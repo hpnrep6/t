@@ -7,15 +7,28 @@ Tutorial Week 2
    :hidden:
    
 
-Writing Math
-------------
+Reading and writing Math
+------------------------
+
+Variables
+~~~~~~~~~
+
+Assigning values
+~~~~~~~~~~~~~~~~
+
+Sample answer
+~~~~~~~~~~~~~
+
+Rational numbers
+----------------
+
 
 .. defining variables
 .. notation (sqrt?)
 
 
-Factoring
----------
+Roots and Factoring
+-------------------
 
 .. square, stuff
 
@@ -64,6 +77,9 @@ Trigonometry
 
 .. sin, cos, tan, cot
 
+Trigonometric inverses
+----------------------
+
 
 Inequalities
 ------------
@@ -81,6 +97,12 @@ More complicated function inverses
 ----------------------------------
 
 .. q26
+
+Logarithms
+----------
+
+.. log rules
+
 
 Application
 -----------

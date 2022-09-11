@@ -18,7 +18,7 @@ help:
 gh-release: Makefile
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) && \
 	cp -rT $(BUILDDIR)/html ./ && \
-	touch .nojekykll && \
+	touch .nojekyll && \
 	echo 't.vec4.ca' >> CNAME
 
 # Catch-all target: route all unknown targets to Sphinx using the new

@@ -6,7 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env: working-directory: ./
     steps:
       - uses: actions/checkout@v2
       - name: release_build 

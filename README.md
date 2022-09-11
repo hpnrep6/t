@@ -1,6 +1,3 @@
+Automatically generated HTML build files fo GitHub pages hosting.
 
-
-## Build
-
-### Install dependencies
-`sudo apt-get install dvipng dvisvgm`
+Do not edit. Edits should be made in another branch and merged with this one.

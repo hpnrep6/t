@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: release_build 
         run: |
+          pwd
           sudo apt-get install dvipng dvisvgm
           pip install -r requirements.txt
           make gh-release

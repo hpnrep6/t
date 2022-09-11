@@ -6,19 +6,17 @@ General Information
 .. toctree::
    :hidden:
    
-
 Contact Information
 -------------------
 
 Email: youngc.chen@mail.utoronto.ca
 
-Try to include the course code in the subject if you're emailing about a course I'm TAing.
-
+Try to include the course code in the subject line if you're emailing about a course I'm TAing.
 
 About
 -----
 
-I'm a Computer Science student at the University of Toronto
+My name is Young Chen and I'm a Computer Science undergraduate student at the University of Toronto
 Scarborough admitted in 2021.
 
 If you want, you can check out my `GitHub <https://github.com/hpnrep6>`_

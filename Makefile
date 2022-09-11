@@ -16,7 +16,7 @@ help:
 .PHONY: help Makefile
 
 gh-release: Makefile
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) && \
+	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) && \
 	cp -rT $(BUILDDIR)/html ./ && \
 	touch .nojekykll && \
 	echo 't.vec4.ca' >> CNAME

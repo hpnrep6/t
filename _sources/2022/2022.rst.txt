@@ -1,0 +1,10 @@
+.. _2022:
+
+2022
+====
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Pages for 2022
+   
+   mata30_fall/mata30

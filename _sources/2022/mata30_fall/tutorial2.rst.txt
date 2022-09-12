@@ -16,6 +16,11 @@ Variables
 Assigning values
 ~~~~~~~~~~~~~~~~
 
+Symbols
+~~~~~~~
+
+.. because, therefore
+
 Sample answer
 ~~~~~~~~~~~~~
 

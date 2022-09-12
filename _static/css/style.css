@@ -21,4 +21,14 @@ body, section h1, section h2, section h3, section h4, section h5, section h6, p.
 
 .wy-menu-vertical a {
     color: white;
+    font-size: 95%;
+    width: 102%;
+}
+
+.wy-menu-vertical li.toctree-l2.current>a, li.toctree-l2, .wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
+    background: #edf6ff;
+}
+
+.wy-menu-vertical li.toctree-l3.current>a, .wy-menu-vertical li.toctree-l3.current li.toctree-l4>a {
+    background: #d4e6f7;
 }

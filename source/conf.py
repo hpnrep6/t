@@ -66,6 +66,10 @@ html_css_files = [
 html_js_files = [
 ]
 
+html_favicon = 'favicon.ico'
+
+html_title = ''
+
 
 # imgmath config
 imgmath_font_size = 14

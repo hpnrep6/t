@@ -91,7 +91,7 @@ Difference of squares
 If you had an equation in the form :math:`x^2 - y^2`,
 then you can factor it into :math:`(x - y)(x + y)`. For example, :math:`x^2 - 9 = (x-3)(x+3)`
 
-In this case, :math:`9 = 3^2`, but the second term doesn't have to be an integer. For example,
+In this case, :math:`9 = 3^2`, but the second term (:math:`y`) doesn't have to be an integer. For example,
 you could have :math:`x^2 - 2 = (x - \sqrt{2})(x + \sqrt{2})` since :math:`2 = (\sqrt{2})^2`.
 
 Cross-multiplication method (for quadratics)
@@ -155,7 +155,7 @@ So any line with the slope :math:`-\dfrac{3}{2}` is perpendicular, a simple exam
 Functions
 ---------
 
-Q3: Suppose you have the function :math:`f(4x + 1) = \dfrac{4x(x+1)}{x^2 - 1}`. 
+Q3: Suppose you have the function :math:`f(4x + 1) = \dfrac{3x}{2x + 1}`. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 (a) What is :math:`f(5)`? 
@@ -454,3 +454,21 @@ and check the values in between the x-intercepts to see if they're greater than 
 
 :math:`f(x)` is useful here since you can show your calculations by writing something like
 :math:`f(-0.5)=-\dfrac{3}{8} < 0` for your number line.
+
+Logarithms and exponents
+------------------------
+
+Q16: Solve the equation :math:`2(\pi^x) + 7(\pi^x) -e^8 = 0`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Function composition
+--------------------
+
+
+Q17: Let :math:`f(x) = x^2 + 10x + 16`, :math:`g(x) = log_{\scriptsize{}\dfrac{1}{2}}(x)`. Solve the equation :math:`(f \circ g)(x) = 0`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can somewhat simplify this question by breaking it down into 2 steps,
+the first being to find the values of x where :math:`f(x) = 0`, and the second
+being to find the values of :math:`t` (since we already used :math:`x`) where :math:`g(t) = x`.
+Your answer would be those values of :math:`t`.

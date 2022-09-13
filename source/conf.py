@@ -67,6 +67,14 @@ html_css_files = [
 html_js_files = [
 ]
 
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "hpnrep6", # Username
+    "github_repo": "t", # Repo name
+    "github_version": "development", # Version
+    "conf_py_path": "/source/", # Path in the checkout to the docs root
+}
+
 html_favicon = 'favicon.ico'
 
 html_title = ''

@@ -30,7 +30,8 @@ author = 'hpnrep6'
 # ones.
 extensions = [
     'sphinx_rtd_theme',
-    'sphinx.ext.imgmath'
+    # 'sphinx.ext.pngmath'
+    'sphinx.ext.mathjax'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -72,4 +73,4 @@ html_title = ''
 
 
 # imgmath config
-imgmath_font_size = 14
+# imgmath_font_size = 12

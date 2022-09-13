@@ -10,3 +10,4 @@ Unofficial discord server: https://discord.gg/Qh5vnvExep
     :caption: Pages for MATA30
 
     tutorial2
+    tutorial3

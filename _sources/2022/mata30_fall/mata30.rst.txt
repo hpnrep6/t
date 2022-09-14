@@ -5,6 +5,8 @@ MATA30 Fall 2022
 
 Unofficial discord server: https://discord.gg/Qh5vnvExep
 
+Tutorial discord server: https://discord.gg/E3Y7hsZqtN
+
 .. toctree::
     :maxdepth: 1
     :caption: Pages for MATA30

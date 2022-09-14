@@ -57,6 +57,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#function-inverses">Function inverses</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#absolute-values">Absolute values</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inequalities">Inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logarithms-and-exponents">Logarithms and exponents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#function-composition">Function composition</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial3.html">Tutorial Week 3</a><ul class="simple">
@@ -86,7 +88,7 @@
           <li><a href="mata30.html">MATA30 Fall 2022</a> &raquo;</li>
       <li>Tutorial Week 2</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/2022/mata30_fall/tutorial2.rst.txt" rel="nofollow"> View page source</a>
+              <a href="https://github.com/hpnrep6/t/blob/development/source/2022/mata30_fall/tutorial2.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -152,14 +154,14 @@ where <span class="math notranslate nohighlight">\(3\)</span> is the common fact
 <h3>Difference of squares<a class="headerlink" href="#difference-of-squares" title="Permalink to this headline"></a></h3>
 <p>If you had an equation in the form <span class="math notranslate nohighlight">\(x^2 - y^2\)</span>,
 then you can factor it into <span class="math notranslate nohighlight">\((x - y)(x + y)\)</span>. For example, <span class="math notranslate nohighlight">\(x^2 - 9 = (x-3)(x+3)\)</span></p>
-<p>In this case, <span class="math notranslate nohighlight">\(9 = 3^2\)</span>, but the second term doesn’t have to be an integer. For example,
+<p>In this case, <span class="math notranslate nohighlight">\(9 = 3^2\)</span>, but the second term (<span class="math notranslate nohighlight">\(y\)</span>) doesn’t have to be an integer. For example,
 you could have <span class="math notranslate nohighlight">\(x^2 - 2 = (x - \sqrt{2})(x + \sqrt{2})\)</span> since <span class="math notranslate nohighlight">\(2 = (\sqrt{2})^2\)</span>.</p>
 </section>
 <section id="cross-multiplication-method-for-quadratics">
 <h3>Cross-multiplication method (for quadratics)<a class="headerlink" href="#cross-multiplication-method-for-quadratics" title="Permalink to this headline"></a></h3>
 <p>You could find the full diagrams and stuff by googling cross-multiplication method, so
 here’s a somewhat simplified version just to get the essentials down:</p>
-<p>Say you have the quadratic <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span> and let the factored form be <span class="math notranslate nohighlight">\((gx - j)(hx - k)\)</span>.
+<p>Say you have the quadratic <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span> and let the factored form be <span class="math notranslate nohighlight">\((gx + j)(hx + k)\)</span>.
 Then you need to find the values of <span class="math notranslate nohighlight">\(g, j, h, k\)</span> such that:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
@@ -202,8 +204,8 @@ the negative reciprocol of <span class="math notranslate nohighlight">\(\dfrac{3
 </section>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
-<section id="q3-suppose-you-have-the-function-f-4x-1-dfrac-4x-x-1-x-2-1">
-<h3>Q3: Suppose you have the function <span class="math notranslate nohighlight">\(f(4x + 1) = \dfrac{4x(x+1)}{x^2 - 1}\)</span>.<a class="headerlink" href="#q3-suppose-you-have-the-function-f-4x-1-dfrac-4x-x-1-x-2-1" title="Permalink to this headline"></a></h3>
+<section id="q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1">
+<h3>Q3: Suppose you have the function <span class="math notranslate nohighlight">\(f(4x + 1) = \dfrac{3x}{2x + 1}\)</span>.<a class="headerlink" href="#q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1" title="Permalink to this headline"></a></h3>
 <ol class="loweralpha simple">
 <li><p>What is <span class="math notranslate nohighlight">\(f(5)\)</span>?</p></li>
 </ol>
@@ -289,6 +291,7 @@ domain is the intersection of the two.</p>
 </section>
 <section id="sketching-functions">
 <h2>Sketching functions<a class="headerlink" href="#sketching-functions" title="Permalink to this headline"></a></h2>
+<p>Check your answers using <a class="reference external" href="https://www.desmos.com/calculator">https://www.desmos.com/calculator</a>.</p>
 <section id="q7-sketch-y-3log-2-x-4-2">
 <h3>Q7: Sketch <span class="math notranslate nohighlight">\(y = 3log_2(x + 4) - 2\)</span>.<a class="headerlink" href="#q7-sketch-y-3log-2-x-4-2" title="Permalink to this headline"></a></h3>
 <p>Let’s first get the graph of <span class="math notranslate nohighlight">\(log_2(x)\)</span>.</p>
@@ -503,6 +506,62 @@ your inverse.</p>
 and check the values in between the x-intercepts to see if they’re greater than 0.</p>
 <p><span class="math notranslate nohighlight">\(f(x)\)</span> is useful here since you can show your calculations by writing something like
 <span class="math notranslate nohighlight">\(f(-0.5)=-\dfrac{3}{8} &lt; 0\)</span> for your number line.</p>
+</section>
+</section>
+<section id="logarithms-and-exponents">
+<h2>Logarithms and exponents<a class="headerlink" href="#logarithms-and-exponents" title="Permalink to this headline"></a></h2>
+<section id="q16-solve-the-equation-2-pi-x-7-pi-x-e-8-0">
+<h3>Q16: Solve the equation <span class="math notranslate nohighlight">\(2(\pi^x) + 7(\pi^x) -e^8 = 0\)</span>.<a class="headerlink" href="#q16-solve-the-equation-2-pi-x-7-pi-x-e-8-0" title="Permalink to this headline"></a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+2(\pi^x) + 7(\pi^x) -e^8 &amp;= 0 \\
+9(\pi^x) -e^8 &amp;= 0 \\
+9(\pi^x) &amp;= e^8 \\
+\pi^x &amp;= \dfrac{e^8}{9} \\
+log_{\pi}(\pi^x) &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
+x log_{\pi}(\pi) &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
+x (1) &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
+x &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
+\end{aligned}\end{split}\]</div>
+</section>
+</section>
+<section id="function-composition">
+<h2>Function composition<a class="headerlink" href="#function-composition" title="Permalink to this headline"></a></h2>
+<section id="q17-let-f-x-x-2-x-g-x-log-scriptsize-dfrac-1-2-x-h-x-cos-x-restrict-x-to-0-leq-x-leq-pi-solve-the-equation-f-circ-g-circ-h-x-0">
+<h3>Q17: Let <span class="math notranslate nohighlight">\(f(x) = x^2 - x\)</span>, <span class="math notranslate nohighlight">\(g(x) = log_{\scriptsize{}\dfrac{1}{2}}(x)\)</span>, <span class="math notranslate nohighlight">\(h(x) = cos(x)\)</span>. Restrict <span class="math notranslate nohighlight">\(x\)</span> to <span class="math notranslate nohighlight">\(0 \leq x \leq \pi\)</span>. Solve the equation <span class="math notranslate nohighlight">\((f \circ g \circ h)(x) = 0\)</span>.<a class="headerlink" href="#q17-let-f-x-x-2-x-g-x-log-scriptsize-dfrac-1-2-x-h-x-cos-x-restrict-x-to-0-leq-x-leq-pi-solve-the-equation-f-circ-g-circ-h-x-0" title="Permalink to this headline"></a></h3>
+<p>You can somewhat simplify this question by breaking it down into multiple steps.</p>
+<p>Let’s first find the values of <span class="math notranslate nohighlight">\(x\)</span> that satisfies <span class="math notranslate nohighlight">\(f(x) = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+x^2 + 10x + 16 &amp;= x(x-1)
+\end{aligned}\]</div>
+<p>The values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x) = 0\)</span> in this case are <span class="math notranslate nohighlight">\(x = 0\)</span> and <span class="math notranslate nohighlight">\(x = 1\)</span>,
+so you want to find the values of <span class="math notranslate nohighlight">\(t\)</span> (since you already used <span class="math notranslate nohighlight">\(x\)</span> for <span class="math notranslate nohighlight">\(f(x)\)</span>,
+so you want to avoid getting confused with variables with the same name) that makes <span class="math notranslate nohighlight">\(g(t) = 0\)</span>
+or <span class="math notranslate nohighlight">\(g(t) = 16\)</span>.</p>
+<p>For <span class="math notranslate nohighlight">\(g(t) = 0\)</span>, you have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+g(t) &amp;= 0 \\
+log_{\scriptsize{}\dfrac{1}{2}}(t) &amp;= 0 \\
+\dfrac{1}{2}^{(log_{\tiny{}\dfrac{1}{2}}(t))} &amp;= (\dfrac{1}{2})^0 \\
+t &amp;= 1
+\end{aligned}\end{split}\]</div>
+<p>For <span class="math notranslate nohighlight">\(g(t) = 8\)</span>, you have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+g(t) &amp;= 1 \\
+log_{\scriptsize{}\dfrac{1}{2}}(t) &amp;= 1 \\
+\dfrac{1}{2}^{(log_{\tiny{}\dfrac{1}{2}}(t))} &amp;= (\dfrac{1}{2})^1 \\
+t &amp;= \dfrac{1}{2}
+\end{aligned}\end{split}\]</div>
+<p>So your values of <span class="math notranslate nohighlight">\(t\)</span> are <span class="math notranslate nohighlight">\(t = 1\)</span> and <span class="math notranslate nohighlight">\(t = \dfrac{1}{2}\)</span>.</p>
+<p>Now you need to find the values of <span class="math notranslate nohighlight">\(u\)</span> (again, using another variable since
+you already used <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>) that makes <span class="math notranslate nohighlight">\(h(u) = 1\)</span> or <span class="math notranslate nohighlight">\(h(u) = \dfrac{1}{2}\)</span>.</p>
+<p>This means you’re solving for <span class="math notranslate nohighlight">\(cos(u) = 1\)</span> and <span class="math notranslate nohighlight">\(cos(u) = \dfrac{1}{2}\)</span>.</p>
+<p>Since our domain of <span class="math notranslate nohighlight">\(u\)</span> is restricted on <span class="math notranslate nohighlight">\(0 \leq u \leq \pi\)</span>, the only values
+of <span class="math notranslate nohighlight">\(u\)</span> that are solutions to this are <span class="math notranslate nohighlight">\(u = 0\)</span> and <span class="math notranslate nohighlight">\(u = \dfrac{\pi}{3}\)</span> (use a unit circle). And this is
+our answer: <span class="math notranslate nohighlight">\(x = 0\)</span> and <span class="math notranslate nohighlight">\(x = \dfrac{3\pi}{2}\)</span>.</p>
 </section>
 </section>
 </section>

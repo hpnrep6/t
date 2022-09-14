@@ -100,7 +100,7 @@ Cross-multiplication method (for quadratics)
 You could find the full diagrams and stuff by googling cross-multiplication method, so
 here's a somewhat simplified version just to get the essentials down:
 
-Say you have the quadratic :math:`ax^2 + bx + c` and let the factored form be :math:`(gx - j)(hx - k)`.
+Say you have the quadratic :math:`ax^2 + bx + c` and let the factored form be :math:`(gx + j)(hx + k)`.
 Then you need to find the values of :math:`g, j, h, k` such that:
 
 .. math::
@@ -265,6 +265,8 @@ Thus, since the domain of both functions in this case is all real numbers, the d
 
 Sketching functions
 -------------------
+
+Check your answers using https://www.desmos.com/calculator.
 
 Q7: Sketch :math:`y = 3log_2(x + 4) - 2`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -461,14 +463,68 @@ Logarithms and exponents
 Q16: Solve the equation :math:`2(\pi^x) + 7(\pi^x) -e^8 = 0`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. math::
+   \begin{aligned}
+   2(\pi^x) + 7(\pi^x) -e^8 &= 0 \\
+   9(\pi^x) -e^8 &= 0 \\
+   9(\pi^x) &= e^8 \\
+   \pi^x &= \dfrac{e^8}{9} \\
+   log_{\pi}(\pi^x) &= log_{\pi}(\dfrac{e^8}{9}) \\
+   x log_{\pi}(\pi) &= log_{\pi}(\dfrac{e^8}{9}) \\
+   x (1) &= log_{\pi}(\dfrac{e^8}{9}) \\
+   x &= log_{\pi}(\dfrac{e^8}{9}) \\
+   \end{aligned}
+
 Function composition
 --------------------
 
 
-Q17: Let :math:`f(x) = x^2 + 10x + 16`, :math:`g(x) = log_{\scriptsize{}\dfrac{1}{2}}(x)`. Solve the equation :math:`(f \circ g)(x) = 0`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q17: Let :math:`f(x) = x^2 - x`, :math:`g(x) = log_{\scriptsize{}\dfrac{1}{2}}(x)`, :math:`h(x) = cos(x)`. Restrict :math:`x` to :math:`0 \leq x \leq \pi`. Solve the equation :math:`(f \circ g \circ h)(x) = 0`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can somewhat simplify this question by breaking it down into 2 steps,
-the first being to find the values of x where :math:`f(x) = 0`, and the second
-being to find the values of :math:`t` (since we already used :math:`x`) where :math:`g(t) = x`.
-Your answer would be those values of :math:`t`.
+
+
+You can somewhat simplify this question by breaking it down into multiple steps.
+
+Let's first find the values of :math:`x` that satisfies :math:`f(x) = 0`.
+
+.. math::
+   \begin{aligned}
+   x^2 + 10x + 16 &= x(x-1)
+   \end{aligned}
+
+The values of :math:`x` where :math:`f(x) = 0` in this case are :math:`x = 0` and :math:`x = 1`,
+so you want to find the values of :math:`t` (since you already used :math:`x` for :math:`f(x)`,
+so you want to avoid getting confused with variables with the same name) that makes :math:`g(t) = 0`
+or :math:`g(t) = 16`.
+
+For :math:`g(t) = 0`, you have 
+
+.. math::
+   \begin{aligned}
+   g(t) &= 0 \\
+   log_{\scriptsize{}\dfrac{1}{2}}(t) &= 0 \\
+   \dfrac{1}{2}^{(log_{\tiny{}\dfrac{1}{2}}(t))} &= (\dfrac{1}{2})^0 \\
+   t &= 1 
+   \end{aligned}
+
+For :math:`g(t) = 8`, you have
+
+.. math::
+   \begin{aligned}
+   g(t) &= 1 \\
+   log_{\scriptsize{}\dfrac{1}{2}}(t) &= 1 \\
+   \dfrac{1}{2}^{(log_{\tiny{}\dfrac{1}{2}}(t))} &= (\dfrac{1}{2})^1 \\
+   t &= \dfrac{1}{2}
+   \end{aligned}
+
+So your values of :math:`t` are :math:`t = 1` and :math:`t = \dfrac{1}{2}`.
+
+Now you need to find the values of :math:`u` (again, using another variable since
+you already used :math:`x` and :math:`t`) that makes :math:`h(u) = 1` or :math:`h(u) = \dfrac{1}{2}`.
+
+This means you're solving for :math:`cos(u) = 1` and :math:`cos(u) = \dfrac{1}{2}`.
+
+Since our domain of :math:`u` is restricted on :math:`0 \leq u \leq \pi`, the only values
+of :math:`u` that are solutions to this are :math:`u = 0` and :math:`u = \dfrac{\pi}{3}` (use a unit circle). And this is
+our answer: :math:`x = 0` and :math:`x = \dfrac{3\pi}{2}`.

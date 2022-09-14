@@ -527,4 +527,4 @@ This means you're solving for :math:`cos(u) = 1` and :math:`cos(u) = \dfrac{1}{2
 
 Since our domain of :math:`u` is restricted on :math:`0 \leq u \leq \pi`, the only values
 of :math:`u` that are solutions to this are :math:`u = 0` and :math:`u = \dfrac{\pi}{3}` (use a unit circle). And this is
-our answer: :math:`x = 0` and :math:`x = \dfrac{3\pi}{2}`.
+our answer: :math:`x = 0` and :math:`x = \dfrac{\pi}{3}`.

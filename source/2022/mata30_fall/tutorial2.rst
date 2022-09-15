@@ -148,9 +148,9 @@ to the right side to get :math:`y = \dfrac{3}{2}x - \dfrac{4}{2} = \dfrac{3}{2}x
 
 This gives you the slope of the line, which is :math:`\dfrac{3}{2}`. The slope perpendicular
 to this would be the negative reciprocol (that is, :math:`m_2 = -\dfrac{1}{m_1}`). So you take
-the negative reciprocol of :math:`\dfrac{3}{2}` to get :math:`m_2 = -\dfrac{3}{2}`.
+the negative reciprocol of :math:`\dfrac{3}{2}` to get :math:`m_2 = -\dfrac{2}{3}`.
 
-So any line with the slope :math:`-\dfrac{3}{2}` is perpendicular, a simple example being :math:`y = -\dfrac{3}{2}x`
+So any line with the slope :math:`-\dfrac{2}{3}` is perpendicular, a simple example being :math:`y = -\dfrac{2}{3}x`
 
 Functions
 ---------

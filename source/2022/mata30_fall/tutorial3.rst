@@ -15,3 +15,17 @@ Tutorial Week 3
     };
     </script>
 
+This week's tutorial will be based on the content from the second week of lectures.
+
+Be sure to be familiar with the material from Week 1 (https://q.utoronto.ca/courses/267509/pages/week-1-sept-5-9?module_item_id=3863942).
+
+Inverse Trigonometric Functions
+-------------------------------
+
+Q1: Find the inverse of the function :math:`f(x) = cos^{-1}(x^3 + 2)`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note domain restriction
+
+
+Q2: Solve the equation 

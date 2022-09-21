@@ -46,7 +46,7 @@ and
 
 3) :math:`cos(x) = cos(-x)`
 
-First, use property 1 to get :math:`\dfrac{78\pi}{7}` within :math:`[-\pi, \pi]`.
+First, use property 1 to get :math:`\dfrac{56\pi}{5}` within :math:`[-\pi, \pi]`.
 
 If the value is negative, use property 3 to make it positive.
 

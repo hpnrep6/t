@@ -28,7 +28,7 @@ Q1: What is the value of :math:`sin^{-1}(1)`?
 Q2: What is the value of :math:`cos^{-1}(cos(\dfrac{71\pi}{7}))`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Q3: Rewrite :math:`tan(cos^{-1}(3x)))` without trigonometric functions.
+Q3: Rewrite :math:`tan(cos^{-1}(3x))` without trigonometric functions.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Inverse Trig Functions

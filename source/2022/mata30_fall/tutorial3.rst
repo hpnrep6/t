@@ -22,10 +22,30 @@ Be sure to be familiar with the material from Week 1 (https://q.utoronto.ca/cour
 Inverse Trigonometric Functions
 -------------------------------
 
-Q1: Find the inverse of the function :math:`f(x) = cos^{-1}(x^3 + 2)`.
+Q1: What is the value of :math:`sin^{-1}(1)`?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Q2: What is the value of :math:`cos^{-1}(cos(\dfrac{71\pi}{7}))`?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Q3: Find the inverse of the function :math:`f(x) = cos^{-1}(x^3 + 2)`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Q4: For what values of :math:`x` satisfy :math:`tan^2(x) = tan(x)` if :math:`-\dfrac{\pi}{2} \le x \le \dfrac{\pi}{2}`?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Q5: What is the domain of :math:`cos^{-1}(-3x + 4)`?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Q6: What is the domain of :math:`tan^{-1}(e^x)`?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Q7: For what values of :math:`x` is :math:`sin^{-1}(cos(x)) = x + \dfrac{\pi}{2}`?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note domain restriction
 
 
 Q2: Solve the equation 
+
+

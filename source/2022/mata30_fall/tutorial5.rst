@@ -36,7 +36,7 @@ Q2: Let :math:`f(x) = \begin{cases} 3x + e^x & \text{if } x \leq 1 \\ x^4 + k & 
 Q3: Let :math:`f(x) = \begin{cases} log(-x) - 1& \text{if } x \leq -1 \\ x & \text{if } -1 \lt x \lt 1 \\ (x - 1)^2 & \text{if } x \gt 1 \end{cases}`. Where is :math:`f(x)` continuous and where is it differentiable?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Q4: Let :math:`f(x) = \begin{cases} \dfrac{(1 - cos(x))(x + 2)}{x^3 + 3x + 5} & \text{if } x \le 0 \\ sin(x) & \text{if } x \gt 0 \end{cases}`. Where is :math:`f(x)` continuous?
+Q4: Let :math:`f(x) = \begin{cases} \dfrac{(1 - cos(x)(x + 2)}{x^3 + 3x^2 + 5x} & \text{if } x \le 0 \\ sin(x) & \text{if } x \gt 0 \end{cases}`. Where is :math:`f(x)` continuous?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Q5: Let :math:`f(x) = \begin{cases} 4 & \text{if } x \le -1 \\ ax + b & \text{if } -1 \lt x \lt 1 \\ x + 6 & \text{if } x \gt 1 \end{cases}`. What values of :math:`a` and :math:`b` make :math:`f(x)` only have removable discontinuities?

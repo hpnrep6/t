@@ -11,10 +11,11 @@ Tutorial discord server: https://discord.gg/E3Y7hsZqtN
    :keywords: mata30, notes, tutorial
 
 .. toctree::
-    :maxdepth: 1
-    :caption: Pages for MATA30
+   :maxdepth: 1
+   :caption: Pages for MATA30
 
-    tutorial2
-    tutorial3
-    tutorial4
-    tutorial5
+   tutorial2
+   tutorial3
+   tutorial4
+   tutorial5
+   tutorial6

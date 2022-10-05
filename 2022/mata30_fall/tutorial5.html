@@ -17,9 +17,11 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tutorial Week 6" href="tutorial6.html" />
     <link rel="prev" title="Tutorial Week 4" href="tutorial4.html" /> 
 </head>
 
@@ -76,7 +78,15 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial4.html#trigonometric-limits">Trigonometric Limits</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 5</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#an-interesting-limit-question">An Interesting Limit Question</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#continuity">Continuity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#finding-derivatives-using-the-limit-definition-of-a-derivative">Finding Derivatives using the Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#differentiability-using-the-limit-definition-of-a-derivative">Differentiability using the Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#intermediate-value-theorem">Intermediate Value Theorem</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial6.html">Tutorial Week 6</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -120,13 +130,68 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script></section>
+</script><p>This week, let’s review continuity, intermediate value theorem, and the limit definition of a derivative.</p>
+<section id="an-interesting-limit-question">
+<h2>An Interesting Limit Question<a class="headerlink" href="#an-interesting-limit-question" title="Permalink to this headline"></a></h2>
+<p>Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} x - 1 &amp; \text{if } x \in \mathbb{Q} \\ 0 &amp; \text{if } x \notin \mathbb{Q} \end{cases}\)</span>.</p>
+<p>Does <span class="math notranslate nohighlight">\(\lim_{x \to 1} f(x)\)</span> exist? If it does, what is its value?</p>
+</section>
+<section id="continuity">
+<h2>Continuity<a class="headerlink" href="#continuity" title="Permalink to this headline"></a></h2>
+<section id="q1-classify-the-discontinuities-in-the-following-image">
+<h3>Q1: Classify the discontinuities in the following image:<a class="headerlink" href="#q1-classify-the-discontinuities-in-the-following-image" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q2-let-f-x-begin-cases-3x-e-x-text-if-x-leq-1-x-4-k-text-if-x-gt-1-end-cases-for-what-value-s-of-k-makes-the-f-x-continuous">
+<h3>Q2: Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} 3x + e^x &amp; \text{if } x \leq 1 \\ x^4 + k &amp; \text{if } x \gt 1\end{cases}\)</span>. For what value(s) of <span class="math notranslate nohighlight">\(k\)</span> makes the <span class="math notranslate nohighlight">\(f(x)\)</span> continuous?<a class="headerlink" href="#q2-let-f-x-begin-cases-3x-e-x-text-if-x-leq-1-x-4-k-text-if-x-gt-1-end-cases-for-what-value-s-of-k-makes-the-f-x-continuous" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q3-let-f-x-begin-cases-log-x-1-text-if-x-leq-1-x-text-if-1-lt-x-lt-1-x-1-2-text-if-x-gt-1-end-cases-where-is-f-x-continuous-and-where-is-it-differentiable">
+<h3>Q3: Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} log(-x) - 1&amp; \text{if } x \leq -1 \\ x &amp; \text{if } -1 \lt x \lt 1 \\ (x - 1)^2 &amp; \text{if } x \gt 1 \end{cases}\)</span>. Where is <span class="math notranslate nohighlight">\(f(x)\)</span> continuous and where is it differentiable?<a class="headerlink" href="#q3-let-f-x-begin-cases-log-x-1-text-if-x-leq-1-x-text-if-1-lt-x-lt-1-x-1-2-text-if-x-gt-1-end-cases-where-is-f-x-continuous-and-where-is-it-differentiable" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q4-let-f-x-begin-cases-dfrac-1-cos-x-x-2-x-3-3x-5-text-if-x-le-0-sin-x-text-if-x-gt-0-end-cases-where-is-f-x-continuous">
+<h3>Q4: Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} \dfrac{(1 - cos(x))(x + 2)}{x^3 + 3x + 5} &amp; \text{if } x \le 0 \\ sin(x) &amp; \text{if } x \gt 0 \end{cases}\)</span>. Where is <span class="math notranslate nohighlight">\(f(x)\)</span> continuous?<a class="headerlink" href="#q4-let-f-x-begin-cases-dfrac-1-cos-x-x-2-x-3-3x-5-text-if-x-le-0-sin-x-text-if-x-gt-0-end-cases-where-is-f-x-continuous" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q5-let-f-x-begin-cases-4-text-if-x-le-1-ax-b-text-if-1-lt-x-lt-1-x-6-text-if-x-gt-1-end-cases-what-values-of-a-and-b-make-f-x-only-have-removable-discontinuities">
+<h3>Q5: Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} 4 &amp; \text{if } x \le -1 \\ ax + b &amp; \text{if } -1 \lt x \lt 1 \\ x + 6 &amp; \text{if } x \gt 1 \end{cases}\)</span>. What values of <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> make <span class="math notranslate nohighlight">\(f(x)\)</span> only have removable discontinuities?<a class="headerlink" href="#q5-let-f-x-begin-cases-4-text-if-x-le-1-ax-b-text-if-1-lt-x-lt-1-x-6-text-if-x-gt-1-end-cases-what-values-of-a-and-b-make-f-x-only-have-removable-discontinuities" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="finding-derivatives-using-the-limit-definition-of-a-derivative">
+<h2>Finding Derivatives using the Limit Definition of a Derivative<a class="headerlink" href="#finding-derivatives-using-the-limit-definition-of-a-derivative" title="Permalink to this headline"></a></h2>
+<section id="q6-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-x-2-5x">
+<h3>Q6: Use the limit definition of a derivative to compute <span class="math notranslate nohighlight">\(f^{'}(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = x^2 - 5x\)</span>.<a class="headerlink" href="#q6-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-x-2-5x" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q7-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-e-x-e">
+<h3>Q7: Use the limit definition of a derivative to compute <span class="math notranslate nohighlight">\(f^{'}(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = e^x + e\)</span>.<a class="headerlink" href="#q7-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-e-x-e" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q8-use-the-limit-definition-of-a-derivative-to-compute-f-0-if-f-x-dfrac-x-3-4x-x-3">
+<h3>Q8: Use the limit definition of a derivative to compute <span class="math notranslate nohighlight">\(f^{'}(0)\)</span> if <span class="math notranslate nohighlight">\(f(x) = \dfrac{x^3 - 4x}{x + 3}\)</span>.<a class="headerlink" href="#q8-use-the-limit-definition-of-a-derivative-to-compute-f-0-if-f-x-dfrac-x-3-4x-x-3" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q9-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-sin-x">
+<h3>Q9: Use the limit definition of a derivative to compute <span class="math notranslate nohighlight">\(f^{'}(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = sin(x)\)</span>.<a class="headerlink" href="#q9-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-sin-x" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="differentiability-using-the-limit-definition-of-a-derivative">
+<h2>Differentiability using the Limit Definition of a Derivative<a class="headerlink" href="#differentiability-using-the-limit-definition-of-a-derivative" title="Permalink to this headline"></a></h2>
+<section id="q10-show-that-f-x-x-tiny-dfrac-2-3-is-not-differentiable-at-x-0-using-the-limit-definition-of-a-derivative">
+<h3>Q10: Show that <span class="math notranslate nohighlight">\(f(x) = x^{\tiny \dfrac{2}{3}}\)</span> is not differentiable at <span class="math notranslate nohighlight">\(x = 0\)</span> using the limit definition of a derivative.<a class="headerlink" href="#q10-show-that-f-x-x-tiny-dfrac-2-3-is-not-differentiable-at-x-0-using-the-limit-definition-of-a-derivative" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="intermediate-value-theorem">
+<h2>Intermediate Value Theorem<a class="headerlink" href="#intermediate-value-theorem" title="Permalink to this headline"></a></h2>
+<section id="q11-show-that-f-x-e-3x-4x-3-3-has-a-root-in-x-in-1-2">
+<h3>Q11: Show that <span class="math notranslate nohighlight">\(f(x) = e^{3x} + 4x^3 + 3\)</span> has a root in <span class="math notranslate nohighlight">\(x \in [-1, 2]\)</span>.<a class="headerlink" href="#q11-show-that-f-x-e-3x-4x-3-3-has-a-root-in-x-in-1-2" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q12-show-that-the-line-y-2-and-the-function-y-3-x-4-x-2-x-4-intercept-each-other-on-x-in-1-5">
+<h3>Q12: Show that the line <span class="math notranslate nohighlight">\(y = 2\)</span> and the function <span class="math notranslate nohighlight">\(y = 3(x - 4)(x + 2)(x + 4)\)</span> intercept each other on <span class="math notranslate nohighlight">\(x \in [1, 5]\)</span>.<a class="headerlink" href="#q12-show-that-the-line-y-2-and-the-function-y-3-x-4-x-2-x-4-intercept-each-other-on-x-in-1-5" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial4.html" class="btn btn-neutral float-left" title="Tutorial Week 4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorial6.html" class="btn btn-neutral float-right" title="Tutorial Week 6" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -14,3 +14,45 @@ Tutorial Week 6
    tex: {packages: {'[+]': ['ams']}}
    };
    </script>
+
+
+This week, we'll be looking more into derivatives.
+
+Proofs of derivative rules
+--------------------------
+
+Product rule
+~~~~~~~~~~~~
+
+Quotient rule
+~~~~~~~~~~~~~
+
+Chain rule
+~~~~~~~~~~
+
+Graphing differentiability
+--------------------------
+
+Derivatives with absolute values
+--------------------------------
+
+Computing derivatives
+---------------------
+
+
+.. Derivative of quotient and product
+
+.. Derivative with variables
+
+Derivative tables
+-----------------
+
+Piecewise function differentiability
+------------------------------------
+
+Application
+-----------
+
+Implicit Differentiation
+------------------------
+

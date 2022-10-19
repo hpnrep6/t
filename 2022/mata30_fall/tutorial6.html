@@ -86,17 +86,16 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 6</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#proofs-of-derivative-rules">Proofs of derivative rules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#graphing-differentiability">Graphing differentiability</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#derivative-notation">Derivative Notation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#derivatives-with-absolute-values">Derivatives with absolute values</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#computing-derivatives">Computing derivatives</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#derivative-tables">Derivative tables</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#piecewise-function-differentiability">Piecewise function differentiability</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#implicit-differentiation">Implicit Differentiation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial7.html">Tutorial Week 7</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#implicit-differentiation">Implicit Differentiation</a></li>
 </ul>
 </li>
 </ul>
@@ -141,18 +140,6 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><p>This week, we’ll be looking more into derivatives.</p>
-<section id="proofs-of-derivative-rules">
-<h2>Proofs of derivative rules<a class="headerlink" href="#proofs-of-derivative-rules" title="Permalink to this headline"></a></h2>
-<section id="product-rule">
-<h3>Product rule<a class="headerlink" href="#product-rule" title="Permalink to this headline"></a></h3>
-</section>
-<section id="quotient-rule">
-<h3>Quotient rule<a class="headerlink" href="#quotient-rule" title="Permalink to this headline"></a></h3>
-</section>
-<section id="chain-rule">
-<h3>Chain rule<a class="headerlink" href="#chain-rule" title="Permalink to this headline"></a></h3>
-</section>
-</section>
 <section id="graphing-differentiability">
 <h2>Graphing differentiability<a class="headerlink" href="#graphing-differentiability" title="Permalink to this headline"></a></h2>
 <section id="q1-sketch-the-graph-of-a-function-that">
@@ -161,49 +148,60 @@ tex: {packages: {'[+]': ['ams']}}
 <li><p>Has a corner at <span class="math notranslate nohighlight">\(x = -3\)</span></p></li>
 <li><p>Is discontinuous at <span class="math notranslate nohighlight">\(x = -1\)</span></p></li>
 <li><p>Has a vertical tangent at <span class="math notranslate nohighlight">\(x = 0\)</span></p></li>
+<li><p>Has a domain of <span class="math notranslate nohighlight">\((-\infty, \infty)\)</span></p></li>
 </ol>
+<a class="reference internal image-reference" href="../../_images/15.jpg"><img alt="../../_images/15.jpg" src="../../_images/15.jpg" style="width: 700px;" /></a>
 </section>
 </section>
 <section id="derivative-notation">
 <h2>Derivative Notation<a class="headerlink" href="#derivative-notation" title="Permalink to this headline"></a></h2>
 <section id="q2-find-f-x-if-f-x-3g-k-x-h-x-k-x">
 <h3>Q2: Find <span class="math notranslate nohighlight">\(f'(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = 3g(k(x)) - h(x)k(x)\)</span>.<a class="headerlink" href="#q2-find-f-x-if-f-x-3g-k-x-h-x-k-x" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/22.jpg"><img alt="../../_images/22.jpg" src="../../_images/22.jpg" style="width: 700px;" /></a>
 </section>
 <section id="q3-find-frac-df-dx-x-3-if-f-x-x-4-k-for-some-constant-k">
 <h3>Q3: Find <span class="math notranslate nohighlight">\(\frac{df}{dx} |_{x = 3}\)</span> if <span class="math notranslate nohighlight">\(f(x) = x^4 + k\)</span> for some constant <span class="math notranslate nohighlight">\(k\)</span>.<a class="headerlink" href="#q3-find-frac-df-dx-x-3-if-f-x-x-4-k-for-some-constant-k" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/31.jpg"><img alt="../../_images/31.jpg" src="../../_images/31.jpg" style="width: 700px;" /></a>
 </section>
 <section id="q4-given-functions-f-x-4h-x-2-g-x-2f-x-h-x-x-frac-dg-dx-8x-3-16x-find-h-x">
 <h3>Q4: Given functions <span class="math notranslate nohighlight">\(f(x) = 4h(x)^2\)</span>, <span class="math notranslate nohighlight">\(g(x) = 2f(x)\)</span>, <span class="math notranslate nohighlight">\(h'(x) = x\)</span>, <span class="math notranslate nohighlight">\(\frac{dg}{dx} = 8x^3 + 16x\)</span>, find <span class="math notranslate nohighlight">\(h(x)\)</span>.<a class="headerlink" href="#q4-given-functions-f-x-4h-x-2-g-x-2f-x-h-x-x-frac-dg-dx-8x-3-16x-find-h-x" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/42.jpg"><img alt="../../_images/42.jpg" src="../../_images/42.jpg" style="width: 700px;" /></a>
 </section>
-<section id="q5-given-f-x-x-3-and-frac-dh-df-5-find-frac-dh-dx">
-<h3>Q5: Given <span class="math notranslate nohighlight">\(f(x) = x^3\)</span> and <span class="math notranslate nohighlight">\(\frac{dh}{df} = 5\)</span>, find <span class="math notranslate nohighlight">\(\frac{dh}{dx}\)</span>.<a class="headerlink" href="#q5-given-f-x-x-3-and-frac-dh-df-5-find-frac-dh-dx" title="Permalink to this headline"></a></h3>
+<section id="q5-given-f-x-x-3-h-is-a-function-defined-in-terms-of-f-x-and-frac-dh-df-5-find-frac-dh-dx">
+<h3>Q5: Given <span class="math notranslate nohighlight">\(f(x) = x^3\)</span>, <span class="math notranslate nohighlight">\(h\)</span> is a function defined in terms of <span class="math notranslate nohighlight">\(f(x)\)</span>, and <span class="math notranslate nohighlight">\(\frac{dh}{df} = 5\)</span>, find <span class="math notranslate nohighlight">\(\frac{dh}{dx}\)</span>.<a class="headerlink" href="#q5-given-f-x-x-3-h-is-a-function-defined-in-terms-of-f-x-and-frac-dh-df-5-find-frac-dh-dx" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/52.jpg"><img alt="../../_images/52.jpg" src="../../_images/52.jpg" style="width: 700px;" /></a>
 </section>
 </section>
 <section id="derivatives-with-absolute-values">
 <h2>Derivatives with absolute values<a class="headerlink" href="#derivatives-with-absolute-values" title="Permalink to this headline"></a></h2>
 <section id="q6-find-the-derivative-of-f-x-cos-x-x-3">
 <h3>Q6: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = cos(x) - |x|^3\)</span>.<a class="headerlink" href="#q6-find-the-derivative-of-f-x-cos-x-x-3" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/62.jpg"><img alt="../../_images/62.jpg" src="../../_images/62.jpg" style="width: 700px;" /></a>
 </section>
 <section id="q7-find-the-derivative-of-f-x-x-2-x-2-2">
 <h3>Q7: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = |x + 2| + (|x - 2|)^2\)</span>.<a class="headerlink" href="#q7-find-the-derivative-of-f-x-x-2-x-2-2" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/72.jpg"><img alt="../../_images/72.jpg" src="../../_images/72.jpg" style="width: 700px;" /></a>
 </section>
 </section>
 <section id="computing-derivatives">
 <h2>Computing derivatives<a class="headerlink" href="#computing-derivatives" title="Permalink to this headline"></a></h2>
 <section id="q8-find-the-derivative-of-cos-sin-tan-x-cdot-2x-e">
 <h3>Q8: Find the derivative of <span class="math notranslate nohighlight">\(cos(sin(tan(x))) \cdot 2x^{e}\)</span>.<a class="headerlink" href="#q8-find-the-derivative-of-cos-sin-tan-x-cdot-2x-e" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/82.jpg"><img alt="../../_images/82.jpg" src="../../_images/82.jpg" style="width: 700px;" /></a>
 </section>
 <section id="q9-find-the-derivative-of-sec-frac-csc-x-3x-3">
 <h3>Q9: Find the derivative of <span class="math notranslate nohighlight">\(sec(\frac{csc(x)}{3x^3})\)</span>.<a class="headerlink" href="#q9-find-the-derivative-of-sec-frac-csc-x-3x-3" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/92.jpg"><img alt="../../_images/92.jpg" src="../../_images/92.jpg" style="width: 700px;" /></a>
 </section>
 <section id="q10-find-the-derivative-of-sqrt-4-2x-3-4x-4">
 <h3>Q10: Find the derivative of <span class="math notranslate nohighlight">\(\sqrt[4]{2x^3 - 4x} + 4\)</span>.<a class="headerlink" href="#q10-find-the-derivative-of-sqrt-4-2x-3-4x-4" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/102.jpg"><img alt="../../_images/102.jpg" src="../../_images/102.jpg" style="width: 700px;" /></a>
 </section>
 </section>
 <section id="derivative-tables">
 <h2>Derivative tables<a class="headerlink" href="#derivative-tables" title="Permalink to this headline"></a></h2>
-<section id="q11-given-f-x-g-h-x-find-g-5">
-<h3>Q11: Given <span class="math notranslate nohighlight">\(f(x) = g(h(x))\)</span>, find <span class="math notranslate nohighlight">\(g(5)\)</span>.<a class="headerlink" href="#q11-given-f-x-g-h-x-find-g-5" title="Permalink to this headline"></a></h3>
+<section id="q11-given-f-x-g-h-x-find-g-3">
+<h3>Q11: Given <span class="math notranslate nohighlight">\(f(x) = g(h(x))\)</span>, find <span class="math notranslate nohighlight">\(g'(3)\)</span>.<a class="headerlink" href="#q11-given-f-x-g-h-x-find-g-3" title="Permalink to this headline"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 20%" />
@@ -227,7 +225,7 @@ tex: {packages: {'[+]': ['ams']}}
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>3</p></td>
 <td><p>-3</p></td>
-<td><p>0</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>5</p></td>
@@ -236,6 +234,7 @@ tex: {packages: {'[+]': ['ams']}}
 </tr>
 </tbody>
 </table>
+<a class="reference internal image-reference" href="../../_images/112.jpg"><img alt="../../_images/112.jpg" src="../../_images/112.jpg" style="width: 700px;" /></a>
 </section>
 <section id="q12-using-the-below-table-find-the-equation-of-the-line-perpendicular-to-f-x-at-x-1">
 <h3>Q12: Using the below table, find the equation of the line perpendicular to <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x = 1\)</span>.<a class="headerlink" href="#q12-using-the-below-table-find-the-equation-of-the-line-perpendicular-to-f-x-at-x-1" title="Permalink to this headline"></a></h3>
@@ -254,7 +253,7 @@ tex: {packages: {'[+]': ['ams']}}
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>7</p></td>
-<td><p>-1</p></td>
+<td><p>-2</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>-3</p></td>
@@ -266,18 +265,14 @@ tex: {packages: {'[+]': ['ams']}}
 </tr>
 </tbody>
 </table>
+<a class="reference internal image-reference" href="../../_images/121.jpg"><img alt="../../_images/121.jpg" src="../../_images/121.jpg" style="width: 700px;" /></a>
 </section>
 </section>
 <section id="piecewise-function-differentiability">
 <h2>Piecewise function differentiability<a class="headerlink" href="#piecewise-function-differentiability" title="Permalink to this headline"></a></h2>
-<section id="q13-find-the-values-of-m-and-b-that-makes-f-x-begin-cases-kx-2-kx-text-if-x-leq-1-frac-x-k-kx-text-if-x-gt-1-end-cases-differentiable-everywhere">
-<h3>Q13: Find the values of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(b\)</span> that makes <span class="math notranslate nohighlight">\(f(x) = \begin{cases} kx^2 + kx &amp; \text{if } x \leq 1 \\ \frac{x + k}{kx} &amp; \text{if } x \gt 1 \end{cases}\)</span> differentiable everywhere.<a class="headerlink" href="#q13-find-the-values-of-m-and-b-that-makes-f-x-begin-cases-kx-2-kx-text-if-x-leq-1-frac-x-k-kx-text-if-x-gt-1-end-cases-differentiable-everywhere" title="Permalink to this headline"></a></h3>
-</section>
-</section>
-<section id="implicit-differentiation">
-<h2>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this headline"></a></h2>
-<section id="q14-if-frac-dy-dx-frac-3x-2-x-y-2-2y-1-solve-for-k-in-y-xy-2-x-3-xk-if-1-0-is-a-point-on-the-graph">
-<h3>Q14: If <span class="math notranslate nohighlight">\(\frac{dy}{dx} = \frac{3x^2 - x - y^2}{2y + 1}\)</span>, solve for <span class="math notranslate nohighlight">\(k\)</span> in <span class="math notranslate nohighlight">\(y+xy^{2}-x^{3}=xk\;\)</span> if <span class="math notranslate nohighlight">\((-1, 0)\)</span> is a point on the graph.<a class="headerlink" href="#q14-if-frac-dy-dx-frac-3x-2-x-y-2-2y-1-solve-for-k-in-y-xy-2-x-3-xk-if-1-0-is-a-point-on-the-graph" title="Permalink to this headline"></a></h3>
+<section id="q13-which-values-of-k-make-f-x-begin-cases-kx-2-k-text-if-x-leq-1-2kx-k-2-text-if-x-gt-1-end-cases-continuous-on-its-domain-are-there-any-values-of-k-that-make-it-differentiable-on-its-domain">
+<h3>Q13: Which values of <span class="math notranslate nohighlight">\(k\)</span> make <span class="math notranslate nohighlight">\(f(x) = \begin{cases} kx^2 + k &amp; \text{if } x \leq 1 \\ 2kx + k - 2 &amp; \text{if } x \gt 1 \end{cases}\)</span> continuous on its domain. Are there any values of <span class="math notranslate nohighlight">\(k\)</span> that make it differentiable on its domain?<a class="headerlink" href="#q13-which-values-of-k-make-f-x-begin-cases-kx-2-k-text-if-x-leq-1-2kx-k-2-text-if-x-gt-1-end-cases-continuous-on-its-domain-are-there-any-values-of-k-that-make-it-differentiable-on-its-domain" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="../../_images/131.jpg"><img alt="../../_images/131.jpg" src="../../_images/131.jpg" style="width: 700px;" /></a>
 </section>
 </section>
 </section>

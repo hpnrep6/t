@@ -19,3 +19,4 @@ Tutorial discord server: https://discord.gg/E3Y7hsZqtN
    tutorial4
    tutorial5
    tutorial6
+   tutorial7

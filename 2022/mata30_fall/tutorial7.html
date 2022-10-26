@@ -21,6 +21,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tutorial Week 8" href="tutorial8.html" />
     <link rel="prev" title="Tutorial Week 6" href="tutorial6.html" /> 
 </head>
 
@@ -95,6 +96,13 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 7</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#implicit-differentiation">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exponential-derivatives">Exponential Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inverse-trigonometric-derivatives">Inverse Trigonometric Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logarithmitic-differentiation">Logarithmitic Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#related-rates">Related Rates</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial8.html">Tutorial Week 8</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -138,10 +146,53 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script><section id="implicit-differentiation">
+</script><p>This tutorial will be about implicit differentiation and logarithmitic differentiation, as well as some application questions.</p>
+<section id="implicit-differentiation">
 <h2>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this headline"></a></h2>
-<section id="q1-if-frac-dy-dx-frac-3x-2-x-y-2-2y-1-solve-for-k-in-y-xy-2-x-3-xk-if-1-0-is-a-point-on-the-graph">
-<h3>Q1: If <span class="math notranslate nohighlight">\(\frac{dy}{dx} = \frac{3x^2 - x - y^2}{2y + 1}\)</span>, solve for <span class="math notranslate nohighlight">\(k\)</span> in <span class="math notranslate nohighlight">\(y+xy^{2}-x^{3}=xk\;\)</span> if <span class="math notranslate nohighlight">\((-1, 0)\)</span> is a point on the graph.<a class="headerlink" href="#q1-if-frac-dy-dx-frac-3x-2-x-y-2-2y-1-solve-for-k-in-y-xy-2-x-3-xk-if-1-0-is-a-point-on-the-graph" title="Permalink to this headline"></a></h3>
+<section id="q1-given-y-and-x-are-implicitly-related-find-frac-dy-dx-for-3x-2y-4y-3y-4-x">
+<h3>Q1: Given <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(x\)</span> are implicitly related, find <span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span> for <span class="math notranslate nohighlight">\(3x^2y + 4y = 3y^4 + x\)</span>.<a class="headerlink" href="#q1-given-y-and-x-are-implicitly-related-find-frac-dy-dx-for-3x-2y-4y-3y-4-x" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q2-which-points-on-the-curve-xy-3y-x-have-a-tangent-line-perpendicular-to-y-3x-1">
+<h3>Q2: Which points on the curve <span class="math notranslate nohighlight">\(xy = 3y + x\)</span> have a tangent line perpendicular to <span class="math notranslate nohighlight">\(y = 3x + 1\)</span>?<a class="headerlink" href="#q2-which-points-on-the-curve-xy-3y-x-have-a-tangent-line-perpendicular-to-y-3x-1" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q3-what-is-the-equation-of-the-line-tangent-to-tan-x-y-4x-1-at-0-frac-pi-4">
+<h3>Q3: What is the equation of the line tangent to <span class="math notranslate nohighlight">\(\tan(x+y)=4x+1\)</span> at <span class="math notranslate nohighlight">\((0, \frac{\pi}{4})\)</span>?<a class="headerlink" href="#q3-what-is-the-equation-of-the-line-tangent-to-tan-x-y-4x-1-at-0-frac-pi-4" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q4-if-frac-dy-dx-frac-3x-2-x-y-2-2y-1-solve-for-k-in-y-xy-2-x-3-xk-if-1-0-is-a-point-on-the-graph">
+<h3>Q4: If <span class="math notranslate nohighlight">\(\frac{dy}{dx} = \frac{3x^2 - x - y^2}{2y + 1}\)</span>, solve for <span class="math notranslate nohighlight">\(k\)</span> in <span class="math notranslate nohighlight">\(y+xy^{2}-x^{3}=xk\;\)</span> if <span class="math notranslate nohighlight">\((-1, 0)\)</span> is a point on the graph.<a class="headerlink" href="#q4-if-frac-dy-dx-frac-3x-2-x-y-2-2y-1-solve-for-k-in-y-xy-2-x-3-xk-if-1-0-is-a-point-on-the-graph" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q5-find-the-derivative-of-x-2y-3-sqrt-xy-x-2y-3-with-respect-to-t-if-x-and-y-are-functions-of-t-what-would-the-derivative-be-if-x-t-3-and-y-3t-2">
+<h3>Q5: Find the derivative of <span class="math notranslate nohighlight">\(x^2y^3 = \sqrt{xy + x} + 2y + 3\)</span> with respect to <span class="math notranslate nohighlight">\(t\)</span> if <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are functions of <span class="math notranslate nohighlight">\(t\)</span>. What would the derivative be if <span class="math notranslate nohighlight">\(x = t^3\)</span> and <span class="math notranslate nohighlight">\(y = 3t + 2\)</span>?<a class="headerlink" href="#q5-find-the-derivative-of-x-2y-3-sqrt-xy-x-2y-3-with-respect-to-t-if-x-and-y-are-functions-of-t-what-would-the-derivative-be-if-x-t-3-and-y-3t-2" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="exponential-derivatives">
+<h2>Exponential Derivatives<a class="headerlink" href="#exponential-derivatives" title="Permalink to this headline"></a></h2>
+<section id="q6-find-f-x-if-f-x-ln-ln-e-e-3x-3-cos-x">
+<h3>Q6: Find <span class="math notranslate nohighlight">\(f'(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = ln(ln(e^{e^{3x^3 + cos(x)}}))\)</span>.<a class="headerlink" href="#q6-find-f-x-if-f-x-ln-ln-e-e-3x-3-cos-x" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="inverse-trigonometric-derivatives">
+<h2>Inverse Trigonometric Derivatives<a class="headerlink" href="#inverse-trigonometric-derivatives" title="Permalink to this headline"></a></h2>
+<section id="q7-find-the-derivative-of-f-x-3-cos-1-x-2-tan-1-sqrt-5-3x-3-1">
+<h3>Q7: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = 3^{cos^{-1}(x^2)} + tan^{-1}(\sqrt[5]{3x^3 + 1})\)</span>.<a class="headerlink" href="#q7-find-the-derivative-of-f-x-3-cos-1-x-2-tan-1-sqrt-5-3x-3-1" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="logarithmitic-differentiation">
+<h2>Logarithmitic Differentiation<a class="headerlink" href="#logarithmitic-differentiation" title="Permalink to this headline"></a></h2>
+<section id="q8-find-the-derivative-of-f-x-x-x">
+<h3>Q8: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = x^x\)</span>.<a class="headerlink" href="#q8-find-the-derivative-of-f-x-x-x" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q9-find-the-derivative-of-f-x-frac-sqrt-3-3x-4-4x-sqrt-3cos-x-4-6x-3-2tan-x">
+<h3>Q9: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = \frac{\sqrt[3]{3x^4 + 4x}\sqrt{3cos(x) + 4}}{6x^3 + 2tan(x)}\)</span>.<a class="headerlink" href="#q9-find-the-derivative-of-f-x-frac-sqrt-3-3x-4-4x-sqrt-3cos-x-4-6x-3-2tan-x" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="related-rates">
+<h2>Related Rates<a class="headerlink" href="#related-rates" title="Permalink to this headline"></a></h2>
+<section id="q10-a-cylinder-with-a-radius-of-4m-is-being-filled-at-a-rate-of-2m-3-min-how-quickly-is-the-height-of-the-water-changing">
+<h3>Q10: A cylinder with a radius of <span class="math notranslate nohighlight">\(4m\)</span> is being filled at a rate of <span class="math notranslate nohighlight">\(2m^3/min\)</span>. How quickly is the height of the water changing?<a class="headerlink" href="#q10-a-cylinder-with-a-radius-of-4m-is-being-filled-at-a-rate-of-2m-3-min-how-quickly-is-the-height-of-the-water-changing" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q11-ship-a-is-located-100km-west-of-ship-b-ship-a-is-travelling-at-20km-h-east-and-ship-b-is-travelling-at-30km-h-north-at-what-rate-does-the-distance-between-the-two-ships-change-after-5-hours">
+<h3>Q11: Ship A is located <span class="math notranslate nohighlight">\(100km\)</span> west of ship B. Ship A is travelling at <span class="math notranslate nohighlight">\(20km/h\)</span> east and ship B is travelling at <span class="math notranslate nohighlight">\(30km/h\)</span> north. At what rate does the distance between the two ships change after <span class="math notranslate nohighlight">\(5\)</span> hours?<a class="headerlink" href="#q11-ship-a-is-located-100km-west-of-ship-b-ship-a-is-travelling-at-20km-h-east-and-ship-b-is-travelling-at-30km-h-north-at-what-rate-does-the-distance-between-the-two-ships-change-after-5-hours" title="Permalink to this headline"></a></h3>
 </section>
 </section>
 </section>
@@ -151,6 +202,7 @@ tex: {packages: {'[+]': ['ams']}}
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial6.html" class="btn btn-neutral float-left" title="Tutorial Week 6" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorial8.html" class="btn btn-neutral float-right" title="Tutorial Week 8" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

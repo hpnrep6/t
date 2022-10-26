@@ -95,5 +95,8 @@ Q10: Ship A is located :math:`100km` west of ship B. Ship A is travelling at :ma
 Inverse Function Derivatives
 ----------------------------
 
-Q11: Given :math:`f(x) = x^3 + ln(7x + 2) + 1`, find :math:`f^{-1}(1)`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q11: Given :math:`f(x) = x^3 + ln(7x + 2) + 1`, find :math:`(f^{-1})'(1)`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: ./images/t7/11.jpg
+   :width: 700

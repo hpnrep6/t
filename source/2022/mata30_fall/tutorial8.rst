@@ -66,7 +66,7 @@ Q3: Find the local maximums and minimums of :math:`f(x) = \csc\left(x\right)+\si
 Test for Absolute Extrema
 -------------------------
 
-Q4. Let :math:`f(x) = \frac{1}{7}\left(x^{3}-2x^{2}+x+2\right)` represent the water level of a lake x hours after 9am. Between 9am and 1pm (inclusive), when was the water highest? When was it lowest?
+Q4: Let :math:`f(x) = \frac{1}{7}\left(x^{3}-2x^{2}+x+2\right)` represent the water level of a lake x hours after 9am. Between 9am and 1pm (inclusive), when was the water highest? When was it lowest?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ./images/t8/4.jpg

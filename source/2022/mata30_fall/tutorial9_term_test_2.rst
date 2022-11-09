@@ -489,7 +489,6 @@ Tangent Line given a Point
 
 |b|
 
-a) Find the equation of the line tangent to :math:`f\left(x\right)=x^{3}+2x+3` that passes through :math:`(0, 19)`
 
 Point given a Tangent Line
 --------------------------

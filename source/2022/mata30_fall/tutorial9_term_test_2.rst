@@ -486,7 +486,7 @@ Q9: Tangent Lines
 Tangent Line given a Point
 --------------------------
 
-a) Find the equation of the line tangent to :math:`y=ex-e` that passes through :math:`\left(4,3e\right)`.
+a) Find the equation of the line tangent to :math:`y=e^x-e` that passes through :math:`\left(4,3e\right)`.
 
 |b|
 

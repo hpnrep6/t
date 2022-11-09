@@ -500,7 +500,7 @@ a) Find the point where the line :math:`y=13x-11` is the tangent line of :math:`
 
 |b|
 
-b) Find the point where the line :math:`y=x` is the tangent line of :math:`y=x^{4}+x^{3}-3x^{2}+2`.
+b) Find the point where the line :math:`y=5x-9` is the tangent line of :math:`y=x^{2}-x`.
 
 .. raw:: html
 

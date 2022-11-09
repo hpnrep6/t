@@ -65,6 +65,7 @@ html_css_files = [
 ]
 
 html_js_files = [
+    'js/toggle.js'
 ]
 
 html_context = {

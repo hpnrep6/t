@@ -36,3 +36,35 @@ body, section h1, section h2, section h3, section h4, section h5, section h6, p.
 .MathJax {
     width: fit-content;
 }
+
+.answer-container {
+    padding-bottom: 20px;
+    background-color: #e5ffe7;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.show-answer-button {
+    background-color: #b0ffb7;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.show-answer-button:hover {
+    background-color: #a0e4a5;
+}
+
+.show-answer-button:active {
+    background-color: #87c68b;
+}
+
+.answer {
+    display: none;
+}
+
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal;
+}

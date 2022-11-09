@@ -459,11 +459,7 @@ c) Find the absolute extrema of :math:`f(x)=x^2+3-x` in :math:`[-2, 2]`
 
 |b|
 
-d) Find the absolute extrema of :math:`f(x)=4arccos(x)+x`
-
-|b|
-
-e) Find the absolute extrema of :math:`f(x)= sin(x)+\frac{x}{\sqrt{2}}` on the interval :math:`[0, 2\pi]`.
+d) Find the absolute extrema of :math:`f(x)= sin(x)+\frac{x}{\sqrt{2}}` on the interval :math:`[0, 2\pi]`.
 
 Check your answer using `desmos <https://www.desmos.com/calculator>`__.
 Your answer should include all the steps of the Test for Absolute Extrema (points might be taken off if you don't). Refer to `practice test 3, question 7 <https://q.utoronto.ca/courses/267509/files/22885001?wrap=1>`__ for a sample solution.

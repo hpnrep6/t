@@ -486,8 +486,11 @@ Q9: Tangent Lines
 Tangent Line given a Point
 --------------------------
 
+a) Find the equations of the lines tangent to :math:`f(x) = x^2 + 5x + 1` and passes through the point :math:`(2, 6)`.
 
 |b|
+
+b) Find the equation of the line tangent to :math:`f(x) = \sqrt{x}` and passes through the point :math:`(-1, 0)`.
 
 
 Point given a Tangent Line

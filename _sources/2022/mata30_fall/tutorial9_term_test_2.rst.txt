@@ -492,6 +492,20 @@ a) Find the equations of the lines tangent to :math:`f(x) = x^2 + 5x + 1` and pa
 
 b) Find the equation of the line tangent to :math:`f(x) = \sqrt{x}` and passes through the point :math:`(-1, 0)`.
 
+.. raw:: html
+
+    <div class="answer-container">
+        <button onClick="toggleClicked(this, 'Show Tutorial Solution', 'Hide Tutorial Solution')" class="show-answer-button">Show Tutorial Solution</button>
+        <div class="answer">
+
+.. image:: ./images/tt2/4.jpg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
 
 Point given a Tangent Line
 --------------------------

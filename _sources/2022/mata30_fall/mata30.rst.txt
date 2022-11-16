@@ -24,3 +24,5 @@ Tutorial discord server: https://discord.gg/E3Y7hsZqtN
    tutorial9_term_test_2
    tutorial9
    tutorial10
+   tutorial11
+   tutorial12

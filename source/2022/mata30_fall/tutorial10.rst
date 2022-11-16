@@ -24,8 +24,8 @@ Q1: The population of Toronto was 2 770 000 in 1975 and 3 133 000 in 1982. Use a
 Q2: A bacteria culture starts off with 100 bacteria and has grown to 300 bacteria after an hour. Find a formula for the population after t hours (assuming the growth rate is proportional to the size).
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Q3: Let :math:`P_1` and :math:`P_2` denote the population of two types of bacteria. If :math:`\frac{dP_1}{dt} = -0.3P_1` and :math:`\frac{dP_2}{dt} = 0.5P_2`, when are their populations equal? 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q3: Let :math:`P_1` and :math:`P_2` denote the population of two types of bacteria. If :math:`P_1(0) = 100`, :maty:`P_2(0) = 50`, and :math:`\frac{dP_1}{dt} = -0.3P_1` and :math:`\frac{dP_2}{dt} = 0.5P_2`, when are their populations equal? 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Q4: A radioactive material's mass can be modelled by :math:`\frac{dm}{dt} = -0.3m`. What is its half-life?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -17,6 +17,7 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -134,7 +135,10 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial10.html#optimization">Optimization</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 11</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#computing-integrals">Computing Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riemann-sums">Riemann Sums</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#approximating-integrals-using-riemann-sums">Approximating Integrals using Riemann Sums</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial12.html">Tutorial Week 12</a><ul class="simple">
@@ -181,7 +185,46 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script></section>
+</script><section id="computing-integrals">
+<h2>Computing Integrals<a class="headerlink" href="#computing-integrals" title="Permalink to this headline"></a></h2>
+<section id="q1-compute-int-x-3-2x-2-dx">
+<h3>Q1: Compute <span class="math notranslate nohighlight">\(\int x^3 + 2x + 2\, dx\)</span>.<a class="headerlink" href="#q1-compute-int-x-3-2x-2-dx" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q2-compute-int-sqrt-6-x-3-dx">
+<h3>Q2: Compute <span class="math notranslate nohighlight">\(\int \sqrt[6]{x^3} \, dx\)</span>.<a class="headerlink" href="#q2-compute-int-sqrt-6-x-3-dx" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q3-compute-int-frac-1-2-x-frac-5-x-2-1-dx">
+<h3>Q3: Compute <span class="math notranslate nohighlight">\(\int \frac{1}{2}x + \frac{5}{x^2 + 1} \, dx\)</span>.<a class="headerlink" href="#q3-compute-int-frac-1-2-x-frac-5-x-2-1-dx" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q4-compute-int-frac-t-5-t-4-t-cos-x-sin-x-dt">
+<h3>Q4: Compute <span class="math notranslate nohighlight">\(\int \frac{t^5 + t^4}{t} + cos(x) + sin(x) \, dt\)</span>.<a class="headerlink" href="#q4-compute-int-frac-t-5-t-4-t-cos-x-sin-x-dt" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q5-compute-int-0-1-5x-x-2-sqrt-3-x-dx">
+<h3>Q5: Compute <span class="math notranslate nohighlight">\(\int_{0}^{1} 5x + x^2\sqrt[3]{x} \, dx\)</span>.<a class="headerlink" href="#q5-compute-int-0-1-5x-x-2-sqrt-3-x-dx" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="riemann-sums">
+<h2>Riemann Sums<a class="headerlink" href="#riemann-sums" title="Permalink to this headline"></a></h2>
+<section id="q6-write-int-3-9-x-4-2x-dx-as-the-limit-of-a-riemann-sum">
+<h3>Q6: Write <span class="math notranslate nohighlight">\(\int_{3}^{9} (x^4 + 2x) \, dx\)</span> as the limit of a Riemann sum.<a class="headerlink" href="#q6-write-int-3-9-x-4-2x-dx-as-the-limit-of-a-riemann-sum" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q7-write-int-pi-2-pi-sin-x-dx-as-the-limit-of-a-riemann-sum">
+<h3>Q7: Write <span class="math notranslate nohighlight">\(\int_{-\pi}^{2\pi} sin(x) \, dx\)</span> as the limit of a Riemann sum.<a class="headerlink" href="#q7-write-int-pi-2-pi-sin-x-dx-as-the-limit-of-a-riemann-sum" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q8-evaluate-int-0-2-5x-1-dx-using-riemann-sums">
+<h3>Q8: Evaluate <span class="math notranslate nohighlight">\(\int_{0}^{2} {5x + 1} \, dx\)</span> using Riemann sums.<a class="headerlink" href="#q8-evaluate-int-0-2-5x-1-dx-using-riemann-sums" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="approximating-integrals-using-riemann-sums">
+<h2>Approximating Integrals using Riemann Sums<a class="headerlink" href="#approximating-integrals-using-riemann-sums" title="Permalink to this headline"></a></h2>
+<section id="q9-approximate-int-0-1-10-x-2-dx-using-the-right-riemann-sum-over-four-rectangles">
+<h3>Q9: Approximate <span class="math notranslate nohighlight">\(\int_{0}^{1} 10 - x^2 \, dx\)</span> using the right Riemann sum over four rectangles.<a class="headerlink" href="#q9-approximate-int-0-1-10-x-2-dx-using-the-right-riemann-sum-over-four-rectangles" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q10-if-f-x-x-2-cos-x-f-0-1-and-f-pi-2-find-f-x">
+<h3>Q10: If <span class="math notranslate nohighlight">\(f''(x) = x + 2 + cos(x)\)</span>, <span class="math notranslate nohighlight">\(f(0) = 1\)</span>, and <span class="math notranslate nohighlight">\(f(\pi) = 2\)</span>, find <span class="math notranslate nohighlight">\(f(x)\)</span>.<a class="headerlink" href="#q10-if-f-x-x-2-cos-x-f-0-1-and-f-pi-2-find-f-x" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+</section>
 
 
            </div>

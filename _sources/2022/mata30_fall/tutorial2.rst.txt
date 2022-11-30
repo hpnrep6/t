@@ -124,6 +124,12 @@ Lines
 Q1: What is the equation of the line with a x-intercept of :math:`-3` and a y-intercept of :math:`5`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 From what you know about x and y intercepts, you should be able to identify that :math:`(-3, 0)` and
 :math:`(0, 5)` are points on the line. You can find the slope using the slope formula
 
@@ -137,11 +143,19 @@ From what you know about x and y intercepts, you should be able to identify that
 You can plug this into the slope-intercept form of a line, that is :math:`y = mx + b`
 which gives you :math:`y = -\dfrac{5}{3}x + 5` (recall how :math:`5` is the y-intercept?).
 
+.. raw:: html
 
-.. x intercept
+      </div>
+   </div>
 
 Q2: Find the equation of a line perpendicular to :math:`-3x + 2y + 4 = 0`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 First, you want to turn this into slope-intercept form, so move everything but :math:`y`
 to the right side to get :math:`y = \dfrac{3}{2}x - \dfrac{4}{2} = \dfrac{3}{2}x - 2`.
@@ -152,6 +166,11 @@ the negative reciprocol of :math:`\dfrac{3}{2}` to get :math:`m_2 = -\dfrac{2}{3
 
 So any line with the slope :math:`-\dfrac{2}{3}` is perpendicular, a simple example being :math:`y = -\dfrac{2}{3}x`
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Functions
 ---------
 
@@ -159,6 +178,12 @@ Q3: Suppose you have the function :math:`f(4x + 1) = \dfrac{3x}{2x + 1}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 (a) What is :math:`f(5)`? 
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 First of all, this means that you want to find the value of :math:`f(5)`, but the only information
 you have about the function is :math:`f(4x + 1) = \dfrac{3x}{2x + 1}`. So how can you get
@@ -186,7 +211,18 @@ So to get :math:`f(5)`, you need :math:`x = 1`. You can now just subtitute :math
    \end{aligned}
 
 
+.. raw:: html
+
+      </div>
+   </div>
+
 (b) What is :math:`f(x)` for an arbitrary x? 
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 For this, like the first question, you want to find a value of x that satisfies every value
 put into :math:`f(x)`. To avoid having a multiple :math:`x` variables in your answer, lets reword
@@ -208,7 +244,18 @@ into :math:`\dfrac{3x}{2x + 1}` which gives you :math:`f(t) = \dfrac{3(\dfrac{t-
 
 With this, you can say that :math:`f(x) = \dfrac{3x-3}{2(x+1)}`
 
+.. raw:: html
+
+      </div>
+   </div>
+
 (c) What is the natural domain of :math:`f(x)`?
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 There is an aymptote when :math:`2(x+1) = 0`, which has the solution
 
@@ -222,8 +269,19 @@ There is an aymptote when :math:`2(x+1) = 0`, which has the solution
 This means that the function is defined on all points but :math:`x = -1`, so the natural
 domain is :math:`(-\infty , -1) \cup (-1, \infty )`.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Q4: What is the natural domain of :math:`f(x) = \sqrt{cos(sin(x))}`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Since there's a square root, you know that the domain is all values where :math:`cos(sin(x)) \geq 0`.
 
@@ -231,8 +289,19 @@ The range of :math:`sin(x)` is :math:`[-1, 1]`, but if you look at the graph of 
 positive from :math:`[-\dfrac{\pi}{2}, \dfrac{\pi}{2}]` (:math:`\dfrac{\pi}{2} = 1.57`) so :math:`cos(sin(x))`
 is positive for all numbers, which means the domain is :math:`(-\infty, \infty)`.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Q5: Find a function with the domain :math:`[0, 3) \cup (3, 5]`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 For this question, you'll need to dig into your toolset of functions and find one that
 has a restriction on "one end" of its domain. The square root function works here, since
@@ -252,8 +321,19 @@ For the last restriction, divide your function by :math:`x - 3`, since that will
 
 Now, combining these restriction, we get :math:`f(x) = \dfrac{\sqrt{x}\sqrt{5 - x}}{x - 3} = \dfrac{\sqrt{x(5-x)}}{x-3}`.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Q6: Find the domain of :math:`f(x) = |x + 4| - x^2`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 If you have the sum or difference of two functions (in this case :math:`|x + 4|` and :math:`x^2`), then the
 domain is the intersection of the two.
@@ -261,6 +341,11 @@ domain is the intersection of the two.
 Thus, since the domain of both functions in this case is all real numbers, the domain is :math:`( -\infty, \infty )`.
 
 .. that one practice question
+
+.. raw:: html
+
+      </div>
+   </div>
 
 
 Sketching functions
@@ -270,6 +355,12 @@ Check your answers using https://www.desmos.com/calculator.
 
 Q7: Sketch :math:`y = 3log_2(x + 4) - 2`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Let's first get the graph of :math:`log_2(x)`.
 
@@ -327,15 +418,37 @@ You can plot these transformations on the table of values and then graph.
 | 0              | 4              |
 +----------------+----------------+
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Q8: What is the domain of :math:`y = 3log_2(x + 4) - 2`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Recall that you can only take the log of a positive number (which means 0 is also excluded), so solving
 for the inequality :math:`x + 4 > 0` gives us :math:`x > -4`. The domain is :math:`(-4, \infty)`.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Q9: Sketch :math:`y = \sqrt{4 - x^2}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+      
 Plot the points, and you'll see the upper half of a circle with radius 2 centered around the origin.
 
 The equation of a circle is :math:`x^2 + y^2 = r^2`, where :math:`r` is the radius.
@@ -349,11 +462,22 @@ So, manipulating our equation gives us
 Which is a circle with radius 2. But, note that from the original equation, :math:`y` is always
 positive, so we only take the part of the circle where :math:`y \geq 0`.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Function inverses
 -----------------
 
 Q10: Find the inverse of :math:`y = e^x - 7`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Switch x and y in the equation, and then solve for y. We get:
 
@@ -367,8 +491,19 @@ Switch x and y in the equation, and then solve for y. We get:
 
 So the inverse if :math:`y = ln(x + 7)`
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Q11: Find the inverse of :math:`y = x^2` restricted on :math:`x \geq 0`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Without the domain restriction, :math:`y = x^2` wouldn't pass the horizontal
 line test and therefore wouldn't have an inverse. But with this domain restriction,
@@ -389,8 +524,19 @@ domain is :math:`x \geq 0`, your range for your inverse is :math:`y \geq 0` whic
 the equation :math:`y = \pm \sqrt{x}` should actually be :math:`y = \sqrt{x}`, and this, is also
 your inverse.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Q12: Let :math:`f(x) = e^{x^3 - 1} + 2x - 1`. Evaluate :math:`f^{-1}(\dfrac{1}{e} - 1)`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 What we are looking for is the value of :math:`x` that maps :math:`f(x)` to :math:`\dfrac{1}{e} - 1`.
 
@@ -412,11 +558,22 @@ Make a table of values for f(x).
 
 When :math:`x = 0`, we have what we want! So :math:`f^{-1}(\dfrac{1}{e} - 1) = 0`.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Absolute values
 ---------------
 
 Q13: Solve the equation :math:`\dfrac{|x + 4|}{|x - 1|} = 5`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 .. math::
    \begin{aligned}
@@ -427,8 +584,19 @@ Q13: Solve the equation :math:`\dfrac{|x + 4|}{|x - 1|} = 5`.
 
 Solve for :math:`\dfrac{x + 4}{x - 1} = 5` and :math:`\dfrac{x + 4}{x - 1} = -5`.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Q14: Solve the inequality :math:`|x - 5| \lt 3`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Using inequality properties, we can get 
 
@@ -439,11 +607,22 @@ Using inequality properties, we can get
    2 \lt\; &x \lt 8
    \end{aligned}
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Inequalities
 ------------
 
 Q15: Solve the inequality :math:`x^3 + 3x^2 > -2x`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Move the :math:`-2x` to the left side to get :math:`x^3 + 3x^2 + 2x > 0`.
 
@@ -457,11 +636,22 @@ and check the values in between the x-intercepts to see if they're greater than 
 :math:`f(x)` is useful here since you can show your calculations by writing something like
 :math:`f(-0.5)=-\dfrac{3}{8} < 0` for your number line.
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Logarithms and exponents
 ------------------------
 
 Q16: Solve the equation :math:`2(\pi^x) + 7(\pi^x) -e^8 = 0`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 .. math::
    \begin{aligned}
@@ -475,6 +665,11 @@ Q16: Solve the equation :math:`2(\pi^x) + 7(\pi^x) -e^8 = 0`.
    x &= log_{\pi}(\dfrac{e^8}{9}) \\
    \end{aligned}
 
+.. raw:: html
+
+      </div>
+   </div>
+
 Function composition
 --------------------
 
@@ -482,7 +677,11 @@ Function composition
 Q17: Let :math:`f(x) = x^2 - x`, :math:`g(x) = log_{\scriptsize{}\dfrac{1}{2}}(x)`, :math:`h(x) = cos(x)`. Restrict :math:`x` to :math:`0 \leq x \leq \pi`. Solve the equation :math:`(f \circ g \circ h)(x) = 0`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
 
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 You can somewhat simplify this question by breaking it down into multiple steps.
 
@@ -528,3 +727,16 @@ This means you're solving for :math:`cos(u) = 1` and :math:`cos(u) = \dfrac{1}{2
 Since our domain of :math:`u` is restricted on :math:`0 \leq u \leq \pi`, the only values
 of :math:`u` that are solutions to this are :math:`u = 0` and :math:`u = \dfrac{\pi}{3}` (use a unit circle). And this is
 our answer: :math:`x = 0` and :math:`x = \dfrac{\pi}{3}`.
+
+.. raw:: html
+
+      </div>
+   </div>
+
+.. raw:: html
+
+  <script>
+    document.querySelectorAll('a.reference.external').forEach(function(link) {
+      link.target = '_blank';
+    });
+  </script>

@@ -25,14 +25,31 @@ Inverse Trig
 Q1: What is the value of :math:`sin^{-1}(1)`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 This means that you need to find the value of :math:`\theta` that gives you :math:`sin(\theta) = 1`
 and :math:`-\dfrac{\pi}{2} \le \theta \le \dfrac{\pi}{2}`.
 
 :math:`\theta = \dfrac{\pi}{2}` works in this case. (Be familiar with the values of the trig functions
 on a unit circle)
  
+.. raw:: html
+
+        </div>
+    </div>
+
 Q2: What is the value of :math:`cos^{-1}(cos(\dfrac{56\pi}{5}))`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 This question requires knowing 3 properties:
 
@@ -52,8 +69,19 @@ If the value is negative, use property 3 to make it positive.
 
 Then use cancellation laws (property 2).
 
+.. raw:: html
+
+        </div>
+    </div>
+
 Q3: Rewrite :math:`tan(cos^{-1}(3x))` without trigonometric functions.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Relate to SOHCAHTOA, so :math:`cos^{-1}(3x)` means the triangle with :math:`\dfrac{A}{H} = 3x`.
 
@@ -63,11 +91,22 @@ Use pythagorean theorem to find the length of the remaining side, then use SOHCA
 of that angle.
 
 
+.. raw:: html
+
+        </div>
+    </div>
+
 Inverse Trig Functions
 ----------------------
 
 Q4: Find the domain of the function :math:`f(x) = cos^{-1}(x^3 + 2)`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 :math:`cos^{-1}(x)` has domain :math:`[-1, 1]`
 
@@ -81,8 +120,19 @@ so let
 
 which is the domain.
 
-Q4: Find the inverse of the function :math:`f(x) = cos^{-1}(x^3 + 2)`.
+.. raw:: html
+
+        </div>
+    </div>
+
+Q5: Find the inverse of the function :math:`f(x) = cos^{-1}(x^3 + 2)`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 .. math::
    \begin{aligned}
@@ -94,8 +144,19 @@ Q4: Find the inverse of the function :math:`f(x) = cos^{-1}(x^3 + 2)`.
 
 with a domain restriction of :math:`[0, \pi]`
 
+.. raw:: html
+
+        </div>
+    </div>
+
 Q6: For what values of :math:`x` satisfy :math:`tan^2(x) = tan(x)` if :math:`-\dfrac{\pi}{2} \lt x \lt \dfrac{\pi}{2}`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 .. math::
    \begin{aligned}
@@ -106,11 +167,27 @@ Q6: For what values of :math:`x` satisfy :math:`tan^2(x) = tan(x)` if :math:`-\d
 
 Use inverse trig to find the values of tan(x).
 
+.. raw:: html
+
+        </div>
+    </div>
+
 Q7: What is the domain of :math:`tan^{-1}(e^x)`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 Domain of :math:`tan^{-1}(x)` and :math:`e^x` is :math:`(-\infty, \infty)`, so domain is 
 :math:`(-\infty, \infty)`.
+
+.. raw:: html
+
+        </div>
+    </div>
 
 Inverse Trig Cancellation Rules
 -------------------------------
@@ -118,11 +195,22 @@ Inverse Trig Cancellation Rules
 Q8: For what values of :math:`x` is :math:`sin^{-1}(cos(x)) = x + \dfrac{\pi}{2}`?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 Recall the property :math:`sin^{-1}(sin(x)) = x` if :math:`x \in [-\dfrac{\pi}{2}, \dfrac{\pi}{2}]`.
 
 Also note that :math:`cos(x) = sin(x + \dfrac{\pi}{2})`.
 
 Substitute in the above and use cancellation laws.
+
+.. raw:: html
+
+        </div>
+    </div>
 
 Graphs of Limits
 ----------------
@@ -155,11 +243,28 @@ Calculating Limits
 Q11: Find :math:`\lim_{x \to 2} \dfrac{x^2 - x - 2}{x - 2}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 Simplify to remove the :math:`x - 2` term from both the numerator and denominator, then 
 directly subtitute.
 
+.. raw:: html
+
+        </div>
+    </div>
+
 Q12: Find the limit if it exists: :math:`\lim_{x \to 3} \dfrac{\sqrt{x + 13} - 4}{x - 3}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
 Multiply by conjugate, simplify, then directly subtitute.
 
@@ -173,3 +278,16 @@ Multiply by conjugate, simplify, then directly subtitute.
    &= \frac{1}{\left(\sqrt{3+13}+4\right)} \\
    &= \frac{1}{8}
    \end{aligned}
+
+.. raw:: html
+
+        </div>
+    </div>
+
+.. raw:: html
+
+  <script>
+    document.querySelectorAll('a.reference.external').forEach(function(link) {
+      link.target = '_blank';
+    });
+  </script>

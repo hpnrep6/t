@@ -10,7 +10,6 @@ function toggleClicked(e, showText = "Show Solution", hideText = "Hide Solution"
 
     switch (state) {
         case false: {
-            console.log(e.innerHtml)
             setChildrenVisibility(e, 'none');
             e.innerHTML = showText;
             break;

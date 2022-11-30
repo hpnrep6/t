@@ -39,14 +39,36 @@ Curve Sketching
 Q1: Sketch :math:`f(x) = \ln\left(x\right)^{2}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 .. image:: ./images/t8/1.jpg
    :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
 
 Q2: Sketch :math:`f(x) = x\sqrt{2-x^{2}}`. Where are the local minimums or local maximums?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 .. image:: ./images/t8/2.jpg
    :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
 
 .. Q3: Sketch :math:`f(x) = \frac{2x^{3}+4x^{2}+2x}{x^{2}+x-1}`.
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,8 +79,19 @@ Sinusodial Function Derivatives
 Q3: Find the local maximums and minimums of :math:`f(x) = \csc\left(x\right)+\sin x`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 .. image:: ./images/t8/3.jpg
    :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
 
 .. Q4: Which points in :math:`f(x) = \sec\left(2x\right)-\tan\left(2x\right)` are inflection points?
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,14 +102,36 @@ Test for Absolute Extrema
 Q4: Let :math:`f(x) = \frac{1}{7}\left(x^{3}-2x^{2}+x+2\right)` represent the water level of a lake x hours after 9am. Between 9am and 1pm (inclusive), when was the water highest? When was it lowest?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 .. image:: ./images/t8/4.jpg
    :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
 
 Q5: Determine the absolute extrema of :math:`f(x) = 2\sqrt{x}-x` on the interval :math:`x \in [0, 9]`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
 .. image:: ./images/t8/5.jpg
    :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
 
 Drawing Functions
 -----------------
@@ -89,3 +144,11 @@ Q7: Draw a function with domain :math:`[0, 5]` that does not satisfy the conclus
 
 Q8: Draw a continuous function with domain :math:`(-2, 2)` that does not satisfy the conclusion of the Extrema Value Theorem on its domain.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+  <script>
+    document.querySelectorAll('a.reference.external').forEach(function(link) {
+      link.target = '_blank';
+    });
+  </script>

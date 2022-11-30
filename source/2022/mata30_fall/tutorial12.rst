@@ -37,8 +37,8 @@ Q1: Compute :math:`\int^3_3 \frac{\cos(e^{x})}{x^{2}+e^{x}} \, dx`.
         </div>
     </div>
 
-Q2: Compute :math:`\int^{-\pi}_{\pi} \frac{x}{\cos\left(x\right)} \, dx`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q2: Compute :math:`\int^{-\frac{\pi}{3}}_{\frac{\pi}{3}} \frac{x}{\cos\left(x\right)} \, dx`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 

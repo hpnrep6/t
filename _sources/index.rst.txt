@@ -6,10 +6,10 @@ Home
    :maxdepth: 3
    
    general
+   2023/2023
    2022/2022
 
-
-.. We do not want a home page, so redirect them to the general info page.
+.. Disable home page
 .. raw:: html
 
    <script>

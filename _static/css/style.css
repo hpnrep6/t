@@ -68,3 +68,7 @@ body, section h1, section h2, section h3, section h4, section h5, section h6, p.
 .wy-table-responsive table td, .wy-table-responsive table th {
     white-space: normal;
 }
+
+.wy-menu-vertical li.current>a button.toctree-expand, .wy-menu-vertical li a button.toctree-expand {
+    color: #90defc;
+}

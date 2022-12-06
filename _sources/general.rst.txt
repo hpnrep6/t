@@ -11,6 +11,8 @@ Contact Information
 
 Email: youngc.chen@mail.utoronto.ca
 
+Office hours: IC 404 (4th floor IC, between the elevators and stairs). Times as listed on Quercus.
+
 Try to include the course code in the subject line if you're emailing about a course I'm TAing.
 
 About

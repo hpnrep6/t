@@ -2,9 +2,6 @@
 
 General Information
 ===================
-
-.. toctree::
-   :hidden:
    
 Contact Information
 -------------------
@@ -21,3 +18,8 @@ Scarborough admitted in 2021.
 
 If you want, you can check out my `GitHub <https://github.com/hpnrep6>`_
 or my `itch.io <https://hpnrep6.itch.io/>`_.
+
+.. toctree::
+   :hidden:
+
+   sandbox

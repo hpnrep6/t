@@ -1,6 +1,6 @@
 .. _2023_mata33_winter:
 
-MATA33 Winter 2022
+MATA33 Winter 2023
 ==================
 
 .. meta::

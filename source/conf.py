@@ -19,7 +19,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = ''
-copyright = '2022, hpnrep6'
+copyright = '2023, hpnrep6'
 author = 'hpnrep6'
 
 

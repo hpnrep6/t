@@ -9,3 +9,5 @@ MATA36 Winter 2023
 .. toctree::
    :maxdepth: 1
    :caption: Pages for MATA36
+
+   tutorial2

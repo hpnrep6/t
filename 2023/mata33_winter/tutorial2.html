@@ -17,6 +17,7 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -52,9 +53,9 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="mata33.html">MATA33 Winter 2023</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 2</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#feasable-regions-and-ftlp">Feasable regions and FTLP</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#graphing-linear-inequalities">Graphing Linear Inequalities</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#finding-optimal-solutions-to-linear-programming-problems">Finding Optimal Solutions to Linear Programming Problems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ftlp-and-feasable-regions">FTLP and Feasable regions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#finding-optimal-solutions-to-linear-programming-problems">Finding optimal solutions to Linear Programming problems</a></li>
 </ul>
 </li>
 </ul>
@@ -208,15 +209,55 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script><p>Welcome to your first tutorial!</p>
-<section id="feasable-regions-and-ftlp">
-<h2>Feasable regions and FTLP<a class="headerlink" href="#feasable-regions-and-ftlp" title="Permalink to this headline"></a></h2>
-</section>
+</script><p>Welcome to your first tutorial! This tutorial will be about linear inequalities and linear programming.</p>
 <section id="graphing-linear-inequalities">
 <h2>Graphing Linear Inequalities<a class="headerlink" href="#graphing-linear-inequalities" title="Permalink to this headline"></a></h2>
+<section id="q1-find-the-solutions-for-4x-5y-lt-20">
+<h3>Q1: Find the solutions for <span class="math notranslate nohighlight">\(4x + 5y \lt 20\)</span>.<a class="headerlink" href="#q1-find-the-solutions-for-4x-5y-lt-20" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q2-find-the-solutions-for-5x-y-geq-10">
+<h3>Q2: Find the solutions for <span class="math notranslate nohighlight">\(5x + y \geq 10\)</span>.<a class="headerlink" href="#q2-find-the-solutions-for-5x-y-geq-10" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q3-find-the-solutions-for-begin-cases-x-y-le6-3x-y-le9-2x-ge1-end-cases">
+<h3>Q3: Find the solutions for <span class="math notranslate nohighlight">\(\begin{cases} x+y\le6 \\ 3x-y\le9 \\ 2x\ge1 \end{cases}\)</span>.<a class="headerlink" href="#q3-find-the-solutions-for-begin-cases-x-y-le6-3x-y-le9-2x-ge1-end-cases" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q4-find-the-solutions-for-begin-cases-2x-y-2-y-ge1-x-y-3-end-cases">
+<h3>Q4: Find the solutions for <span class="math notranslate nohighlight">\(\begin{cases} 2x-y&gt;-2 \\ y\ge1 \\ x+y=3 \end{cases}\)</span>.<a class="headerlink" href="#q4-find-the-solutions-for-begin-cases-2x-y-2-y-ge1-x-y-3-end-cases" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="ftlp-and-feasable-regions">
+<h2>FTLP and Feasable regions<a class="headerlink" href="#ftlp-and-feasable-regions" title="Permalink to this headline"></a></h2>
+<section id="fundamental-theorem-of-linear-programming">
+<h3>Fundamental theorem of Linear Programming:<a class="headerlink" href="#fundamental-theorem-of-linear-programming" title="Permalink to this headline"></a></h3>
+<p>A linear function (of the form <span class="math notranslate nohighlight">\(f(x) = ax + by\)</span>)
+has a maximum and minimum at one of its corner points if it is defined on a feasible region that is</p>
+<ol class="arabic simple">
+<li><p>non-empty (contains at least one point)</p></li>
+<li><p>bounded (does not extend to infinity in any direction)</p></li>
+<li><p>standard (e.g. bounded by <span class="math notranslate nohighlight">\(\leq\)</span> rather than <span class="math notranslate nohighlight">\(\lt\)</span> so that all edges and corners are in the region)</p></li>
+</ol>
+</section>
+<section id="q5-do-the-following-regions-satisfy-the-conditions-of-the-fundamental-theorem-of-linear-programming">
+<h3>Q5: Do the following regions satisfy the conditions of the Fundamental theorem of Linear Programming?<a class="headerlink" href="#q5-do-the-following-regions-satisfy-the-conditions-of-the-fundamental-theorem-of-linear-programming" title="Permalink to this headline"></a></h3>
+<p>a)</p>
+<iframe src="https://www.desmos.com/calculator/wjzv9k5oe9?embed" width="500" height="500" style="border: 1px solid #ccc; margin-bottom: 2rem;" frameborder=0></iframe><p>b)</p>
+<iframe src="https://www.desmos.com/calculator/hdmtt6xuth?embed" width="500" height="500" style="border: 1px solid #ccc; margin-bottom: 2rem;" frameborder=0></iframe></section>
 </section>
 <section id="finding-optimal-solutions-to-linear-programming-problems">
-<h2>Finding Optimal Solutions to Linear Programming Problems<a class="headerlink" href="#finding-optimal-solutions-to-linear-programming-problems" title="Permalink to this headline"></a></h2>
+<h2>Finding optimal solutions to Linear Programming problems<a class="headerlink" href="#finding-optimal-solutions-to-linear-programming-problems" title="Permalink to this headline"></a></h2>
+<section id="q6-suppose-a-school-lunch-program-serves-two-types-of-food-a-and-b-food-a-requires-4-minutes-and-10-to-prepare-and-food-b-requires-6-minutes-and-5-to-prepare-the-lunch-program-has-a-budget-of-200-and-two-hours-to-prepare-the-food-how-could-you-maximize-the-amount-of-food-items-prepared">
+<h3>Q6: Suppose a school lunch program serves two types of food: A and B. Food A requires 4 minutes and $10 to prepare and food B requires 6 minutes and $5 to prepare. The lunch program has a budget of $200 and two hours to prepare the food. How could you maximize the amount of food items prepared?<a class="headerlink" href="#q6-suppose-a-school-lunch-program-serves-two-types-of-food-a-and-b-food-a-requires-4-minutes-and-10-to-prepare-and-food-b-requires-6-minutes-and-5-to-prepare-the-lunch-program-has-a-budget-of-200-and-two-hours-to-prepare-the-food-how-could-you-maximize-the-amount-of-food-items-prepared" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><iframe src="https://www.desmos.com/calculator/81p0uwfoiu?embed" width="500" height="500" style="border: 1px solid #ccc; margin-bottom: 2rem;" frameborder=0></iframe>    </div>
+</div></section>
+<section id="q7-a-feasible-region-is-defined-by-begin-cases-6x-2y-le12-x-y-ge0-x-y-geq-0-end-cases-what-values-of-x-y-maximize-z-x-2y">
+<h3>Q7: A feasible region is defined by <span class="math notranslate nohighlight">\(\begin{cases} 6x+2y\le12 \\ x-y\ge0 \\ x,y \geq 0 \end{cases}\)</span>. What values of <span class="math notranslate nohighlight">\(x, y\)</span> maximize <span class="math notranslate nohighlight">\(Z = x+2y\)</span>?<a class="headerlink" href="#q7-a-feasible-region-is-defined-by-begin-cases-6x-2y-le12-x-y-ge0-x-y-geq-0-end-cases-what-values-of-x-y-maximize-z-x-2y" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><iframe src="https://www.desmos.com/calculator/9j55k7zokf?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>    </div>
+</div><p>Related: <a class="reference external" href="https://www.youtube.com/watch?v=hNqLAwyhT-4&amp;list=PLD3fYc0bAjC-Wc4icC2F34Bry3oLpFb8B&amp;index=7">https://www.youtube.com/watch?v=hNqLAwyhT-4&amp;list=PLD3fYc0bAjC-Wc4icC2F34Bry3oLpFb8B&amp;index=7</a></p>
+</section>
 </section>
 </section>
 

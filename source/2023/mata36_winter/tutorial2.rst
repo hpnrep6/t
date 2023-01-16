@@ -16,4 +16,4 @@ Tutorial Week 2
       };
       </script>
 
-You'll be writing your beginning test in this week's tutorial.
+Welcome to your first MATA36 tutorial! You'll be writing your beginning test in this week's tutorial.

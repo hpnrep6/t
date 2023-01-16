@@ -16,7 +16,7 @@ Tutorial Week 2
       };
       </script>
 
-Welcome to your first tutorial! This tutorial will be about linear Inequalities and linear programming.
+Welcome to your first tutorial! This tutorial will be about linear inequalities and linear programming.
 
 Graphing Linear Inequalities
 ----------------------------

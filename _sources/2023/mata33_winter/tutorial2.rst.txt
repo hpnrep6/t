@@ -24,14 +24,72 @@ Graphing Linear Inequalities
 Q1: Find the solutions for :math:`4x + 5y \lt 20`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t2/1.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
 Q2: Find the solutions for :math:`5x + y \geq 10`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t2/2.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
 
 Q3: Find the solutions for :math:`\begin{cases} x+y\le6 \\ 3x-y\le9 \\ 2x\ge1 \end{cases}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t2/3.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
+
 Q4: Find the solutions for :math:`\begin{cases} 2x-y>-2 \\ y\ge1 \\ x+y=3 \end{cases}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t2/4.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
 
 FTLP and Feasable regions
 -------------------------
@@ -74,9 +132,12 @@ Q6: Suppose a school lunch program serves two types of food: A and B. Food A req
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
+.. image:: ./images/t2/6.jpeg
+   :width: 700
+
 .. raw:: html
 
-      <iframe src="https://www.desmos.com/calculator/81p0uwfoiu?embed" width="500" height="500" style="border: 1px solid #ccc; margin-bottom: 2rem;" frameborder=0></iframe>
+      <iframe src="https://www.desmos.com/calculator/81p0uwfoiu?embed" width="500" height="500" style="border: 1px solid #ccc; margin: 2rem 0;" frameborder=0></iframe>
 
 .. raw:: html
 

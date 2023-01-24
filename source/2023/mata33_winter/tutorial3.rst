@@ -64,8 +64,51 @@ Q5: Evaluate the following.
 :math:`\rule{0pt}{4ex}`
 3. :math:`\begin{bmatrix} 3 & 0 \\ 2 & 1  \end{bmatrix} \cdot \begin{bmatrix} 1 & 5 \\ 3 & 4 \end{bmatrix}`?
 
-Q6: Find all diagonal matrices C such that :math:`\begin{bmatrix} 1 & 2 \\ 3 & 4  \end{bmatrix} = C^2 + \begin{bmatrix} -1 & 0 \\ 1 & 1  \end{bmatrix}`.
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t3/5.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
+Q6: Find all diagonal matrices C such that :math:`\begin{bmatrix} 1 & 2 \\ 3 & 4  \end{bmatrix} = C^2 + \begin{bmatrix} -1 & 2 \\ 3 & 1  \end{bmatrix}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Q7: Represent :math:`\begin{cases} 3x^3 + 7x^2 - x + 1 \\ 6x^2 + 5x \\ 12x^3 - x^3 + 9x + 1 \end{cases}` as a matrix. Then write this in the form of :math:`AX = B`, where :math:`A` is the coefficient matrix, :math:`X` is the variable matrix, and :math:`B` is the solution matrix.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t3/6.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
+Q7: Represent :math:`\begin{cases} 3x^3 + 7x^2 - x + 1 = 0 \\ 6x^2 + 5x = 0 \\ 12x^3 - x^2 + 9x + 1 = 0 \end{cases}` as a matrix. Write this in the form of :math:`AX = B`, where :math:`A` is the coefficient matrix, :math:`X` is the variable matrix, and :math:`B` is the solution matrix.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t3/7.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>

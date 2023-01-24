@@ -32,6 +32,8 @@ Q1: Evaluate :math:`\int \frac{1}{cos(x) + 2}dx`.
 .. image:: ./images/t3/1-2.jpeg
    :width: 700
 
+\* There's a mistake in the last line; it should be :math:`\frac{2}{\sqrt{3}}`.
+
 .. raw:: html
 
         </div>

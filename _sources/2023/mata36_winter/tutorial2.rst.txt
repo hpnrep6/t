@@ -17,3 +17,6 @@ Tutorial Week 2
       </script>
 
 Welcome to your first MATA36 tutorial! You'll be writing your beginning test in this week's tutorial.
+
+:math:`\rule{0pt}{0ex}`
+-----------------------

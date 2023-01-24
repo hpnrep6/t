@@ -44,16 +44,10 @@ Numbers of Solutions
 Q3: For the above question, if :math:`Z = x + 2y`, how many solutions would there be?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Constructing feasible regions
------------------------------
-
-Q4: Create a set of inequalities with the feasible region as the triangle bounded by :math:`(1, 1)`, :math:`(10, 5)`, :math:`(10, 1)`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 Matrices
 --------
 
-Q5: Evaluate the following.
+Q4: Evaluate the following.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. :math:`-3 \cdot \begin{bmatrix} 3 & 0 \\ 2 & 1  \end{bmatrix}`
@@ -79,7 +73,7 @@ Q5: Evaluate the following.
         </div>
     </div>
 
-Q6: Find all diagonal matrices C such that :math:`\begin{bmatrix} 1 & 2 \\ 3 & 4  \end{bmatrix} = C^2 + \begin{bmatrix} -1 & 2 \\ 3 & 1  \end{bmatrix}`.
+Q5: Find all diagonal matrices C such that :math:`\begin{bmatrix} 1 & 2 \\ 3 & 4  \end{bmatrix} = C^2 + \begin{bmatrix} -1 & 2 \\ 3 & 1  \end{bmatrix}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
@@ -96,7 +90,7 @@ Q6: Find all diagonal matrices C such that :math:`\begin{bmatrix} 1 & 2 \\ 3 & 4
         </div>
     </div>
 
-Q7: Represent :math:`\begin{cases} 3x^3 + 7x^2 - x + 1 = 0 \\ 6x^2 + 5x = 0 \\ 12x^3 - x^2 + 9x + 1 = 0 \end{cases}` as a matrix. Write this in the form of :math:`AX = B`, where :math:`A` is the coefficient matrix, :math:`X` is the variable matrix, and :math:`B` is the solution matrix.
+Q6: Represent :math:`\begin{cases} 3x^3 + 7x^2 - x + 1 = 0 \\ 6x^2 + 5x = 0 \\ 12x^3 - x^2 + 9x + 1 = 0 \end{cases}` as a matrix. Write this in the form of :math:`AX = B`, where :math:`A` is the coefficient matrix, :math:`X` is the variable matrix, and :math:`B` is the solution matrix.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html

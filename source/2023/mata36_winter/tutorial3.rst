@@ -20,23 +20,75 @@ Assignment Review
 Q1: Evaluate :math:`\int \frac{1}{cos(x) + 2}dx`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t3/1-1.jpeg
+   :width: 700
+
+.. image:: ./images/t3/1-2.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
 Integral Practice
 -----------------
 
 Q2: Evaluate :math:`\int \frac{1}{1-cos(x)} dx`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t3/2.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
 .. half angle
 
-Q3: Evaluate :math:`\int_{-5}^{5} \frac{\arctan\left(x\right)\sin\left(x\right)^{2}x^{2}}{1+2x^{2}} dx`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q3: Evaluate :math:`\int_{-5}^{5} \frac{\arctan\left(x\right)\sin^2\left(x\right)x^{2}}{1+2x^{2}} dx`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t3/3.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
 
 Q4: Evaluate :math:`\int arctan(1/x)dx`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Partial Fraction Decomposition
-------------------------------
+.. raw:: html
 
-Q5: Evaluate :math:`\int \frac{x^3 + 4x^2 + x - 1}{x^3 + x^2} dx`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
 
+.. image:: ./images/t3/4.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>

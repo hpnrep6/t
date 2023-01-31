@@ -26,7 +26,7 @@ Q1: Evaluate :math:`\int sin^4(x) \; dx`.
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/2.jpeg
+.. image:: ./images/t4/1.jpeg
    :width: 700
 
 .. raw:: html
@@ -46,27 +46,7 @@ Q2: Evaluate :math:`\int \frac{x^4+2x^3-3x+4}{x(x-3)(x^2+1)} \; dx`.
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/2.jpeg
-   :width: 700
-
-.. raw:: html
-
-        </div>
-    </div>
-
-Trigonometric Substitution
---------------------------
-
-Q3: Evaluate :math:`\int x\sqrt{1-x^4} \; dx`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. raw:: html
-
-   <div class="answer-container">
-      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
-      <div class="answer">
-
-.. image:: ./images/t3/2.jpeg
+.. image:: ./images/t4/2.jpeg
    :width: 700
 
 .. raw:: html

@@ -26,7 +26,7 @@ Q1: If :math:`A` is a :math:`2 \times 2` matrix, show that if :math:`AB = 0` for
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/5.jpeg
+.. image:: ./images/t4/1.jpeg
    :width: 700
 
 .. raw:: html
@@ -43,7 +43,7 @@ Q2: Consider a :math:`4 \times 4` diagonal matrix :math:`A` with non-zero entrie
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/5.jpeg
+.. image:: ./images/t4/2.jpeg
    :width: 700
 
 .. raw:: html
@@ -54,8 +54,8 @@ Q2: Consider a :math:`4 \times 4` diagonal matrix :math:`A` with non-zero entrie
 Gaussian Elimination and Systems of Equations
 ---------------------------------------------
 
-Q3: Solve the system of equations :math:`\begin{cases} x+y+z=1 \\ 2x+7y+3z=4 \\ x+6y+z=-2 \end{cases}`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q3: Solve the system of equations :math:`\begin{cases} x+y+z=1 \\ 2x+7y+3z=4 \\ x+6y+z+2=0 \end{cases}`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -63,7 +63,7 @@ Q3: Solve the system of equations :math:`\begin{cases} x+y+z=1 \\ 2x+7y+3z=4 \\ 
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/5.jpeg
+.. image:: ./images/t4/3.jpeg
    :width: 700
 
 .. raw:: html
@@ -71,8 +71,8 @@ Q3: Solve the system of equations :math:`\begin{cases} x+y+z=1 \\ 2x+7y+3z=4 \\ 
         </div>
     </div>
 
-Q4: For what values of :math:`a` and :math:`b` allows the following system of equations to have one solution, infinite solutions, and no solutions: :math:`\begin{cases} x + 6y = a \\ bx + y = 2 \end{cases}`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Q4: For what values of :math:`a` and :math:`b` allows the following system of equations to have 1) one (unique) solution 2) no solutions: :math:`\begin{cases} x + 0 = 3 \\  by = a \end{cases}`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -80,7 +80,7 @@ Q4: For what values of :math:`a` and :math:`b` allows the following system of eq
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/5.jpeg
+.. image:: ./images/t4/4.jpeg
    :width: 700
 
 .. raw:: html

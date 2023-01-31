@@ -3,6 +3,8 @@
 MATA36 Winter 2023
 ==================
 
+Unofficial discord server: https://discord.gg/zjCeB6ZgZ7
+
 .. meta::
    :keywords: mata36, notes, tutorial
 

@@ -17,11 +17,12 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="MATA36 Winter 2023" href="../mata36_winter/mata36.html" />
+    <link rel="next" title="Tutorial Week 5" href="tutorial5.html" />
     <link rel="prev" title="Tutorial Week 3" href="tutorial3.html" /> 
 </head>
 
@@ -63,7 +64,12 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial3.html#matrices">Matrices</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 4</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#proving-with-matrices">Proving with Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gaussian-elimination-and-systems-of-equations">Gaussian Elimination and Systems of Equations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial5.html">Tutorial Week 5</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -78,7 +84,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial3.html#integral-practice">Integral Practice</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial4.html">Tutorial Week 4</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial4.html#integral-practice">Integral Practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial4.html#partial-fraction-decomposition">Partial Fraction Decomposition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial5.html">Tutorial Week 5</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -226,14 +237,48 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script></section>
+</script><section id="proving-with-matrices">
+<h2>Proving with Matrices<a class="headerlink" href="#proving-with-matrices" title="Permalink to this headline"></a></h2>
+<section id="q1-if-a-is-a-2-times-2-matrix-show-that-if-ab-0-for-all-2-times-1-matrices-b-then-a-0">
+<h3>Q1: If <span class="math notranslate nohighlight">\(A\)</span> is a <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrix, show that if <span class="math notranslate nohighlight">\(AB = 0\)</span> for all <span class="math notranslate nohighlight">\(2 \times 1\)</span> matrices B, then <span class="math notranslate nohighlight">\(A = 0\)</span>.<a class="headerlink" href="#q1-if-a-is-a-2-times-2-matrix-show-that-if-ab-0-for-all-2-times-1-matrices-b-then-a-0" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/12.jpeg"><img alt="../../_images/12.jpeg" src="../../_images/12.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q2-consider-a-4-times-4-diagonal-matrix-a-with-non-zero-entries-along-the-diagonal-and-suppose-ab-i-4-what-would-the-matrix-b-be">
+<h3>Q2: Consider a <span class="math notranslate nohighlight">\(4 \times 4\)</span> diagonal matrix <span class="math notranslate nohighlight">\(A\)</span> with non-zero entries along the diagonal and suppose <span class="math notranslate nohighlight">\(AB = I_{4}\)</span>. What would the matrix <span class="math notranslate nohighlight">\(B\)</span> be?<a class="headerlink" href="#q2-consider-a-4-times-4-diagonal-matrix-a-with-non-zero-entries-along-the-diagonal-and-suppose-ab-i-4-what-would-the-matrix-b-be" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/22.jpeg"><img alt="../../_images/22.jpeg" src="../../_images/22.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="gaussian-elimination-and-systems-of-equations">
+<h2>Gaussian Elimination and Systems of Equations<a class="headerlink" href="#gaussian-elimination-and-systems-of-equations" title="Permalink to this headline"></a></h2>
+<section id="q3-solve-the-system-of-equations-begin-cases-x-y-z-1-2x-7y-3z-4-x-6y-z-2-0-end-cases">
+<h3>Q3: Solve the system of equations <span class="math notranslate nohighlight">\(\begin{cases} x+y+z=1 \\ 2x+7y+3z=4 \\ x+6y+z+2=0 \end{cases}\)</span>.<a class="headerlink" href="#q3-solve-the-system-of-equations-begin-cases-x-y-z-1-2x-7y-3z-4-x-6y-z-2-0-end-cases" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/32.jpeg"><img alt="../../_images/32.jpeg" src="../../_images/32.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q4-for-what-values-of-a-and-b-allows-the-following-system-of-equations-to-have-1-one-unique-solution-2-no-solutions-begin-cases-x-0-3-by-a-end-cases">
+<h3>Q4: For what values of <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> allows the following system of equations to have 1) one (unique) solution 2) no solutions: <span class="math notranslate nohighlight">\(\begin{cases} x + 0 = 3 \\  by = a \end{cases}\)</span>.<a class="headerlink" href="#q4-for-what-values-of-a-and-b-allows-the-following-system-of-equations-to-have-1-one-unique-solution-2-no-solutions-begin-cases-x-0-3-by-a-end-cases" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/42.jpeg"><img alt="../../_images/42.jpeg" src="../../_images/42.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial3.html" class="btn btn-neutral float-left" title="Tutorial Week 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../mata36_winter/mata36.html" class="btn btn-neutral float-right" title="MATA36 Winter 2023" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial5.html" class="btn btn-neutral float-right" title="Tutorial Week 5" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

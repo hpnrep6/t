@@ -26,7 +26,7 @@ Q1: If :math:`A` is a :math:`2 \times 2` matrix, show that if :math:`AB = 0` for
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/2.jpeg
+.. image:: ./images/t3/5.jpeg
    :width: 700
 
 .. raw:: html
@@ -43,7 +43,7 @@ Q2: Consider a :math:`4 \times 4` diagonal matrix :math:`A` with non-zero entrie
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/2.jpeg
+.. image:: ./images/t3/5.jpeg
    :width: 700
 
 .. raw:: html
@@ -63,7 +63,7 @@ Q3: Solve the system of equations :math:`\begin{cases} x+y+z=1 \\ 2x+7y+3z=4 \\ 
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/2.jpeg
+.. image:: ./images/t3/5.jpeg
    :width: 700
 
 .. raw:: html
@@ -80,7 +80,7 @@ Q4: For what values of :math:`a` and :math:`b` allows the following system of eq
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t3/2.jpeg
+.. image:: ./images/t3/5.jpeg
    :width: 700
 
 .. raw:: html

@@ -14,3 +14,4 @@ MATA33 Winter 2023
    tutorial3
    tutorial4
    tutorial5
+   tutorial6

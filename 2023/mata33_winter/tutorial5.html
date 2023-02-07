@@ -17,11 +17,12 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="MATA36 Winter 2023" href="../mata36_winter/mata36.html" />
+    <link rel="next" title="Tutorial Week 6" href="tutorial6.html" />
     <link rel="prev" title="Tutorial Week 4" href="tutorial4.html" /> 
 </head>
 
@@ -68,7 +69,13 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial4.html#gaussian-elimination-and-systems-of-equations">Gaussian Elimination and Systems of Equations</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 5</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gaussian-elimination-and-number-of-solutions">Gaussian Elimination and Number of Solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#homogeneous-systems">Homogeneous Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial6.html">Tutorial Week 6</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -88,7 +95,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial4.html#partial-fraction-decomposition">Partial Fraction Decomposition</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial5.html">Tutorial Week 5</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#trigonometric-substitution">Trigonometric Substitution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#area-between-functions">Area Between Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial6.html">Tutorial Week 6</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -236,14 +249,51 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script></section>
+</script><section id="gaussian-elimination-and-number-of-solutions">
+<h2>Gaussian Elimination and Number of Solutions<a class="headerlink" href="#gaussian-elimination-and-number-of-solutions" title="Permalink to this headline"></a></h2>
+<section id="q1-find-the-solutions-to-the-system-of-equations-begin-cases-2x-4x-2-8x-3-4-0-x-2x-2-4x-3-2-x-x-2-x-3-1-end-cases">
+<h3>Q1: Find the solutions to the system of equations <span class="math notranslate nohighlight">\(\begin{cases} 2x + 4x^2 + 8x^3 - 4 = 0 \\ x + 2x^2 + 4x^3 = 2 \\ x + x^2 + x^3 = 1 \end{cases}\)</span><a class="headerlink" href="#q1-find-the-solutions-to-the-system-of-equations-begin-cases-2x-4x-2-8x-3-4-0-x-2x-2-4x-3-2-x-x-2-x-3-1-end-cases" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/13.jpeg"><img alt="../../_images/13.jpeg" src="../../_images/13.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="homogeneous-systems">
+<h2>Homogeneous Systems<a class="headerlink" href="#homogeneous-systems" title="Permalink to this headline"></a></h2>
+<section id="q2-solve-the-following-homogeneous-system-and-classify-the-solution-as-trivial-or-non-trivial-begin-cases-2x-2y-0-5x-y-0-end-cases">
+<h3>Q2: Solve the following homogeneous system and classify the solution as trivial or non-trivial <span class="math notranslate nohighlight">\(\begin{cases} 2x + 2y = 0 \\ 5x + y = 0 \end{cases}\)</span><a class="headerlink" href="#q2-solve-the-following-homogeneous-system-and-classify-the-solution-as-trivial-or-non-trivial-begin-cases-2x-2y-0-5x-y-0-end-cases" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/23.jpeg"><img alt="../../_images/23.jpeg" src="../../_images/23.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q3-solve-the-following-homogeneous-system-and-classify-the-solution-as-trivial-or-non-trivial-begin-cases-2x-2y-0-x-y-0-end-cases">
+<h3>Q3: Solve the following homogeneous system and classify the solution as trivial or non-trivial <span class="math notranslate nohighlight">\(\begin{cases} 2x + 2y = 0 \\ -x - y = 0 \end{cases}\)</span><a class="headerlink" href="#q3-solve-the-following-homogeneous-system-and-classify-the-solution-as-trivial-or-non-trivial-begin-cases-2x-2y-0-x-y-0-end-cases" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/33.jpeg"><img alt="../../_images/33.jpeg" src="../../_images/33.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="midterm-review">
+<h2>Midterm Review<a class="headerlink" href="#midterm-review" title="Permalink to this headline"></a></h2>
+<section id="q4-if-abc-tcb-t-produces-a-3-times-2-matrix-and-cb-t-produces-a-2-times-6-matrix-what-are-the-dimensions-of-a-b-and-c">
+<h3>Q4: If <span class="math notranslate nohighlight">\(ABC^TCB^T\)</span> produces a <span class="math notranslate nohighlight">\(3 \times 2\)</span> matrix and <span class="math notranslate nohighlight">\((CB)^T\)</span> produces a <span class="math notranslate nohighlight">\(2 \times 6\)</span> matrix, what are the dimensions of <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(C\)</span>?<a class="headerlink" href="#q4-if-abc-tcb-t-produces-a-3-times-2-matrix-and-cb-t-produces-a-2-times-6-matrix-what-are-the-dimensions-of-a-b-and-c" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/43.jpeg"><img alt="../../_images/43.jpeg" src="../../_images/43.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial4.html" class="btn btn-neutral float-left" title="Tutorial Week 4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../mata36_winter/mata36.html" class="btn btn-neutral float-right" title="MATA36 Winter 2023" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial6.html" class="btn btn-neutral float-right" title="Tutorial Week 6" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

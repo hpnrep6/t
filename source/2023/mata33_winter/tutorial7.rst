@@ -1,4 +1,4 @@
-Tutorial Week 6
+Tutorial Week 7
 ===============
 
 .. toctree::
@@ -14,11 +14,3 @@ Tutorial Week 6
       };
       </script>
 
-Volumes of Revolution
----------------------
-
-Volumes using Cross-Sectional Areas
------------------------------------
-
-Volumes by Cylindrical Shells
------------------------------

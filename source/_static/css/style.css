@@ -63,6 +63,7 @@ body, section h1, section h2, section h3, section h4, section h5, section h6, p.
 
 .answer {
     display: none;
+    flex-direction: column;
 }
 
 .wy-table-responsive table td, .wy-table-responsive table th {
@@ -71,4 +72,8 @@ body, section h1, section h2, section h3, section h4, section h5, section h6, p.
 
 .wy-menu-vertical li.current>a button.toctree-expand, .wy-menu-vertical li a button.toctree-expand {
     color: #90defc;
+}
+
+.image-reference {
+    width: fit-content;
 }

@@ -16,7 +16,7 @@ function toggleClicked(e, showText = "Show Solution", hideText = "Hide Solution"
         }
 
         case true: {
-            setChildrenVisibility(e, 'block');
+            setChildrenVisibility(e, 'flex');
             e.innerHTML = hideText;
             break;
         }

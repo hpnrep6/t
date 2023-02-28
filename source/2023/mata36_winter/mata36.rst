@@ -18,3 +18,4 @@ Unofficial discord server: https://discord.gg/zjCeB6ZgZ7
    tutorial5
    tutorial6
    tutorial7
+   tutorial8

@@ -20,22 +20,6 @@ Volumes using Cross-Sectional Areas
 Q1: Find the volume of a pyramid-like shape with a square base of side length 4 and height 6. The sides of the pyramid are defined by the function :math:`y = \frac{6(x-2)^2}{4}`, with the origin of the function being the centre of the pyramid and the x axis running parallel to the sides of the pyramid.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-.. raw:: html
-
-   <div class="answer-container">
-      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
-      <div class="answer">
-
-.. image:: ./images/t6/1.jpeg
-   :width: 700
-
-.. raw:: html
-
-        </div>
-    </div>
-
-
 Volumes of Revolution
 ---------------------
 

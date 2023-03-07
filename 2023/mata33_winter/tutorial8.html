@@ -17,11 +17,12 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="MATA36 Winter 2023" href="../mata36_winter/mata36.html" />
+    <link rel="next" title="Tutorial Week 9" href="tutorial9.html" />
     <link rel="prev" title="Tutorial Week 7" href="tutorial7.html" /> 
 </head>
 
@@ -86,7 +87,12 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial7.html#level-sets">Level sets</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 8</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#partial-derivatives">Partial Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#marginal-costs">Marginal Costs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial9.html">Tutorial Week 9</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -123,7 +129,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial7.html#simpson-s-rule">Simpson’s Rule</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial8.html">Tutorial Week 8</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial8.html#improper-integrals">Improper Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial8.html#comparison-test">Comparison Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial9.html">Tutorial Week 9</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -271,14 +282,48 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script></section>
+</script><section id="partial-derivatives">
+<h2>Partial Derivatives<a class="headerlink" href="#partial-derivatives" title="Permalink to this headline"></a></h2>
+<section id="q1-let-f-x-y-z-x-3-y-2-sin-z-compute-f-x-f-y-f-z-compute-frac-partial-x-partial-z-6-8-pi">
+<h3>Q1: Let <span class="math notranslate nohighlight">\(f(x, y, z) = x^3 + y^2 + sin(z)\)</span>. Compute <span class="math notranslate nohighlight">\(f_x, f_y, f_z\)</span>. Compute <span class="math notranslate nohighlight">\(\frac{\partial x}{\partial z} |_{(6, 8, \pi)}\)</span>.<a class="headerlink" href="#q1-let-f-x-y-z-x-3-y-2-sin-z-compute-f-x-f-y-f-z-compute-frac-partial-x-partial-z-6-8-pi" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/16.jpeg"><img alt="../../_images/16.jpeg" src="../../_images/16.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q2-let-g-x-y-2-xy-x-sqrt-y-find-frac-partial-g-partial-y">
+<h3>Q2: Let <span class="math notranslate nohighlight">\(g(x, y) = 2^{xy} + x\sqrt{y}\)</span>. Find <span class="math notranslate nohighlight">\(\frac{\partial g}{\partial y}\)</span>.<a class="headerlink" href="#q2-let-g-x-y-2-xy-x-sqrt-y-find-frac-partial-g-partial-y" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/26.jpeg"><img alt="../../_images/26.jpeg" src="../../_images/26.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q3-let-6-xyzw-sqrt-x-3-xyz-z-3-tan-xy-and-w-be-an-implicitly-defined-function-in-terms-of-x-y-and-z-find-w-z">
+<h3>Q3: Let <span class="math notranslate nohighlight">\(6^{xyzw} = \sqrt{x^3 + xyz - z^3 + tan(xy)}\)</span> and <span class="math notranslate nohighlight">\(w\)</span> be an implicitly defined function in terms of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>. Find <span class="math notranslate nohighlight">\(w_z\)</span>.<a class="headerlink" href="#q3-let-6-xyzw-sqrt-x-3-xyz-z-3-tan-xy-and-w-be-an-implicitly-defined-function-in-terms-of-x-y-and-z-find-w-z" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/36.jpeg"><img alt="../../_images/36.jpeg" src="../../_images/36.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="marginal-costs">
+<h2>Marginal Costs<a class="headerlink" href="#marginal-costs" title="Permalink to this headline"></a></h2>
+<section id="q4-let-c-x-y-z-5x-2-3y-x-z-3-denote-the-cost-of-producing-x-number-of-product-a-y-number-of-product-b-and-z-number-of-product-c-if-x-10-y-5-z-8-what-is-the-marginal-cost-with-respect-to-x-marginal-cost-with-respect-to-y-and-the-marginal-cost-with-respect-to-z">
+<h3>Q4: Let <span class="math notranslate nohighlight">\(C(x, y, z) = 5x^2 + 3y^x - z^3\)</span> denote the cost of producing x number of product A, y number of product B, and z number of product C. If <span class="math notranslate nohighlight">\(x = 10\)</span>, <span class="math notranslate nohighlight">\(y = 5\)</span>, <span class="math notranslate nohighlight">\(z = 8\)</span>, what is the marginal cost with respect to x, marginal cost with respect to y, and the marginal cost with respect to z?<a class="headerlink" href="#q4-let-c-x-y-z-5x-2-3y-x-z-3-denote-the-cost-of-producing-x-number-of-product-a-y-number-of-product-b-and-z-number-of-product-c-if-x-10-y-5-z-8-what-is-the-marginal-cost-with-respect-to-x-marginal-cost-with-respect-to-y-and-the-marginal-cost-with-respect-to-z" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/46.jpeg"><img alt="../../_images/46.jpeg" src="../../_images/46.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial7.html" class="btn btn-neutral float-left" title="Tutorial Week 7" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../mata36_winter/mata36.html" class="btn btn-neutral float-right" title="MATA36 Winter 2023" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial9.html" class="btn btn-neutral float-right" title="Tutorial Week 9" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

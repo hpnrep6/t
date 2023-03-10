@@ -16,9 +16,6 @@ Email: youngc.chen@mail.utoronto.ca
 Teaching
 --------
 
-.. toctree::
-   :maxdepth: 1
-
-   2022/mata30_fall/mata30
-   2023/mata33_winter/mata33
-   2023/mata36_winter/mata36
+- :ref:`2022_mata30_fall`
+- :ref:`2023_mata33_winter`
+- :ref:`2023_mata36_winter`

@@ -17,11 +17,12 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2022" href="../../2022/2022.html" />
+    <link rel="next" title="Tutorial Week 10" href="tutorial10.html" />
     <link rel="prev" title="Tutorial Week 8" href="tutorial8.html" /> 
 </head>
 
@@ -92,7 +93,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial8.html#marginal-costs">Marginal Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial9.html">Tutorial Week 9</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial9.html#higher-order-partial-derivatives">Higher order Partial Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial9.html#implicit-functions-and-higher-order-partial-derivatives">Implicit functions and Higher order Partial Derivatives</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial10.html">Tutorial Week 10</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -134,7 +140,13 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial8.html#comparison-test">Comparison Test</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 9</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#limits-convergence-and-divergence-of-sequences">Limits, convergence, and divergence of Sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#monotone-convergence-theorem-mct-and-convergence">Monotone Convergence Theorem (MCT) and Convergence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#limits-of-monotonic-sequences">Limits of Monotonic Sequences</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial10.html">Tutorial Week 10</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -282,14 +294,41 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script></section>
+</script><section id="limits-convergence-and-divergence-of-sequences">
+<h2>Limits, convergence, and divergence of Sequences<a class="headerlink" href="#limits-convergence-and-divergence-of-sequences" title="Permalink to this headline"></a></h2>
+<section id="q1-given-the-sequence-a-n-where-a-n-frac-n-n-2-frac-1-3-n-find-if-it-converges-or-diverges-if-it-converges-find-the-limit">
+<h3>Q1: Given the sequence <span class="math notranslate nohighlight">\(\{ a_n \}\)</span> where <span class="math notranslate nohighlight">\(a_n =  \frac{(n + n^2)^{\frac{1}{3}}}{n}\)</span>, find if it converges or diverges. If it converges, find the limit.<a class="headerlink" href="#q1-given-the-sequence-a-n-where-a-n-frac-n-n-2-frac-1-3-n-find-if-it-converges-or-diverges-if-it-converges-find-the-limit" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q2-given-the-sequence-a-n-where-a-n-sin-n-frac-log-3-n-log-8-n-find-if-it-converges-or-diverges-if-it-converges-find-the-limit">
+<h3>Q2: Given the sequence <span class="math notranslate nohighlight">\(\{ a_n \}\)</span> where <span class="math notranslate nohighlight">\(a_n = sin(n) \frac{log_3(n)}{log_8(n)}\)</span>, find if it converges or diverges. If it converges, find the limit.<a class="headerlink" href="#q2-given-the-sequence-a-n-where-a-n-sin-n-frac-log-3-n-log-8-n-find-if-it-converges-or-diverges-if-it-converges-find-the-limit" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="monotone-convergence-theorem-mct-and-convergence">
+<h2>Monotone Convergence Theorem (MCT) and Convergence<a class="headerlink" href="#monotone-convergence-theorem-mct-and-convergence" title="Permalink to this headline"></a></h2>
+<section id="q3-show-that-the-sequence-a-n-frac-2n-1-3n-4-is-monotonic">
+<h3>Q3: Show that the sequence <span class="math notranslate nohighlight">\(a_n = \frac{2n-1}{3n+4}\)</span> is monotonic.<a class="headerlink" href="#q3-show-that-the-sequence-a-n-frac-2n-1-3n-4-is-monotonic" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q4-show-how-you-can-use-mct-to-prove-that-the-sequence-frac-n-e-n-1-is-convergent">
+<h3>Q4: Show how you can use MCT to prove that the sequence <span class="math notranslate nohighlight">\(\{ \frac{n}{e^n} + 1 \}\)</span> is convergent.<a class="headerlink" href="#q4-show-how-you-can-use-mct-to-prove-that-the-sequence-frac-n-e-n-1-is-convergent" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+<section id="limits-of-monotonic-sequences">
+<h2>Limits of Monotonic Sequences<a class="headerlink" href="#limits-of-monotonic-sequences" title="Permalink to this headline"></a></h2>
+<section id="q5-find-the-limit-of-the-sequence-sqrt-2-sqrt-2-sqrt-2-sqrt-2-sqrt-2-sqrt-2">
+<h3>Q5: Find the limit of the sequence <span class="math notranslate nohighlight">\(\{ \sqrt{2}, \sqrt{2\sqrt{2}}, \sqrt{2\sqrt{2\sqrt{2}}}, ... \}\)</span>.<a class="headerlink" href="#q5-find-the-limit-of-the-sequence-sqrt-2-sqrt-2-sqrt-2-sqrt-2-sqrt-2-sqrt-2" title="Permalink to this headline"></a></h3>
+</section>
+<section id="q6-show-that-the-sequence-a-n-1-frac-1-1-a-n-converges-to-sqrt-2">
+<h3>Q6: Show that the sequence <span class="math notranslate nohighlight">\(a_n = 1 + \frac{1}{1+a_n}\)</span> converges to <span class="math notranslate nohighlight">\(\sqrt{2}\)</span>.<a class="headerlink" href="#q6-show-that-the-sequence-a-n-1-frac-1-1-a-n-converges-to-sqrt-2" title="Permalink to this headline"></a></h3>
+</section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial8.html" class="btn btn-neutral float-left" title="Tutorial Week 8" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../2022/2022.html" class="btn btn-neutral float-right" title="2022" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial10.html" class="btn btn-neutral float-right" title="Tutorial Week 10" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

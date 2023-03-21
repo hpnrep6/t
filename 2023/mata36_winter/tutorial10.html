@@ -17,11 +17,12 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2022" href="../../2022/2022.html" />
+    <link rel="next" title="Tutorial Week 11" href="tutorial11.html" />
     <link rel="prev" title="Tutorial Week 9" href="tutorial9.html" /> 
 </head>
 
@@ -97,7 +98,16 @@
 <li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial9.html#implicit-functions-and-higher-order-partial-derivatives">Implicit functions and Higher order Partial Derivatives</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial10.html">Tutorial Week 10</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial10.html#chain-rule">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial10.html#tangent-planes">Tangent Planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial10.html#critical-points">Critical Points</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial11.html">Tutorial Week 11</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial12.html">Tutorial Week 12</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -145,7 +155,16 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial9.html#limits-of-monotonic-sequences">Limits of Monotonic Sequences</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 10</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#recursively-defined-functions">Recursively defined Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conditions-for-convergent-series">Conditions for convergent series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#geometric-series">Geometric Series</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial11.html">Tutorial Week 11</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial12.html">Tutorial Week 12</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -293,14 +312,72 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script></section>
+</script><section id="recursively-defined-functions">
+<h2>Recursively defined Functions<a class="headerlink" href="#recursively-defined-functions" title="Permalink to this headline"></a></h2>
+<section id="q1-show-that-the-sequence-a-1-1-a-n-1-sqrt-2a-n-8-converges-and-find-the-limit-it-converges-to">
+<h3>Q1: Show that the sequence <span class="math notranslate nohighlight">\(a_1 = 1\)</span> <span class="math notranslate nohighlight">\(a_{n+1} = \sqrt{2a_n + 8}\)</span> converges and find the limit it converges to.<a class="headerlink" href="#q1-show-that-the-sequence-a-1-1-a-n-1-sqrt-2a-n-8-converges-and-find-the-limit-it-converges-to" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/19.jpeg"><img alt="../../_images/19.jpeg" src="../../_images/19.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="conditions-for-convergent-series">
+<h2>Conditions for convergent series<a class="headerlink" href="#conditions-for-convergent-series" title="Permalink to this headline"></a></h2>
+<section id="q2-show-that-the-following-series-are-divergent">
+<h3>Q2: Show that the following series are divergent.<a class="headerlink" href="#q2-show-that-the-following-series-are-divergent" title="Permalink to this headline"></a></h3>
+<div class="line-block">
+<div class="line">a. <span class="math notranslate nohighlight">\(\sum_1^\infty 1 - \arctan(n)\)</span></div>
+<div class="line"><span class="math notranslate nohighlight">\(\;\)</span></div>
+<div class="line">b. <span class="math notranslate nohighlight">\(\sum_1^\infty 3(-1)^n\)</span></div>
+<div class="line"><span class="math notranslate nohighlight">\(\;\)</span></div>
+<div class="line">c. <span class="math notranslate nohighlight">\(\sum_1^\infty \frac{1}{1 + 2^{-n} - 5^{-4n}}\)</span></div>
+</div>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/29.jpeg"><img alt="../../_images/29.jpeg" src="../../_images/29.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="geometric-series">
+<h2>Geometric Series<a class="headerlink" href="#geometric-series" title="Permalink to this headline"></a></h2>
+<section id="q3-does-sum-n-1-infty-3-frac-3-2-n-converge-if-so-find-its-sum">
+<h3>Q3: Does <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty 3(-\frac{3}{2})^n\)</span> converge, if so, find its sum.<a class="headerlink" href="#q3-does-sum-n-1-infty-3-frac-3-2-n-converge-if-so-find-its-sum" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/39.jpeg"><img alt="../../_images/39.jpeg" src="../../_images/39.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q4-does-sum-n-3-infty-4-n-1-5-n6-2n-converge-if-so-find-its-sum">
+<h3>Q4: Does <span class="math notranslate nohighlight">\(\sum_{n=3}^\infty 4^{n+1}5^n6^{-2n}\)</span> converge? If so, find its sum.<a class="headerlink" href="#q4-does-sum-n-3-infty-4-n-1-5-n6-2n-converge-if-so-find-its-sum" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/49.jpeg"><img alt="../../_images/49.jpeg" src="../../_images/49.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q5-does-sum-n-1-infty-3-3n-4-n-converge-if-so-find-its-sum">
+<h3>Q5: Does <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty 3^{3n}4^{-n}\)</span> converge? If so, find its sum.<a class="headerlink" href="#q5-does-sum-n-1-infty-3-3n-4-n-converge-if-so-find-its-sum" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/54.jpeg"><img alt="../../_images/54.jpeg" src="../../_images/54.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q6-does-sum-n-1-infty-frac-1-4-n-1-3-frac-2-n-5-n-2-converge-if-so-find-its-sum">
+<h3>Q6: Does <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty( (\frac{1}{4})^{n-1} - 3(\frac{2^n}{5^{n-2}}))\)</span> converge? If so, find its sum.<a class="headerlink" href="#q6-does-sum-n-1-infty-frac-1-4-n-1-3-frac-2-n-5-n-2-converge-if-so-find-its-sum" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/63.jpeg"><img alt="../../_images/63.jpeg" src="../../_images/63.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial9.html" class="btn btn-neutral float-left" title="Tutorial Week 9" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../2022/2022.html" class="btn btn-neutral float-right" title="2022" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial11.html" class="btn btn-neutral float-right" title="Tutorial Week 11" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

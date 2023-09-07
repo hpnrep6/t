@@ -7,5 +7,6 @@
    :maxdepth: 1
    :caption: Pages for 2023
    
+   mata30_fall/mata30
    mata33_winter/mata33
    mata36_winter/mata36

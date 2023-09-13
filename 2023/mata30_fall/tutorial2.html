@@ -17,6 +17,7 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -51,7 +52,11 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="mata30.html">MATA30 Fall 2023</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 2</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#what-are-tutorials">What are tutorials?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#expectations-when-showing-your-work">Expectations when showing your work</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sets">Sets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quantifiers-and-shorthands">Quantifiers and shorthands</a></li>
 </ul>
 </li>
 </ul>
@@ -325,7 +330,60 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script></section>
+</script><p>Welcome to your first tutorial!</p>
+<section id="what-are-tutorials">
+<h2>What are tutorials?<a class="headerlink" href="#what-are-tutorials" title="Permalink to this headline"></a></h2>
+<p>In this course, tutorials are here to give you extra practice and review on the course content in a smaller class format, giving you more opportunities to have
+one-on-one support that you otherwise wouldn’t be able to easily get in say a two hundred person lecture.</p>
+<p>Do note that teaching assistants, or TAs, are given some freedom on how tutorials are run, so every tutorial will vary slightly in format and specific content, but all
+will cover the core concepts requied to be successful in this course.</p>
+</section>
+<section id="expectations-when-showing-your-work">
+<h2>Expectations when showing your work<a class="headerlink" href="#expectations-when-showing-your-work" title="Permalink to this headline"></a></h2>
+<p>This course isn’t really proof and theory heavy, so when showing your work, you don’t need to say stuff like “1 + 0 = 1 by the additive identity property of the real numbers”, but you should justify
+any steps that couldn’t be easily followed by the TA (or sometimes professor) grading your paper (e.g. using L’Hopital’s theorem, which you’ll be doing later on in the course).</p>
+</section>
+<section id="sets">
+<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline"></a></h2>
+<p>Let’s start with a quick review of a concept you should be somewhat familiar with: Sets.</p>
+<p>A set is a collection of distinct objects and is defined with curly braces <span class="math notranslate nohighlight">\(\{ \}\)</span>, for example let <span class="math notranslate nohighlight">\(S = \{3, 5, 6\}\)</span>.</p>
+<p>You can use the symbol <span class="math notranslate nohighlight">\(\in\)</span> to denote that an element belongs to a set (or in other words, the element is in a set). For example, <span class="math notranslate nohighlight">\(3 \in \{1, 2, 3\}\)</span>.</p>
+<p>Similarly, you can also say that <span class="math notranslate nohighlight">\(4 \notin \{1, 2, 3\}\)</span>.</p>
+<p>There’s also the union (<span class="math notranslate nohighlight">\(\cup\)</span>) and intersection (<span class="math notranslate nohighlight">\(cap\)</span>) operators, for example <span class="math notranslate nohighlight">\(\{1, 2, 3\} \cup \{8, 9\} = \{1, 2, 3, 8, 9\}\)</span>.</p>
+<section id="notable-sets">
+<h3>Notable sets<a class="headerlink" href="#notable-sets" title="Permalink to this headline"></a></h3>
+<p>You might remember <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> from high school, which, lucky for you, is a set!</p>
+<p>There’s a few notable sets that will be helpful to know, those being:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{Z}\)</span> - The integers</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{N}\)</span> - The natural numbers</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> - The rational numbers (Any number that can be written as the ration of two integers)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{R}\)</span> - The real numbers (Basically any number)</p></li>
+</ul>
+<p>Now here’s a little trivia (well, basically the entirety of MATA22 if you decide to take that course)… what about <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>?</p>
+</section>
+<section id="intervals">
+<h3>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline"></a></h3>
+<p>Intervals can be expressed using either set-builder notation, that being something like <span class="math notranslate nohighlight">\(I = \{x \in \mathbb{R} | 0 &lt; x \le 3 \}\)</span> or in interval notation <span class="math notranslate nohighlight">\((0, 3]\)</span></p>
+</section>
+</section>
+<section id="quantifiers-and-shorthands">
+<h2>Quantifiers and shorthands<a class="headerlink" href="#quantifiers-and-shorthands" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\therefore\)</span> - Therefore</p></li>
+<li><p><span class="math notranslate nohighlight">\(\because\)</span> - Because</p></li>
+<li><p>st - Such that</p></li>
+<li><p><span class="math notranslate nohighlight">\(\forall\)</span> - For all</p></li>
+<li><p><span class="math notranslate nohighlight">\(\exists\)</span> - There exists</p></li>
+</ul>
+<p>Try to translate the following between symbols and regular english:</p>
+<ul class="simple">
+<li><p>For all x in f(x), x = 5.</p></li>
+<li><p>Because y is in the set S, we have some integer k that is greater than y.</p></li>
+<li><p>For every rational number r, there is some integer k and some real number b such that r = k + b.</p></li>
+</ul>
+</section>
+</section>
 
 
            </div>

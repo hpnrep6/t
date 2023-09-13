@@ -42,7 +42,7 @@ You can use the symbol :math:`\in` to denote that an element belongs to a set (o
 
 Similarly, you can also say that :math:`4 \notin \{1, 2, 3\}`.
 
-There's also the union (:math:`\cup`) and intersection (:math:`cap`) operators, for example :math:`\{1, 2, 3\} \cup \{8, 9\} = \{1, 2, 3, 8, 9\}`.
+There's also the union (:math:`\cup`) and intersection (:math:`\cap`) operators, for example :math:`\{1, 2, 3\} \cup \{8, 9\} = \{1, 2, 3, 8, 9\}`.
 
 Notable sets
 ~~~~~~~~~~~~

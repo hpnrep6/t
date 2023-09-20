@@ -208,7 +208,7 @@ Finite Limits
 Sometimes, we want to be able to find the values of a function as we get close (and in most cases, infinitely close!) to some point that may be undefined on the function.
 
 To formally define this notion of a limit, we would need to use the delta-epsilon definition of a limit, which is way out of scope of this course, so just use your intuition here. (If you're 
-really curious, the definition is :math:`\lim_{x \to a} f(x) = L \Rightarrow (\forall \epsilon > 0, \exists \delta > 0 \text{ st } 0 < |x - c| < \delta \Rightarrow |f(x) - L| < \epsilon)`
+really curious, the definition is :math:`\lim_{x \to a} f(x) = L \Leftrightarrow (\forall \epsilon > 0, \exists \delta > 0 \text{ st } 0 < |x - c| < \delta \Rightarrow |f(x) - L| < \epsilon)`
 
 One example of this is at x = 1 for the function :math:`f(x) = \frac{(x - 1)x}{x-1}`. Even though x - 1 cancels out, the function is still left undefined at x = 1, yet we can easily compute the limit :math:`\lim_{x \to 1} \frac{(x-1)x}{x-1} = \lim_{x \to 1} x = 1`.
 

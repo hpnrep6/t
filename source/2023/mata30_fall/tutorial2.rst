@@ -392,7 +392,9 @@ Q7: Solve the equation :math:`ln(3x + 1) = 4`.
 .. math::
    \begin{aligned}
    ln(3x+1) &= 4 \\
-   ln(3x+1) &= 4 \\
+   e^ln(3x+1) &= e^4 \\
+   3x+1 &= e^4 \\
+   x &= \frac{e^4 - 1}{3} \\
    \end{aligned}
 
 .. raw:: html

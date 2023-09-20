@@ -4,10 +4,11 @@ MATA30 Fall 2023
 ================
 
 .. meta::
-   :keywords: mata33, notes, tutorial
+   :keywords: mata30, notes, tutorial
 
 .. toctree::
    :maxdepth: 1
    :caption: Pages for MATA30
 
    tutorial2
+   tutorial3

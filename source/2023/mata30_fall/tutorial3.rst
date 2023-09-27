@@ -261,7 +261,7 @@ and
 
 :math:`\lim{x \to 1^+} f(x) = \lim_{x \to 1^+} \frac{1 + x^2k}{xk}`.
 
-So we need to solve for k in :math:` \lim_{x \to 1^-} x^3 + xk = \lim_{x \to 1^+} \frac{1 + x^2k}{xk}`
+So we need to solve for k in :math:`\lim_{x \to 1^-} x^3 + xk = \lim_{x \to 1^+} \frac{1 + x^2k}{xk}`
 
 .. math::
    \begin{aligned}

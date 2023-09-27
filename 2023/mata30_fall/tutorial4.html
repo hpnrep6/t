@@ -372,14 +372,63 @@ tex: {packages: {'[+]': ['ams']}}
 <p>Let’s see these in action in the following question.</p>
 <section id="q1-solve-the-limit-lim-x-to-3-frac-sin-x-3-x-2-9">
 <h3>Q1: Solve the limit <span class="math notranslate nohighlight">\(\lim_{x \to 3} \frac{sin(x - 3)}{x^2 - 9}\)</span>.<a class="headerlink" href="#q1-solve-the-limit-lim-x-to-3-frac-sin-x-3-x-2-9" title="Permalink to this headline"></a></h3>
-</section>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to 3} \frac{sin(x - 3)}{x^2 - 9} &amp;= \lim_{x \to 3} \frac{sin(x - 3)}{(x - 3)(x + 3)} \\
+ &amp;= \lim_{x \to 3} \frac{sin(x - 3)}{x - 3}(x + 3) \\
+ &amp;= \lim_{x - 3 \to 0} \frac{sin(x - 3)}{x - 3}(x + 3) \\
+ &amp;= (\lim_{x - 3 \to 0} \frac{sin(x - 3)}{x - 3})(\lim_{x - 3 \to 0}(x + 3)) \\
+ &amp;= 1 \cdot \lim_{x - 3 \to 0}(x + 3) \\
+ &amp;= 1 \cdot \lim_{x \to 3}(x + 3) \\
+ &amp;= 3 + 3 = 6 \\
+\end{aligned}\end{split}\]</div>
+    </div>
+</div></section>
 </section>
 <section id="squeeze-theorem">
 <h2>Squeeze Theorem<a class="headerlink" href="#squeeze-theorem" title="Permalink to this headline"></a></h2>
-<p>The squeeze theorem states that if <span class="math notranslate nohighlight">\(g(x) \le f(x) \le h(x)\)</span> for all x values near some number a, and if <span class="math notranslate nohighlight">\(lim_{x \to a} g(x) = lim_{x\ to a} h(x) = L\)</span>, then <span class="math notranslate nohighlight">\(lim_{x \to a} f(x) = L\)</span>.</p>
-<section id="q2-calculate-lim-x-to-infty-dfrac-3x-2-sin-x-3-4x-2-2">
-<h3>Q2: Calculate <span class="math notranslate nohighlight">\(lim_{x \to \infty} \; \dfrac{3x^2 + \sin(x^3)}{4x^2 - 2}\)</span>.<a class="headerlink" href="#q2-calculate-lim-x-to-infty-dfrac-3x-2-sin-x-3-4x-2-2" title="Permalink to this headline"></a></h3>
-</section>
+<p>The squeeze theorem states that if <span class="math notranslate nohighlight">\(g(x) \le f(x) \le h(x)\)</span> for all x values near some number a, and if <span class="math notranslate nohighlight">\(lim_{x \to a} g(x) = lim_{x \to a} h(x) = L\)</span>, then <span class="math notranslate nohighlight">\(lim_{x \to a} f(x) = L\)</span>.</p>
+<section id="q2-calculate-lim-x-to-infty-frac-3x-2-sin-x-3-4x-2-2">
+<h3>Q2: Calculate <span class="math notranslate nohighlight">\(lim_{x \to \infty} \; \frac{3x^2 + \sin(x^3)}{4x^2 - 2}\)</span>.<a class="headerlink" href="#q2-calculate-lim-x-to-infty-frac-3x-2-sin-x-3-4x-2-2" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>We know that <span class="math notranslate nohighlight">\(-1 \le sin(x) \le 1\)</span> (as in sin(x) is bounded between -1 and 1 for all x), which means that <span class="math notranslate nohighlight">\(-1 \le sin(x^3) \le 1\)</span>.</p>
+<p>To use the squeeze theorem, we first need to “reconstruct” our original expression in a double inequality involving the upper and lower bounds of the function. We do just this below:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+-1 &amp;\le sin(x^3) &amp;\le 1 \\
+3x^2 -1 &amp;\le 3x^2 + sin(x^3) &amp;\le 3x^2 + 1 \\
+\frac{3x^2 -1}{4x^2-2} &amp;\le \frac{3x^2 + sin(x^3)}{4x^2-2} &amp;\le \frac{3x^2 + 1}{4x^2-2}
+\end{aligned}\end{split}\]</div>
+<p>Now we need to calculate the limits of the terms surrounding <span class="math notranslate nohighlight">\(\frac{3x^2 + sin(x^3)}{4x^2-2}\)</span> in the above double inequality, so we have:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to \infty} \frac{3x^2 -1}{4x^2-2} &amp;= \lim_{x \to \infty} \frac{3x^2 - \frac{x^2}{x^2}}{4x^2-2\frac{x^2}{x^2}} \\
+&amp;= \lim_{x \to \infty} \frac{x^2(3 - \frac{1}{x^2})}{x^2(4-\frac{2}{x^2})} \\
+&amp;= \lim_{x \to \infty} \frac{3 - \frac{1}{x^2}}{4-\frac{2}{x^2}} \\
+&amp;= \frac{3 - \frac{1}{\infty}}{4-\frac{2}{\infty}} \\
+&amp;= \frac{3 - 0}{4- 0} = \frac{3}{4}\\
+\end{aligned}\end{split}\]</div>
+<p>We do the same thing for the upper bound.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to \infty} \frac{3x^2 +1}{4x^2-2} &amp;= \lim_{x \to \infty} \frac{3x^2 + \frac{x^2}{x^2}}{4x^2-2\frac{x^2}{x^2}} \\
+&amp;= \lim_{x \to \infty} \frac{x^2(3 + \frac{1}{x^2})}{x^2(4-\frac{2}{x^2})} \\
+&amp;= \lim_{x \to \infty} \frac{3 + \frac{1}{x^2}}{4-\frac{2}{x^2}} \\
+&amp;= \frac{3 + \frac{1}{\infty}}{4-\frac{2}{\infty}} \\
+&amp;= \frac{3 + 0}{4- 0} = \frac{3}{4}\\
+\end{aligned}\end{split}\]</div>
+<p>So by adding our limit to infinity to the double inequality, we get:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to \infty} \frac{3x^2 -1}{4x^2-2} &amp;\le \lim_{x \to \infty} \frac{3x^2 + sin(x^3)}{4x^2-2} &amp;\le \lim_{x \to \infty}  \frac{3x^2 + 1}{4x^2-2} \\
+\frac{3}{4} &amp;\le \lim_{x \to \infty} \frac{3x^2 + sin(x^3)}{4x^2-2} &amp;\le \frac{3}{4}
+\end{aligned}\end{split}\]</div>
+<p>and thus <span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{3x^2 + sin(x^3)}{4x^2-2} = \frac{3}{4}\)</span></p>
+    </div>
+</div></section>
 <section id="q3-use-the-squeeze-theorem-to-show-that-lim-x-to-0-frac-sin-x-x-1-you-can-t-use-the-limit-identity-here-since-that-s-what-you-re-trying-to-prove">
 <h3>Q3: Use the squeeze theorem to show that <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span>. (You can’t use the limit identity here since that’s what you’re trying to prove)<a class="headerlink" href="#q3-use-the-squeeze-theorem-to-show-that-lim-x-to-0-frac-sin-x-x-1-you-can-t-use-the-limit-identity-here-since-that-s-what-you-re-trying-to-prove" title="Permalink to this headline"></a></h3>
 <div class="answer-container">
@@ -391,19 +440,68 @@ tex: {packages: {'[+]': ['ams']}}
 <section id="absolute-values">
 <h2>Absolute Values<a class="headerlink" href="#absolute-values" title="Permalink to this headline"></a></h2>
 <p>When dealing with absolute values, you’ll usually need to rewrite your function as a piecewise function and use that to evaluate the limit.</p>
-<section id="q4-find-the-limit-lim-x-to-1-frac-7-x-x-3-2-if-it-exists">
-<h3>Q4: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to -1} \frac{7 - |x|}{x^3 + 2}\)</span>. (if it exists)<a class="headerlink" href="#q4-find-the-limit-lim-x-to-1-frac-7-x-x-3-2-if-it-exists" title="Permalink to this headline"></a></h3>
-</section>
+<section id="q4-find-the-limit-lim-x-to-1-frac-7-x-1-x-3-2-if-it-exists">
+<h3>Q4: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to -1} \frac{7 - |x + 1|}{x^3 + 2}\)</span>. (if it exists)<a class="headerlink" href="#q4-find-the-limit-lim-x-to-1-frac-7-x-1-x-3-2-if-it-exists" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>We know that <span class="math notranslate nohighlight">\(|x| = \begin{cases} x \;\;\;\;\;\; \text{if } x \ge 0 \\ -x \;\;\; \text{if } x &lt; 0\end{cases}\)</span></p>
+<p>Using this, we get that <span class="math notranslate nohighlight">\(|x + 1| = \begin{cases} x + 1 \;\;\;\;\;\;\;\;\; \text{if } x \ge -1 \\ -(x + 1) \;\;\; \text{if } x &lt; -1\end{cases}\)</span>, since this is just <span class="math notranslate nohighlight">\(|x|\)</span> shifted left by one unit.</p>
+<p>Since now we have the piecewise definition of <span class="math notranslate nohighlight">\(|x + 1|\)</span>, we can get the piecewise definition of <span class="math notranslate nohighlight">\(\frac{7 - |x + 1|}{x^3 + 2}\)</span> and try to find the limit using that.</p>
+<p><span class="math notranslate nohighlight">\(\begin{aligned} \frac{7 - |x + 1|}{x^3 + 2} &amp;= \begin{cases} \frac{7 - (x + 1)}{x^3 + 2} \;\;\;\;\;\;\; \text{if } x \ge -1 \\ \frac{7 - (-(x + 1))}{x^3 + 2} \;\;\; \text{if } x &lt; -1\end{cases} \\&amp;=  \begin{cases} \frac{6 - x}{x^3 + 2} \;\;\;\;\;\;\; \text{if } x \ge -1 \\ \frac{8 + x}{x^3 + 2} \;\;\;\;\;\;\; \text{if } x &lt; -1\end{cases} \end{aligned}\)</span></p>
+<p>Now we can calculate the left and right side limits of this function at -1.</p>
+<p>Let <span class="math notranslate nohighlight">\(f(x) = \frac{7 - |x + 1|}{x^3 + 2}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to -1^-} f(x) &amp;= \lim_{x \to -1^-} \frac{6 - x}{x^3 + 2} \\
+&amp;= \frac{6 + 1}{-1 + 2} \\
+&amp;= 7
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to -1^+} f(x) &amp;= \lim_{x \to -1^+} \frac{8 + x}{x^3 + 2} \\
+&amp;= \frac{8 - 1}{-1 + 2} \\
+&amp;= 7
+\end{aligned}\end{split}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\lim_{x \to -1^-} f(x) =  \lim_{x \to -1^+} f(x) = 7\)</span>, we have that <span class="math notranslate nohighlight">\(\lim_{x \to -1} f(x) = \lim_{x \to -1} \frac{7 - |x + 1|}{x^3 + 2} = 7\)</span>.</p>
+    </div>
+</div></section>
 </section>
 <section id="more-examples">
 <h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this headline"></a></h2>
 <p>We’ll go over a few more examples of limits to give you a better sense of the tools you have at your disposal when working with limits.</p>
 <section id="q5-given-any-constant-number-k-what-is-lim-x-to-0-cot-2kx-2kx-k">
-<h3>Q5: Given any constant number <span class="math notranslate nohighlight">\(k\)</span>, what is <span class="math notranslate nohighlight">\(lim_{x \to 0}\; \cot(2kx)2kx + k\)</span>?<a class="headerlink" href="#q5-given-any-constant-number-k-what-is-lim-x-to-0-cot-2kx-2kx-k" title="Permalink to this headline"></a></h3>
-</section>
+<h3>Q5: Given any constant number <span class="math notranslate nohighlight">\(k\)</span>, what is <span class="math notranslate nohighlight">\(\lim_{x \to 0}\; \cot(2kx)2kx + k\)</span>?<a class="headerlink" href="#q5-given-any-constant-number-k-what-is-lim-x-to-0-cot-2kx-2kx-k" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Note that similar to <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span>, we can also say <span class="math notranslate nohighlight">\(\lim_{x \to 0}\frac{x}{sin(x)} = 1\)</span>.</p>
+<p>Also remember that <span class="math notranslate nohighlight">\(tan(x) = \frac{sin(x)}{cos(x)}\)</span>, so <span class="math notranslate nohighlight">\(cot(x) = \frac{cos(x)}{sin(x)}\)</span>
+We can solve for the limit as follows:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to 0} \cot(2kx)2kx + k &amp;= \lim_{x \to 0} \frac{cos(2kx)2kx}{sin(2kx)} + k \\
+&amp;= \lim_{x \to 0} \frac{2kx}{sin(2kx)} \lim_{x \to 0} cos(2kx) + \lim_{x \to 0} k \\
+&amp;= 1 \cdot 1 + k \\
+&amp;= 1 + k
+\end{aligned}\end{split}\]</div>
+    </div>
+</div></section>
 <section id="q6-find-the-limit-lim-x-to-0-frac-sin-e-cos-x-x-if-it-exists">
 <h3>Q6: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(e\cos(x))}{x}\)</span>. (if it exists)<a class="headerlink" href="#q6-find-the-limit-lim-x-to-0-frac-sin-e-cos-x-x-if-it-exists" title="Permalink to this headline"></a></h3>
-</section>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to 0} \frac{\sin(e\cos(x))}{x} &amp;= \lim_{x \to 0} \frac{e\cos(x)\sin(e\cos(x))}{e\cos(x) \cdot x} \\
+&amp;= \lim_{x \to 0} \frac{e\cos(x)}{x} \lim_{x \to 0} \frac{sin(e\cos(x))}{e\cos(x)} \\
+ &amp;= \lim_{x \to 0} \frac{e\cos(x)}{x} \cdot 1 \\
+ &amp;= \frac{ \lim_{x \to 0}e\cos(x)}{ \lim_{x \to 0}x} \\
+ &amp;= \frac{e\cos(0)}{ \lim_{x \to 0} x} \\
+ &amp;= \frac{e}{ \lim_{x \to 0} x} \\
+ &amp;=  e\lim_{x \to 0}\frac{1}{ x}
+\end{aligned}\end{split}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \frac{1}{x} = \frac{1}{0^+} = \infty\)</span> and <span class="math notranslate nohighlight">\(\lim_{x \to 0^-} \frac{1}{x} = \frac{1}{0^-} = -\infty\)</span>, we get that <span class="math notranslate nohighlight">\(e \lim_{x \to 0}\frac{1}{x} \text{DNE }\)</span> (Does not exist).</p>
+    </div>
+</div></section>
 </section>
 </section>
 

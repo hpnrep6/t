@@ -185,15 +185,15 @@ Looking at the left and right side limits, we get
 
 .. math::
     \begin{aligned}
-    \lim_{h \to 0^-} \frac{f(0 + h) - f(0)}{h} &= \lim_{x \to 0^-} \frac{1}{h^\frac{1}{3}}
-    &= \lim_{x \to 0^-} \frac{1}{0^-}
+    \lim_{h \to 0^-} \frac{f(0 + h) - f(0)}{h} &= \lim_{x \to 0^-} \frac{1}{h^\frac{1}{3}} \\
+    &= \lim_{x \to 0^-} \frac{1}{0^-} \\
     &= -\infty
     \end{aligned}
 
 .. math::
     \begin{aligned}
-    \lim_{h \to 0^+} \frac{f(0 + h) - f(0)}{h} &= \lim_{x \to 0^+} \frac{1}{h^\frac{1}{3}}
-    &= \lim_{x \to 0^+} \frac{1}{0^+}
+    \lim_{h \to 0^+} \frac{f(0 + h) - f(0)}{h} &= \lim_{x \to 0^+} \frac{1}{h^\frac{1}{3}} \\
+    &= \lim_{x \to 0^+} \frac{1}{0^+} \\
     &= \infty
     \end{aligned}
 

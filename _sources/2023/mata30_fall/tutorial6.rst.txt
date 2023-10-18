@@ -216,7 +216,10 @@ Midterm Review
 --------------
 
 Q3: Find :math:`\lim_{x \to 2} \frac{sin^3(4x - 8)}{2x - 4}`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Q4: Find the horizontal asympototes of :math:`f(x) = 2x + \sqrt{4x^2+3}`
+Q4: Find the horizontal asympototes of :math:`f(x) = 2x + \sqrt{4x^2+3}`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Q5: Find :math:`\lim_{x \to -1} (x + 1)^2cos(\frac{1}{x + 1})`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

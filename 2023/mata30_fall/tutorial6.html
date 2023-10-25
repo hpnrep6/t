@@ -22,7 +22,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="MATA33 Winter 2023" href="../mata33_winter/mata33.html" />
+    <link rel="next" title="Tutorial Week 7" href="tutorial7.html" />
     <link rel="prev" title="Tutorial Week 5" href="tutorial5.html" /> 
 </head>
 
@@ -85,11 +85,16 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 6</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#midterm-rundown">Midterm Rundown</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#derivative-notation">Derivative Notation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#derivative-rules">Derivative Rules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#common-derivatives">Common derivatives</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#derivative-practice">Derivative Practice</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#derivative-notation">Derivative Notation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#derivative-rules">Derivative Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#common-derivatives">Common derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#derivative-practice">Derivative Practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#logarithmic-differentiation">Logarithmic Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#implicit-differentiation">Implicit Differentiation</a></li>
 </ul>
 </li>
 </ul>
@@ -412,95 +417,16 @@ familiarize you to how everything’s going to work.</p>
 </ul>
 </section>
 </section>
-<section id="derivative-notation">
-<h2>Derivative Notation<a class="headerlink" href="#derivative-notation" title="Permalink to this headline"></a></h2>
-<strike><p>Now that we’ve gone through how the midterm, let’s move on to something not on the midterm.</p>
-</strike><p>There are two types of notation used to represent derivatives: Leibniz’s notation and Lagrange’s notation.</p>
-<section id="leibniz-s-notation">
-<h3>Leibniz’s notation<a class="headerlink" href="#leibniz-s-notation" title="Permalink to this headline"></a></h3>
-<p>In Leibniz’s notation, to take the derivative of something, you prepend it with <span class="math notranslate nohighlight">\(\frac{d}{dx}\)</span>. For example, to take
-the derivative of g(x), you would write <span class="math notranslate nohighlight">\(\frac{d}{dx}g(x)\)</span>. Often times, this gets “simplified” to <span class="math notranslate nohighlight">\(\frac{dg(x)}{dx}\)</span> or <span class="math notranslate nohighlight">\(\frac{dg}{dx}\)</span>.</p>
-<p>For higher order derivative, we write the order as an exponent of the differential operator, such as <span class="math notranslate nohighlight">\(\frac{d^5}{dx^5}f(x)\)</span>.</p>
-</section>
-<section id="lagrange-s-notation">
-<h3>Lagrange’s notation<a class="headerlink" href="#lagrange-s-notation" title="Permalink to this headline"></a></h3>
-<p>In lagrange’s notation, we use prime marks ( ‘ ) to denote the derivative of a function, i.e. <span class="math notranslate nohighlight">\(f'(x)\)</span> is the derivative of <span class="math notranslate nohighlight">\(f(x)\)</span>. Of course, it
-isn’t exactly practical to keep writing the prime marks for higher order derivatives, so we simply write the derivative order number directly. For example, <span class="math notranslate nohighlight">\(f^{(12)}(x)\)</span>.</p>
-</section>
-<section id="evaluating-derivative">
-<h3>Evaluating derivative<a class="headerlink" href="#evaluating-derivative" title="Permalink to this headline"></a></h3>
-<p>If you want to evaluate a derivative at a point, we write a vertical bar after the derivative and write the value we’re evaluating at as a subscript after the bar.</p>
-<p>For example, <span class="math notranslate nohighlight">\(\frac{df(x)}{dx} |_{x = 3}\)</span>.</p>
-</section>
-</section>
-<section id="derivative-rules">
-<h2>Derivative Rules<a class="headerlink" href="#derivative-rules" title="Permalink to this headline"></a></h2>
-<p>There are a few derivative rules that make our lives a lot easier when computing derivatives (do you know anyone who would enjoy using the limit definition of a derivative to calculate something like the derivative of <span class="math notranslate nohighlight">\(\sqrt{sin(cos(x^5)) + ln(x) - 3x^{3x}\)</span>?)</p>
-<ul class="simple">
-<li><p>Constant multiple rule: <span class="math notranslate nohighlight">\(\frac{d}{dx} cf(x) = cf'(x)\)</span>.</p></li>
-<li><p>Sum/difference rule: <span class="math notranslate nohighlight">\(\frac{d}{dx} f(x) + g(x) = f'(x) + g'(x)\)</span></p></li>
-<li><p>Product rule: <span class="math notranslate nohighlight">\(\frac{d}{dx}(f(x) \cdot g(x)) = f(x)g'(x) + f'(x)g(x)\)</span></p></li>
-<li><p>Quotient rule: <span class="math notranslate nohighlight">\(\frac{d}{dx} \frac{f(x)}{g(x)} = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}\)</span></p></li>
-<li><p>Chain rule: <span class="math notranslate nohighlight">\(\frac{d}{dx} f(g(x)) = f'(g(x))\cdot g'(x)\)</span></p></li>
-</ul>
-</section>
-<section id="common-derivatives">
-<h2>Common derivatives<a class="headerlink" href="#common-derivatives" title="Permalink to this headline"></a></h2>
-<p>Just like how we have generalised derivative rules, we also have some rules for some specific commonly encountered functions.</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx}k = 0\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} x^n = nx^{n-1}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} sin(x) = cos(x)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} cos(x) = -sin(x)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} tan(x) = sec^2(x)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} k^x = ln(k)k^x\)</span> (Special case: <span class="math notranslate nohighlight">\(\frac{d}{dx} e^x = e^x\)</span>)</p></li>
-<li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} log_a(x) = \frac{1}{aln(x)}\)</span> (Special case: <span class="math notranslate nohighlight">\(\frac{d}{dx} ln(x) = \frac{1}{x}\)</span>)</p></li>
-</ul>
-</section>
-<section id="derivative-practice">
-<h2>Derivative Practice<a class="headerlink" href="#derivative-practice" title="Permalink to this headline"></a></h2>
-<section id="q1-let-f-x-x-3-h-be-some-function-defined-in-terms-of-f-x-and-frac-dh-df-3-2x-find-frac-dh-dx">
-<h3>Q1: Let <span class="math notranslate nohighlight">\(f(x) = x^3\)</span>. <span class="math notranslate nohighlight">\(h\)</span> be some function defined in terms of <span class="math notranslate nohighlight">\(f(x)\)</span>, and <span class="math notranslate nohighlight">\(\frac{dh}{df} = 3 + 2x\)</span>. Find <span class="math notranslate nohighlight">\(\frac{dh}{dx}\)</span>.<a class="headerlink" href="#q1-let-f-x-x-3-h-be-some-function-defined-in-terms-of-f-x-and-frac-dh-df-3-2x-find-frac-dh-dx" title="Permalink to this headline"></a></h3>
-<div class="answer-container">
-   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
-   <div class="answer"><p>Think about what it means if f is a function of x. In this situation, h being a function defined in terms of f(x) means that h is wrriten in the form of <span class="math notranslate nohighlight">\(h(f(x)) = something\)</span>, such as <span class="math notranslate nohighlight">\(h(f(x)) = f(x)^3\)</span>.</p>
-<p>We can use chain rule here. Because h is written in the form of <span class="math notranslate nohighlight">\(h(f(x))\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-    \frac{d}{dx} h(f(x)) &amp;= h'(f(x))f'(x) \\
-    &amp;= \frac{dh}{df} \frac{df}{dx} \\
-    &amp;= (3 + 2x) \cdot \frac{d}{dx}x^3 \\
-    &amp;= (3 + 2x) \cdot 3x^2 \\
-    &amp;= 9x^2 + 6x^3
-\end{aligned}\end{split}\]</div>
-    </div>
-</div></section>
-<section id="q2-find-the-derivative-of-x-2-cos-x">
-<h3>Q2: Find the derivative of <span class="math notranslate nohighlight">\(|x + 2| - cos(x)\)</span>.<a class="headerlink" href="#q2-find-the-derivative-of-x-2-cos-x" title="Permalink to this headline"></a></h3>
-<div class="answer-container">
-   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
-   <div class="answer"><p>Piecewise functions have piecewise derivatives, but with some extra care taken.</p>
-<p>We know that <span class="math notranslate nohighlight">\(|x + 2| = \begin{cases} x + 2 \;\;\;\;\;\;\; \text{      if } x \ge -2 \\ -(x+2) \; \text {   if } x \lt -2 \end{cases}\)</span>.</p>
-<p>So let’s do the same for the derivative too. But keep in mind that for a derivative to exist, the left and right derivative have to be equal.</p>
-<p><span class="math notranslate nohighlight">\(\frac{d}{dx}|x+2| - cos(x) = \begin{cases} \frac{d}{dx}x + 2 - cos(x) \;\;\;\;\;\;\;\; \text{      if } x \gt -2 \\ ? \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\text{ if } x = -2 \\ \frac{d}{dx}  -(x+2) - cos(x) \; \text {   if } x \lt -2 \end{cases}\)</span></p>
-<p>We can find that</p>
-<p><span class="math notranslate nohighlight">\(\frac{d}{dx}x + 2 - cos(x) = 1 + sin(x)\)</span> and <span class="math notranslate nohighlight">\(\frac{d}{dx}-(x + 2) - cos(x) = -1 + sin(x)\)</span>.</p>
-<p>At x = 2, we have the left and right derivatives <span class="math notranslate nohighlight">\(1 + sin(-2) \neq -1 + sin(-2)\)</span> so the derivative at x = -2 does not exist.</p>
-<p>Thus the derivative is:</p>
-<p><span class="math notranslate nohighlight">\(\frac{d}{dx}|x+2| - cos(x) = \begin{cases} 1 + sin(x) \;\;\;\; \text{      if } x \gt -2 \\ DNE \;\;\;\;\;\;\;\;\;\;\;\text{ if } x = -2 \\ -1 + sin(x) \; \text {   if } x \lt -2 \end{cases}\)</span></p>
-    </div>
-</div></section>
-</section>
 <section id="midterm-review">
 <h2>Midterm Review<a class="headerlink" href="#midterm-review" title="Permalink to this headline"></a></h2>
-<section id="q3-find-lim-x-to-2-frac-sin-3-4x-8-2x-4">
-<h3>Q3: Find <span class="math notranslate nohighlight">\(\lim_{x \to 2} \frac{sin^3(4x - 8)}{2x - 4}\)</span>.<a class="headerlink" href="#q3-find-lim-x-to-2-frac-sin-3-4x-8-2x-4" title="Permalink to this headline"></a></h3>
+<section id="q1-find-lim-x-to-2-frac-sin-3-4x-8-2x-4">
+<h3>Q1: Find <span class="math notranslate nohighlight">\(\lim_{x \to 2} \frac{sin^3(4x - 8)}{2x - 4}\)</span>.<a class="headerlink" href="#q1-find-lim-x-to-2-frac-sin-3-4x-8-2x-4" title="Permalink to this headline"></a></h3>
 </section>
-<section id="q4-find-the-horizontal-asympototes-of-f-x-2x-sqrt-4x-2-3">
-<h3>Q4: Find the horizontal asympototes of <span class="math notranslate nohighlight">\(f(x) = 2x + \sqrt{4x^2+3}\)</span>.<a class="headerlink" href="#q4-find-the-horizontal-asympototes-of-f-x-2x-sqrt-4x-2-3" title="Permalink to this headline"></a></h3>
+<section id="q2-find-the-horizontal-asympototes-of-f-x-2x-sqrt-4x-2-3">
+<h3>Q2: Find the horizontal asympototes of <span class="math notranslate nohighlight">\(f(x) = 2x + \sqrt{4x^2+3}\)</span>.<a class="headerlink" href="#q2-find-the-horizontal-asympototes-of-f-x-2x-sqrt-4x-2-3" title="Permalink to this headline"></a></h3>
 </section>
-<section id="q5-find-lim-x-to-1-x-1-2cos-frac-1-x-1">
-<h3>Q5: Find <span class="math notranslate nohighlight">\(\lim_{x \to -1} (x + 1)^2cos(\frac{1}{x + 1})\)</span>.<a class="headerlink" href="#q5-find-lim-x-to-1-x-1-2cos-frac-1-x-1" title="Permalink to this headline"></a></h3>
+<section id="q3-find-lim-x-to-1-x-1-2cos-frac-1-x-1">
+<h3>Q3: Find <span class="math notranslate nohighlight">\(\lim_{x \to -1} (x + 1)^2cos(\frac{1}{x + 1})\)</span>.<a class="headerlink" href="#q3-find-lim-x-to-1-x-1-2cos-frac-1-x-1" title="Permalink to this headline"></a></h3>
 </section>
 </section>
 </section>
@@ -510,7 +436,7 @@ isn’t exactly practical to keep writing the prime marks for higher order deriv
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial5.html" class="btn btn-neutral float-left" title="Tutorial Week 5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../mata33_winter/mata33.html" class="btn btn-neutral float-right" title="MATA33 Winter 2023" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial7.html" class="btn btn-neutral float-right" title="Tutorial Week 7" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

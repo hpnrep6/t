@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial Week 2</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../_static/js/toggle.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tutorial Week 3" href="tutorial3.html" />
+    <link rel="prev" title="MATA30 Fall 2022" href="mata30.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> 
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../general.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general.html#contact-information">Contact Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sandbox.html">Sandbox</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2023/2023.html">2023</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2023/mata30_fall/mata30.html">MATA30 Fall 2023</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html#what-are-tutorials">What are tutorials?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html#expectations-when-showing-your-work">Expectations when showing your work</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html#sets">Sets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html#quantifiers-and-shorthands">Quantifiers and shorthands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html#functions-and-graphs">Functions and graphs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html#some-terminology-for-functions">Some terminology for functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html#solving-inequalities">Solving inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial2.html#exponentials-and-logarithms">Exponentials and Logarithms</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata30_fall/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial3.html#trigonometric-and-inverse-trigonometric-functions">Trigonometric and inverse trigonometric functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial3.html#inverse-trigonometric-practice">Inverse trigonometric practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial3.html#finite-limits">Finite Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata30_fall/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial4.html#indeterminate-form">Indeterminate Form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial4.html#limit-identities">Limit Identities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial4.html#squeeze-theorem">Squeeze Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial4.html#absolute-values">Absolute Values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial4.html#more-examples">More examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata30_fall/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial5.html#continuity">Continuity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial5.html#intermediate-value-theorem">Intermediate Value Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial5.html#limit-definition-of-a-derivative">Limit definition of a derivative</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata30_fall/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial6.html#midterm-rundown">Midterm Rundown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial6.html#derivative-notation">Derivative Notation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial6.html#derivative-rules">Derivative Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial6.html#common-derivatives">Common derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial6.html#derivative-practice">Derivative Practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata30_fall/tutorial6.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../2023/mata33_winter/mata33.html">MATA33 Winter 2023</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial2.html#graphing-linear-inequalities">Graphing Linear Inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial2.html#ftlp-and-feasable-regions">FTLP and Feasable regions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial2.html#finding-optimal-solutions-to-linear-programming-problems">Finding optimal solutions to Linear Programming problems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial3.html#unbounded-regions">Unbounded Regions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial3.html#numbers-of-solutions">Numbers of Solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial3.html#matrices">Matrices</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial4.html#proving-with-matrices">Proving with Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial4.html#gaussian-elimination-and-systems-of-equations">Gaussian Elimination and Systems of Equations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial5.html#gaussian-elimination-and-number-of-solutions">Gaussian Elimination and Number of Solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial5.html#homogeneous-systems">Homogeneous Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial5.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial6.html#inverting-matrices">Inverting Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial6.html#solving-system-of-equations-with-inverse-matrices">Solving System of Equations with Inverse Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial6.html#equations-with-inverse-matrices">Equations with Inverse Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial6.html#determinants">Determinants</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial7.html#cramer-s-rule">Cramer’s Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial7.html#domains-of-multivariable-functions">Domains of multivariable functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial7.html#level-sets">Level sets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial8.html#partial-derivatives">Partial Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial8.html#marginal-costs">Marginal Costs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial9.html#higher-order-partial-derivatives">Higher order Partial Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial9.html#implicit-functions-and-higher-order-partial-derivatives">Implicit functions and Higher order Partial Derivatives</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial10.html#chain-rule">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial10.html#tangent-planes">Tangent Planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial10.html#critical-points">Critical Points</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial11.html#hessian-matrix-and-local-extrema">Hessian Matrix and Local Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial11.html#multivariable-optimization-and-lagrange-multipliers">Multivariable Optimization and Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata33_winter/tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata33_winter/tutorial12.html#changing-order-of-integration">Changing Order of Integration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../2023/mata36_winter/mata36.html">MATA36 Winter 2023</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial2.html#rule-0pt-0ex"><span class="math notranslate nohighlight">\(\rule{0pt}{0ex}\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial3.html#assignment-review">Assignment Review</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial3.html#integral-practice">Integral Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial4.html#integral-practice">Integral Practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial4.html#partial-fraction-decomposition">Partial Fraction Decomposition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial5.html#trigonometric-substitution">Trigonometric Substitution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial5.html#area-between-functions">Area Between Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial5.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial6.html#volumes-using-cross-sectional-areas">Volumes using Cross-Sectional Areas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial6.html#volumes-of-revolution">Volumes of Revolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial6.html#volumes-by-cylindrical-shells">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial7.html#arc-length-of-curves">Arc length of curves</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial7.html#simpson-s-rule">Simpson’s Rule</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial8.html#improper-integrals">Improper Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial8.html#comparison-test">Comparison Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial9.html#limits-convergence-and-divergence-of-sequences">Limits, convergence, and divergence of Sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial9.html#monotone-convergence-theorem-mct-and-convergence">Monotone Convergence Theorem (MCT) and Convergence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial9.html#limits-of-monotonic-sequences">Limits of Monotonic Sequences</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial10.html#recursively-defined-functions">Recursively defined Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial10.html#conditions-for-convergent-series">Conditions for convergent series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial10.html#geometric-series">Geometric Series</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial11.html#integral-test">Integral Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial11.html#comparison-test">Comparison Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial11.html#telescoping-series">Telescoping Series</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2023/mata36_winter/tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial12.html#alternating-series">Alternating Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2023/mata36_winter/tutorial12.html#ratio-test">Ratio Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../2022.html">2022</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="mata30.html">MATA30 Fall 2022</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#writing-math">Writing Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#factoring">Factoring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lines">Lines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sketching-functions">Sketching functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#function-inverses">Function inverses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#absolute-values">Absolute values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inequalities">Inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logarithms-and-exponents">Logarithms and exponents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#function-composition">Function composition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#inverse-trig">Inverse Trig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#inverse-trig-functions">Inverse Trig Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#inverse-trig-cancellation-rules">Inverse Trig Cancellation Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#graphs-of-limits">Graphs of Limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#calculating-limits">Calculating Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial4.html#proof-of-trigonometric-limit-identities">Proof of Trigonometric Limit Identities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial4.html#squeeze-theorem">Squeeze Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial4.html#indeterminant-forms">Indeterminant Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial4.html#conjugates">Conjugates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial4.html#finding-limits">Finding Limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial4.html#trigonometric-limits">Trigonometric Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#continuity">Continuity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#finding-derivatives-using-the-limit-definition-of-a-derivative">Finding Derivatives using the Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#differentiability-using-the-limit-definition-of-a-derivative">Differentiability using the Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#intermediate-value-theorem">Intermediate Value Theorem</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#graphing-differentiability">Graphing differentiability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#derivative-notation">Derivative Notation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#derivatives-with-absolute-values">Derivatives with absolute values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#computing-derivatives">Computing derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#derivative-tables">Derivative tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#piecewise-function-differentiability">Piecewise function differentiability</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#implicit-differentiation">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#exponential-derivatives">Exponential Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#inverse-trigonometric-derivatives">Inverse Trigonometric Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#logarithmitic-differentiation">Logarithmitic Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#related-rates">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#inverse-function-derivatives">Inverse Function Derivatives</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#curve-sketching">Curve Sketching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#sinusodial-function-derivatives">Sinusodial Function Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#test-for-absolute-extrema">Test for Absolute Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#drawing-functions">Drawing Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial9_term_test_2.html">Term Test 2 Supplementary Practice</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9_term_test_2.html#q1-definitions">Q1: Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9_term_test_2.html#q2-continuity-ivt">Q2: Continuity &amp; IVT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9_term_test_2.html#q3-limit-definition-of-a-derivative">Q3: Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9_term_test_2.html#q4-5-computing-derivatives">Q4/5: Computing Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9_term_test_2.html#q6-related-rates">Q6: Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9_term_test_2.html#q7-absolute-extrema">Q7: Absolute Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9_term_test_2.html#q8-curve-sketching">Q8: Curve Sketching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9_term_test_2.html#q9-tangent-lines">Q9: Tangent Lines</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9.html#l-hopital-s-rule">L’Hopital’s Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9.html#l-hopital-s-rule-with-logs">L’Hopital’s Rule with Logs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9.html#mean-value-theorem">Mean Value Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9.html#linearization">Linearization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial10.html#exponential-modelling">Exponential Modelling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial10.html#newton-s-law-of-cooling">Newton’s Law of Cooling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial10.html#optimization">Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial11.html#computing-integrals">Computing Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial11.html#riemann-sums">Riemann Sums</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial11.html#approximating-integrals-using-riemann-sums">Approximating Integrals using Riemann Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial12.html#integral-theorems">Integral Theorems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial12.html#fundamental-theorem-of-calculus-i">Fundamental Theorem Of Calculus I</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial12.html#subtitution-method-aka-u-substitution">Subtitution Method (aka u-substitution)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html"></a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../2022.html">2022</a> &raquo;</li>
+          <li><a href="mata30.html">MATA30 Fall 2022</a> &raquo;</li>
+      <li>Tutorial Week 2</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/hpnrep6/t/blob/development/source/2022/mata30_fall/tutorial2.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tutorial-week-2">
+<span id="mata30-fall-tut-2"></span><h1>Tutorial Week 2<a class="headerlink" href="#tutorial-week-2" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/ams']},
+tex: {packages: {'[+]': ['ams']}}
+};
+</script><p>Welcome to your first tutorial. In this tutorial, we’ll be reviewing some prerequisite material
+you’re already expected to understand as well as week 1 material.</p>
+<section id="writing-math">
+<h2>Writing Math<a class="headerlink" href="#writing-math" title="Permalink to this headline"></a></h2>
+<section id="assigning-values-to-variables">
+<h3>Assigning values to variables<a class="headerlink" href="#assigning-values-to-variables" title="Permalink to this headline"></a></h3>
+<p>You may be familiar with variables like <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span> from high school, but on something like a test or written assignment,
+how would you define a new variable?</p>
+<p>One way would be to use the word “let”, such as:</p>
+<p><span class="math notranslate nohighlight">\(\text{Let } x = 7\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{Let } f(x) = x^2 + 6\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{Let } g(t) = t^{84} + 65.99 \text{ represent the rising cost of internet.}\)</span></p>
+<p>Of course, there are many other ways to define a variable, and you might notice some of them while doing your homework/readings.</p>
+</section>
+<section id="showing-your-work">
+<h3>Showing your work<a class="headerlink" href="#showing-your-work" title="Permalink to this headline"></a></h3>
+<p>On a test, try to adequetely justify each step in your solution, as simply stating the answer to a complicated problem may not earn
+you a lot of marks (or if any at all).</p>
+<p>For example, if you were given the question:</p>
+<p>What are the roots of <span class="math notranslate nohighlight">\(f(x) = 4x + 1\)</span>?</p>
+<p>Your solution could be something like:</p>
+<p><span class="math notranslate nohighlight">\(f(x) \text{ has a root when } f(x) = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{So let } f(x) = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(\text{so that we have }\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+0 &amp;= 4x + 1 \\
+-4x &amp;= 1 \\
+x &amp;= \dfrac{1}{-4}
+\end{aligned}\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(\text{Therefore } f(x) \text{ has a root at } x = \dfrac{1}{-4} \text{.}\)</span></p>
+</section>
+</section>
+<section id="factoring">
+<h2>Factoring<a class="headerlink" href="#factoring" title="Permalink to this headline"></a></h2>
+<p>It probably has been a few months since the last time you factored something, so I thought
+it’ll be good that we review this.</p>
+<p>One thing that should sound familiar is the term “perfect square”.</p>
+<p>A perfect square is an integer that is the square (<span class="math notranslate nohighlight">\(x^2\)</span>) of another integer.</p>
+<p>For example, the perfect square <span class="math notranslate nohighlight">\(9 = 3^2\)</span>.</p>
+<section id="common-factors">
+<h3>Common factors<a class="headerlink" href="#common-factors" title="Permalink to this headline"></a></h3>
+<p>If two terms have a common factor, then you can “move” that factor out, for example <span class="math notranslate nohighlight">\(3x + 3y = 3(x + y)\)</span>
+where <span class="math notranslate nohighlight">\(3\)</span> is the common factor of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p>
+</section>
+<section id="difference-of-squares">
+<h3>Difference of squares<a class="headerlink" href="#difference-of-squares" title="Permalink to this headline"></a></h3>
+<p>If you had an equation in the form <span class="math notranslate nohighlight">\(x^2 - y^2\)</span>,
+then you can factor it into <span class="math notranslate nohighlight">\((x - y)(x + y)\)</span>. For example, <span class="math notranslate nohighlight">\(x^2 - 9 = (x-3)(x+3)\)</span></p>
+<p>In this case, <span class="math notranslate nohighlight">\(9 = 3^2\)</span>, but the second term (<span class="math notranslate nohighlight">\(y\)</span>) doesn’t have to be an integer. For example,
+you could have <span class="math notranslate nohighlight">\(x^2 - 2 = (x - \sqrt{2})(x + \sqrt{2})\)</span> since <span class="math notranslate nohighlight">\(2 = (\sqrt{2})^2\)</span>.</p>
+</section>
+<section id="cross-multiplication-method-for-quadratics">
+<h3>Cross-multiplication method (for quadratics)<a class="headerlink" href="#cross-multiplication-method-for-quadratics" title="Permalink to this headline"></a></h3>
+<p>You could find the full diagrams and stuff by googling cross-multiplication method, so
+here’s a somewhat simplified version just to get the essentials down:</p>
+<p>Say you have the quadratic <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span> and let the factored form be <span class="math notranslate nohighlight">\((gx + j)(hx + k)\)</span>.
+Then you need to find the values of <span class="math notranslate nohighlight">\(g, j, h, k\)</span> such that:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+a &amp;= gh \text{ (The numbers preceding x in the factored form)} \\
+c &amp;= jk \text{ (The numbers being subtracted in the factored form)} \\
+b &amp;= gk + jh \text{ (Cross multiply)}
+\end{aligned}\end{split}\]</div>
+</section>
+<section id="quadratic-equation">
+<h3>Quadratic equation<a class="headerlink" href="#quadratic-equation" title="Permalink to this headline"></a></h3>
+<p>If you still can’t manage to factor your quadratic equation using the previous methods,
+then you can get the factors by solving the quadratic equation:</p>
+<p><span class="math notranslate nohighlight">\(x = \dfrac{ -b \pm \sqrt{b^2 - 4ac}}{2a}\)</span></p>
+</section>
+</section>
+<section id="lines">
+<h2>Lines<a class="headerlink" href="#lines" title="Permalink to this headline"></a></h2>
+<section id="q1-what-is-the-equation-of-the-line-with-a-x-intercept-of-3-and-a-y-intercept-of-5">
+<h3>Q1: What is the equation of the line with a x-intercept of <span class="math notranslate nohighlight">\(-3\)</span> and a y-intercept of <span class="math notranslate nohighlight">\(5\)</span>?<a class="headerlink" href="#q1-what-is-the-equation-of-the-line-with-a-x-intercept-of-3-and-a-y-intercept-of-5" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>From what you know about x and y intercepts, you should be able to identify that <span class="math notranslate nohighlight">\((-3, 0)\)</span> and
+<span class="math notranslate nohighlight">\((0, 5)\)</span> are points on the line. You can find the slope using the slope formula</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+m &amp;= \dfrac{y_2 - y_1}{x_2 - x_1} \\
+&amp;= \dfrac{0 - 5}{ -(-3) - 0} \\
+&amp;= -\dfrac{5}{3}
+\end{aligned}\end{split}\]</div>
+<p>You can plug this into the slope-intercept form of a line, that is <span class="math notranslate nohighlight">\(y = mx + b\)</span>
+which gives you <span class="math notranslate nohighlight">\(y = -\dfrac{5}{3}x + 5\)</span> (recall how <span class="math notranslate nohighlight">\(5\)</span> is the y-intercept?).</p>
+   </div>
+</div></section>
+<section id="q2-find-the-equation-of-a-line-perpendicular-to-3x-2y-4-0">
+<h3>Q2: Find the equation of a line perpendicular to <span class="math notranslate nohighlight">\(-3x + 2y + 4 = 0\)</span>.<a class="headerlink" href="#q2-find-the-equation-of-a-line-perpendicular-to-3x-2y-4-0" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>First, you want to turn this into slope-intercept form, so move everything but <span class="math notranslate nohighlight">\(y\)</span>
+to the right side to get <span class="math notranslate nohighlight">\(y = \dfrac{3}{2}x - \dfrac{4}{2} = \dfrac{3}{2}x - 2\)</span>.</p>
+<p>This gives you the slope of the line, which is <span class="math notranslate nohighlight">\(\dfrac{3}{2}\)</span>. The slope perpendicular
+to this would be the negative reciprocol (that is, <span class="math notranslate nohighlight">\(m_2 = -\dfrac{1}{m_1}\)</span>). So you take
+the negative reciprocol of <span class="math notranslate nohighlight">\(\dfrac{3}{2}\)</span> to get <span class="math notranslate nohighlight">\(m_2 = -\dfrac{2}{3}\)</span>.</p>
+<p>So any line with the slope <span class="math notranslate nohighlight">\(-\dfrac{2}{3}\)</span> is perpendicular, a simple example being <span class="math notranslate nohighlight">\(y = -\dfrac{2}{3}x\)</span></p>
+   </div>
+</div></section>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<section id="q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1">
+<h3>Q3: Suppose you have the function <span class="math notranslate nohighlight">\(f(4x + 1) = \dfrac{3x}{2x + 1}\)</span>.<a class="headerlink" href="#q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1" title="Permalink to this headline"></a></h3>
+<ol class="loweralpha simple">
+<li><p>What is <span class="math notranslate nohighlight">\(f(5)\)</span>?</p></li>
+</ol>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>First of all, this means that you want to find the value of <span class="math notranslate nohighlight">\(f(5)\)</span>, but the only information
+you have about the function is <span class="math notranslate nohighlight">\(f(4x + 1) = \dfrac{3x}{2x + 1}\)</span>. So how can you get
+<span class="math notranslate nohighlight">\(f(5)\)</span> in there? You would make <span class="math notranslate nohighlight">\(f(4x + 1) = f(5)\)</span>, which means you need to find the value
+of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(4x + 1 = 5\)</span>.</p>
+<p>Solving this equation gets us</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+4x + 1 &amp;= 5 \\
+4x &amp;= 5 - 1 \\
+4x &amp;= 4 \\
+x &amp;= 1
+\end{aligned}\end{split}\]</div>
+<p>So to get <span class="math notranslate nohighlight">\(f(5)\)</span>, you need <span class="math notranslate nohighlight">\(x = 1\)</span>. You can now just subtitute <span class="math notranslate nohighlight">\(x = 1\)</span> into
+<span class="math notranslate nohighlight">\(\dfrac{3x}{2x + 1}\)</span> which gets you</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dfrac{3x}{2x + 1} &amp;= \dfrac{3(1)}{2(1) + 1} \\
+&amp;= \dfrac{3}{3} \\
+&amp;= 1
+\end{aligned}\end{split}\]</div>
+   </div>
+</div><ol class="loweralpha simple" start="2">
+<li><p>What is <span class="math notranslate nohighlight">\(f(x)\)</span> for an arbitrary x?</p></li>
+</ol>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>For this, like the first question, you want to find a value of x that satisfies every value
+put into <span class="math notranslate nohighlight">\(f(x)\)</span>. To avoid having a multiple <span class="math notranslate nohighlight">\(x\)</span> variables in your answer, lets reword
+it so that we’re looking for the value of <span class="math notranslate nohighlight">\(f(t)\)</span> for an arbitrary <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p>You need a value of <span class="math notranslate nohighlight">\(x\)</span> for every <span class="math notranslate nohighlight">\(t\)</span>, so let <span class="math notranslate nohighlight">\(t = 4x + 1\)</span>.</p>
+<p>Solving for <span class="math notranslate nohighlight">\(x\)</span> gives you</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+4x + 1 &amp;= t \\
+4x &amp;= t - 1 \\
+x &amp;= \dfrac{t - 1}{4}
+\end{aligned}\end{split}\]</div>
+<p>Now that you have <span class="math notranslate nohighlight">\(x\)</span> in terms of <span class="math notranslate nohighlight">\(t\)</span>, you can subtitute your new value of <span class="math notranslate nohighlight">\(x\)</span>
+into <span class="math notranslate nohighlight">\(\dfrac{3x}{2x + 1}\)</span> which gives you <span class="math notranslate nohighlight">\(f(t) = \dfrac{3(\dfrac{t-1}{4})}{2(\dfrac{t - 1}{4}) + 1} = \dfrac{3t-3}{2(t+1)}\)</span></p>
+<p>With this, you can say that <span class="math notranslate nohighlight">\(f(x) = \dfrac{3x-3}{2(x+1)}\)</span></p>
+   </div>
+</div><ol class="loweralpha simple" start="3">
+<li><p>What is the natural domain of <span class="math notranslate nohighlight">\(f(x)\)</span>?</p></li>
+</ol>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>There is an aymptote when <span class="math notranslate nohighlight">\(2(x+1) = 0\)</span>, which has the solution</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dfrac{2(x+1)}{2} &amp;= \dfrac{0}{2} \\
+x + 1 &amp;= 0 \\
+x &amp;= -1
+\end{aligned}\end{split}\]</div>
+<p>This means that the function is defined on all points but <span class="math notranslate nohighlight">\(x = -1\)</span>, so the natural
+domain is <span class="math notranslate nohighlight">\((-\infty , -1) \cup (-1, \infty )\)</span>.</p>
+   </div>
+</div></section>
+<section id="q4-what-is-the-natural-domain-of-f-x-sqrt-cos-sin-x">
+<h3>Q4: What is the natural domain of <span class="math notranslate nohighlight">\(f(x) = \sqrt{cos(sin(x))}\)</span>?<a class="headerlink" href="#q4-what-is-the-natural-domain-of-f-x-sqrt-cos-sin-x" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Since there’s a square root, you know that the domain is all values where <span class="math notranslate nohighlight">\(cos(sin(x)) \geq 0\)</span>.</p>
+<p>The range of <span class="math notranslate nohighlight">\(sin(x)\)</span> is <span class="math notranslate nohighlight">\([-1, 1]\)</span>, but if you look at the graph of <span class="math notranslate nohighlight">\(cos(x)\)</span>, it is
+positive from <span class="math notranslate nohighlight">\([-\dfrac{\pi}{2}, \dfrac{\pi}{2}]\)</span> (<span class="math notranslate nohighlight">\(\dfrac{\pi}{2} = 1.57\)</span>) so <span class="math notranslate nohighlight">\(cos(sin(x))\)</span>
+is positive for all numbers, which means the domain is <span class="math notranslate nohighlight">\((-\infty, \infty)\)</span>.</p>
+   </div>
+</div></section>
+<section id="q5-find-a-function-with-the-domain-0-3-cup-3-5">
+<h3>Q5: Find a function with the domain <span class="math notranslate nohighlight">\([0, 3) \cup (3, 5]\)</span>.<a class="headerlink" href="#q5-find-a-function-with-the-domain-0-3-cup-3-5" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>For this question, you’ll need to dig into your toolset of functions and find one that
+has a restriction on “one end” of its domain. The square root function works here, since
+the value being square rooted can’t be negative.</p>
+<p>So, let’s identify the restrictions on the domain:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(x \geq 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x \leq 5\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x \neq 3\)</span></p></li>
+</ol>
+<p>For the first restriction, you can use the function <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>.</p>
+<p>For the second restriction, you can use the function <span class="math notranslate nohighlight">\(\sqrt{5 - x}\)</span>. (or the square root of any function that is positive on <span class="math notranslate nohighlight">\((-\infty, 5]\)</span>)</p>
+<p>For the last restriction, divide your function by <span class="math notranslate nohighlight">\(x - 3\)</span>, since that will create an asympotote at <span class="math notranslate nohighlight">\(x = 3\)</span>.</p>
+<p>Now, combining these restriction, we get <span class="math notranslate nohighlight">\(f(x) = \dfrac{\sqrt{x}\sqrt{5 - x}}{x - 3} = \dfrac{\sqrt{x(5-x)}}{x-3}\)</span>.</p>
+   </div>
+</div></section>
+<section id="q6-find-the-domain-of-f-x-x-4-x-2">
+<h3>Q6: Find the domain of <span class="math notranslate nohighlight">\(f(x) = |x + 4| - x^2\)</span>.<a class="headerlink" href="#q6-find-the-domain-of-f-x-x-4-x-2" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>If you have the sum or difference of two functions (in this case <span class="math notranslate nohighlight">\(|x + 4|\)</span> and <span class="math notranslate nohighlight">\(x^2\)</span>), then the
+domain is the intersection of the two.</p>
+<p>Thus, since the domain of both functions in this case is all real numbers, the domain is <span class="math notranslate nohighlight">\(( -\infty, \infty )\)</span>.</p>
+   </div>
+</div></section>
+</section>
+<section id="sketching-functions">
+<h2>Sketching functions<a class="headerlink" href="#sketching-functions" title="Permalink to this headline"></a></h2>
+<p>Check your answers using <a class="reference external" href="https://www.desmos.com/calculator">https://www.desmos.com/calculator</a>.</p>
+<section id="q7-sketch-y-3log-2-x-4-2">
+<h3>Q7: Sketch <span class="math notranslate nohighlight">\(y = 3log_2(x + 4) - 2\)</span>.<a class="headerlink" href="#q7-sketch-y-3log-2-x-4-2" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Let’s first get the graph of <span class="math notranslate nohighlight">\(log_2(x)\)</span>.</p>
+<p>You know that <span class="math notranslate nohighlight">\(log_2(x)\)</span> is the inverse of <span class="math notranslate nohighlight">\(2^x\)</span>, so using the table of values for <span class="math notranslate nohighlight">\(2^x\)</span>:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>x</p></th>
+<th class="head"><p>y</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-2</p></td>
+<td><p>0.25</p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>4</p></td>
+</tr>
+</tbody>
+</table>
+<p>we can switch the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> columns to get the table of values for <span class="math notranslate nohighlight">\(log_2(x)\)</span>.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>x</p></th>
+<th class="head"><p>y</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.25</p></td>
+<td><p>-2</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.5</p></td>
+<td><p>-1</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>2</p></td>
+</tr>
+</tbody>
+</table>
+<p>From the equation, you can see that the following transformations were applied on the graph of <span class="math notranslate nohighlight">\(log_2(x)\)</span></p>
+<ol class="arabic simple">
+<li><p>Vertical stretch by a factor of 3</p></li>
+<li><p>Vertical shift down 2 units</p></li>
+<li><p>Horizontal shift left 4 units</p></li>
+</ol>
+<p>You can plot these transformations on the table of values and then graph.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(x - 4\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(3y - 2\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-3.75</p></td>
+<td><p>-8</p></td>
+</tr>
+<tr class="row-odd"><td><p>-3.5</p></td>
+<td><p>-5</p></td>
+</tr>
+<tr class="row-even"><td><p>-3</p></td>
+<td><p>-2</p></td>
+</tr>
+<tr class="row-odd"><td><p>-2</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>4</p></td>
+</tr>
+</tbody>
+</table>
+   </div>
+</div></section>
+<section id="q8-what-is-the-domain-of-y-3log-2-x-4-2">
+<h3>Q8: What is the domain of <span class="math notranslate nohighlight">\(y = 3log_2(x + 4) - 2\)</span>?<a class="headerlink" href="#q8-what-is-the-domain-of-y-3log-2-x-4-2" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Recall that you can only take the log of a positive number (which means 0 is also excluded), so solving
+for the inequality <span class="math notranslate nohighlight">\(x + 4 &gt; 0\)</span> gives us <span class="math notranslate nohighlight">\(x &gt; -4\)</span>. The domain is <span class="math notranslate nohighlight">\((-4, \infty)\)</span>.</p>
+   </div>
+</div></section>
+<section id="q9-sketch-y-sqrt-4-x-2">
+<h3>Q9: Sketch <span class="math notranslate nohighlight">\(y = \sqrt{4 - x^2}\)</span>.<a class="headerlink" href="#q9-sketch-y-sqrt-4-x-2" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Plot the points, and you’ll see the upper half of a circle with radius 2 centered around the origin.</p>
+<p>The equation of a circle is <span class="math notranslate nohighlight">\(x^2 + y^2 = r^2\)</span>, where <span class="math notranslate nohighlight">\(r\)</span> is the radius.</p>
+<p>So, manipulating our equation gives us</p>
+<p><span class="math notranslate nohighlight">\(y^2 = 4 - x^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(y^2 + x^2 = 2^2\)</span></p>
+<p>Which is a circle with radius 2. But, note that from the original equation, <span class="math notranslate nohighlight">\(y\)</span> is always
+positive, so we only take the part of the circle where <span class="math notranslate nohighlight">\(y \geq 0\)</span>.</p>
+   </div>
+</div></section>
+</section>
+<section id="function-inverses">
+<h2>Function inverses<a class="headerlink" href="#function-inverses" title="Permalink to this headline"></a></h2>
+<section id="q10-find-the-inverse-of-y-e-x-7">
+<h3>Q10: Find the inverse of <span class="math notranslate nohighlight">\(y = e^x - 7\)</span>.<a class="headerlink" href="#q10-find-the-inverse-of-y-e-x-7" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Switch x and y in the equation, and then solve for y. We get:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+x &amp;= e^y - 7 \\
+x + 7 &amp;= e^y \\
+ln(x + 7) &amp;= ln(e^y) \\
+ln(x + 7) &amp;= y
+\end{aligned}\end{split}\]</div>
+<p>So the inverse if <span class="math notranslate nohighlight">\(y = ln(x + 7)\)</span></p>
+   </div>
+</div></section>
+<section id="q11-find-the-inverse-of-y-x-2-restricted-on-x-geq-0">
+<h3>Q11: Find the inverse of <span class="math notranslate nohighlight">\(y = x^2\)</span> restricted on <span class="math notranslate nohighlight">\(x \geq 0\)</span>.<a class="headerlink" href="#q11-find-the-inverse-of-y-x-2-restricted-on-x-geq-0" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Without the domain restriction, <span class="math notranslate nohighlight">\(y = x^2\)</span> wouldn’t pass the horizontal
+line test and therefore wouldn’t have an inverse. But with this domain restriction,
+we can find such an inverse for the function.</p>
+<p>So you can do:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+x &amp;= y^2 \\
+\sqrt{x} &amp;= \sqrt{y^2} \\
+\sqrt{x} &amp;= |y| \\
+y &amp;= \pm \sqrt{x}
+\end{aligned}\end{split}\]</div>
+<p>But note how when you take the inverse of a function, the domain and range switch. Since your
+domain is <span class="math notranslate nohighlight">\(x \geq 0\)</span>, your range for your inverse is <span class="math notranslate nohighlight">\(y \geq 0\)</span> which means that
+the equation <span class="math notranslate nohighlight">\(y = \pm \sqrt{x}\)</span> should actually be <span class="math notranslate nohighlight">\(y = \sqrt{x}\)</span>, and this, is also
+your inverse.</p>
+   </div>
+</div></section>
+<section id="q12-let-f-x-e-x-3-1-2x-1-evaluate-f-1-dfrac-1-e-1">
+<h3>Q12: Let <span class="math notranslate nohighlight">\(f(x) = e^{x^3 - 1} + 2x - 1\)</span>. Evaluate <span class="math notranslate nohighlight">\(f^{-1}(\dfrac{1}{e} - 1)\)</span>.<a class="headerlink" href="#q12-let-f-x-e-x-3-1-2x-1-evaluate-f-1-dfrac-1-e-1" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>What we are looking for is the value of <span class="math notranslate nohighlight">\(x\)</span> that maps <span class="math notranslate nohighlight">\(f(x)\)</span> to <span class="math notranslate nohighlight">\(\dfrac{1}{e} - 1\)</span>.</p>
+<p>Make a table of values for f(x).</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>x</p></th>
+<th class="head"><p>y</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-2</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^{-9} - 5\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^{-2} - 5\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>0</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^{-1} - 1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^{7} + 4\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>When <span class="math notranslate nohighlight">\(x = 0\)</span>, we have what we want! So <span class="math notranslate nohighlight">\(f^{-1}(\dfrac{1}{e} - 1) = 0\)</span>.</p>
+   </div>
+</div></section>
+</section>
+<section id="absolute-values">
+<h2>Absolute values<a class="headerlink" href="#absolute-values" title="Permalink to this headline"></a></h2>
+<section id="q13-solve-the-equation-dfrac-x-4-x-1-5">
+<h3>Q13: Solve the equation <span class="math notranslate nohighlight">\(\dfrac{|x + 4|}{|x - 1|} = 5\)</span>.<a class="headerlink" href="#q13-solve-the-equation-dfrac-x-4-x-1-5" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dfrac{|x + 4|}{|x - 1|} &amp;= 5 \\
+|\dfrac{x + 4}{x - 1}| &amp;= 5 \\
+\dfrac{x + 4}{x - 1} &amp;= \pm 5
+\end{aligned}\end{split}\]</div>
+<p>Solve for <span class="math notranslate nohighlight">\(\dfrac{x + 4}{x - 1} = 5\)</span> and <span class="math notranslate nohighlight">\(\dfrac{x + 4}{x - 1} = -5\)</span>.</p>
+   </div>
+</div></section>
+<section id="q14-solve-the-inequality-x-5-lt-3">
+<h3>Q14: Solve the inequality <span class="math notranslate nohighlight">\(|x - 5| \lt 3\)</span>.<a class="headerlink" href="#q14-solve-the-inequality-x-5-lt-3" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Using inequality properties, we can get</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+-3 \lt\; &amp;x - 5 \lt 3 \\
+-3 + 5 \lt\; &amp;x - 5 + 5 \lt 3 + 5\\
+2 \lt\; &amp;x \lt 8
+\end{aligned}\end{split}\]</div>
+   </div>
+</div></section>
+</section>
+<section id="inequalities">
+<h2>Inequalities<a class="headerlink" href="#inequalities" title="Permalink to this headline"></a></h2>
+<section id="q15-solve-the-inequality-x-3-3x-2-2x">
+<h3>Q15: Solve the inequality <span class="math notranslate nohighlight">\(x^3 + 3x^2 &gt; -2x\)</span>.<a class="headerlink" href="#q15-solve-the-inequality-x-3-3x-2-2x" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Move the <span class="math notranslate nohighlight">\(-2x\)</span> to the left side to get <span class="math notranslate nohighlight">\(x^3 + 3x^2 + 2x &gt; 0\)</span>.</p>
+<p>Factor out <span class="math notranslate nohighlight">\(x\)</span> to get <span class="math notranslate nohighlight">\(x(x^2 + 3x + 2) &gt; 0\)</span>.</p>
+<p>Factor the quadratic to get <span class="math notranslate nohighlight">\(x(x+2)(x+1)&gt;0\)</span>.</p>
+<p>Let <span class="math notranslate nohighlight">\(f(x) = x(x+2)(x+1)\)</span>. Now, use a number line, mark the x-intercepts,
+and check the values in between the x-intercepts to see if they’re greater than 0.</p>
+<p><span class="math notranslate nohighlight">\(f(x)\)</span> is useful here since you can show your calculations by writing something like
+<span class="math notranslate nohighlight">\(f(-0.5)=-\dfrac{3}{8} &lt; 0\)</span> for your number line.</p>
+   </div>
+</div></section>
+</section>
+<section id="logarithms-and-exponents">
+<h2>Logarithms and exponents<a class="headerlink" href="#logarithms-and-exponents" title="Permalink to this headline"></a></h2>
+<section id="q16-solve-the-equation-2-pi-x-7-pi-x-e-8-0">
+<h3>Q16: Solve the equation <span class="math notranslate nohighlight">\(2(\pi^x) + 7(\pi^x) -e^8 = 0\)</span>.<a class="headerlink" href="#q16-solve-the-equation-2-pi-x-7-pi-x-e-8-0" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+2(\pi^x) + 7(\pi^x) -e^8 &amp;= 0 \\
+9(\pi^x) -e^8 &amp;= 0 \\
+9(\pi^x) &amp;= e^8 \\
+\pi^x &amp;= \dfrac{e^8}{9} \\
+log_{\pi}(\pi^x) &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
+x log_{\pi}(\pi) &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
+x (1) &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
+x &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
+\end{aligned}\end{split}\]</div>
+   </div>
+</div></section>
+</section>
+<section id="function-composition">
+<h2>Function composition<a class="headerlink" href="#function-composition" title="Permalink to this headline"></a></h2>
+<section id="q17-let-f-x-x-2-x-g-x-log-scriptsize-dfrac-1-2-x-h-x-cos-x-restrict-x-to-0-leq-x-leq-pi-solve-the-equation-f-circ-g-circ-h-x-0">
+<h3>Q17: Let <span class="math notranslate nohighlight">\(f(x) = x^2 - x\)</span>, <span class="math notranslate nohighlight">\(g(x) = log_{\scriptsize{}\dfrac{1}{2}}(x)\)</span>, <span class="math notranslate nohighlight">\(h(x) = cos(x)\)</span>. Restrict <span class="math notranslate nohighlight">\(x\)</span> to <span class="math notranslate nohighlight">\(0 \leq x \leq \pi\)</span>. Solve the equation <span class="math notranslate nohighlight">\((f \circ g \circ h)(x) = 0\)</span>.<a class="headerlink" href="#q17-let-f-x-x-2-x-g-x-log-scriptsize-dfrac-1-2-x-h-x-cos-x-restrict-x-to-0-leq-x-leq-pi-solve-the-equation-f-circ-g-circ-h-x-0" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>You can somewhat simplify this question by breaking it down into multiple steps.</p>
+<p>Let’s first find the values of <span class="math notranslate nohighlight">\(x\)</span> that satisfies <span class="math notranslate nohighlight">\(f(x) = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+x^2 + 10x + 16 &amp;= x(x-1)
+\end{aligned}\]</div>
+<p>The values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x) = 0\)</span> in this case are <span class="math notranslate nohighlight">\(x = 0\)</span> and <span class="math notranslate nohighlight">\(x = 1\)</span>,
+so you want to find the values of <span class="math notranslate nohighlight">\(t\)</span> (since you already used <span class="math notranslate nohighlight">\(x\)</span> for <span class="math notranslate nohighlight">\(f(x)\)</span>,
+so you want to avoid getting confused with variables with the same name) that makes <span class="math notranslate nohighlight">\(g(t) = 0\)</span>
+or <span class="math notranslate nohighlight">\(g(t) = 16\)</span>.</p>
+<p>For <span class="math notranslate nohighlight">\(g(t) = 0\)</span>, you have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+g(t) &amp;= 0 \\
+log_{\scriptsize{}\dfrac{1}{2}}(t) &amp;= 0 \\
+\dfrac{1}{2}^{(log_{\tiny{}\dfrac{1}{2}}(t))} &amp;= (\dfrac{1}{2})^0 \\
+t &amp;= 1
+\end{aligned}\end{split}\]</div>
+<p>For <span class="math notranslate nohighlight">\(g(t) = 8\)</span>, you have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+g(t) &amp;= 1 \\
+log_{\scriptsize{}\dfrac{1}{2}}(t) &amp;= 1 \\
+\dfrac{1}{2}^{(log_{\tiny{}\dfrac{1}{2}}(t))} &amp;= (\dfrac{1}{2})^1 \\
+t &amp;= \dfrac{1}{2}
+\end{aligned}\end{split}\]</div>
+<p>So your values of <span class="math notranslate nohighlight">\(t\)</span> are <span class="math notranslate nohighlight">\(t = 1\)</span> and <span class="math notranslate nohighlight">\(t = \dfrac{1}{2}\)</span>.</p>
+<p>Now you need to find the values of <span class="math notranslate nohighlight">\(u\)</span> (again, using another variable since
+you already used <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(t\)</span>) that makes <span class="math notranslate nohighlight">\(h(u) = 1\)</span> or <span class="math notranslate nohighlight">\(h(u) = \dfrac{1}{2}\)</span>.</p>
+<p>This means you’re solving for <span class="math notranslate nohighlight">\(cos(u) = 1\)</span> and <span class="math notranslate nohighlight">\(cos(u) = \dfrac{1}{2}\)</span>.</p>
+<p>Since our domain of <span class="math notranslate nohighlight">\(u\)</span> is restricted on <span class="math notranslate nohighlight">\(0 \leq u \leq \pi\)</span>, the only values
+of <span class="math notranslate nohighlight">\(u\)</span> that are solutions to this are <span class="math notranslate nohighlight">\(u = 0\)</span> and <span class="math notranslate nohighlight">\(u = \dfrac{\pi}{3}\)</span> (use a unit circle). And this is
+our answer: <span class="math notranslate nohighlight">\(x = 0\)</span> and <span class="math notranslate nohighlight">\(x = \dfrac{\pi}{3}\)</span>.</p>
+   </div>
+</div><script>
+  document.querySelectorAll('a.reference.external').forEach(function(link) {
+    link.target = '_blank';
+  });
+</script></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="mata30.html" class="btn btn-neutral float-left" title="MATA30 Fall 2022" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorial3.html" class="btn btn-neutral float-right" title="Tutorial Week 3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, hpnrep6.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

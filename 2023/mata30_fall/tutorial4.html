@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial Week 4</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../_static/js/toggle.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tutorial Week 5" href="tutorial5.html" />
+    <link rel="prev" title="Tutorial Week 3" href="tutorial3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> 
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../general.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general.html#contact-information">Contact Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sandbox.html">Sandbox</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="mata30.html">MATA30 Fall 2023</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#what-are-tutorials">What are tutorials?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#expectations-when-showing-your-work">Expectations when showing your work</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#sets">Sets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#quantifiers-and-shorthands">Quantifiers and shorthands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#functions-and-graphs">Functions and graphs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#some-terminology-for-functions">Some terminology for functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#solving-inequalities">Solving inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#exponentials-and-logarithms">Exponentials and Logarithms</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#trigonometric-and-inverse-trigonometric-functions">Trigonometric and inverse trigonometric functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#inverse-trigonometric-practice">Inverse trigonometric practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#finite-limits">Finite Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#indeterminate-form">Indeterminate Form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#limit-identities">Limit Identities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#squeeze-theorem">Squeeze Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#absolute-values">Absolute Values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#more-examples">More examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#continuity">Continuity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#intermediate-value-theorem">Intermediate Value Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#limit-definition-of-a-derivative">Limit definition of a derivative</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#midterm-rundown">Midterm Rundown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#derivative-notation">Derivative Notation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#derivative-rules">Derivative Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#common-derivatives">Common derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#derivative-practice">Derivative Practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mata33_winter/mata33.html">MATA33 Winter 2023</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial2.html#graphing-linear-inequalities">Graphing Linear Inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial2.html#ftlp-and-feasable-regions">FTLP and Feasable regions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial2.html#finding-optimal-solutions-to-linear-programming-problems">Finding optimal solutions to Linear Programming problems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial3.html#unbounded-regions">Unbounded Regions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial3.html#numbers-of-solutions">Numbers of Solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial3.html#matrices">Matrices</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial4.html#proving-with-matrices">Proving with Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial4.html#gaussian-elimination-and-systems-of-equations">Gaussian Elimination and Systems of Equations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial5.html#gaussian-elimination-and-number-of-solutions">Gaussian Elimination and Number of Solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial5.html#homogeneous-systems">Homogeneous Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial5.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial6.html#inverting-matrices">Inverting Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial6.html#solving-system-of-equations-with-inverse-matrices">Solving System of Equations with Inverse Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial6.html#equations-with-inverse-matrices">Equations with Inverse Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial6.html#determinants">Determinants</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial7.html#cramer-s-rule">Cramer’s Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial7.html#domains-of-multivariable-functions">Domains of multivariable functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial7.html#level-sets">Level sets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial8.html#partial-derivatives">Partial Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial8.html#marginal-costs">Marginal Costs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial9.html#higher-order-partial-derivatives">Higher order Partial Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial9.html#implicit-functions-and-higher-order-partial-derivatives">Implicit functions and Higher order Partial Derivatives</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial10.html#chain-rule">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial10.html#tangent-planes">Tangent Planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial10.html#critical-points">Critical Points</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial11.html#hessian-matrix-and-local-extrema">Hessian Matrix and Local Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial11.html#multivariable-optimization-and-lagrange-multipliers">Multivariable Optimization and Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata33_winter/tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata33_winter/tutorial12.html#changing-order-of-integration">Changing Order of Integration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mata36_winter/mata36.html">MATA36 Winter 2023</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial2.html#rule-0pt-0ex"><span class="math notranslate nohighlight">\(\rule{0pt}{0ex}\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial3.html#assignment-review">Assignment Review</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial3.html#integral-practice">Integral Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial4.html#integral-practice">Integral Practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial4.html#partial-fraction-decomposition">Partial Fraction Decomposition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#trigonometric-substitution">Trigonometric Substitution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#area-between-functions">Area Between Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial6.html#volumes-using-cross-sectional-areas">Volumes using Cross-Sectional Areas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial6.html#volumes-of-revolution">Volumes of Revolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial6.html#volumes-by-cylindrical-shells">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial7.html#arc-length-of-curves">Arc length of curves</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial7.html#simpson-s-rule">Simpson’s Rule</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial8.html#improper-integrals">Improper Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial8.html#comparison-test">Comparison Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial9.html#limits-convergence-and-divergence-of-sequences">Limits, convergence, and divergence of Sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial9.html#monotone-convergence-theorem-mct-and-convergence">Monotone Convergence Theorem (MCT) and Convergence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial9.html#limits-of-monotonic-sequences">Limits of Monotonic Sequences</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial10.html#recursively-defined-functions">Recursively defined Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial10.html#conditions-for-convergent-series">Conditions for convergent series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial10.html#geometric-series">Geometric Series</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial11.html#integral-test">Integral Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial11.html#comparison-test">Comparison Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial11.html#telescoping-series">Telescoping Series</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial12.html#alternating-series">Alternating Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial12.html#ratio-test">Ratio Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2022/2022.html">2022</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2022/mata30_fall/mata30.html">MATA30 Fall 2022</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#writing-math">Writing Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#factoring">Factoring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#lines">Lines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#functions">Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#sketching-functions">Sketching functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#function-inverses">Function inverses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#absolute-values">Absolute values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#inequalities">Inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#logarithms-and-exponents">Logarithms and exponents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#function-composition">Function composition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#inverse-trig">Inverse Trig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#inverse-trig-functions">Inverse Trig Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#inverse-trig-cancellation-rules">Inverse Trig Cancellation Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#graphs-of-limits">Graphs of Limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#calculating-limits">Calculating Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#proof-of-trigonometric-limit-identities">Proof of Trigonometric Limit Identities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#squeeze-theorem">Squeeze Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#indeterminant-forms">Indeterminant Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#conjugates">Conjugates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#finding-limits">Finding Limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#trigonometric-limits">Trigonometric Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html#continuity">Continuity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html#finding-derivatives-using-the-limit-definition-of-a-derivative">Finding Derivatives using the Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html#differentiability-using-the-limit-definition-of-a-derivative">Differentiability using the Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html#intermediate-value-theorem">Intermediate Value Theorem</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#graphing-differentiability">Graphing differentiability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#derivative-notation">Derivative Notation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#derivatives-with-absolute-values">Derivatives with absolute values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#computing-derivatives">Computing derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#derivative-tables">Derivative tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#piecewise-function-differentiability">Piecewise function differentiability</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#implicit-differentiation">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#exponential-derivatives">Exponential Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#inverse-trigonometric-derivatives">Inverse Trigonometric Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#logarithmitic-differentiation">Logarithmitic Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#related-rates">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#inverse-function-derivatives">Inverse Function Derivatives</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html#curve-sketching">Curve Sketching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html#sinusodial-function-derivatives">Sinusodial Function Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html#test-for-absolute-extrema">Test for Absolute Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html#drawing-functions">Drawing Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html">Term Test 2 Supplementary Practice</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q1-definitions">Q1: Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q2-continuity-ivt">Q2: Continuity &amp; IVT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q3-limit-definition-of-a-derivative">Q3: Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q4-5-computing-derivatives">Q4/5: Computing Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q6-related-rates">Q6: Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q7-absolute-extrema">Q7: Absolute Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q8-curve-sketching">Q8: Curve Sketching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q9-tangent-lines">Q9: Tangent Lines</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html#l-hopital-s-rule">L’Hopital’s Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html#l-hopital-s-rule-with-logs">L’Hopital’s Rule with Logs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html#mean-value-theorem">Mean Value Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html#linearization">Linearization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial10.html#exponential-modelling">Exponential Modelling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial10.html#newton-s-law-of-cooling">Newton’s Law of Cooling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial10.html#optimization">Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial11.html#computing-integrals">Computing Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial11.html#riemann-sums">Riemann Sums</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial11.html#approximating-integrals-using-riemann-sums">Approximating Integrals using Riemann Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial12.html#integral-theorems">Integral Theorems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial12.html#fundamental-theorem-of-calculus-i">Fundamental Theorem Of Calculus I</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial12.html#subtitution-method-aka-u-substitution">Subtitution Method (aka u-substitution)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html"></a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../2023.html">2023</a> &raquo;</li>
+          <li><a href="mata30.html">MATA30 Fall 2023</a> &raquo;</li>
+      <li>Tutorial Week 4</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/hpnrep6/t/blob/development/source/2023/mata30_fall/tutorial4.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tutorial-week-4">
+<h1>Tutorial Week 4<a class="headerlink" href="#tutorial-week-4" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/ams']},
+tex: {packages: {'[+]': ['ams']}}
+};
+</script><p>In this week’s tutorial, we’ll go over more limit methods and topics, such as the squeeze theorem, dealing with absolute values, as well as showing the existence of some limits.</p>
+<section id="indeterminate-form">
+<h2>Indeterminate Form<a class="headerlink" href="#indeterminate-form" title="Permalink to this headline"></a></h2>
+<p>When a limit is in indeterminate form, we’ll need to simplify/rewrite the limit into an alternate form the actually determine the limit.</p>
+<p>The indeterminate forms are as follows:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\frac{0}{0}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\infty}{\infty}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\infty - \infty\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(0^0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(1^\infty\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\infty^0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(0 \cdot \infty\)</span></p></li>
+</ul>
+<p>If the limit is in any other form, we’ll usually be able to determine it directly (it could be the case that it doesn’t exist, but at least we know for sure it doesn’t exist).</p>
+</section>
+<section id="limit-identities">
+<h2>Limit Identities<a class="headerlink" href="#limit-identities" title="Permalink to this headline"></a></h2>
+<p>In this course, there are a couple of limit identities that you can use to help make your life easier. They are:</p>
+<p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span></p>
+<p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{1 - cos(x)}{x} = 0\)</span></p>
+<p>Let’s see these in action in the following question.</p>
+<section id="q1-solve-the-limit-lim-x-to-3-frac-sin-x-3-x-2-9">
+<h3>Q1: Solve the limit <span class="math notranslate nohighlight">\(\lim_{x \to 3} \frac{sin(x - 3)}{x^2 - 9}\)</span>.<a class="headerlink" href="#q1-solve-the-limit-lim-x-to-3-frac-sin-x-3-x-2-9" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to 3} \frac{sin(x - 3)}{x^2 - 9} &amp;= \lim_{x \to 3} \frac{sin(x - 3)}{(x - 3)(x + 3)} \\
+ &amp;= \lim_{x \to 3} \frac{sin(x - 3)}{x - 3}(x + 3) \\
+ &amp;= \lim_{x - 3 \to 0} \frac{sin(x - 3)}{x - 3}(x + 3) \\
+ &amp;= (\lim_{x - 3 \to 0} \frac{sin(x - 3)}{x - 3})(\lim_{x - 3 \to 0}(x + 3)) \\
+ &amp;= 1 \cdot \lim_{x - 3 \to 0}(x + 3) \\
+ &amp;= 1 \cdot \lim_{x \to 3}(x + 3) \\
+ &amp;= 3 + 3 = 6 \\
+\end{aligned}\end{split}\]</div>
+    </div>
+</div></section>
+</section>
+<section id="squeeze-theorem">
+<h2>Squeeze Theorem<a class="headerlink" href="#squeeze-theorem" title="Permalink to this headline"></a></h2>
+<p>The squeeze theorem states that if <span class="math notranslate nohighlight">\(g(x) \le f(x) \le h(x)\)</span> for all x values near some number a, and if <span class="math notranslate nohighlight">\(lim_{x \to a} g(x) = lim_{x \to a} h(x) = L\)</span>, then <span class="math notranslate nohighlight">\(lim_{x \to a} f(x) = L\)</span>.</p>
+<section id="q2-calculate-lim-x-to-infty-frac-3x-2-sin-x-3-4x-2-2">
+<h3>Q2: Calculate <span class="math notranslate nohighlight">\(lim_{x \to \infty} \; \frac{3x^2 + \sin(x^3)}{4x^2 - 2}\)</span>.<a class="headerlink" href="#q2-calculate-lim-x-to-infty-frac-3x-2-sin-x-3-4x-2-2" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>We know that <span class="math notranslate nohighlight">\(-1 \le sin(x) \le 1\)</span> (as in sin(x) is bounded between -1 and 1 for all x), which means that <span class="math notranslate nohighlight">\(-1 \le sin(x^3) \le 1\)</span>.</p>
+<p>To use the squeeze theorem, we first need to “reconstruct” our original expression in a double inequality involving the upper and lower bounds of the function. We do just this below:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+-1 &amp;\le sin(x^3) &amp;\le 1 \\
+3x^2 -1 &amp;\le 3x^2 + sin(x^3) &amp;\le 3x^2 + 1 \\
+\frac{3x^2 -1}{4x^2-2} &amp;\le \frac{3x^2 + sin(x^3)}{4x^2-2} &amp;\le \frac{3x^2 + 1}{4x^2-2}
+\end{aligned}\end{split}\]</div>
+<p>Now we need to calculate the limits of the terms surrounding <span class="math notranslate nohighlight">\(\frac{3x^2 + sin(x^3)}{4x^2-2}\)</span> in the above double inequality, so we have:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to \infty} \frac{3x^2 -1}{4x^2-2} &amp;= \lim_{x \to \infty} \frac{3x^2 - \frac{x^2}{x^2}}{4x^2-2\frac{x^2}{x^2}} \\
+&amp;= \lim_{x \to \infty} \frac{x^2(3 - \frac{1}{x^2})}{x^2(4-\frac{2}{x^2})} \\
+&amp;= \lim_{x \to \infty} \frac{3 - \frac{1}{x^2}}{4-\frac{2}{x^2}} \\
+&amp;= \frac{3 - \frac{1}{\infty}}{4-\frac{2}{\infty}} \\
+&amp;= \frac{3 - 0}{4- 0} = \frac{3}{4}\\
+\end{aligned}\end{split}\]</div>
+<p>We do the same thing for the upper bound.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to \infty} \frac{3x^2 +1}{4x^2-2} &amp;= \lim_{x \to \infty} \frac{3x^2 + \frac{x^2}{x^2}}{4x^2-2\frac{x^2}{x^2}} \\
+&amp;= \lim_{x \to \infty} \frac{x^2(3 + \frac{1}{x^2})}{x^2(4-\frac{2}{x^2})} \\
+&amp;= \lim_{x \to \infty} \frac{3 + \frac{1}{x^2}}{4-\frac{2}{x^2}} \\
+&amp;= \frac{3 + \frac{1}{\infty}}{4-\frac{2}{\infty}} \\
+&amp;= \frac{3 + 0}{4- 0} = \frac{3}{4}\\
+\end{aligned}\end{split}\]</div>
+<p>So by adding our limit to infinity to the double inequality, we get:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to \infty} \frac{3x^2 -1}{4x^2-2} &amp;\le \lim_{x \to \infty} \frac{3x^2 + sin(x^3)}{4x^2-2} &amp;\le \lim_{x \to \infty}  \frac{3x^2 + 1}{4x^2-2} \\
+\frac{3}{4} &amp;\le \lim_{x \to \infty} \frac{3x^2 + sin(x^3)}{4x^2-2} &amp;\le \frac{3}{4}
+\end{aligned}\end{split}\]</div>
+<p>and thus <span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{3x^2 + sin(x^3)}{4x^2-2} = \frac{3}{4}\)</span></p>
+    </div>
+</div></section>
+<section id="q3-use-the-squeeze-theorem-to-show-that-lim-x-to-0-frac-sin-x-x-1-you-can-t-use-the-limit-identity-here-since-that-s-what-you-re-trying-to-prove">
+<h3>Q3: Use the squeeze theorem to show that <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span>. (You can’t use the limit identity here since that’s what you’re trying to prove)<a class="headerlink" href="#q3-use-the-squeeze-theorem-to-show-that-lim-x-to-0-frac-sin-x-x-1-you-can-t-use-the-limit-identity-here-since-that-s-what-you-re-trying-to-prove" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/01.jpg"><img alt="../../_images/01.jpg" src="../../_images/01.jpg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="absolute-values">
+<h2>Absolute Values<a class="headerlink" href="#absolute-values" title="Permalink to this headline"></a></h2>
+<p>When dealing with absolute values, you’ll usually need to rewrite your function as a piecewise function and use that to evaluate the limit.</p>
+<section id="q4-find-the-limit-lim-x-to-1-frac-7-x-1-x-3-2-if-it-exists">
+<h3>Q4: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to -1} \frac{7 - |x + 1|}{x^3 + 2}\)</span>. (if it exists)<a class="headerlink" href="#q4-find-the-limit-lim-x-to-1-frac-7-x-1-x-3-2-if-it-exists" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>We know that <span class="math notranslate nohighlight">\(|x| = \begin{cases} x \;\;\;\;\;\; \text{if } x \ge 0 \\ -x \;\;\; \text{if } x &lt; 0\end{cases}\)</span></p>
+<p>Using this, we get that <span class="math notranslate nohighlight">\(|x + 1| = \begin{cases} x + 1 \;\;\;\;\;\;\;\;\; \text{if } x \ge -1 \\ -(x + 1) \;\;\; \text{if } x &lt; -1\end{cases}\)</span>, since this is just <span class="math notranslate nohighlight">\(|x|\)</span> shifted left by one unit.</p>
+<p>Since now we have the piecewise definition of <span class="math notranslate nohighlight">\(|x + 1|\)</span>, we can get the piecewise definition of <span class="math notranslate nohighlight">\(\frac{7 - |x + 1|}{x^3 + 2}\)</span> and try to find the limit using that.</p>
+<p><span class="math notranslate nohighlight">\(\begin{aligned} \frac{7 - |x + 1|}{x^3 + 2} &amp;= \begin{cases} \frac{7 - (x + 1)}{x^3 + 2} \;\;\;\;\;\;\; \text{if } x \ge -1 \\ \frac{7 - (-(x + 1))}{x^3 + 2} \;\;\; \text{if } x &lt; -1\end{cases} \\&amp;=  \begin{cases} \frac{6 - x}{x^3 + 2} \;\;\;\;\;\;\; \text{if } x \ge -1 \\ \frac{8 + x}{x^3 + 2} \;\;\;\;\;\;\; \text{if } x &lt; -1\end{cases} \end{aligned}\)</span></p>
+<p>Now we can calculate the left and right side limits of this function at -1.</p>
+<p>Let <span class="math notranslate nohighlight">\(f(x) = \frac{7 - |x + 1|}{x^3 + 2}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to -1^-} f(x) &amp;= \lim_{x \to -1^-} \frac{6 - x}{x^3 + 2} \\
+&amp;= \frac{6 + 1}{-1 + 2} \\
+&amp;= 7
+\end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to -1^+} f(x) &amp;= \lim_{x \to -1^+} \frac{8 + x}{x^3 + 2} \\
+&amp;= \frac{8 - 1}{-1 + 2} \\
+&amp;= 7
+\end{aligned}\end{split}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\lim_{x \to -1^-} f(x) =  \lim_{x \to -1^+} f(x) = 7\)</span>, we have that <span class="math notranslate nohighlight">\(\lim_{x \to -1} f(x) = \lim_{x \to -1} \frac{7 - |x + 1|}{x^3 + 2} = 7\)</span>.</p>
+    </div>
+</div></section>
+</section>
+<section id="more-examples">
+<h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this headline"></a></h2>
+<p>We’ll go over a few more examples of limits to give you a better sense of the tools you have at your disposal when working with limits.</p>
+<section id="q5-given-any-constant-number-k-what-is-lim-x-to-0-cot-2kx-2kx-k">
+<h3>Q5: Given any constant number <span class="math notranslate nohighlight">\(k\)</span>, what is <span class="math notranslate nohighlight">\(\lim_{x \to 0}\; \cot(2kx)2kx + k\)</span>?<a class="headerlink" href="#q5-given-any-constant-number-k-what-is-lim-x-to-0-cot-2kx-2kx-k" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>Note that similar to <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span>, we can also say <span class="math notranslate nohighlight">\(\lim_{x \to 0}\frac{x}{sin(x)} = 1\)</span>.</p>
+<p>Also remember that <span class="math notranslate nohighlight">\(tan(x) = \frac{sin(x)}{cos(x)}\)</span>, so <span class="math notranslate nohighlight">\(cot(x) = \frac{cos(x)}{sin(x)}\)</span>
+We can solve for the limit as follows:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to 0} \cot(2kx)2kx + k &amp;= \lim_{x \to 0} \frac{cos(2kx)2kx}{sin(2kx)} + k \\
+&amp;= \lim_{x \to 0} \frac{2kx}{sin(2kx)} \lim_{x \to 0} cos(2kx) + \lim_{x \to 0} k \\
+&amp;= 1 \cdot 1 + k \\
+&amp;= 1 + k
+\end{aligned}\end{split}\]</div>
+    </div>
+</div></section>
+<section id="q6-find-the-limit-lim-x-to-0-frac-sin-e-cos-x-x-if-it-exists">
+<h3>Q6: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(e\cos(x))}{x}\)</span>. (if it exists)<a class="headerlink" href="#q6-find-the-limit-lim-x-to-0-frac-sin-e-cos-x-x-if-it-exists" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\lim_{x \to 0} \frac{\sin(e\cos(x))}{x} &amp;= \lim_{x \to 0} \frac{e\cos(x)\sin(e\cos(x))}{e\cos(x) \cdot x} \\
+&amp;= \lim_{x \to 0} \frac{e\cos(x)}{x} \lim_{x \to 0} \frac{sin(e\cos(x))}{e\cos(x)} \\
+ &amp;= \lim_{x \to 0} \frac{e\cos(x)}{x} \cdot 1 \\
+ &amp;= \frac{ \lim_{x \to 0}e\cos(x)}{ \lim_{x \to 0}x} \\
+ &amp;= \frac{e\cos(0)}{ \lim_{x \to 0} x} \\
+ &amp;= \frac{e}{ \lim_{x \to 0} x} \\
+ &amp;=  e\lim_{x \to 0}\frac{1}{ x}
+\end{aligned}\end{split}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\lim_{x \to 0^+} \frac{1}{x} = \frac{1}{0^+} = \infty\)</span> and <span class="math notranslate nohighlight">\(\lim_{x \to 0^-} \frac{1}{x} = \frac{1}{0^-} = -\infty\)</span>, we get that <span class="math notranslate nohighlight">\(e \lim_{x \to 0}\frac{1}{x} \text{DNE }\)</span> (Does not exist).</p>
+    </div>
+</div></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tutorial3.html" class="btn btn-neutral float-left" title="Tutorial Week 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorial5.html" class="btn btn-neutral float-right" title="Tutorial Week 5" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, hpnrep6.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

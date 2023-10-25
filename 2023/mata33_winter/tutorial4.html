@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial Week 4</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../_static/js/toggle.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tutorial Week 5" href="tutorial5.html" />
+    <link rel="prev" title="Tutorial Week 3" href="tutorial3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> 
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../general.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general.html#contact-information">Contact Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sandbox.html">Sandbox</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../mata30_fall/mata30.html">MATA30 Fall 2023</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mata30_fall/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial2.html#what-are-tutorials">What are tutorials?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial2.html#expectations-when-showing-your-work">Expectations when showing your work</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial2.html#sets">Sets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial2.html#quantifiers-and-shorthands">Quantifiers and shorthands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial2.html#functions-and-graphs">Functions and graphs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial2.html#some-terminology-for-functions">Some terminology for functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial2.html#solving-inequalities">Solving inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial2.html#exponentials-and-logarithms">Exponentials and Logarithms</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata30_fall/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial3.html#trigonometric-and-inverse-trigonometric-functions">Trigonometric and inverse trigonometric functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial3.html#inverse-trigonometric-practice">Inverse trigonometric practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial3.html#finite-limits">Finite Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata30_fall/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial4.html#indeterminate-form">Indeterminate Form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial4.html#limit-identities">Limit Identities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial4.html#squeeze-theorem">Squeeze Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial4.html#absolute-values">Absolute Values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial4.html#more-examples">More examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata30_fall/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial5.html#continuity">Continuity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial5.html#intermediate-value-theorem">Intermediate Value Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial5.html#limit-definition-of-a-derivative">Limit definition of a derivative</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata30_fall/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial6.html#midterm-rundown">Midterm Rundown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial6.html#derivative-notation">Derivative Notation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial6.html#derivative-rules">Derivative Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial6.html#common-derivatives">Common derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial6.html#derivative-practice">Derivative Practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata30_fall/tutorial6.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="mata33.html">MATA33 Winter 2023</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#graphing-linear-inequalities">Graphing Linear Inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#ftlp-and-feasable-regions">FTLP and Feasable regions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial2.html#finding-optimal-solutions-to-linear-programming-problems">Finding optimal solutions to Linear Programming problems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#unbounded-regions">Unbounded Regions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#numbers-of-solutions">Numbers of Solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial3.html#matrices">Matrices</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#proving-with-matrices">Proving with Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gaussian-elimination-and-systems-of-equations">Gaussian Elimination and Systems of Equations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#gaussian-elimination-and-number-of-solutions">Gaussian Elimination and Number of Solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#homogeneous-systems">Homogeneous Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#inverting-matrices">Inverting Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#solving-system-of-equations-with-inverse-matrices">Solving System of Equations with Inverse Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#equations-with-inverse-matrices">Equations with Inverse Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial6.html#determinants">Determinants</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#cramer-s-rule">Cramer’s Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#domains-of-multivariable-functions">Domains of multivariable functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial7.html#level-sets">Level sets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#partial-derivatives">Partial Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#marginal-costs">Marginal Costs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9.html#higher-order-partial-derivatives">Higher order Partial Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9.html#implicit-functions-and-higher-order-partial-derivatives">Implicit functions and Higher order Partial Derivatives</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial10.html#chain-rule">Chain Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial10.html#tangent-planes">Tangent Planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial10.html#critical-points">Critical Points</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial11.html#hessian-matrix-and-local-extrema">Hessian Matrix and Local Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial11.html#multivariable-optimization-and-lagrange-multipliers">Multivariable Optimization and Lagrange Multipliers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial12.html#changing-order-of-integration">Changing Order of Integration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../mata36_winter/mata36.html">MATA36 Winter 2023</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial2.html#rule-0pt-0ex"><span class="math notranslate nohighlight">\(\rule{0pt}{0ex}\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial3.html#assignment-review">Assignment Review</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial3.html#integral-practice">Integral Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial4.html#integral-practice">Integral Practice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial4.html#partial-fraction-decomposition">Partial Fraction Decomposition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#trigonometric-substitution">Trigonometric Substitution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#area-between-functions">Area Between Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial5.html#midterm-review">Midterm Review</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial6.html#volumes-using-cross-sectional-areas">Volumes using Cross-Sectional Areas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial6.html#volumes-of-revolution">Volumes of Revolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial6.html#volumes-by-cylindrical-shells">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial7.html#arc-length-of-curves">Arc length of curves</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial7.html#simpson-s-rule">Simpson’s Rule</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial8.html#improper-integrals">Improper Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial8.html#comparison-test">Comparison Test</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial9.html#limits-convergence-and-divergence-of-sequences">Limits, convergence, and divergence of Sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial9.html#monotone-convergence-theorem-mct-and-convergence">Monotone Convergence Theorem (MCT) and Convergence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial9.html#limits-of-monotonic-sequences">Limits of Monotonic Sequences</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial10.html#recursively-defined-functions">Recursively defined Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial10.html#conditions-for-convergent-series">Conditions for convergent series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial10.html#geometric-series">Geometric Series</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial11.html#integral-test">Integral Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial11.html#comparison-test">Comparison Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial11.html#telescoping-series">Telescoping Series</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mata36_winter/tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial12.html#alternating-series">Alternating Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mata36_winter/tutorial12.html#ratio-test">Ratio Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2022/2022.html">2022</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2022/mata30_fall/mata30.html">MATA30 Fall 2022</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#writing-math">Writing Math</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#factoring">Factoring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#lines">Lines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#functions">Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#sketching-functions">Sketching functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#function-inverses">Function inverses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#absolute-values">Absolute values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#inequalities">Inequalities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#logarithms-and-exponents">Logarithms and exponents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial2.html#function-composition">Function composition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#inverse-trig">Inverse Trig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#inverse-trig-functions">Inverse Trig Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#inverse-trig-cancellation-rules">Inverse Trig Cancellation Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#graphs-of-limits">Graphs of Limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial3.html#calculating-limits">Calculating Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html">Tutorial Week 4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#proof-of-trigonometric-limit-identities">Proof of Trigonometric Limit Identities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#squeeze-theorem">Squeeze Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#indeterminant-forms">Indeterminant Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#conjugates">Conjugates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#finding-limits">Finding Limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial4.html#trigonometric-limits">Trigonometric Limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html">Tutorial Week 5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html#continuity">Continuity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html#finding-derivatives-using-the-limit-definition-of-a-derivative">Finding Derivatives using the Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html#differentiability-using-the-limit-definition-of-a-derivative">Differentiability using the Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial5.html#intermediate-value-theorem">Intermediate Value Theorem</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html">Tutorial Week 6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#graphing-differentiability">Graphing differentiability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#derivative-notation">Derivative Notation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#derivatives-with-absolute-values">Derivatives with absolute values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#computing-derivatives">Computing derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#derivative-tables">Derivative tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial6.html#piecewise-function-differentiability">Piecewise function differentiability</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html">Tutorial Week 7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#implicit-differentiation">Implicit Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#exponential-derivatives">Exponential Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#inverse-trigonometric-derivatives">Inverse Trigonometric Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#logarithmitic-differentiation">Logarithmitic Differentiation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#related-rates">Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial7.html#inverse-function-derivatives">Inverse Function Derivatives</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html#curve-sketching">Curve Sketching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html#sinusodial-function-derivatives">Sinusodial Function Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html#test-for-absolute-extrema">Test for Absolute Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial8.html#drawing-functions">Drawing Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html">Term Test 2 Supplementary Practice</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q1-definitions">Q1: Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q2-continuity-ivt">Q2: Continuity &amp; IVT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q3-limit-definition-of-a-derivative">Q3: Limit Definition of a Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q4-5-computing-derivatives">Q4/5: Computing Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q6-related-rates">Q6: Related Rates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q7-absolute-extrema">Q7: Absolute Extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q8-curve-sketching">Q8: Curve Sketching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9_term_test_2.html#q9-tangent-lines">Q9: Tangent Lines</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html#l-hopital-s-rule">L’Hopital’s Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html#l-hopital-s-rule-with-logs">L’Hopital’s Rule with Logs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html#mean-value-theorem">Mean Value Theorem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial9.html#linearization">Linearization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial10.html">Tutorial Week 10</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial10.html#exponential-modelling">Exponential Modelling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial10.html#newton-s-law-of-cooling">Newton’s Law of Cooling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial10.html#optimization">Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial11.html">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial11.html#computing-integrals">Computing Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial11.html#riemann-sums">Riemann Sums</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial11.html#approximating-integrals-using-riemann-sums">Approximating Integrals using Riemann Sums</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../2022/mata30_fall/tutorial12.html">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial12.html#integral-theorems">Integral Theorems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial12.html#fundamental-theorem-of-calculus-i">Fundamental Theorem Of Calculus I</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2022/mata30_fall/tutorial12.html#subtitution-method-aka-u-substitution">Subtitution Method (aka u-substitution)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html"></a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../2023.html">2023</a> &raquo;</li>
+          <li><a href="mata33.html">MATA33 Winter 2023</a> &raquo;</li>
+      <li>Tutorial Week 4</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/hpnrep6/t/blob/development/source/2023/mata33_winter/tutorial4.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tutorial-week-4">
+<h1>Tutorial Week 4<a class="headerlink" href="#tutorial-week-4" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/ams']},
+tex: {packages: {'[+]': ['ams']}}
+};
+</script><section id="proving-with-matrices">
+<h2>Proving with Matrices<a class="headerlink" href="#proving-with-matrices" title="Permalink to this headline"></a></h2>
+<section id="q1-if-a-is-a-2-times-2-matrix-show-that-if-ab-0-for-all-2-times-1-matrices-b-then-a-0">
+<h3>Q1: If <span class="math notranslate nohighlight">\(A\)</span> is a <span class="math notranslate nohighlight">\(2 \times 2\)</span> matrix, show that if <span class="math notranslate nohighlight">\(AB = 0\)</span> for all <span class="math notranslate nohighlight">\(2 \times 1\)</span> matrices B, then <span class="math notranslate nohighlight">\(A = 0\)</span>.<a class="headerlink" href="#q1-if-a-is-a-2-times-2-matrix-show-that-if-ab-0-for-all-2-times-1-matrices-b-then-a-0" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/15.jpeg"><img alt="../../_images/15.jpeg" src="../../_images/15.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q2-consider-a-4-times-4-diagonal-matrix-a-with-non-zero-entries-along-the-diagonal-and-suppose-ab-i-4-what-would-the-matrix-b-be">
+<h3>Q2: Consider a <span class="math notranslate nohighlight">\(4 \times 4\)</span> diagonal matrix <span class="math notranslate nohighlight">\(A\)</span> with non-zero entries along the diagonal and suppose <span class="math notranslate nohighlight">\(AB = I_{4}\)</span>. What would the matrix <span class="math notranslate nohighlight">\(B\)</span> be?<a class="headerlink" href="#q2-consider-a-4-times-4-diagonal-matrix-a-with-non-zero-entries-along-the-diagonal-and-suppose-ab-i-4-what-would-the-matrix-b-be" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/24.jpeg"><img alt="../../_images/24.jpeg" src="../../_images/24.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="gaussian-elimination-and-systems-of-equations">
+<h2>Gaussian Elimination and Systems of Equations<a class="headerlink" href="#gaussian-elimination-and-systems-of-equations" title="Permalink to this headline"></a></h2>
+<section id="q3-solve-the-system-of-equations-begin-cases-x-y-z-1-2x-7y-3z-4-x-6y-z-2-0-end-cases">
+<h3>Q3: Solve the system of equations <span class="math notranslate nohighlight">\(\begin{cases} x+y+z=1 \\ 2x+7y+3z=4 \\ x+6y+z+2=0 \end{cases}\)</span>.<a class="headerlink" href="#q3-solve-the-system-of-equations-begin-cases-x-y-z-1-2x-7y-3z-4-x-6y-z-2-0-end-cases" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/33.jpeg"><img alt="../../_images/33.jpeg" src="../../_images/33.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q4-for-what-values-of-a-and-b-allows-the-following-system-of-equations-to-have-1-one-unique-solution-2-no-solutions-begin-cases-x-0-3-by-a-end-cases">
+<h3>Q4: For what values of <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> allows the following system of equations to have 1) one (unique) solution 2) no solutions: <span class="math notranslate nohighlight">\(\begin{cases} x + 0 = 3 \\  by = a \end{cases}\)</span>.<a class="headerlink" href="#q4-for-what-values-of-a-and-b-allows-the-following-system-of-equations-to-have-1-one-unique-solution-2-no-solutions-begin-cases-x-0-3-by-a-end-cases" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/43.jpeg"><img alt="../../_images/43.jpeg" src="../../_images/43.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tutorial3.html" class="btn btn-neutral float-left" title="Tutorial Week 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tutorial5.html" class="btn btn-neutral float-right" title="Tutorial Week 5" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, hpnrep6.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

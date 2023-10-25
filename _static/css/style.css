@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Oxygen;
+    src: url(../font/Oxygen-Light.ttf);
+}
+
+.wy-nav-content {
+    max-width: none;
+}
+
+body, section h1, section h2, section h3, section h4, section h5, section h6, p.caption {
+    font-family: Oxygen !important;
+}
+
+.wy-side-nav-search, .wy-nav-top {
+    background: #61aed4;
+}
+
+.wy-nav-side {
+    background: #304462;
+}
+
+.wy-menu-vertical a {
+    color: white;
+    font-size: 95%;
+    width: 102%;
+}
+
+.wy-menu-vertical li.toctree-l2.current>a, li.toctree-l2, .wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
+    background: #edf6ff;
+}
+
+.wy-menu-vertical li.toctree-l3.current>a, .wy-menu-vertical li.toctree-l3.current li.toctree-l4>a {
+    background: #d4e6f7;
+}
+
+.MathJax {
+    width: fit-content;
+}
+
+.answer-container {
+    padding-bottom: 20px;
+    background-color: #e5ffe7;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.show-answer-button {
+    background-color: #b0ffb7;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.show-answer-button:hover {
+    background-color: #a0e4a5;
+}
+
+.show-answer-button:active {
+    background-color: #87c68b;
+}
+
+.answer {
+    display: none;
+    flex-direction: column;
+}
+
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal;
+}
+
+.wy-menu-vertical li.current>a button.toctree-expand, .wy-menu-vertical li a button.toctree-expand {
+    color: #90defc;
+}
+
+.image-reference {
+    width: fit-content;
+}

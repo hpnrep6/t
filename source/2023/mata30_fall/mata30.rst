@@ -16,3 +16,4 @@ MATA30 Fall 2023
    tutorial5
    tutorial6
    tutorial7
+   tutorial8

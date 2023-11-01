@@ -22,7 +22,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="MATA33 Winter 2023" href="../mata33_winter/mata33.html" />
+    <link rel="next" title="Tutorial Week 9" href="tutorial9.html" />
     <link rel="prev" title="Tutorial Week 7" href="tutorial7.html" /> 
 </head>
 
@@ -101,7 +101,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#curve-sketching">Curve Sketching</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#derivatives-of-inverse-functions">Derivatives of inverse functions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#applications-of-derivatives-and-related-rates">Applications of derivatives and related rates</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#l-hopital-s-rule">L’Hopital’s Rule</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial9.html">Tutorial Week 9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial9.html#l-hopital-s-rule">L’Hopital’s Rule</a></li>
 </ul>
 </li>
 </ul>
@@ -390,14 +393,47 @@ you’ll have all the information required to sketch:</p>
 </ol>
 <section id="q1-sketch-f-x-ln-left-x-right-2">
 <h3>Q1: Sketch <span class="math notranslate nohighlight">\(f(x) = \ln\left(x\right)^{2}\)</span>.<a class="headerlink" href="#q1-sketch-f-x-ln-left-x-right-2" title="Permalink to this headline"></a></h3>
-</section>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/17.jpg"><img alt="../../_images/17.jpg" src="../../_images/17.jpg" style="width: 700px;" /></a>
+    </div>
+</div></section>
 </section>
 <section id="derivatives-of-inverse-functions">
 <h2>Derivatives of inverse functions<a class="headerlink" href="#derivatives-of-inverse-functions" title="Permalink to this headline"></a></h2>
 <p>There’s a helpful formula to find the derivative of an inverse function, that being <span class="math notranslate nohighlight">\((f^{-1}(x))' = \frac{1}{f'(f^{-1}(x))\)</span>.</p>
-<section id="q2-given-f-x-x-3-ln-7x-2-1-find-f-1-1">
-<h3>Q2: Given <span class="math notranslate nohighlight">\(f(x) = x^3 + ln(7x + 2) + 1\)</span>, find <span class="math notranslate nohighlight">\((f^{-1})'(1)\)</span>.<a class="headerlink" href="#q2-given-f-x-x-3-ln-7x-2-1-find-f-1-1" title="Permalink to this headline"></a></h3>
-</section>
+<section id="q2-given-f-x-x-3-ln-7x-1-1-find-f-1-1">
+<h3>Q2: Given <span class="math notranslate nohighlight">\(f(x) = x^3 + ln(7x + 1) + 1\)</span>, find <span class="math notranslate nohighlight">\((f^{-1})'(1)\)</span>.<a class="headerlink" href="#q2-given-f-x-x-3-ln-7x-1-1-find-f-1-1" title="Permalink to this headline"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>We will use the formula <span class="math notranslate nohighlight">\((f^{-1}(x))' = \frac{1}{f'(f^{-1}(x))}\)</span>.</p>
+<p>We see that first of all, we need <span class="math notranslate nohighlight">\(f^{-1}(x)\)</span>. Notice how this function isn’t
+easily invertible. The strategy now would be to simply try substituting in random integers
+for x (e.g. -2, -1, 0, 1, 2), and most of the time, it will be one of those since you’re
+not really expected to actually find the inverse function.</p>
+<p>Let <span class="math notranslate nohighlight">\(a = f^{-1}(1)\)</span>. This means that <span class="math notranslate nohighlight">\(f(a) = 1\)</span>.</p>
+<p>We have</p>
+<p><span class="math notranslate nohighlight">\(1 = a^3 + ln(7a + 1) + 1\)</span></p>
+<p><span class="math notranslate nohighlight">\(0 = a^3 + ln(7a + 1) + 1\)</span></p>
+<p>If we try plugging in -2, -1, 0, 1, and 2 for the value of a, we see that <span class="math notranslate nohighlight">\(a = 0\)</span>
+is a solution to the equation.</p>
+<p>So <span class="math notranslate nohighlight">\(f^{-1}(1) = a = 0\)</span>.</p>
+<p>Now let’s find <span class="math notranslate nohighlight">\(f'(f^{-1}(1)) = f'(0)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+f'(x) &amp;= \frac{d}{dx} x^3 + ln(7x + 1) + 1 \\
+&amp;= 3x^2 + \frac{7}{7x + 1} \\
+f'(0) &amp;= 3(0)^2 + \frac{7}{7(0) + 1} \\
+&amp;= 7
+\end{aligned}\end{split}\]</div>
+<p>So then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+(f^{-1}(1))' &amp;= \frac{1}{f'(f^{-1}(1))} \\
+&amp;= \frac{1}{7}
+\end{aligned}\end{split}\]</div>
+    </div>
+</div></section>
 </section>
 <section id="applications-of-derivatives-and-related-rates">
 <h2>Applications of derivatives and related rates<a class="headerlink" href="#applications-of-derivatives-and-related-rates" title="Permalink to this headline"></a></h2>
@@ -433,23 +469,18 @@ you’ll have all the information required to sketch:</p>
 </table>
 <section id="q3-a-cylinder-with-a-radius-of-4m-is-being-filled-at-a-rate-of-2m-3-min-how-quickly-is-the-height-of-the-water-changing">
 <h3>Q3: A cylinder with a radius of <span class="math notranslate nohighlight">\(4m\)</span> is being filled at a rate of <span class="math notranslate nohighlight">\(2m^3/min\)</span>. How quickly is the height of the water changing?<a class="headerlink" href="#q3-a-cylinder-with-a-radius-of-4m-is-being-filled-at-a-rate-of-2m-3-min-how-quickly-is-the-height-of-the-water-changing" title="Permalink to this headline"></a></h3>
-</section>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/95.jpg"><img alt="../../_images/95.jpg" src="../../_images/95.jpg" style="width: 700px;" /></a>
+    </div>
+</div></section>
 <section id="q4-ship-a-is-located-100km-west-of-ship-b-ship-a-is-travelling-at-20km-h-east-and-ship-b-is-travelling-at-30km-h-north-at-what-rate-does-the-distance-between-the-two-ships-change-after-6-hours">
 <h3>Q4: Ship A is located <span class="math notranslate nohighlight">\(100km\)</span> west of ship B. Ship A is travelling at <span class="math notranslate nohighlight">\(20km/h\)</span> east and ship B is travelling at <span class="math notranslate nohighlight">\(30km/h\)</span> north. At what rate does the distance between the two ships change after <span class="math notranslate nohighlight">\(6\)</span> hours?<a class="headerlink" href="#q4-ship-a-is-located-100km-west-of-ship-b-ship-a-is-travelling-at-20km-h-east-and-ship-b-is-travelling-at-30km-h-north-at-what-rate-does-the-distance-between-the-two-ships-change-after-6-hours" title="Permalink to this headline"></a></h3>
-</section>
-</section>
-<section id="l-hopital-s-rule">
-<h2>L’Hopital’s Rule<a class="headerlink" href="#l-hopital-s-rule" title="Permalink to this headline"></a></h2>
-<p>L’Hopital’s rule provides an easy to solve limits that otherwise would have been impossible/very difficult to compute using conventional algebra.</p>
-<section id="q5-compute-lim-x-to-0-frac-x-sin-x-x-2-cos-x-sin-x">
-<h3>Q5: Compute <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x + sin(x)}{x^2 + cos(x)sin(x)}\)</span>.<a class="headerlink" href="#q5-compute-lim-x-to-0-frac-x-sin-x-x-2-cos-x-sin-x" title="Permalink to this headline"></a></h3>
-</section>
-<section id="q6-compute-lim-x-to-0-xln-x">
-<h3>Q6: Compute <span class="math notranslate nohighlight">\(\lim_{x \to 0^+} xln(x)\)</span>.<a class="headerlink" href="#q6-compute-lim-x-to-0-xln-x" title="Permalink to this headline"></a></h3>
-</section>
-<section id="q7-compute-lim-x-to-infty-left-frac-1-e-x-1-right-e-x">
-<h3>Q7: Compute <span class="math notranslate nohighlight">\(\lim_{x \to \infty} \left(\frac{1}{e^{x}}+1\right)^{e^{x}}\)</span>.<a class="headerlink" href="#q7-compute-lim-x-to-infty-left-frac-1-e-x-1-right-e-x" title="Permalink to this headline"></a></h3>
-</section>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/105.jpg"><img alt="../../_images/105.jpg" src="../../_images/105.jpg" style="width: 700px;" /></a>
+    </div>
+</div></section>
 </section>
 </section>
 
@@ -458,7 +489,7 @@ you’ll have all the information required to sketch:</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tutorial7.html" class="btn btn-neutral float-left" title="Tutorial Week 7" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../mata33_winter/mata33.html" class="btn btn-neutral float-right" title="MATA33 Winter 2023" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial9.html" class="btn btn-neutral float-right" title="Tutorial Week 9" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

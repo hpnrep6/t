@@ -99,6 +99,10 @@ Q3: A 60°C object is placed in a 20°C room. After 10 minutes, the temperature 
 Optimization
 ------------
 
+One method of solving optimization problems is to use the Test for Absolute Extrema, which generally states that:
+
+Given a function :math:`f(x)` that is continuous on a closed interval, you can find the absolute maximum and minimum by looking at its critical points and endpoints.
+
 Q4: Find the dimensions of the largest rectangle that fits in between :math:`x^2` and :math:`y=3`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

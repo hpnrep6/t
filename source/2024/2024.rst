@@ -1,0 +1,10 @@
+.. _2024:
+
+2024
+====
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Pages for 2024
+   
+   mata36_winter/mata36

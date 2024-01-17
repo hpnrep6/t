@@ -47,17 +47,14 @@ U-Substitution
 
 To briefly summarize U-sub, you would:
 
-1. Choose a :math:`u` and find the corresponding :math:`du = u'(x) dx`. Ideally, both :math:`u` and :math:`du` 
-values appear in the expression you're integrating.
+1. Choose a :math:`u` and find the corresponding :math:`du = u'(x) dx`. Ideally, both :math:`u` and :math:`du` values appear in the expression you're integrating.
 
-2. Substitute in your :math:`u` and :math:`du` values into the expression being integrated. You may need to 
-rearrange the :math:`du` equation in some cases, but by the end of this step, there should be no :math:`dx` in
-your integral.
+2. Substitute in your :math:`u` and :math:`du` values into the expression being integrated. You may need to rearrange the :math:`du` equation in some cases, but by the end of this step, there should be no :math:`dx` in your integral.
 
-3. Continue integrating with one of the other integration methods until you're able to simply use the basic
-integration rules.
+3. Continue integrating with one of the other integration methods until you're able to simply use the basic integration rules.
 
 4. Reverse the substitution so that your final expression is in terms of :math:`x` and not :math:`u`.
+
 
 Note: In some cases, you may need to do more than one U-sub. In this case, just follow the alphabet and use the letters
 :math:`v` and/or :math:`w` instead of :math:`u`.
@@ -73,8 +70,7 @@ To briefly summarize Integration by Parts (IBP), you would:
 
 3. Replace your integral :math:`\int u \cdot dv` with :math:`uv - \int v \cdot du`
 
-4. Continue integrating with one of the other integration methods until you're able to simply use the basic
-integration rules. There is no need to reverse anything like in U-sub since your new integral should still be defined in terms of x.
+4. Continue integrating with one of the other integration methods until you're able to simply use the basic integration rules. There is no need to reverse anything like in U-sub since your new integral should still be defined in terms of x.
 
 As a guideline for which function in your integral to choose as an :math:`u` value in an integration by parts step, we can follow LIATE.
 

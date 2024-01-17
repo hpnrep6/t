@@ -441,14 +441,10 @@ tex: {packages: {'[+]': ['ams']}}
 <section id="u-substitution">
 <h3>U-Substitution<a class="headerlink" href="#u-substitution" title="Permalink to this heading"></a></h3>
 <p>To briefly summarize U-sub, you would:</p>
-<p>1. Choose a <span class="math notranslate nohighlight">\(u\)</span> and find the corresponding <span class="math notranslate nohighlight">\(du = u'(x) dx\)</span>. Ideally, both <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>
-values appear in the expression you’re integrating.</p>
-<p>2. Substitute in your <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span> values into the expression being integrated. You may need to
-rearrange the <span class="math notranslate nohighlight">\(du\)</span> equation in some cases, but by the end of this step, there should be no <span class="math notranslate nohighlight">\(dx\)</span> in
-your integral.</p>
-<p>3. Continue integrating with one of the other integration methods until you’re able to simply use the basic
-integration rules.</p>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple">
+<li><p>Choose a <span class="math notranslate nohighlight">\(u\)</span> and find the corresponding <span class="math notranslate nohighlight">\(du = u'(x) dx\)</span>. Ideally, both <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span> values appear in the expression you’re integrating.</p></li>
+<li><p>Substitute in your <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span> values into the expression being integrated. You may need to rearrange the <span class="math notranslate nohighlight">\(du\)</span> equation in some cases, but by the end of this step, there should be no <span class="math notranslate nohighlight">\(dx\)</span> in your integral.</p></li>
+<li><p>Continue integrating with one of the other integration methods until you’re able to simply use the basic integration rules.</p></li>
 <li><p>Reverse the substitution so that your final expression is in terms of <span class="math notranslate nohighlight">\(x\)</span> and not <span class="math notranslate nohighlight">\(u\)</span>.</p></li>
 </ol>
 <p>Note: In some cases, you may need to do more than one U-sub. In this case, just follow the alphabet and use the letters
@@ -461,9 +457,8 @@ integration rules.</p>
 <li><p>Choose a <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span>, where the expression <span class="math notranslate nohighlight">\(u \cdot dv\)</span> appears in your integral. Your choice of <span class="math notranslate nohighlight">\(dv\)</span> should be easily integrable.</p></li>
 <li><p>Calculate <span class="math notranslate nohighlight">\(du = u'(x)\)</span> and <span class="math notranslate nohighlight">\(v = \int dv\)</span>.</p></li>
 <li><p>Replace your integral <span class="math notranslate nohighlight">\(\int u \cdot dv\)</span> with <span class="math notranslate nohighlight">\(uv - \int v \cdot du\)</span></p></li>
+<li><p>Continue integrating with one of the other integration methods until you’re able to simply use the basic integration rules. There is no need to reverse anything like in U-sub since your new integral should still be defined in terms of x.</p></li>
 </ol>
-<p>4. Continue integrating with one of the other integration methods until you’re able to simply use the basic
-integration rules. There is no need to reverse anything like in U-sub since your new integral should still be defined in terms of x.</p>
 <p>As a guideline for which function in your integral to choose as an <span class="math notranslate nohighlight">\(u\)</span> value in an integration by parts step, we can follow LIATE.</p>
 <p>This stands for:</p>
 <ul class="simple">

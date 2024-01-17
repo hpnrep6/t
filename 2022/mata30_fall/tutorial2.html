@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../2023/2023.html">2023</a><ul>
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-2">
-<span id="mata30-fall-tut-2"></span><h1>Tutorial Week 2<a class="headerlink" href="#tutorial-week-2" title="Permalink to this headline"></a></h1>
+<span id="mata30-fall-tut-2"></span><h1>Tutorial Week 2<a class="headerlink" href="#tutorial-week-2" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -408,9 +423,9 @@ tex: {packages: {'[+]': ['ams']}}
 </script><p>Welcome to your first tutorial. In this tutorial, we’ll be reviewing some prerequisite material
 you’re already expected to understand as well as week 1 material.</p>
 <section id="writing-math">
-<h2>Writing Math<a class="headerlink" href="#writing-math" title="Permalink to this headline"></a></h2>
+<h2>Writing Math<a class="headerlink" href="#writing-math" title="Permalink to this heading"></a></h2>
 <section id="assigning-values-to-variables">
-<h3>Assigning values to variables<a class="headerlink" href="#assigning-values-to-variables" title="Permalink to this headline"></a></h3>
+<h3>Assigning values to variables<a class="headerlink" href="#assigning-values-to-variables" title="Permalink to this heading"></a></h3>
 <p>You may be familiar with variables like <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span> from high school, but on something like a test or written assignment,
 how would you define a new variable?</p>
 <p>One way would be to use the word “let”, such as:</p>
@@ -420,7 +435,7 @@ how would you define a new variable?</p>
 <p>Of course, there are many other ways to define a variable, and you might notice some of them while doing your homework/readings.</p>
 </section>
 <section id="showing-your-work">
-<h3>Showing your work<a class="headerlink" href="#showing-your-work" title="Permalink to this headline"></a></h3>
+<h3>Showing your work<a class="headerlink" href="#showing-your-work" title="Permalink to this heading"></a></h3>
 <p>On a test, try to adequetely justify each step in your solution, as simply stating the answer to a complicated problem may not earn
 you a lot of marks (or if any at all).</p>
 <p>For example, if you were given the question:</p>
@@ -439,26 +454,26 @@ x &amp;= \dfrac{1}{-4}
 </section>
 </section>
 <section id="factoring">
-<h2>Factoring<a class="headerlink" href="#factoring" title="Permalink to this headline"></a></h2>
+<h2>Factoring<a class="headerlink" href="#factoring" title="Permalink to this heading"></a></h2>
 <p>It probably has been a few months since the last time you factored something, so I thought
 it’ll be good that we review this.</p>
 <p>One thing that should sound familiar is the term “perfect square”.</p>
 <p>A perfect square is an integer that is the square (<span class="math notranslate nohighlight">\(x^2\)</span>) of another integer.</p>
 <p>For example, the perfect square <span class="math notranslate nohighlight">\(9 = 3^2\)</span>.</p>
 <section id="common-factors">
-<h3>Common factors<a class="headerlink" href="#common-factors" title="Permalink to this headline"></a></h3>
+<h3>Common factors<a class="headerlink" href="#common-factors" title="Permalink to this heading"></a></h3>
 <p>If two terms have a common factor, then you can “move” that factor out, for example <span class="math notranslate nohighlight">\(3x + 3y = 3(x + y)\)</span>
 where <span class="math notranslate nohighlight">\(3\)</span> is the common factor of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p>
 </section>
 <section id="difference-of-squares">
-<h3>Difference of squares<a class="headerlink" href="#difference-of-squares" title="Permalink to this headline"></a></h3>
+<h3>Difference of squares<a class="headerlink" href="#difference-of-squares" title="Permalink to this heading"></a></h3>
 <p>If you had an equation in the form <span class="math notranslate nohighlight">\(x^2 - y^2\)</span>,
 then you can factor it into <span class="math notranslate nohighlight">\((x - y)(x + y)\)</span>. For example, <span class="math notranslate nohighlight">\(x^2 - 9 = (x-3)(x+3)\)</span></p>
 <p>In this case, <span class="math notranslate nohighlight">\(9 = 3^2\)</span>, but the second term (<span class="math notranslate nohighlight">\(y\)</span>) doesn’t have to be an integer. For example,
 you could have <span class="math notranslate nohighlight">\(x^2 - 2 = (x - \sqrt{2})(x + \sqrt{2})\)</span> since <span class="math notranslate nohighlight">\(2 = (\sqrt{2})^2\)</span>.</p>
 </section>
 <section id="cross-multiplication-method-for-quadratics">
-<h3>Cross-multiplication method (for quadratics)<a class="headerlink" href="#cross-multiplication-method-for-quadratics" title="Permalink to this headline"></a></h3>
+<h3>Cross-multiplication method (for quadratics)<a class="headerlink" href="#cross-multiplication-method-for-quadratics" title="Permalink to this heading"></a></h3>
 <p>You could find the full diagrams and stuff by googling cross-multiplication method, so
 here’s a somewhat simplified version just to get the essentials down:</p>
 <p>Say you have the quadratic <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span> and let the factored form be <span class="math notranslate nohighlight">\((gx + j)(hx + k)\)</span>.
@@ -471,16 +486,16 @@ b &amp;= gk + jh \text{ (Cross multiply)}
 \end{aligned}\end{split}\]</div>
 </section>
 <section id="quadratic-equation">
-<h3>Quadratic equation<a class="headerlink" href="#quadratic-equation" title="Permalink to this headline"></a></h3>
+<h3>Quadratic equation<a class="headerlink" href="#quadratic-equation" title="Permalink to this heading"></a></h3>
 <p>If you still can’t manage to factor your quadratic equation using the previous methods,
 then you can get the factors by solving the quadratic equation:</p>
 <p><span class="math notranslate nohighlight">\(x = \dfrac{ -b \pm \sqrt{b^2 - 4ac}}{2a}\)</span></p>
 </section>
 </section>
 <section id="lines">
-<h2>Lines<a class="headerlink" href="#lines" title="Permalink to this headline"></a></h2>
+<h2>Lines<a class="headerlink" href="#lines" title="Permalink to this heading"></a></h2>
 <section id="q1-what-is-the-equation-of-the-line-with-a-x-intercept-of-3-and-a-y-intercept-of-5">
-<h3>Q1: What is the equation of the line with a x-intercept of <span class="math notranslate nohighlight">\(-3\)</span> and a y-intercept of <span class="math notranslate nohighlight">\(5\)</span>?<a class="headerlink" href="#q1-what-is-the-equation-of-the-line-with-a-x-intercept-of-3-and-a-y-intercept-of-5" title="Permalink to this headline"></a></h3>
+<h3>Q1: What is the equation of the line with a x-intercept of <span class="math notranslate nohighlight">\(-3\)</span> and a y-intercept of <span class="math notranslate nohighlight">\(5\)</span>?<a class="headerlink" href="#q1-what-is-the-equation-of-the-line-with-a-x-intercept-of-3-and-a-y-intercept-of-5" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>From what you know about x and y intercepts, you should be able to identify that <span class="math notranslate nohighlight">\((-3, 0)\)</span> and
@@ -496,7 +511,7 @@ which gives you <span class="math notranslate nohighlight">\(y = -\dfrac{5}{3}x 
    </div>
 </div></section>
 <section id="q2-find-the-equation-of-a-line-perpendicular-to-3x-2y-4-0">
-<h3>Q2: Find the equation of a line perpendicular to <span class="math notranslate nohighlight">\(-3x + 2y + 4 = 0\)</span>.<a class="headerlink" href="#q2-find-the-equation-of-a-line-perpendicular-to-3x-2y-4-0" title="Permalink to this headline"></a></h3>
+<h3>Q2: Find the equation of a line perpendicular to <span class="math notranslate nohighlight">\(-3x + 2y + 4 = 0\)</span>.<a class="headerlink" href="#q2-find-the-equation-of-a-line-perpendicular-to-3x-2y-4-0" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>First, you want to turn this into slope-intercept form, so move everything but <span class="math notranslate nohighlight">\(y\)</span>
@@ -509,9 +524,9 @@ the negative reciprocol of <span class="math notranslate nohighlight">\(\dfrac{3
 </div></section>
 </section>
 <section id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading"></a></h2>
 <section id="q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1">
-<h3>Q3: Suppose you have the function <span class="math notranslate nohighlight">\(f(4x + 1) = \dfrac{3x}{2x + 1}\)</span>.<a class="headerlink" href="#q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1" title="Permalink to this headline"></a></h3>
+<h3>Q3: Suppose you have the function <span class="math notranslate nohighlight">\(f(4x + 1) = \dfrac{3x}{2x + 1}\)</span>.<a class="headerlink" href="#q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1" title="Permalink to this heading"></a></h3>
 <ol class="loweralpha simple">
 <li><p>What is <span class="math notranslate nohighlight">\(f(5)\)</span>?</p></li>
 </ol>
@@ -575,7 +590,7 @@ domain is <span class="math notranslate nohighlight">\((-\infty , -1) \cup (-1, 
    </div>
 </div></section>
 <section id="q4-what-is-the-natural-domain-of-f-x-sqrt-cos-sin-x">
-<h3>Q4: What is the natural domain of <span class="math notranslate nohighlight">\(f(x) = \sqrt{cos(sin(x))}\)</span>?<a class="headerlink" href="#q4-what-is-the-natural-domain-of-f-x-sqrt-cos-sin-x" title="Permalink to this headline"></a></h3>
+<h3>Q4: What is the natural domain of <span class="math notranslate nohighlight">\(f(x) = \sqrt{cos(sin(x))}\)</span>?<a class="headerlink" href="#q4-what-is-the-natural-domain-of-f-x-sqrt-cos-sin-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Since there’s a square root, you know that the domain is all values where <span class="math notranslate nohighlight">\(cos(sin(x)) \geq 0\)</span>.</p>
@@ -585,7 +600,7 @@ is positive for all numbers, which means the domain is <span class="math notrans
    </div>
 </div></section>
 <section id="q5-find-a-function-with-the-domain-0-3-cup-3-5">
-<h3>Q5: Find a function with the domain <span class="math notranslate nohighlight">\([0, 3) \cup (3, 5]\)</span>.<a class="headerlink" href="#q5-find-a-function-with-the-domain-0-3-cup-3-5" title="Permalink to this headline"></a></h3>
+<h3>Q5: Find a function with the domain <span class="math notranslate nohighlight">\([0, 3) \cup (3, 5]\)</span>.<a class="headerlink" href="#q5-find-a-function-with-the-domain-0-3-cup-3-5" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>For this question, you’ll need to dig into your toolset of functions and find one that
@@ -604,7 +619,7 @@ the value being square rooted can’t be negative.</p>
    </div>
 </div></section>
 <section id="q6-find-the-domain-of-f-x-x-4-x-2">
-<h3>Q6: Find the domain of <span class="math notranslate nohighlight">\(f(x) = |x + 4| - x^2\)</span>.<a class="headerlink" href="#q6-find-the-domain-of-f-x-x-4-x-2" title="Permalink to this headline"></a></h3>
+<h3>Q6: Find the domain of <span class="math notranslate nohighlight">\(f(x) = |x + 4| - x^2\)</span>.<a class="headerlink" href="#q6-find-the-domain-of-f-x-x-4-x-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>If you have the sum or difference of two functions (in this case <span class="math notranslate nohighlight">\(|x + 4|\)</span> and <span class="math notranslate nohighlight">\(x^2\)</span>), then the
@@ -614,10 +629,10 @@ domain is the intersection of the two.</p>
 </div></section>
 </section>
 <section id="sketching-functions">
-<h2>Sketching functions<a class="headerlink" href="#sketching-functions" title="Permalink to this headline"></a></h2>
+<h2>Sketching functions<a class="headerlink" href="#sketching-functions" title="Permalink to this heading"></a></h2>
 <p>Check your answers using <a class="reference external" href="https://www.desmos.com/calculator">https://www.desmos.com/calculator</a>.</p>
 <section id="q7-sketch-y-3log-2-x-4-2">
-<h3>Q7: Sketch <span class="math notranslate nohighlight">\(y = 3log_2(x + 4) - 2\)</span>.<a class="headerlink" href="#q7-sketch-y-3log-2-x-4-2" title="Permalink to this headline"></a></h3>
+<h3>Q7: Sketch <span class="math notranslate nohighlight">\(y = 3log_2(x + 4) - 2\)</span>.<a class="headerlink" href="#q7-sketch-y-3log-2-x-4-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Let’s first get the graph of <span class="math notranslate nohighlight">\(log_2(x)\)</span>.</p>
@@ -717,7 +732,7 @@ domain is the intersection of the two.</p>
    </div>
 </div></section>
 <section id="q8-what-is-the-domain-of-y-3log-2-x-4-2">
-<h3>Q8: What is the domain of <span class="math notranslate nohighlight">\(y = 3log_2(x + 4) - 2\)</span>?<a class="headerlink" href="#q8-what-is-the-domain-of-y-3log-2-x-4-2" title="Permalink to this headline"></a></h3>
+<h3>Q8: What is the domain of <span class="math notranslate nohighlight">\(y = 3log_2(x + 4) - 2\)</span>?<a class="headerlink" href="#q8-what-is-the-domain-of-y-3log-2-x-4-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Recall that you can only take the log of a positive number (which means 0 is also excluded), so solving
@@ -725,7 +740,7 @@ for the inequality <span class="math notranslate nohighlight">\(x + 4 &gt; 0\)</
    </div>
 </div></section>
 <section id="q9-sketch-y-sqrt-4-x-2">
-<h3>Q9: Sketch <span class="math notranslate nohighlight">\(y = \sqrt{4 - x^2}\)</span>.<a class="headerlink" href="#q9-sketch-y-sqrt-4-x-2" title="Permalink to this headline"></a></h3>
+<h3>Q9: Sketch <span class="math notranslate nohighlight">\(y = \sqrt{4 - x^2}\)</span>.<a class="headerlink" href="#q9-sketch-y-sqrt-4-x-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Plot the points, and you’ll see the upper half of a circle with radius 2 centered around the origin.</p>
@@ -739,9 +754,9 @@ positive, so we only take the part of the circle where <span class="math notrans
 </div></section>
 </section>
 <section id="function-inverses">
-<h2>Function inverses<a class="headerlink" href="#function-inverses" title="Permalink to this headline"></a></h2>
+<h2>Function inverses<a class="headerlink" href="#function-inverses" title="Permalink to this heading"></a></h2>
 <section id="q10-find-the-inverse-of-y-e-x-7">
-<h3>Q10: Find the inverse of <span class="math notranslate nohighlight">\(y = e^x - 7\)</span>.<a class="headerlink" href="#q10-find-the-inverse-of-y-e-x-7" title="Permalink to this headline"></a></h3>
+<h3>Q10: Find the inverse of <span class="math notranslate nohighlight">\(y = e^x - 7\)</span>.<a class="headerlink" href="#q10-find-the-inverse-of-y-e-x-7" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Switch x and y in the equation, and then solve for y. We get:</p>
@@ -756,7 +771,7 @@ ln(x + 7) &amp;= y
    </div>
 </div></section>
 <section id="q11-find-the-inverse-of-y-x-2-restricted-on-x-geq-0">
-<h3>Q11: Find the inverse of <span class="math notranslate nohighlight">\(y = x^2\)</span> restricted on <span class="math notranslate nohighlight">\(x \geq 0\)</span>.<a class="headerlink" href="#q11-find-the-inverse-of-y-x-2-restricted-on-x-geq-0" title="Permalink to this headline"></a></h3>
+<h3>Q11: Find the inverse of <span class="math notranslate nohighlight">\(y = x^2\)</span> restricted on <span class="math notranslate nohighlight">\(x \geq 0\)</span>.<a class="headerlink" href="#q11-find-the-inverse-of-y-x-2-restricted-on-x-geq-0" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Without the domain restriction, <span class="math notranslate nohighlight">\(y = x^2\)</span> wouldn’t pass the horizontal
@@ -777,7 +792,7 @@ your inverse.</p>
    </div>
 </div></section>
 <section id="q12-let-f-x-e-x-3-1-2x-1-evaluate-f-1-dfrac-1-e-1">
-<h3>Q12: Let <span class="math notranslate nohighlight">\(f(x) = e^{x^3 - 1} + 2x - 1\)</span>. Evaluate <span class="math notranslate nohighlight">\(f^{-1}(\dfrac{1}{e} - 1)\)</span>.<a class="headerlink" href="#q12-let-f-x-e-x-3-1-2x-1-evaluate-f-1-dfrac-1-e-1" title="Permalink to this headline"></a></h3>
+<h3>Q12: Let <span class="math notranslate nohighlight">\(f(x) = e^{x^3 - 1} + 2x - 1\)</span>. Evaluate <span class="math notranslate nohighlight">\(f^{-1}(\dfrac{1}{e} - 1)\)</span>.<a class="headerlink" href="#q12-let-f-x-e-x-3-1-2x-1-evaluate-f-1-dfrac-1-e-1" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>What we are looking for is the value of <span class="math notranslate nohighlight">\(x\)</span> that maps <span class="math notranslate nohighlight">\(f(x)\)</span> to <span class="math notranslate nohighlight">\(\dfrac{1}{e} - 1\)</span>.</p>
@@ -815,9 +830,9 @@ your inverse.</p>
 </div></section>
 </section>
 <section id="absolute-values">
-<h2>Absolute values<a class="headerlink" href="#absolute-values" title="Permalink to this headline"></a></h2>
+<h2>Absolute values<a class="headerlink" href="#absolute-values" title="Permalink to this heading"></a></h2>
 <section id="q13-solve-the-equation-dfrac-x-4-x-1-5">
-<h3>Q13: Solve the equation <span class="math notranslate nohighlight">\(\dfrac{|x + 4|}{|x - 1|} = 5\)</span>.<a class="headerlink" href="#q13-solve-the-equation-dfrac-x-4-x-1-5" title="Permalink to this headline"></a></h3>
+<h3>Q13: Solve the equation <span class="math notranslate nohighlight">\(\dfrac{|x + 4|}{|x - 1|} = 5\)</span>.<a class="headerlink" href="#q13-solve-the-equation-dfrac-x-4-x-1-5" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">
@@ -830,7 +845,7 @@ your inverse.</p>
    </div>
 </div></section>
 <section id="q14-solve-the-inequality-x-5-lt-3">
-<h3>Q14: Solve the inequality <span class="math notranslate nohighlight">\(|x - 5| \lt 3\)</span>.<a class="headerlink" href="#q14-solve-the-inequality-x-5-lt-3" title="Permalink to this headline"></a></h3>
+<h3>Q14: Solve the inequality <span class="math notranslate nohighlight">\(|x - 5| \lt 3\)</span>.<a class="headerlink" href="#q14-solve-the-inequality-x-5-lt-3" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Using inequality properties, we can get</p>
@@ -844,9 +859,9 @@ your inverse.</p>
 </div></section>
 </section>
 <section id="inequalities">
-<h2>Inequalities<a class="headerlink" href="#inequalities" title="Permalink to this headline"></a></h2>
+<h2>Inequalities<a class="headerlink" href="#inequalities" title="Permalink to this heading"></a></h2>
 <section id="q15-solve-the-inequality-x-3-3x-2-2x">
-<h3>Q15: Solve the inequality <span class="math notranslate nohighlight">\(x^3 + 3x^2 &gt; -2x\)</span>.<a class="headerlink" href="#q15-solve-the-inequality-x-3-3x-2-2x" title="Permalink to this headline"></a></h3>
+<h3>Q15: Solve the inequality <span class="math notranslate nohighlight">\(x^3 + 3x^2 &gt; -2x\)</span>.<a class="headerlink" href="#q15-solve-the-inequality-x-3-3x-2-2x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Move the <span class="math notranslate nohighlight">\(-2x\)</span> to the left side to get <span class="math notranslate nohighlight">\(x^3 + 3x^2 + 2x &gt; 0\)</span>.</p>
@@ -860,9 +875,9 @@ and check the values in between the x-intercepts to see if they’re greater tha
 </div></section>
 </section>
 <section id="logarithms-and-exponents">
-<h2>Logarithms and exponents<a class="headerlink" href="#logarithms-and-exponents" title="Permalink to this headline"></a></h2>
+<h2>Logarithms and exponents<a class="headerlink" href="#logarithms-and-exponents" title="Permalink to this heading"></a></h2>
 <section id="q16-solve-the-equation-2-pi-x-7-pi-x-e-8-0">
-<h3>Q16: Solve the equation <span class="math notranslate nohighlight">\(2(\pi^x) + 7(\pi^x) -e^8 = 0\)</span>.<a class="headerlink" href="#q16-solve-the-equation-2-pi-x-7-pi-x-e-8-0" title="Permalink to this headline"></a></h3>
+<h3>Q16: Solve the equation <span class="math notranslate nohighlight">\(2(\pi^x) + 7(\pi^x) -e^8 = 0\)</span>.<a class="headerlink" href="#q16-solve-the-equation-2-pi-x-7-pi-x-e-8-0" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">
@@ -880,9 +895,9 @@ x &amp;= log_{\pi}(\dfrac{e^8}{9}) \\
 </div></section>
 </section>
 <section id="function-composition">
-<h2>Function composition<a class="headerlink" href="#function-composition" title="Permalink to this headline"></a></h2>
+<h2>Function composition<a class="headerlink" href="#function-composition" title="Permalink to this heading"></a></h2>
 <section id="q17-let-f-x-x-2-x-g-x-log-scriptsize-dfrac-1-2-x-h-x-cos-x-restrict-x-to-0-leq-x-leq-pi-solve-the-equation-f-circ-g-circ-h-x-0">
-<h3>Q17: Let <span class="math notranslate nohighlight">\(f(x) = x^2 - x\)</span>, <span class="math notranslate nohighlight">\(g(x) = log_{\scriptsize{}\dfrac{1}{2}}(x)\)</span>, <span class="math notranslate nohighlight">\(h(x) = cos(x)\)</span>. Restrict <span class="math notranslate nohighlight">\(x\)</span> to <span class="math notranslate nohighlight">\(0 \leq x \leq \pi\)</span>. Solve the equation <span class="math notranslate nohighlight">\((f \circ g \circ h)(x) = 0\)</span>.<a class="headerlink" href="#q17-let-f-x-x-2-x-g-x-log-scriptsize-dfrac-1-2-x-h-x-cos-x-restrict-x-to-0-leq-x-leq-pi-solve-the-equation-f-circ-g-circ-h-x-0" title="Permalink to this headline"></a></h3>
+<h3>Q17: Let <span class="math notranslate nohighlight">\(f(x) = x^2 - x\)</span>, <span class="math notranslate nohighlight">\(g(x) = log_{\scriptsize{}\dfrac{1}{2}}(x)\)</span>, <span class="math notranslate nohighlight">\(h(x) = cos(x)\)</span>. Restrict <span class="math notranslate nohighlight">\(x\)</span> to <span class="math notranslate nohighlight">\(0 \leq x \leq \pi\)</span>. Solve the equation <span class="math notranslate nohighlight">\((f \circ g \circ h)(x) = 0\)</span>.<a class="headerlink" href="#q17-let-f-x-x-2-x-g-x-log-scriptsize-dfrac-1-2-x-h-x-cos-x-restrict-x-to-0-leq-x-leq-pi-solve-the-equation-f-circ-g-circ-h-x-0" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>You can somewhat simplify this question by breaking it down into multiple steps.</p>

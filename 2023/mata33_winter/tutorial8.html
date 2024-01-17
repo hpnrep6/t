@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-8">
-<h1>Tutorial Week 8<a class="headerlink" href="#tutorial-week-8" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 8<a class="headerlink" href="#tutorial-week-8" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,23 +421,23 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="partial-derivatives">
-<h2>Partial Derivatives<a class="headerlink" href="#partial-derivatives" title="Permalink to this headline"></a></h2>
+<h2>Partial Derivatives<a class="headerlink" href="#partial-derivatives" title="Permalink to this heading"></a></h2>
 <section id="q1-let-f-x-y-z-x-3-y-2-sin-z-compute-f-x-f-y-f-z-compute-frac-partial-x-partial-z-6-8-pi">
-<h3>Q1: Let <span class="math notranslate nohighlight">\(f(x, y, z) = x^3 + y^2 + sin(z)\)</span>. Compute <span class="math notranslate nohighlight">\(f_x, f_y, f_z\)</span>. Compute <span class="math notranslate nohighlight">\(\frac{\partial x}{\partial z} |_{(6, 8, \pi)}\)</span>.<a class="headerlink" href="#q1-let-f-x-y-z-x-3-y-2-sin-z-compute-f-x-f-y-f-z-compute-frac-partial-x-partial-z-6-8-pi" title="Permalink to this headline"></a></h3>
+<h3>Q1: Let <span class="math notranslate nohighlight">\(f(x, y, z) = x^3 + y^2 + sin(z)\)</span>. Compute <span class="math notranslate nohighlight">\(f_x, f_y, f_z\)</span>. Compute <span class="math notranslate nohighlight">\(\frac{\partial x}{\partial z} |_{(6, 8, \pi)}\)</span>.<a class="headerlink" href="#q1-let-f-x-y-z-x-3-y-2-sin-z-compute-f-x-f-y-f-z-compute-frac-partial-x-partial-z-6-8-pi" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/19.jpeg"><img alt="../../_images/19.jpeg" src="../../_images/19.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q2-let-g-x-y-2-xy-x-sqrt-y-find-frac-partial-g-partial-y">
-<h3>Q2: Let <span class="math notranslate nohighlight">\(g(x, y) = 2^{xy} + x\sqrt{y}\)</span>. Find <span class="math notranslate nohighlight">\(\frac{\partial g}{\partial y}\)</span>.<a class="headerlink" href="#q2-let-g-x-y-2-xy-x-sqrt-y-find-frac-partial-g-partial-y" title="Permalink to this headline"></a></h3>
+<h3>Q2: Let <span class="math notranslate nohighlight">\(g(x, y) = 2^{xy} + x\sqrt{y}\)</span>. Find <span class="math notranslate nohighlight">\(\frac{\partial g}{\partial y}\)</span>.<a class="headerlink" href="#q2-let-g-x-y-2-xy-x-sqrt-y-find-frac-partial-g-partial-y" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/28.jpeg"><img alt="../../_images/28.jpeg" src="../../_images/28.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q3-let-6-xyzw-sqrt-x-3-xyz-z-3-tan-xy-and-w-be-an-implicitly-defined-function-in-terms-of-x-y-and-z-find-w-z">
-<h3>Q3: Let <span class="math notranslate nohighlight">\(6^{xyzw} = \sqrt{x^3 + xyz - z^3 + tan(xy)}\)</span> and <span class="math notranslate nohighlight">\(w\)</span> be an implicitly defined function in terms of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>. Find <span class="math notranslate nohighlight">\(w_z\)</span>.<a class="headerlink" href="#q3-let-6-xyzw-sqrt-x-3-xyz-z-3-tan-xy-and-w-be-an-implicitly-defined-function-in-terms-of-x-y-and-z-find-w-z" title="Permalink to this headline"></a></h3>
+<h3>Q3: Let <span class="math notranslate nohighlight">\(6^{xyzw} = \sqrt{x^3 + xyz - z^3 + tan(xy)}\)</span> and <span class="math notranslate nohighlight">\(w\)</span> be an implicitly defined function in terms of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>. Find <span class="math notranslate nohighlight">\(w_z\)</span>.<a class="headerlink" href="#q3-let-6-xyzw-sqrt-x-3-xyz-z-3-tan-xy-and-w-be-an-implicitly-defined-function-in-terms-of-x-y-and-z-find-w-z" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/37.jpeg"><img alt="../../_images/37.jpeg" src="../../_images/37.jpeg" style="width: 700px;" /></a>
@@ -430,9 +445,9 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="marginal-costs">
-<h2>Marginal Costs<a class="headerlink" href="#marginal-costs" title="Permalink to this headline"></a></h2>
+<h2>Marginal Costs<a class="headerlink" href="#marginal-costs" title="Permalink to this heading"></a></h2>
 <section id="q4-let-c-x-y-z-5x-2-3y-x-z-3-denote-the-cost-of-producing-x-number-of-product-a-y-number-of-product-b-and-z-number-of-product-c-if-x-10-y-5-z-8-what-is-the-marginal-cost-with-respect-to-x-marginal-cost-with-respect-to-y-and-the-marginal-cost-with-respect-to-z">
-<h3>Q4: Let <span class="math notranslate nohighlight">\(C(x, y, z) = 5x^2 + 3y^x - z^3\)</span> denote the cost of producing x number of product A, y number of product B, and z number of product C. If <span class="math notranslate nohighlight">\(x = 10\)</span>, <span class="math notranslate nohighlight">\(y = 5\)</span>, <span class="math notranslate nohighlight">\(z = 8\)</span>, what is the marginal cost with respect to x, marginal cost with respect to y, and the marginal cost with respect to z?<a class="headerlink" href="#q4-let-c-x-y-z-5x-2-3y-x-z-3-denote-the-cost-of-producing-x-number-of-product-a-y-number-of-product-b-and-z-number-of-product-c-if-x-10-y-5-z-8-what-is-the-marginal-cost-with-respect-to-x-marginal-cost-with-respect-to-y-and-the-marginal-cost-with-respect-to-z" title="Permalink to this headline"></a></h3>
+<h3>Q4: Let <span class="math notranslate nohighlight">\(C(x, y, z) = 5x^2 + 3y^x - z^3\)</span> denote the cost of producing x number of product A, y number of product B, and z number of product C. If <span class="math notranslate nohighlight">\(x = 10\)</span>, <span class="math notranslate nohighlight">\(y = 5\)</span>, <span class="math notranslate nohighlight">\(z = 8\)</span>, what is the marginal cost with respect to x, marginal cost with respect to y, and the marginal cost with respect to z?<a class="headerlink" href="#q4-let-c-x-y-z-5x-2-3y-x-z-3-denote-the-cost-of-producing-x-number-of-product-a-y-number-of-product-b-and-z-number-of-product-c-if-x-10-y-5-z-8-what-is-the-marginal-cost-with-respect-to-x-marginal-cost-with-respect-to-y-and-the-marginal-cost-with-respect-to-z" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/47.jpeg"><img alt="../../_images/47.jpeg" src="../../_images/47.jpeg" style="width: 700px;" /></a>

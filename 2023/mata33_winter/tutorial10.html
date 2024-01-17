@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-10">
-<h1>Tutorial Week 10<a class="headerlink" href="#tutorial-week-10" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 10<a class="headerlink" href="#tutorial-week-10" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,16 +421,16 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="chain-rule">
-<h2>Chain Rule<a class="headerlink" href="#chain-rule" title="Permalink to this headline"></a></h2>
+<h2>Chain Rule<a class="headerlink" href="#chain-rule" title="Permalink to this heading"></a></h2>
 <section id="q1-let-z-e-xy-3x-2y-2-x-ln-t-1-st-y-cos-t-s-find-frac-partial-z-partial-s-using-the-chain-rule">
-<h3>Q1: Let <span class="math notranslate nohighlight">\(z = e^{xy} + 3x^2y^2\)</span>, <span class="math notranslate nohighlight">\(x = ln(t + 1) - st\)</span>, <span class="math notranslate nohighlight">\(y = cos(t + s)\)</span>. Find <span class="math notranslate nohighlight">\(\frac{\partial z}{\partial s}\)</span> using the chain rule.<a class="headerlink" href="#q1-let-z-e-xy-3x-2y-2-x-ln-t-1-st-y-cos-t-s-find-frac-partial-z-partial-s-using-the-chain-rule" title="Permalink to this headline"></a></h3>
+<h3>Q1: Let <span class="math notranslate nohighlight">\(z = e^{xy} + 3x^2y^2\)</span>, <span class="math notranslate nohighlight">\(x = ln(t + 1) - st\)</span>, <span class="math notranslate nohighlight">\(y = cos(t + s)\)</span>. Find <span class="math notranslate nohighlight">\(\frac{\partial z}{\partial s}\)</span> using the chain rule.<a class="headerlink" href="#q1-let-z-e-xy-3x-2y-2-x-ln-t-1-st-y-cos-t-s-find-frac-partial-z-partial-s-using-the-chain-rule" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/11.jpeg"><img alt="../../_images/11.jpeg" src="../../_images/11.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q2-suppose-f-depends-on-x-y-and-z-x-depends-on-r-and-s-y-depends-on-r-s-and-t-z-depends-on-r-and-t-draw-a-tree-diagram-for-the-f-and-use-the-chain-rule-to-find-frac-partial-f-partial-r-and-frac-partial-f-partial-t">
-<h3>Q2: Suppose <span class="math notranslate nohighlight">\(f\)</span> depends on <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>; <span class="math notranslate nohighlight">\(x\)</span> depends on <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(s\)</span>, <span class="math notranslate nohighlight">\(y\)</span> depends on <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(s\)</span>, and <span class="math notranslate nohighlight">\(t\)</span>; <span class="math notranslate nohighlight">\(z\)</span> depends on <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(t\)</span>. Draw a tree diagram for the f and use the chain rule to find <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial r}\)</span> and <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial t}\)</span>.<a class="headerlink" href="#q2-suppose-f-depends-on-x-y-and-z-x-depends-on-r-and-s-y-depends-on-r-s-and-t-z-depends-on-r-and-t-draw-a-tree-diagram-for-the-f-and-use-the-chain-rule-to-find-frac-partial-f-partial-r-and-frac-partial-f-partial-t" title="Permalink to this headline"></a></h3>
+<h3>Q2: Suppose <span class="math notranslate nohighlight">\(f\)</span> depends on <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span>; <span class="math notranslate nohighlight">\(x\)</span> depends on <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(s\)</span>, <span class="math notranslate nohighlight">\(y\)</span> depends on <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(s\)</span>, and <span class="math notranslate nohighlight">\(t\)</span>; <span class="math notranslate nohighlight">\(z\)</span> depends on <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(t\)</span>. Draw a tree diagram for the f and use the chain rule to find <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial r}\)</span> and <span class="math notranslate nohighlight">\(\frac{\partial f}{\partial t}\)</span>.<a class="headerlink" href="#q2-suppose-f-depends-on-x-y-and-z-x-depends-on-r-and-s-y-depends-on-r-s-and-t-z-depends-on-r-and-t-draw-a-tree-diagram-for-the-f-and-use-the-chain-rule-to-find-frac-partial-f-partial-r-and-frac-partial-f-partial-t" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/21.jpeg"><img alt="../../_images/21.jpeg" src="../../_images/21.jpeg" style="width: 700px;" /></a>
@@ -423,9 +438,9 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="tangent-planes">
-<h2>Tangent Planes<a class="headerlink" href="#tangent-planes" title="Permalink to this headline"></a></h2>
+<h2>Tangent Planes<a class="headerlink" href="#tangent-planes" title="Permalink to this heading"></a></h2>
 <section id="q3-given-z-x-2-y-x-ln-left-y-x-right-find-the-equation-of-the-plane-tangent-to-the-surface-at-0-3-ln-3">
-<h3>Q3: Given <span class="math notranslate nohighlight">\(z =x^{2}y-x+\ln\left(y+x\right)\)</span>, find the equation of the plane tangent to the surface at <span class="math notranslate nohighlight">\((0, 3, ln(3))\)</span>.<a class="headerlink" href="#q3-given-z-x-2-y-x-ln-left-y-x-right-find-the-equation-of-the-plane-tangent-to-the-surface-at-0-3-ln-3" title="Permalink to this headline"></a></h3>
+<h3>Q3: Given <span class="math notranslate nohighlight">\(z =x^{2}y-x+\ln\left(y+x\right)\)</span>, find the equation of the plane tangent to the surface at <span class="math notranslate nohighlight">\((0, 3, ln(3))\)</span>.<a class="headerlink" href="#q3-given-z-x-2-y-x-ln-left-y-x-right-find-the-equation-of-the-plane-tangent-to-the-surface-at-0-3-ln-3" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/31.jpeg"><img alt="../../_images/31.jpeg" src="../../_images/31.jpeg" style="width: 700px;" /></a>
@@ -433,9 +448,9 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="critical-points">
-<h2>Critical Points<a class="headerlink" href="#critical-points" title="Permalink to this headline"></a></h2>
+<h2>Critical Points<a class="headerlink" href="#critical-points" title="Permalink to this heading"></a></h2>
 <section id="q4-find-and-classify-the-critical-points-of-the-function-f-x-y-3x-3-frac-4-3-y-3-16x-9y">
-<h3>Q4: Find and classify the critical points of the function <span class="math notranslate nohighlight">\(f(x, y) = 3x^3 + \frac{4}{3}y^3 - 16x - 9y\)</span>.<a class="headerlink" href="#q4-find-and-classify-the-critical-points-of-the-function-f-x-y-3x-3-frac-4-3-y-3-16x-9y" title="Permalink to this headline"></a></h3>
+<h3>Q4: Find and classify the critical points of the function <span class="math notranslate nohighlight">\(f(x, y) = 3x^3 + \frac{4}{3}y^3 - 16x - 9y\)</span>.<a class="headerlink" href="#q4-find-and-classify-the-critical-points-of-the-function-f-x-y-3x-3-frac-4-3-y-3-16x-9y" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/41.jpeg"><img alt="../../_images/41.jpeg" src="../../_images/41.jpeg" style="width: 700px;" /></a>

@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-2">
-<h1>Tutorial Week 2<a class="headerlink" href="#tutorial-week-2" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 2<a class="headerlink" href="#tutorial-week-2" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -407,26 +422,26 @@ tex: {packages: {'[+]': ['ams']}}
 };
 </script><p>Welcome to your first tutorial!</p>
 <section id="what-are-tutorials">
-<h2>What are tutorials?<a class="headerlink" href="#what-are-tutorials" title="Permalink to this headline"></a></h2>
+<h2>What are tutorials?<a class="headerlink" href="#what-are-tutorials" title="Permalink to this heading"></a></h2>
 <p>In this course, tutorials are here to give you extra practice and review on the course content in a smaller class format, giving you more opportunities to have
 one-on-one support that you otherwise wouldn’t be able to easily get in say a two hundred person lecture.</p>
 <p>Do note that teaching assistants, or TAs, are given some freedom on how tutorials are run, so every tutorial will vary slightly in format and specific content, but all
 will cover the core concepts requied to be successful in this course.</p>
 </section>
 <section id="expectations-when-showing-your-work">
-<h2>Expectations when showing your work<a class="headerlink" href="#expectations-when-showing-your-work" title="Permalink to this headline"></a></h2>
+<h2>Expectations when showing your work<a class="headerlink" href="#expectations-when-showing-your-work" title="Permalink to this heading"></a></h2>
 <p>This course isn’t really proof and theory heavy, so when showing your work, you don’t need to say stuff like “1 + 0 = 1 by the additive identity property of the real numbers”, but you should justify
 any steps that couldn’t be easily followed by the TA (or sometimes professor) grading your paper (e.g. using L’Hopital’s theorem, which you’ll be doing later on in the course).</p>
 </section>
 <section id="sets">
-<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline"></a></h2>
+<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this heading"></a></h2>
 <p>Let’s start with a quick review of a concept you should be somewhat familiar with: Sets.</p>
 <p>A set is a collection of distinct objects and is defined with curly braces <span class="math notranslate nohighlight">\(\{ \}\)</span>, for example let <span class="math notranslate nohighlight">\(S = \{3, 5, 6\}\)</span>.</p>
 <p>You can use the symbol <span class="math notranslate nohighlight">\(\in\)</span> to denote that an element belongs to a set (or in other words, the element is in a set). For example, <span class="math notranslate nohighlight">\(3 \in \{1, 2, 3\}\)</span>.</p>
 <p>Similarly, you can also say that <span class="math notranslate nohighlight">\(4 \notin \{1, 2, 3\}\)</span>.</p>
 <p>There’s also the union (<span class="math notranslate nohighlight">\(\cup\)</span>) and intersection (<span class="math notranslate nohighlight">\(\cap\)</span>) operators, for example <span class="math notranslate nohighlight">\(\{1, 2, 3\} \cup \{8, 9\} = \{1, 2, 3, 8, 9\}\)</span>.</p>
 <section id="notable-sets">
-<h3>Notable sets<a class="headerlink" href="#notable-sets" title="Permalink to this headline"></a></h3>
+<h3>Notable sets<a class="headerlink" href="#notable-sets" title="Permalink to this heading"></a></h3>
 <p>You might remember <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> from high school, which, lucky for you, is a set!</p>
 <p>There’s a few notable sets that will be helpful to know, those being:</p>
 <ul class="simple">
@@ -438,12 +453,12 @@ any steps that couldn’t be easily followed by the TA (or sometimes professor) 
 <p>Now here’s a little trivia (well, basically the entirety of MATA22 if you decide to take that course)… what about <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>?</p>
 </section>
 <section id="intervals">
-<h3>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline"></a></h3>
+<h3>Intervals<a class="headerlink" href="#intervals" title="Permalink to this heading"></a></h3>
 <p>Intervals can be expressed using either set-builder notation, that being something like <span class="math notranslate nohighlight">\(I = \{x \in \mathbb{R} | 0 &lt; x \le 3 \}\)</span> or in interval notation <span class="math notranslate nohighlight">\((0, 3]\)</span></p>
 </section>
 </section>
 <section id="quantifiers-and-shorthands">
-<h2>Quantifiers and shorthands<a class="headerlink" href="#quantifiers-and-shorthands" title="Permalink to this headline"></a></h2>
+<h2>Quantifiers and shorthands<a class="headerlink" href="#quantifiers-and-shorthands" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\therefore\)</span> - Therefore</p></li>
 <li><p><span class="math notranslate nohighlight">\(\because\)</span> - Because</p></li>
@@ -465,10 +480,10 @@ any steps that couldn’t be easily followed by the TA (or sometimes professor) 
 </ul>
 </section>
 <section id="functions-and-graphs">
-<h2>Functions and graphs<a class="headerlink" href="#functions-and-graphs" title="Permalink to this headline"></a></h2>
+<h2>Functions and graphs<a class="headerlink" href="#functions-and-graphs" title="Permalink to this heading"></a></h2>
 <p>Let’s go through how to solve a few practice questions on functions now.</p>
 <section id="q1-what-is-the-equation-of-the-line-with-a-x-intercept-of-3-and-a-y-intercept-of-5">
-<h3>Q1: What is the equation of the line with a x-intercept of <span class="math notranslate nohighlight">\(-3\)</span> and a y-intercept of <span class="math notranslate nohighlight">\(5\)</span>?<a class="headerlink" href="#q1-what-is-the-equation-of-the-line-with-a-x-intercept-of-3-and-a-y-intercept-of-5" title="Permalink to this headline"></a></h3>
+<h3>Q1: What is the equation of the line with a x-intercept of <span class="math notranslate nohighlight">\(-3\)</span> and a y-intercept of <span class="math notranslate nohighlight">\(5\)</span>?<a class="headerlink" href="#q1-what-is-the-equation-of-the-line-with-a-x-intercept-of-3-and-a-y-intercept-of-5" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>From what you know about x and y intercepts, you should be able to identify that <span class="math notranslate nohighlight">\((-3, 0)\)</span> and
@@ -484,7 +499,7 @@ which gives you <span class="math notranslate nohighlight">\(y = -\dfrac{5}{3}x 
    </div>
 </div></section>
 <section id="q2-find-the-equation-of-a-line-perpendicular-to-3x-2y-4-0">
-<h3>Q2: Find the equation of a line perpendicular to <span class="math notranslate nohighlight">\(-3x + 2y + 4 = 0\)</span>.<a class="headerlink" href="#q2-find-the-equation-of-a-line-perpendicular-to-3x-2y-4-0" title="Permalink to this headline"></a></h3>
+<h3>Q2: Find the equation of a line perpendicular to <span class="math notranslate nohighlight">\(-3x + 2y + 4 = 0\)</span>.<a class="headerlink" href="#q2-find-the-equation-of-a-line-perpendicular-to-3x-2y-4-0" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>First, you want to turn this into slope-intercept form, so move everything but <span class="math notranslate nohighlight">\(y\)</span>
@@ -496,7 +511,7 @@ the negative reciprocol of <span class="math notranslate nohighlight">\(\dfrac{3
    </div>
 </div></section>
 <section id="q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1">
-<h3>Q3: Suppose you have the function <span class="math notranslate nohighlight">\(f(4x + 1) = \dfrac{3x}{2x + 1}\)</span>.<a class="headerlink" href="#q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1" title="Permalink to this headline"></a></h3>
+<h3>Q3: Suppose you have the function <span class="math notranslate nohighlight">\(f(4x + 1) = \dfrac{3x}{2x + 1}\)</span>.<a class="headerlink" href="#q3-suppose-you-have-the-function-f-4x-1-dfrac-3x-2x-1" title="Permalink to this heading"></a></h3>
 <ol class="loweralpha simple">
 <li><p>What is <span class="math notranslate nohighlight">\(f(5)\)</span>?</p></li>
 </ol>
@@ -560,7 +575,7 @@ domain is <span class="math notranslate nohighlight">\((-\infty , -1) \cup (-1, 
    </div>
 </div></section>
 <section id="q4-what-is-the-natural-domain-of-f-x-sqrt-cos-sin-x">
-<h3>Q4: What is the natural domain of <span class="math notranslate nohighlight">\(f(x) = \sqrt{cos(sin(x))}\)</span>?<a class="headerlink" href="#q4-what-is-the-natural-domain-of-f-x-sqrt-cos-sin-x" title="Permalink to this headline"></a></h3>
+<h3>Q4: What is the natural domain of <span class="math notranslate nohighlight">\(f(x) = \sqrt{cos(sin(x))}\)</span>?<a class="headerlink" href="#q4-what-is-the-natural-domain-of-f-x-sqrt-cos-sin-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Since there’s a square root, you know that the domain is all values where <span class="math notranslate nohighlight">\(cos(sin(x)) \geq 0\)</span>.</p>
@@ -571,21 +586,21 @@ is positive for all numbers, which means the domain is <span class="math notrans
 </div></section>
 </section>
 <section id="some-terminology-for-functions">
-<h2>Some terminology for functions<a class="headerlink" href="#some-terminology-for-functions" title="Permalink to this headline"></a></h2>
+<h2>Some terminology for functions<a class="headerlink" href="#some-terminology-for-functions" title="Permalink to this heading"></a></h2>
 <section id="one-to-one">
-<h3>One-to-one<a class="headerlink" href="#one-to-one" title="Permalink to this headline"></a></h3>
+<h3>One-to-one<a class="headerlink" href="#one-to-one" title="Permalink to this heading"></a></h3>
 <p>A function is one-to-one if <span class="math notranslate nohighlight">\(\forall x_1, x_2 \in \text{Domain}(f)\)</span>, <span class="math notranslate nohighlight">\(x_1 \neq x_2\)</span> implies <span class="math notranslate nohighlight">\(f(x_1) \neq f(x_2)\)</span>. You can verify a one-to-one function using the horizontal line test.</p>
 </section>
 <section id="even">
-<h3>Even<a class="headerlink" href="#even" title="Permalink to this headline"></a></h3>
+<h3>Even<a class="headerlink" href="#even" title="Permalink to this heading"></a></h3>
 <p>A function is even if <span class="math notranslate nohighlight">\(\forall x \in \text{Domain}(f)\)</span>, <span class="math notranslate nohighlight">\(f(x) = f(-x)\)</span></p>
 </section>
 <section id="odd">
-<h3>Odd<a class="headerlink" href="#odd" title="Permalink to this headline"></a></h3>
+<h3>Odd<a class="headerlink" href="#odd" title="Permalink to this heading"></a></h3>
 <p>A function is odd if <span class="math notranslate nohighlight">\(\forall x \in \text{Domain}(f)\)</span>, <span class="math notranslate nohighlight">\(f(-x) = -f(x)\)</span></p>
 </section>
 <section id="classify-the-following-functions">
-<h3>Classify the following functions:<a class="headerlink" href="#classify-the-following-functions" title="Permalink to this headline"></a></h3>
+<h3>Classify the following functions:<a class="headerlink" href="#classify-the-following-functions" title="Permalink to this heading"></a></h3>
 <iframe src="https://www.desmos.com/calculator/gajmbgblr8?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 <iframe src="https://www.desmos.com/calculator/svpa2v2vgm?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
@@ -597,10 +612,10 @@ is positive for all numbers, which means the domain is <span class="math notrans
 <br></section>
 </section>
 <section id="solving-inequalities">
-<h2>Solving inequalities<a class="headerlink" href="#solving-inequalities" title="Permalink to this headline"></a></h2>
+<h2>Solving inequalities<a class="headerlink" href="#solving-inequalities" title="Permalink to this heading"></a></h2>
 <p>Something you might not have learned before is how to solve for inequalities, so we’ll do some practice on that.</p>
 <section id="q5-solve-the-inequality-x-3-3x-2-2x">
-<h3>Q5: Solve the inequality <span class="math notranslate nohighlight">\(x^3 + 3x^2 &gt; -2x\)</span>.<a class="headerlink" href="#q5-solve-the-inequality-x-3-3x-2-2x" title="Permalink to this headline"></a></h3>
+<h3>Q5: Solve the inequality <span class="math notranslate nohighlight">\(x^3 + 3x^2 &gt; -2x\)</span>.<a class="headerlink" href="#q5-solve-the-inequality-x-3-3x-2-2x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Move the <span class="math notranslate nohighlight">\(-2x\)</span> to the left side to get <span class="math notranslate nohighlight">\(x^3 + 3x^2 + 2x &gt; 0\)</span>.</p>
@@ -613,7 +628,7 @@ and check the values in between the x-intercepts to see if they’re greater tha
    </div>
 </div></section>
 <section id="q6-solve-the-inequality-3-x-7x-5-le-9-x">
-<h3>Q6: Solve the inequality <span class="math notranslate nohighlight">\(-3 + x &lt; -7x - 5 \le 9 + x\)</span>.<a class="headerlink" href="#q6-solve-the-inequality-3-x-7x-5-le-9-x" title="Permalink to this headline"></a></h3>
+<h3>Q6: Solve the inequality <span class="math notranslate nohighlight">\(-3 + x &lt; -7x - 5 \le 9 + x\)</span>.<a class="headerlink" href="#q6-solve-the-inequality-3-x-7x-5-le-9-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">
@@ -629,7 +644,7 @@ and check the values in between the x-intercepts to see if they’re greater tha
 </div></section>
 </section>
 <section id="exponentials-and-logarithms">
-<h2>Exponentials and Logarithms<a class="headerlink" href="#exponentials-and-logarithms" title="Permalink to this headline"></a></h2>
+<h2>Exponentials and Logarithms<a class="headerlink" href="#exponentials-and-logarithms" title="Permalink to this heading"></a></h2>
 <p>A few logarithmic laws to know:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(log_a(x) = k\)</span> implies <span class="math notranslate nohighlight">\(a^k = x\)</span></p></li>
@@ -640,7 +655,7 @@ and check the values in between the x-intercepts to see if they’re greater tha
 <p>In this course, assume log to be log based 10 (<span class="math notranslate nohighlight">\(log(x) = log_{10}(x)\)</span>) and
 let ln be log based e (<span class="math notranslate nohighlight">\(ln(x) = log_e(x)\)</span>)</p>
 <section id="q7-solve-the-equation-ln-3x-1-4">
-<h3>Q7: Solve the equation <span class="math notranslate nohighlight">\(ln(3x + 1) = 4\)</span>.<a class="headerlink" href="#q7-solve-the-equation-ln-3x-1-4" title="Permalink to this headline"></a></h3>
+<h3>Q7: Solve the equation <span class="math notranslate nohighlight">\(ln(3x + 1) = 4\)</span>.<a class="headerlink" href="#q7-solve-the-equation-ln-3x-1-4" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">
@@ -653,7 +668,7 @@ x &amp;= \frac{e^4 - 1}{3} \\
    </div>
 </div></section>
 <section id="q8-solve-the-equation-2-pi-x-7-pi-x-e-8-0">
-<h3>Q8: Solve the equation <span class="math notranslate nohighlight">\(2(\pi^x) + 7(\pi^x) -e^8 = 0\)</span>.<a class="headerlink" href="#q8-solve-the-equation-2-pi-x-7-pi-x-e-8-0" title="Permalink to this headline"></a></h3>
+<h3>Q8: Solve the equation <span class="math notranslate nohighlight">\(2(\pi^x) + 7(\pi^x) -e^8 = 0\)</span>.<a class="headerlink" href="#q8-solve-the-equation-2-pi-x-7-pi-x-e-8-0" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">

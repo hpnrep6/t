@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-7">
-<h1>Tutorial Week 7<a class="headerlink" href="#tutorial-week-7" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 7<a class="headerlink" href="#tutorial-week-7" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,9 +421,9 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="arc-length-of-curves">
-<h2>Arc length of curves<a class="headerlink" href="#arc-length-of-curves" title="Permalink to this headline"></a></h2>
+<h2>Arc length of curves<a class="headerlink" href="#arc-length-of-curves" title="Permalink to this heading"></a></h2>
 <section id="q1-find-the-length-of-the-curve-y-ln-sin-x-on-x-in-frac-pi-4-frac-3-pi-4">
-<h3>Q1: Find the length of the curve <span class="math notranslate nohighlight">\(y = -ln(sin(x))\)</span> on <span class="math notranslate nohighlight">\(x \in [\frac{\pi}{4}, \frac{3\pi}{4}]\)</span>.<a class="headerlink" href="#q1-find-the-length-of-the-curve-y-ln-sin-x-on-x-in-frac-pi-4-frac-3-pi-4" title="Permalink to this headline"></a></h3>
+<h3>Q1: Find the length of the curve <span class="math notranslate nohighlight">\(y = -ln(sin(x))\)</span> on <span class="math notranslate nohighlight">\(x \in [\frac{\pi}{4}, \frac{3\pi}{4}]\)</span>.<a class="headerlink" href="#q1-find-the-length-of-the-curve-y-ln-sin-x-on-x-in-frac-pi-4-frac-3-pi-4" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/116.jpeg"><img alt="../../_images/116.jpeg" src="../../_images/116.jpeg" style="width: 700px;" /></a>
@@ -416,7 +431,7 @@ tex: {packages: {'[+]': ['ams']}}
     </div>
 </div></section>
 <section id="q2-find-the-length-of-the-astroid-curve-x-frac-2-3-y-frac-2-3-3">
-<h3>Q2: Find the length of the astroid curve <span class="math notranslate nohighlight">\(x^{\frac{2}{3}}+y^{\frac{2}{3}}=3\)</span>.<a class="headerlink" href="#q2-find-the-length-of-the-astroid-curve-x-frac-2-3-y-frac-2-3-3" title="Permalink to this headline"></a></h3>
+<h3>Q2: Find the length of the astroid curve <span class="math notranslate nohighlight">\(x^{\frac{2}{3}}+y^{\frac{2}{3}}=3\)</span>.<a class="headerlink" href="#q2-find-the-length-of-the-astroid-curve-x-frac-2-3-y-frac-2-3-3" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/315.jpeg"><img alt="../../_images/315.jpeg" src="../../_images/315.jpeg" style="width: 700px;" /></a>
@@ -425,9 +440,9 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="simpson-s-rule">
-<h2>Simpson’s Rule<a class="headerlink" href="#simpson-s-rule" title="Permalink to this headline"></a></h2>
+<h2>Simpson’s Rule<a class="headerlink" href="#simpson-s-rule" title="Permalink to this heading"></a></h2>
 <section id="q3-approximate-int-pi-pi-frac-sin-x-x-dx-using-simpson-s-rule-with-n-4">
-<h3>Q3: Approximate <span class="math notranslate nohighlight">\(\int_{-\pi}^{\pi} \frac{sin(x)}{x}dx\)</span> using Simpson’s Rule with <span class="math notranslate nohighlight">\(n=4\)</span>.<a class="headerlink" href="#q3-approximate-int-pi-pi-frac-sin-x-x-dx-using-simpson-s-rule-with-n-4" title="Permalink to this headline"></a></h3>
+<h3>Q3: Approximate <span class="math notranslate nohighlight">\(\int_{-\pi}^{\pi} \frac{sin(x)}{x}dx\)</span> using Simpson’s Rule with <span class="math notranslate nohighlight">\(n=4\)</span>.<a class="headerlink" href="#q3-approximate-int-pi-pi-frac-sin-x-x-dx-using-simpson-s-rule-with-n-4" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/55.jpeg"><img alt="../../_images/55.jpeg" src="../../_images/55.jpeg" style="width: 700px;" /></a>

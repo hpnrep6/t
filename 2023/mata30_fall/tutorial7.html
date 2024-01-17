@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-7">
-<h1>Tutorial Week 7<a class="headerlink" href="#tutorial-week-7" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 7<a class="headerlink" href="#tutorial-week-7" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,27 +421,27 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="derivative-notation">
-<h2>Derivative Notation<a class="headerlink" href="#derivative-notation" title="Permalink to this headline"></a></h2>
+<h2>Derivative Notation<a class="headerlink" href="#derivative-notation" title="Permalink to this heading"></a></h2>
 <p>There are two types of notation used to represent derivatives: Leibniz’s notation and Lagrange’s notation.</p>
 <section id="leibniz-s-notation">
-<h3>Leibniz’s notation<a class="headerlink" href="#leibniz-s-notation" title="Permalink to this headline"></a></h3>
+<h3>Leibniz’s notation<a class="headerlink" href="#leibniz-s-notation" title="Permalink to this heading"></a></h3>
 <p>In Leibniz’s notation, to take the derivative of something, you prepend it with <span class="math notranslate nohighlight">\(\frac{d}{dx}\)</span>. For example, to take
 the derivative of g(x), you would write <span class="math notranslate nohighlight">\(\frac{d}{dx}g(x)\)</span>. Often times, this gets “simplified” to <span class="math notranslate nohighlight">\(\frac{dg(x)}{dx}\)</span> or <span class="math notranslate nohighlight">\(\frac{dg}{dx}\)</span>.</p>
 <p>For higher order derivative, we write the order as an exponent of the differential operator, such as <span class="math notranslate nohighlight">\(\frac{d^5}{dx^5}f(x)\)</span>.</p>
 </section>
 <section id="lagrange-s-notation">
-<h3>Lagrange’s notation<a class="headerlink" href="#lagrange-s-notation" title="Permalink to this headline"></a></h3>
+<h3>Lagrange’s notation<a class="headerlink" href="#lagrange-s-notation" title="Permalink to this heading"></a></h3>
 <p>In lagrange’s notation, we use prime marks ( ‘ ) to denote the derivative of a function, i.e. <span class="math notranslate nohighlight">\(f'(x)\)</span> is the derivative of <span class="math notranslate nohighlight">\(f(x)\)</span>. Of course, it
 isn’t exactly practical to keep writing the prime marks for higher order derivatives, so we simply write the derivative order number directly. For example, <span class="math notranslate nohighlight">\(f^{(12)}(x)\)</span>.</p>
 </section>
 <section id="evaluating-derivative">
-<h3>Evaluating derivative<a class="headerlink" href="#evaluating-derivative" title="Permalink to this headline"></a></h3>
+<h3>Evaluating derivative<a class="headerlink" href="#evaluating-derivative" title="Permalink to this heading"></a></h3>
 <p>If you want to evaluate a derivative at a point, we write a vertical bar after the derivative and write the value we’re evaluating at as a subscript after the bar.</p>
 <p>For example, <span class="math notranslate nohighlight">\(\frac{df(x)}{dx} |_{x = 3}\)</span>.</p>
 </section>
 </section>
 <section id="derivative-rules">
-<h2>Derivative Rules<a class="headerlink" href="#derivative-rules" title="Permalink to this headline"></a></h2>
+<h2>Derivative Rules<a class="headerlink" href="#derivative-rules" title="Permalink to this heading"></a></h2>
 <p>There are a few derivative rules that make our lives a lot easier when computing derivatives (do you know anyone who would enjoy using the limit definition of a derivative to calculate something like the derivative of <span class="math notranslate nohighlight">\(\sqrt{sin(cos(x^5)) + ln(x) - 3x^{3x}\)</span>?)</p>
 <ul class="simple">
 <li><p>Constant multiple rule: <span class="math notranslate nohighlight">\(\frac{d}{dx} cf(x) = cf'(x)\)</span>.</p></li>
@@ -437,7 +452,7 @@ isn’t exactly practical to keep writing the prime marks for higher order deriv
 </ul>
 </section>
 <section id="common-derivatives">
-<h2>Common derivatives<a class="headerlink" href="#common-derivatives" title="Permalink to this headline"></a></h2>
+<h2>Common derivatives<a class="headerlink" href="#common-derivatives" title="Permalink to this heading"></a></h2>
 <p>Just like how we have generalised derivative rules, we also have some rules for some specific commonly encountered functions.</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\frac{d}{dx}k = 0\)</span></p></li>
@@ -450,9 +465,9 @@ isn’t exactly practical to keep writing the prime marks for higher order deriv
 </ul>
 </section>
 <section id="derivative-practice">
-<h2>Derivative Practice<a class="headerlink" href="#derivative-practice" title="Permalink to this headline"></a></h2>
+<h2>Derivative Practice<a class="headerlink" href="#derivative-practice" title="Permalink to this heading"></a></h2>
 <section id="q1-let-f-x-x-3-h-be-some-function-defined-in-terms-of-f-x-and-frac-dh-df-3-2x-find-frac-dh-dx">
-<h3>Q1: Let <span class="math notranslate nohighlight">\(f(x) = x^3\)</span>. <span class="math notranslate nohighlight">\(h\)</span> be some function defined in terms of <span class="math notranslate nohighlight">\(f(x)\)</span>, and <span class="math notranslate nohighlight">\(\frac{dh}{df} = 3 + 2x\)</span>. Find <span class="math notranslate nohighlight">\(\frac{dh}{dx}\)</span>.<a class="headerlink" href="#q1-let-f-x-x-3-h-be-some-function-defined-in-terms-of-f-x-and-frac-dh-df-3-2x-find-frac-dh-dx" title="Permalink to this headline"></a></h3>
+<h3>Q1: Let <span class="math notranslate nohighlight">\(f(x) = x^3\)</span>. <span class="math notranslate nohighlight">\(h\)</span> be some function defined in terms of <span class="math notranslate nohighlight">\(f(x)\)</span>, and <span class="math notranslate nohighlight">\(\frac{dh}{df} = 3 + 2x\)</span>. Find <span class="math notranslate nohighlight">\(\frac{dh}{dx}\)</span>.<a class="headerlink" href="#q1-let-f-x-x-3-h-be-some-function-defined-in-terms-of-f-x-and-frac-dh-df-3-2x-find-frac-dh-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Think about what it means if f is a function of x. In this situation, h being a function defined in terms of f(x) means that h is wrriten in the form of <span class="math notranslate nohighlight">\(h(f(x)) = something\)</span>, such as <span class="math notranslate nohighlight">\(h(f(x)) = f(x)^3\)</span>.</p>
@@ -468,7 +483,7 @@ isn’t exactly practical to keep writing the prime marks for higher order deriv
     </div>
 </div></section>
 <section id="q2-find-the-derivative-of-x-2-cos-x">
-<h3>Q2: Find the derivative of <span class="math notranslate nohighlight">\(|x + 2| - cos(x)\)</span>.<a class="headerlink" href="#q2-find-the-derivative-of-x-2-cos-x" title="Permalink to this headline"></a></h3>
+<h3>Q2: Find the derivative of <span class="math notranslate nohighlight">\(|x + 2| - cos(x)\)</span>.<a class="headerlink" href="#q2-find-the-derivative-of-x-2-cos-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Piecewise functions have piecewise derivatives, but with some extra care taken.</p>
@@ -484,11 +499,11 @@ isn’t exactly practical to keep writing the prime marks for higher order deriv
 </div></section>
 </section>
 <section id="logarithmic-differentiation">
-<h2>Logarithmic Differentiation<a class="headerlink" href="#logarithmic-differentiation" title="Permalink to this headline"></a></h2>
+<h2>Logarithmic Differentiation<a class="headerlink" href="#logarithmic-differentiation" title="Permalink to this heading"></a></h2>
 <p>Logarithmic differentiation is helpful when dealing with exponential functions that have variables in both the base and the exponent, as well as
 large composite functions joined by multiplication and division.</p>
 <section id="q3-find-the-derivative-of-sqrt-3-2x-sin-x">
-<h3>Q3: Find the derivative of <span class="math notranslate nohighlight">\((\sqrt[3]{2x})^{sin(x)}\)</span>.<a class="headerlink" href="#q3-find-the-derivative-of-sqrt-3-2x-sin-x" title="Permalink to this headline"></a></h3>
+<h3>Q3: Find the derivative of <span class="math notranslate nohighlight">\((\sqrt[3]{2x})^{sin(x)}\)</span>.<a class="headerlink" href="#q3-find-the-derivative-of-sqrt-3-2x-sin-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>We start with <span class="math notranslate nohighlight">\(f(x) = (\sqrt[3]{2x})^{sin(x)}\)</span>,</p>
@@ -507,7 +522,7 @@ f'(x) &amp;= (\sqrt[3]{2x}^{sin(x)})(cos(x)ln((\sqrt[3]{2x})) + sin(x)(\frac{1}{
 </div></section>
 </section>
 <section id="implicit-differentiation">
-<h2>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this headline"></a></h2>
+<h2>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this heading"></a></h2>
 <p>We can use implicit differentiation when one variable is a function of another variable in our equation, e.g. y is a function of x or y(x).</p>
 <p>Here are some examples to get you used to implicit differentiation.
 When differentiating implicitly for the variables x and y, and y is a function of x, we have:</p>
@@ -517,7 +532,7 @@ When differentiating implicitly for the variables x and y, and y is a function o
 <li><p><span class="math notranslate nohighlight">\(\frac{d}{dx} cos(x)y^3 = -sin(x)y^3 + cos(x)3y^2\frac{dy}{dx}\)</span></p></li>
 </ul>
 <section id="q4-if-y-is-a-function-of-x-find-frac-dy-dx-for-3x-2y-4y-3y-4-x">
-<h3>Q4: If y is a function of x, find <span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span> for <span class="math notranslate nohighlight">\(3x^2y + 4y = 3y^4 + x\)</span>.<a class="headerlink" href="#q4-if-y-is-a-function-of-x-find-frac-dy-dx-for-3x-2y-4y-3y-4-x" title="Permalink to this headline"></a></h3>
+<h3>Q4: If y is a function of x, find <span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span> for <span class="math notranslate nohighlight">\(3x^2y + 4y = 3y^4 + x\)</span>.<a class="headerlink" href="#q4-if-y-is-a-function-of-x-find-frac-dy-dx-for-3x-2y-4y-3y-4-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>We take the derivative on both sides and solve for <span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span>.</p>
@@ -531,7 +546,7 @@ y\frac{d}{dx}3x^2+ 3x^2\frac{d}{dx}y + \frac{d}{dx}4y &amp;= \frac{d}{dx}3y^4 + 
     </div>
 </div></section>
 <section id="q5-what-is-the-equation-of-the-tangent-line-of-tan-x-y-4x-1-at-0-frac-pi-4">
-<h3>Q5: What is the equation of the tangent line of <span class="math notranslate nohighlight">\(tan(x + y) = 4x + 1\)</span> at <span class="math notranslate nohighlight">\((0, \frac{\pi}{4})\)</span>?<a class="headerlink" href="#q5-what-is-the-equation-of-the-tangent-line-of-tan-x-y-4x-1-at-0-frac-pi-4" title="Permalink to this headline"></a></h3>
+<h3>Q5: What is the equation of the tangent line of <span class="math notranslate nohighlight">\(tan(x + y) = 4x + 1\)</span> at <span class="math notranslate nohighlight">\((0, \frac{\pi}{4})\)</span>?<a class="headerlink" href="#q5-what-is-the-equation-of-the-tangent-line-of-tan-x-y-4x-1-at-0-frac-pi-4" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>To get the equation of a line, we need the slope and a point on the line. We’re given the point <span class="math notranslate nohighlight">\((0, \frac{\pi}{4})\)</span>,

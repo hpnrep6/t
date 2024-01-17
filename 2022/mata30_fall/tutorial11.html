@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../2023/2023.html">2023</a><ul>
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-11">
-<span id="mata30-fall-tut-11"></span><h1>Tutorial Week 11<a class="headerlink" href="#tutorial-week-11" title="Permalink to this headline"></a></h1>
+<span id="mata30-fall-tut-11"></span><h1>Tutorial Week 11<a class="headerlink" href="#tutorial-week-11" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,37 +421,37 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="computing-integrals">
-<h2>Computing Integrals<a class="headerlink" href="#computing-integrals" title="Permalink to this headline"></a></h2>
+<h2>Computing Integrals<a class="headerlink" href="#computing-integrals" title="Permalink to this heading"></a></h2>
 <section id="q1-compute-int-x-3-2x-2-dx">
-<h3>Q1: Compute <span class="math notranslate nohighlight">\(\int x^3 + 2x + 2\, dx\)</span>.<a class="headerlink" href="#q1-compute-int-x-3-2x-2-dx" title="Permalink to this headline"></a></h3>
+<h3>Q1: Compute <span class="math notranslate nohighlight">\(\int x^3 + 2x + 2\, dx\)</span>.<a class="headerlink" href="#q1-compute-int-x-3-2x-2-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/1.jpg"><img alt="../../_images/1.jpg" src="../../_images/1.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q2-compute-int-sqrt-6-x-3-dx">
-<h3>Q2: Compute <span class="math notranslate nohighlight">\(\int \sqrt[6]{x^3} \, dx\)</span>.<a class="headerlink" href="#q2-compute-int-sqrt-6-x-3-dx" title="Permalink to this headline"></a></h3>
+<h3>Q2: Compute <span class="math notranslate nohighlight">\(\int \sqrt[6]{x^3} \, dx\)</span>.<a class="headerlink" href="#q2-compute-int-sqrt-6-x-3-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/2.jpg"><img alt="../../_images/2.jpg" src="../../_images/2.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q3-compute-int-frac-1-2-x-frac-5-x-2-1-dx">
-<h3>Q3: Compute <span class="math notranslate nohighlight">\(\int \frac{1}{2}x + \frac{5}{x^2 + 1} \, dx\)</span>.<a class="headerlink" href="#q3-compute-int-frac-1-2-x-frac-5-x-2-1-dx" title="Permalink to this headline"></a></h3>
+<h3>Q3: Compute <span class="math notranslate nohighlight">\(\int \frac{1}{2}x + \frac{5}{x^2 + 1} \, dx\)</span>.<a class="headerlink" href="#q3-compute-int-frac-1-2-x-frac-5-x-2-1-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/3.jpg"><img alt="../../_images/3.jpg" src="../../_images/3.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q4-compute-int-frac-t-5-t-4-t-cos-t-sin-t-dt">
-<h3>Q4: Compute <span class="math notranslate nohighlight">\(\int \frac{t^5 + t^4}{t} + cos(t) + sin(t) \, dt\)</span>.<a class="headerlink" href="#q4-compute-int-frac-t-5-t-4-t-cos-t-sin-t-dt" title="Permalink to this headline"></a></h3>
+<h3>Q4: Compute <span class="math notranslate nohighlight">\(\int \frac{t^5 + t^4}{t} + cos(t) + sin(t) \, dt\)</span>.<a class="headerlink" href="#q4-compute-int-frac-t-5-t-4-t-cos-t-sin-t-dt" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/4.jpg"><img alt="../../_images/4.jpg" src="../../_images/4.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q5-compute-int-0-1-5x-x-2-sqrt-3-x-dx">
-<h3>Q5: Compute <span class="math notranslate nohighlight">\(\int_{0}^{1} 5x + x^2\sqrt[3]{x} \, dx\)</span>.<a class="headerlink" href="#q5-compute-int-0-1-5x-x-2-sqrt-3-x-dx" title="Permalink to this headline"></a></h3>
+<h3>Q5: Compute <span class="math notranslate nohighlight">\(\int_{0}^{1} 5x + x^2\sqrt[3]{x} \, dx\)</span>.<a class="headerlink" href="#q5-compute-int-0-1-5x-x-2-sqrt-3-x-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/5.jpg"><img alt="../../_images/5.jpg" src="../../_images/5.jpg" style="width: 700px;" /></a>
@@ -444,23 +459,23 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="riemann-sums">
-<h2>Riemann Sums<a class="headerlink" href="#riemann-sums" title="Permalink to this headline"></a></h2>
+<h2>Riemann Sums<a class="headerlink" href="#riemann-sums" title="Permalink to this heading"></a></h2>
 <section id="q6-write-int-3-9-x-4-2x-dx-as-the-limit-of-a-riemann-sum">
-<h3>Q6: Write <span class="math notranslate nohighlight">\(\int_{3}^{9} (x^4 + 2x) \, dx\)</span> as the limit of a Riemann sum.<a class="headerlink" href="#q6-write-int-3-9-x-4-2x-dx-as-the-limit-of-a-riemann-sum" title="Permalink to this headline"></a></h3>
+<h3>Q6: Write <span class="math notranslate nohighlight">\(\int_{3}^{9} (x^4 + 2x) \, dx\)</span> as the limit of a Riemann sum.<a class="headerlink" href="#q6-write-int-3-9-x-4-2x-dx-as-the-limit-of-a-riemann-sum" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/6.jpg"><img alt="../../_images/6.jpg" src="../../_images/6.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q7-write-int-pi-2-pi-sin-x-dx-as-the-limit-of-a-riemann-sum">
-<h3>Q7: Write <span class="math notranslate nohighlight">\(\int_{-\pi}^{2\pi} sin(x) \, dx\)</span> as the limit of a Riemann sum.<a class="headerlink" href="#q7-write-int-pi-2-pi-sin-x-dx-as-the-limit-of-a-riemann-sum" title="Permalink to this headline"></a></h3>
+<h3>Q7: Write <span class="math notranslate nohighlight">\(\int_{-\pi}^{2\pi} sin(x) \, dx\)</span> as the limit of a Riemann sum.<a class="headerlink" href="#q7-write-int-pi-2-pi-sin-x-dx-as-the-limit-of-a-riemann-sum" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/7.jpg"><img alt="../../_images/7.jpg" src="../../_images/7.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q8-evaluate-int-0-2-5x-1-dx-using-riemann-sums">
-<h3>Q8: Evaluate <span class="math notranslate nohighlight">\(\int_{0}^{2} {5x + 1} \, dx\)</span> using Riemann sums.<a class="headerlink" href="#q8-evaluate-int-0-2-5x-1-dx-using-riemann-sums" title="Permalink to this headline"></a></h3>
+<h3>Q8: Evaluate <span class="math notranslate nohighlight">\(\int_{0}^{2} {5x + 1} \, dx\)</span> using Riemann sums.<a class="headerlink" href="#q8-evaluate-int-0-2-5x-1-dx-using-riemann-sums" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/8.jpg"><img alt="../../_images/8.jpg" src="../../_images/8.jpg" style="width: 700px;" /></a>
@@ -468,16 +483,16 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="approximating-integrals-using-riemann-sums">
-<h2>Approximating Integrals using Riemann Sums<a class="headerlink" href="#approximating-integrals-using-riemann-sums" title="Permalink to this headline"></a></h2>
+<h2>Approximating Integrals using Riemann Sums<a class="headerlink" href="#approximating-integrals-using-riemann-sums" title="Permalink to this heading"></a></h2>
 <section id="q9-approximate-int-0-1-10-x-2-dx-using-the-right-riemann-sum-over-four-rectangles">
-<h3>Q9: Approximate <span class="math notranslate nohighlight">\(\int_{0}^{1} 10 - x^2 \, dx\)</span> using the right Riemann sum over four rectangles.<a class="headerlink" href="#q9-approximate-int-0-1-10-x-2-dx-using-the-right-riemann-sum-over-four-rectangles" title="Permalink to this headline"></a></h3>
+<h3>Q9: Approximate <span class="math notranslate nohighlight">\(\int_{0}^{1} 10 - x^2 \, dx\)</span> using the right Riemann sum over four rectangles.<a class="headerlink" href="#q9-approximate-int-0-1-10-x-2-dx-using-the-right-riemann-sum-over-four-rectangles" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/9.jpg"><img alt="../../_images/9.jpg" src="../../_images/9.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q10-if-f-x-x-2-cos-x-f-0-1-and-f-pi-2-find-f-x">
-<h3>Q10: If <span class="math notranslate nohighlight">\(f''(x) = x + 2 + cos(x)\)</span>, <span class="math notranslate nohighlight">\(f(0) = 1\)</span>, and <span class="math notranslate nohighlight">\(f(\pi) = 2\)</span>, find <span class="math notranslate nohighlight">\(f(x)\)</span>.<a class="headerlink" href="#q10-if-f-x-x-2-cos-x-f-0-1-and-f-pi-2-find-f-x" title="Permalink to this headline"></a></h3>
+<h3>Q10: If <span class="math notranslate nohighlight">\(f''(x) = x + 2 + cos(x)\)</span>, <span class="math notranslate nohighlight">\(f(0) = 1\)</span>, and <span class="math notranslate nohighlight">\(f(\pi) = 2\)</span>, find <span class="math notranslate nohighlight">\(f(x)\)</span>.<a class="headerlink" href="#q10-if-f-x-x-2-cos-x-f-0-1-and-f-pi-2-find-f-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/10.jpg"><img alt="../../_images/10.jpg" src="../../_images/10.jpg" style="width: 700px;" /></a>

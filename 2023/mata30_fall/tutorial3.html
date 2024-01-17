@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-3">
-<h1>Tutorial Week 3<a class="headerlink" href="#tutorial-week-3" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 3<a class="headerlink" href="#tutorial-week-3" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -407,7 +422,7 @@ tex: {packages: {'[+]': ['ams']}}
 };
 </script><p>In this week’s tutorial, we’ll be going over inverse trigonometric functions and limits.</p>
 <section id="trigonometric-and-inverse-trigonometric-functions">
-<h2>Trigonometric and inverse trigonometric functions<a class="headerlink" href="#trigonometric-and-inverse-trigonometric-functions" title="Permalink to this headline"></a></h2>
+<h2>Trigonometric and inverse trigonometric functions<a class="headerlink" href="#trigonometric-and-inverse-trigonometric-functions" title="Permalink to this heading"></a></h2>
 <p>Let’s start this class with a (not so) quick review of the trigonometric functions and their inverses. Try to name each of the following functions:</p>
 <iframe src="https://www.desmos.com/calculator/h3zf2lrnoh?embed" width="250" height="250" style="border: 1px solid #ccc" frameborder=0></iframe>
 
@@ -451,10 +466,10 @@ like).</p>
 <iframe src="https://www.desmos.com/calculator/nlpj5uq3cu?embed" width="250" height="250" style="border: 1px solid #ccc" frameborder=0></iframe>
 <hr></section>
 <section id="inverse-trigonometric-practice">
-<h2>Inverse trigonometric practice<a class="headerlink" href="#inverse-trigonometric-practice" title="Permalink to this headline"></a></h2>
+<h2>Inverse trigonometric practice<a class="headerlink" href="#inverse-trigonometric-practice" title="Permalink to this heading"></a></h2>
 <p>Now that we have all the functions down, let’s do a few practice questions with these functions.</p>
 <section id="q1-what-is-the-value-of-sin-1-1">
-<h3>Q1: What is the value of <span class="math notranslate nohighlight">\(sin^{-1}(1)\)</span>?<a class="headerlink" href="#q1-what-is-the-value-of-sin-1-1" title="Permalink to this headline"></a></h3>
+<h3>Q1: What is the value of <span class="math notranslate nohighlight">\(sin^{-1}(1)\)</span>?<a class="headerlink" href="#q1-what-is-the-value-of-sin-1-1" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>This means that you need to find the value of <span class="math notranslate nohighlight">\(\theta\)</span> that gives you <span class="math notranslate nohighlight">\(sin(\theta) = 1\)</span>
@@ -464,7 +479,7 @@ on a unit circle)</p>
     </div>
 </div></section>
 <section id="q2-what-is-the-value-of-cos-1-cos-dfrac-56-pi-5">
-<h3>Q2: What is the value of <span class="math notranslate nohighlight">\(cos^{-1}(cos(\dfrac{56\pi}{5}))\)</span>?<a class="headerlink" href="#q2-what-is-the-value-of-cos-1-cos-dfrac-56-pi-5" title="Permalink to this headline"></a></h3>
+<h3>Q2: What is the value of <span class="math notranslate nohighlight">\(cos^{-1}(cos(\dfrac{56\pi}{5}))\)</span>?<a class="headerlink" href="#q2-what-is-the-value-of-cos-1-cos-dfrac-56-pi-5" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>This question requires knowing 3 properties:</p>
@@ -489,7 +504,7 @@ on a unit circle)</p>
     </div>
 </div></section>
 <section id="q3-find-the-inverse-of-the-function-f-x-cos-1-x-3-2">
-<h3>Q3: Find the inverse of the function <span class="math notranslate nohighlight">\(f(x) = cos^{-1}(x^3 + 2)\)</span>.<a class="headerlink" href="#q3-find-the-inverse-of-the-function-f-x-cos-1-x-3-2" title="Permalink to this headline"></a></h3>
+<h3>Q3: Find the inverse of the function <span class="math notranslate nohighlight">\(f(x) = cos^{-1}(x^3 + 2)\)</span>.<a class="headerlink" href="#q3-find-the-inverse-of-the-function-f-x-cos-1-x-3-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">
@@ -504,7 +519,7 @@ cos(x) &amp;= (y^3 + 2) \\
 </div></section>
 </section>
 <section id="finite-limits">
-<h2>Finite Limits<a class="headerlink" href="#finite-limits" title="Permalink to this headline"></a></h2>
+<h2>Finite Limits<a class="headerlink" href="#finite-limits" title="Permalink to this heading"></a></h2>
 <p>Sometimes, we want to be able to find the values of a function as we get close (and in most cases, infinitely close!) to some point that may be undefined on the function.</p>
 <p>To formally define this notion of a limit, we would need to use the delta-epsilon definition of a limit, which is way out of scope of this course, so just use your intuition here (but remember to adequetly justify your steps!). If you’re
 really curious, the definition is <span class="math notranslate nohighlight">\(\lim_{x \to a} f(x) = L \Leftrightarrow (\forall \epsilon &gt; 0, \exists \delta &gt; 0 \text{ st } 0 &lt; |x - c| &lt; \delta \Rightarrow |f(x) - L| &lt; \epsilon)\)</span></p>
@@ -513,7 +528,7 @@ really curious, the definition is <span class="math notranslate nohighlight">\(\
 here is that <span class="math notranslate nohighlight">\(\lim_{x \to a} f(x) = L \Leftrightarrow \lim_{x \to a^+} = L\)</span> and <span class="math notranslate nohighlight">\(\lim_{x \to a^-}f(x) = L\)</span> (this is useful for showing that a limit does not exist).</p>
 <p>Hopefully this isn’t the first time you’ve encountered limits, since this next question will be a bit tricky to do…</p>
 <section id="q4-find-the-limit-if-it-exists-lim-x-to-3-dfrac-sqrt-x-13-4-x-3">
-<h3>Q4: Find the limit if it exists: <span class="math notranslate nohighlight">\(\lim_{x \to 3} \dfrac{\sqrt{x + 13} - 4}{x - 3}\)</span>.<a class="headerlink" href="#q4-find-the-limit-if-it-exists-lim-x-to-3-dfrac-sqrt-x-13-4-x-3" title="Permalink to this headline"></a></h3>
+<h3>Q4: Find the limit if it exists: <span class="math notranslate nohighlight">\(\lim_{x \to 3} \dfrac{\sqrt{x + 13} - 4}{x - 3}\)</span>.<a class="headerlink" href="#q4-find-the-limit-if-it-exists-lim-x-to-3-dfrac-sqrt-x-13-4-x-3" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Multiply by conjugate, simplify, then directly subtitute.</p>
@@ -530,7 +545,7 @@ here is that <span class="math notranslate nohighlight">\(\lim_{x \to a} f(x) = 
     </div>
 </div></section>
 <section id="q5-let-f-x-begin-cases-x-1-x-3-xk-x-1-frac-1-x-2k-xk-end-cases-for-what-values-of-k-does-lim-x-to-1-f-x-exist">
-<h3>Q5: Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} x &lt; 1 &amp; x^3 + xk \\ x &gt; 1&amp; \frac{1 + x^2k}{xk}\end{cases}\)</span>. For what values of <span class="math notranslate nohighlight">\(k\)</span> does <span class="math notranslate nohighlight">\(\lim_{x \to 1} f(x)\)</span> exist?<a class="headerlink" href="#q5-let-f-x-begin-cases-x-1-x-3-xk-x-1-frac-1-x-2k-xk-end-cases-for-what-values-of-k-does-lim-x-to-1-f-x-exist" title="Permalink to this headline"></a></h3>
+<h3>Q5: Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} x &lt; 1 &amp; x^3 + xk \\ x &gt; 1&amp; \frac{1 + x^2k}{xk}\end{cases}\)</span>. For what values of <span class="math notranslate nohighlight">\(k\)</span> does <span class="math notranslate nohighlight">\(\lim_{x \to 1} f(x)\)</span> exist?<a class="headerlink" href="#q5-let-f-x-begin-cases-x-1-x-3-xk-x-1-frac-1-x-2k-xk-end-cases-for-what-values-of-k-does-lim-x-to-1-f-x-exist" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>For the limit to exist, we need <span class="math notranslate nohighlight">\(\lim_{x \to 1^-} f(x) = \lim_{x \to 1^+} f(x)\)</span>.</p>

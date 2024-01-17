@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-4">
-<h1>Tutorial Week 4<a class="headerlink" href="#tutorial-week-4" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 4<a class="headerlink" href="#tutorial-week-4" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -407,7 +422,7 @@ tex: {packages: {'[+]': ['ams']}}
 };
 </script><p>In this week’s tutorial, we’ll go over more limit methods and topics, such as the squeeze theorem, dealing with absolute values, as well as showing the existence of some limits.</p>
 <section id="indeterminate-form">
-<h2>Indeterminate Form<a class="headerlink" href="#indeterminate-form" title="Permalink to this headline"></a></h2>
+<h2>Indeterminate Form<a class="headerlink" href="#indeterminate-form" title="Permalink to this heading"></a></h2>
 <p>When a limit is in indeterminate form, we’ll need to simplify/rewrite the limit into an alternate form the actually determine the limit.</p>
 <p>The indeterminate forms are as follows:</p>
 <ul class="simple">
@@ -422,13 +437,13 @@ tex: {packages: {'[+]': ['ams']}}
 <p>If the limit is in any other form, we’ll usually be able to determine it directly (it could be the case that it doesn’t exist, but at least we know for sure it doesn’t exist).</p>
 </section>
 <section id="limit-identities">
-<h2>Limit Identities<a class="headerlink" href="#limit-identities" title="Permalink to this headline"></a></h2>
+<h2>Limit Identities<a class="headerlink" href="#limit-identities" title="Permalink to this heading"></a></h2>
 <p>In this course, there are a couple of limit identities that you can use to help make your life easier. They are:</p>
 <p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span></p>
 <p><span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{1 - cos(x)}{x} = 0\)</span></p>
 <p>Let’s see these in action in the following question.</p>
 <section id="q1-solve-the-limit-lim-x-to-3-frac-sin-x-3-x-2-9">
-<h3>Q1: Solve the limit <span class="math notranslate nohighlight">\(\lim_{x \to 3} \frac{sin(x - 3)}{x^2 - 9}\)</span>.<a class="headerlink" href="#q1-solve-the-limit-lim-x-to-3-frac-sin-x-3-x-2-9" title="Permalink to this headline"></a></h3>
+<h3>Q1: Solve the limit <span class="math notranslate nohighlight">\(\lim_{x \to 3} \frac{sin(x - 3)}{x^2 - 9}\)</span>.<a class="headerlink" href="#q1-solve-the-limit-lim-x-to-3-frac-sin-x-3-x-2-9" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">
@@ -445,10 +460,10 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="squeeze-theorem">
-<h2>Squeeze Theorem<a class="headerlink" href="#squeeze-theorem" title="Permalink to this headline"></a></h2>
+<h2>Squeeze Theorem<a class="headerlink" href="#squeeze-theorem" title="Permalink to this heading"></a></h2>
 <p>The squeeze theorem states that if <span class="math notranslate nohighlight">\(g(x) \le f(x) \le h(x)\)</span> for all x values near some number a, and if <span class="math notranslate nohighlight">\(lim_{x \to a} g(x) = lim_{x \to a} h(x) = L\)</span>, then <span class="math notranslate nohighlight">\(lim_{x \to a} f(x) = L\)</span>.</p>
 <section id="q2-calculate-lim-x-to-infty-frac-3x-2-sin-x-3-4x-2-2">
-<h3>Q2: Calculate <span class="math notranslate nohighlight">\(lim_{x \to \infty} \; \frac{3x^2 + \sin(x^3)}{4x^2 - 2}\)</span>.<a class="headerlink" href="#q2-calculate-lim-x-to-infty-frac-3x-2-sin-x-3-4x-2-2" title="Permalink to this headline"></a></h3>
+<h3>Q2: Calculate <span class="math notranslate nohighlight">\(lim_{x \to \infty} \; \frac{3x^2 + \sin(x^3)}{4x^2 - 2}\)</span>.<a class="headerlink" href="#q2-calculate-lim-x-to-infty-frac-3x-2-sin-x-3-4x-2-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>We know that <span class="math notranslate nohighlight">\(-1 \le sin(x) \le 1\)</span> (as in sin(x) is bounded between -1 and 1 for all x), which means that <span class="math notranslate nohighlight">\(-1 \le sin(x^3) \le 1\)</span>.</p>
@@ -487,7 +502,7 @@ tex: {packages: {'[+]': ['ams']}}
     </div>
 </div></section>
 <section id="q3-use-the-squeeze-theorem-to-show-that-lim-x-to-0-frac-sin-x-x-1-you-can-t-use-the-limit-identity-here-since-that-s-what-you-re-trying-to-prove">
-<h3>Q3: Use the squeeze theorem to show that <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span>. (You can’t use the limit identity here since that’s what you’re trying to prove)<a class="headerlink" href="#q3-use-the-squeeze-theorem-to-show-that-lim-x-to-0-frac-sin-x-x-1-you-can-t-use-the-limit-identity-here-since-that-s-what-you-re-trying-to-prove" title="Permalink to this headline"></a></h3>
+<h3>Q3: Use the squeeze theorem to show that <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span>. (You can’t use the limit identity here since that’s what you’re trying to prove)<a class="headerlink" href="#q3-use-the-squeeze-theorem-to-show-that-lim-x-to-0-frac-sin-x-x-1-you-can-t-use-the-limit-identity-here-since-that-s-what-you-re-trying-to-prove" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/01.jpg"><img alt="../../_images/01.jpg" src="../../_images/01.jpg" style="width: 700px;" /></a>
@@ -495,10 +510,10 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="absolute-values">
-<h2>Absolute Values<a class="headerlink" href="#absolute-values" title="Permalink to this headline"></a></h2>
+<h2>Absolute Values<a class="headerlink" href="#absolute-values" title="Permalink to this heading"></a></h2>
 <p>When dealing with absolute values, you’ll usually need to rewrite your function as a piecewise function and use that to evaluate the limit.</p>
 <section id="q4-find-the-limit-lim-x-to-1-frac-7-x-1-x-3-2-if-it-exists">
-<h3>Q4: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to -1} \frac{7 - |x + 1|}{x^3 + 2}\)</span>. (if it exists)<a class="headerlink" href="#q4-find-the-limit-lim-x-to-1-frac-7-x-1-x-3-2-if-it-exists" title="Permalink to this headline"></a></h3>
+<h3>Q4: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to -1} \frac{7 - |x + 1|}{x^3 + 2}\)</span>. (if it exists)<a class="headerlink" href="#q4-find-the-limit-lim-x-to-1-frac-7-x-1-x-3-2-if-it-exists" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>We know that <span class="math notranslate nohighlight">\(|x| = \begin{cases} x \;\;\;\;\;\; \text{if } x \ge 0 \\ -x \;\;\; \text{if } x &lt; 0\end{cases}\)</span></p>
@@ -524,10 +539,10 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="more-examples">
-<h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this headline"></a></h2>
+<h2>More examples<a class="headerlink" href="#more-examples" title="Permalink to this heading"></a></h2>
 <p>We’ll go over a few more examples of limits to give you a better sense of the tools you have at your disposal when working with limits.</p>
 <section id="q5-given-any-constant-number-k-what-is-lim-x-to-0-cot-2kx-2kx-k">
-<h3>Q5: Given any constant number <span class="math notranslate nohighlight">\(k\)</span>, what is <span class="math notranslate nohighlight">\(\lim_{x \to 0}\; \cot(2kx)2kx + k\)</span>?<a class="headerlink" href="#q5-given-any-constant-number-k-what-is-lim-x-to-0-cot-2kx-2kx-k" title="Permalink to this headline"></a></h3>
+<h3>Q5: Given any constant number <span class="math notranslate nohighlight">\(k\)</span>, what is <span class="math notranslate nohighlight">\(\lim_{x \to 0}\; \cot(2kx)2kx + k\)</span>?<a class="headerlink" href="#q5-given-any-constant-number-k-what-is-lim-x-to-0-cot-2kx-2kx-k" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Note that similar to <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{sin(x)}{x} = 1\)</span>, we can also say <span class="math notranslate nohighlight">\(\lim_{x \to 0}\frac{x}{sin(x)} = 1\)</span>.</p>
@@ -543,7 +558,7 @@ We can solve for the limit as follows:</p>
     </div>
 </div></section>
 <section id="q6-find-the-limit-lim-x-to-0-frac-sin-e-cos-x-x-if-it-exists">
-<h3>Q6: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(e\cos(x))}{x}\)</span>. (if it exists)<a class="headerlink" href="#q6-find-the-limit-lim-x-to-0-frac-sin-e-cos-x-x-if-it-exists" title="Permalink to this headline"></a></h3>
+<h3>Q6: Find the limit <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(e\cos(x))}{x}\)</span>. (if it exists)<a class="headerlink" href="#q6-find-the-limit-lim-x-to-0-frac-sin-e-cos-x-x-if-it-exists" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">

@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-5">
-<h1>Tutorial Week 5<a class="headerlink" href="#tutorial-week-5" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 5<a class="headerlink" href="#tutorial-week-5" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -408,7 +423,7 @@ tex: {packages: {'[+]': ['ams']}}
 </script><p>Next week is reading week, so there will be no tutorial (or any class at UTSC at least that’s how it’s supposed to go) next week.</p>
 <p>Today’s tutorial will cover the concept of continuity, applications of the intermediate value theorem, and how we can apply the limit definition of a derivative.</p>
 <section id="continuity">
-<h2>Continuity<a class="headerlink" href="#continuity" title="Permalink to this headline"></a></h2>
+<h2>Continuity<a class="headerlink" href="#continuity" title="Permalink to this heading"></a></h2>
 <p>A function is continuous at <span class="math notranslate nohighlight">\(x = a\)</span> if <span class="math notranslate nohighlight">\(\lim_{x \to a} f(x) = f(a)\)</span>.</p>
 <p>First, we look at the types of discountinuities. Intuitively, a function is continuous if every point in the function is “connected” to every other point, and there are not gaps between any of the points in the function.</p>
 <p>In this course, there are 3 types of discountinuities that interest us.</p>
@@ -417,7 +432,7 @@ tex: {packages: {'[+]': ['ams']}}
 <p>The third is the infinite discountinuity, where <span class="math notranslate nohighlight">\(\lim_{x \to a^+} = \infty \text{ or } -\infty\)</span> or <span class="math notranslate nohighlight">\(\lim_{x \to a^-} = \infty \text{ or } -\infty\)</span>.</p>
 <p>There’s also the essential discountinuity which is not covered in this course. It’s kind of like an infinite discountinuity, but instead of the limit being infinity, we have that <span class="math notranslate nohighlight">\(\lim_{x \to a^+} f(x)\)</span> DNE or <span class="math notranslate nohighlight">\(\lim_{x \to a^-} f(x)\)</span> DNE. One classic example of this is at x = 0 for <span class="math notranslate nohighlight">\(sin(\frac{1}{x})\)</span>.</p>
 <section id="q1-let-f-x-begin-cases-3x-e-x-text-if-x-leq-1-x-4-k-text-if-x-gt-1-end-cases-for-what-value-s-of-k-makes-the-f-x-continuous">
-<h3>Q1: Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} 3x + e^x &amp; \text{if } x \leq 1 \\ x^4 + k &amp; \text{if } x \gt 1\end{cases}\)</span>. For what value(s) of <span class="math notranslate nohighlight">\(k\)</span> makes the <span class="math notranslate nohighlight">\(f(x)\)</span> continuous?<a class="headerlink" href="#q1-let-f-x-begin-cases-3x-e-x-text-if-x-leq-1-x-4-k-text-if-x-gt-1-end-cases-for-what-value-s-of-k-makes-the-f-x-continuous" title="Permalink to this headline"></a></h3>
+<h3>Q1: Let <span class="math notranslate nohighlight">\(f(x) = \begin{cases} 3x + e^x &amp; \text{if } x \leq 1 \\ x^4 + k &amp; \text{if } x \gt 1\end{cases}\)</span>. For what value(s) of <span class="math notranslate nohighlight">\(k\)</span> makes the <span class="math notranslate nohighlight">\(f(x)\)</span> continuous?<a class="headerlink" href="#q1-let-f-x-begin-cases-3x-e-x-text-if-x-leq-1-x-4-k-text-if-x-gt-1-end-cases-for-what-value-s-of-k-makes-the-f-x-continuous" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>We see that <span class="math notranslate nohighlight">\(3x + e^x\)</span> and <span class="math notranslate nohighlight">\(x^4 + k\)</span> is a composition of continuous functions, so they themselves are continuous across their domain.</p>
@@ -440,11 +455,11 @@ f(1) = \lim_{x \to 1^+} f(x) &amp;=  \lim_{x \to 1^+} x^4 + k \\
 </div></section>
 </section>
 <section id="intermediate-value-theorem">
-<h2>Intermediate Value Theorem<a class="headerlink" href="#intermediate-value-theorem" title="Permalink to this headline"></a></h2>
+<h2>Intermediate Value Theorem<a class="headerlink" href="#intermediate-value-theorem" title="Permalink to this heading"></a></h2>
 <p>The intermediate value theorem (IVT) state that if a function f(x) is continuous on the interval [a, b], and <span class="math notranslate nohighlight">\(\forall n\)</span> between f(a) and f(b), <span class="math notranslate nohighlight">\(\exists c \in [a, b]\)</span> such that <span class="math notranslate nohighlight">\(f(c) = n\)</span>.</p>
 <p>Note that the “between” is strictly between, so if f(a) &lt; f(b), that would be <span class="math notranslate nohighlight">\(N \in (f(a), f(b))\)</span>. By this definition, if <span class="math notranslate nohighlight">\(f(a) = f(b)\)</span>, there wouldn’t be any numbers between them, so the implication of IVT becomes vacuous.</p>
 <section id="q2-show-that-f-x-e-3x-4x-3-3-has-a-root-in-x-in-1-2">
-<h3>Q2: Show that <span class="math notranslate nohighlight">\(f(x) = e^{3x} + 4x^3 + 3\)</span> has a root in <span class="math notranslate nohighlight">\(x \in [-1, 2]\)</span>.<a class="headerlink" href="#q2-show-that-f-x-e-3x-4x-3-3-has-a-root-in-x-in-1-2" title="Permalink to this headline"></a></h3>
+<h3>Q2: Show that <span class="math notranslate nohighlight">\(f(x) = e^{3x} + 4x^3 + 3\)</span> has a root in <span class="math notranslate nohighlight">\(x \in [-1, 2]\)</span>.<a class="headerlink" href="#q2-show-that-f-x-e-3x-4x-3-3-has-a-root-in-x-in-1-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>We know that <span class="math notranslate nohighlight">\(e^3x, 4x^3, \text{ and } 3\)</span> are continuous functions on <span class="math notranslate nohighlight">\(x \in [-1, 2]\)</span>, and since f(x) is the composition of continuous functions, f(x) is continuous on <span class="math notranslate nohighlight">\(x \in [-1, 2]\)</span>.</p>
@@ -458,11 +473,11 @@ f(1) = \lim_{x \to 1^+} f(x) &amp;=  \lim_{x \to 1^+} x^4 + k \\
 </div></section>
 </section>
 <section id="limit-definition-of-a-derivative">
-<h2>Limit definition of a derivative<a class="headerlink" href="#limit-definition-of-a-derivative" title="Permalink to this headline"></a></h2>
+<h2>Limit definition of a derivative<a class="headerlink" href="#limit-definition-of-a-derivative" title="Permalink to this heading"></a></h2>
 <p>Graphically, a derivative is the slope of a tangent line at some point on the function. The limit definition of a derivative is a way to formally define what a derivative is.</p>
 <p>A derivative f’(x) is defined as <span class="math notranslate nohighlight">\(f'(x) = \lim{h \to 0} \frac{f(x + h) - f(x)}{h}\)</span>, and we say a point is differentiable if this limit for f’(x) exists.</p>
 <section id="q3-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-x-2-5x">
-<h3>Q3: Use the limit definition of a derivative to compute <span class="math notranslate nohighlight">\(f^{'}(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = x^2 - 5x\)</span>.<a class="headerlink" href="#q3-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-x-2-5x" title="Permalink to this headline"></a></h3>
+<h3>Q3: Use the limit definition of a derivative to compute <span class="math notranslate nohighlight">\(f^{'}(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = x^2 - 5x\)</span>.<a class="headerlink" href="#q3-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-x-2-5x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">
@@ -476,7 +491,7 @@ lim_{h \to 0} \frac{f(x +h) - f(x)}{h} &amp;= lim_{h \to 0} \frac{ ((x+h)^2 - 5(
     </div>
 </div></section>
 <section id="q4-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-sin-x">
-<h3>Q4: Use the limit definition of a derivative to compute <span class="math notranslate nohighlight">\(f^{'}(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = sin(x)\)</span>.<a class="headerlink" href="#q4-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-sin-x" title="Permalink to this headline"></a></h3>
+<h3>Q4: Use the limit definition of a derivative to compute <span class="math notranslate nohighlight">\(f^{'}(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = sin(x)\)</span>.<a class="headerlink" href="#q4-use-the-limit-definition-of-a-derivative-to-compute-f-x-if-f-x-sin-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><div class="math notranslate nohighlight">
@@ -492,7 +507,7 @@ lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
     </div>
 </div></section>
 <section id="q5-show-that-f-x-x-tiny-dfrac-2-3-is-not-differentiable-at-x-0-using-the-limit-definition-of-a-derivative">
-<h3>Q5: Show that <span class="math notranslate nohighlight">\(f(x) = x^{\tiny \dfrac{2}{3}}\)</span> is not differentiable at <span class="math notranslate nohighlight">\(x = 0\)</span> using the limit definition of a derivative.<a class="headerlink" href="#q5-show-that-f-x-x-tiny-dfrac-2-3-is-not-differentiable-at-x-0-using-the-limit-definition-of-a-derivative" title="Permalink to this headline"></a></h3>
+<h3>Q5: Show that <span class="math notranslate nohighlight">\(f(x) = x^{\tiny \dfrac{2}{3}}\)</span> is not differentiable at <span class="math notranslate nohighlight">\(x = 0\)</span> using the limit definition of a derivative.<a class="headerlink" href="#q5-show-that-f-x-x-tiny-dfrac-2-3-is-not-differentiable-at-x-0-using-the-limit-definition-of-a-derivative" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Using the limit definition of a derivative, we get that</p>

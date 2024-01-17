@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-7">
-<h1>Tutorial Week 7<a class="headerlink" href="#tutorial-week-7" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 7<a class="headerlink" href="#tutorial-week-7" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,16 +421,16 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="cramer-s-rule">
-<h2>Cramer’s Rule<a class="headerlink" href="#cramer-s-rule" title="Permalink to this headline"></a></h2>
+<h2>Cramer’s Rule<a class="headerlink" href="#cramer-s-rule" title="Permalink to this heading"></a></h2>
 <section id="q1-use-cramer-s-rule-to-solve-for-z-in-the-system-begin-cases-2x-3y-z-1-x-4y-z-5-6x-y-3z-4-end-cases">
-<h3>Q1: Use Cramer’s Rule to solve for <span class="math notranslate nohighlight">\(z\)</span> in the system <span class="math notranslate nohighlight">\(\begin{cases} 2x + 3y + z = 1 \\ x - 4y + z = -5 \\ 6x + y - 3z = 4 \end{cases}\)</span>.<a class="headerlink" href="#q1-use-cramer-s-rule-to-solve-for-z-in-the-system-begin-cases-2x-3y-z-1-x-4y-z-5-6x-y-3z-4-end-cases" title="Permalink to this headline"></a></h3>
+<h3>Q1: Use Cramer’s Rule to solve for <span class="math notranslate nohighlight">\(z\)</span> in the system <span class="math notranslate nohighlight">\(\begin{cases} 2x + 3y + z = 1 \\ x - 4y + z = -5 \\ 6x + y - 3z = 4 \end{cases}\)</span>.<a class="headerlink" href="#q1-use-cramer-s-rule-to-solve-for-z-in-the-system-begin-cases-2x-3y-z-1-x-4y-z-5-6x-y-3z-4-end-cases" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/18.jpeg"><img alt="../../_images/18.jpeg" src="../../_images/18.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q2-given-ax-b-where-a-begin-bmatrix-box-2-1-box-5-3-box-box-box-end-bmatrix-x-begin-bmatrix-x-y-z-end-bmatrix-and-b-begin-bmatrix-0-0-3-end-bmatrix-if-det-a-5-find-x">
-<h3>Q2: Given <span class="math notranslate nohighlight">\(AX = B\)</span> where <span class="math notranslate nohighlight">\(A = \begin{bmatrix} \Box &amp; 2 &amp; 1 \\ \Box &amp; 5 &amp; 3 \\ \Box &amp; \Box &amp; \Box \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(X = \begin{bmatrix} x \\ y \\ z \end{bmatrix}\)</span>, and <span class="math notranslate nohighlight">\(B = \begin{bmatrix} 0 \\ 0 \\ -3 \end{bmatrix}\)</span>, if <span class="math notranslate nohighlight">\(det(A) = 5\)</span>, find <span class="math notranslate nohighlight">\(x\)</span>.<a class="headerlink" href="#q2-given-ax-b-where-a-begin-bmatrix-box-2-1-box-5-3-box-box-box-end-bmatrix-x-begin-bmatrix-x-y-z-end-bmatrix-and-b-begin-bmatrix-0-0-3-end-bmatrix-if-det-a-5-find-x" title="Permalink to this headline"></a></h3>
+<h3>Q2: Given <span class="math notranslate nohighlight">\(AX = B\)</span> where <span class="math notranslate nohighlight">\(A = \begin{bmatrix} \Box &amp; 2 &amp; 1 \\ \Box &amp; 5 &amp; 3 \\ \Box &amp; \Box &amp; \Box \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(X = \begin{bmatrix} x \\ y \\ z \end{bmatrix}\)</span>, and <span class="math notranslate nohighlight">\(B = \begin{bmatrix} 0 \\ 0 \\ -3 \end{bmatrix}\)</span>, if <span class="math notranslate nohighlight">\(det(A) = 5\)</span>, find <span class="math notranslate nohighlight">\(x\)</span>.<a class="headerlink" href="#q2-given-ax-b-where-a-begin-bmatrix-box-2-1-box-5-3-box-box-box-end-bmatrix-x-begin-bmatrix-x-y-z-end-bmatrix-and-b-begin-bmatrix-0-0-3-end-bmatrix-if-det-a-5-find-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/27.jpeg"><img alt="../../_images/27.jpeg" src="../../_images/27.jpeg" style="width: 700px;" /></a>
@@ -423,16 +438,16 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="domains-of-multivariable-functions">
-<h2>Domains of multivariable functions<a class="headerlink" href="#domains-of-multivariable-functions" title="Permalink to this headline"></a></h2>
+<h2>Domains of multivariable functions<a class="headerlink" href="#domains-of-multivariable-functions" title="Permalink to this heading"></a></h2>
 <section id="q3-find-and-sketch-the-domain-of-f-x-y-sqrt-2x-2-2y-2-8-ln-x-y">
-<h3>Q3: Find and sketch the domain of <span class="math notranslate nohighlight">\(f(x, y) = \sqrt{2x^2 + 2y^2 - 8} - ln(x - y)\)</span>.<a class="headerlink" href="#q3-find-and-sketch-the-domain-of-f-x-y-sqrt-2x-2-2y-2-8-ln-x-y" title="Permalink to this headline"></a></h3>
+<h3>Q3: Find and sketch the domain of <span class="math notranslate nohighlight">\(f(x, y) = \sqrt{2x^2 + 2y^2 - 8} - ln(x - y)\)</span>.<a class="headerlink" href="#q3-find-and-sketch-the-domain-of-f-x-y-sqrt-2x-2-2y-2-8-ln-x-y" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/36.jpeg"><img alt="../../_images/36.jpeg" src="../../_images/36.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q4-find-and-sketch-the-domain-of-f-x-y-sqrt-3x-y-2-x-log-2-x-2-4">
-<h3>Q4: Find and sketch the domain of <span class="math notranslate nohighlight">\(f(x, y) = \sqrt{3x + y} + 2^x - log_2(x^2-4)\)</span>.<a class="headerlink" href="#q4-find-and-sketch-the-domain-of-f-x-y-sqrt-3x-y-2-x-log-2-x-2-4" title="Permalink to this headline"></a></h3>
+<h3>Q4: Find and sketch the domain of <span class="math notranslate nohighlight">\(f(x, y) = \sqrt{3x + y} + 2^x - log_2(x^2-4)\)</span>.<a class="headerlink" href="#q4-find-and-sketch-the-domain-of-f-x-y-sqrt-3x-y-2-x-log-2-x-2-4" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/46.jpeg"><img alt="../../_images/46.jpeg" src="../../_images/46.jpeg" style="width: 700px;" /></a>
@@ -440,9 +455,9 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="level-sets">
-<h2>Level sets<a class="headerlink" href="#level-sets" title="Permalink to this headline"></a></h2>
+<h2>Level sets<a class="headerlink" href="#level-sets" title="Permalink to this heading"></a></h2>
 <section id="q5-sketch-level-sets-of-f-x-y-5x-2-y-2-for-l-1-l-5-and-l-9">
-<h3>Q5: Sketch level sets of <span class="math notranslate nohighlight">\(f(x, y) = 5x^2 + y^2\)</span> for <span class="math notranslate nohighlight">\(L(1)\)</span>, <span class="math notranslate nohighlight">\(L(5)\)</span>, and <span class="math notranslate nohighlight">\(L(9)\)</span>.<a class="headerlink" href="#q5-sketch-level-sets-of-f-x-y-5x-2-y-2-for-l-1-l-5-and-l-9" title="Permalink to this headline"></a></h3>
+<h3>Q5: Sketch level sets of <span class="math notranslate nohighlight">\(f(x, y) = 5x^2 + y^2\)</span> for <span class="math notranslate nohighlight">\(L(1)\)</span>, <span class="math notranslate nohighlight">\(L(5)\)</span>, and <span class="math notranslate nohighlight">\(L(9)\)</span>.<a class="headerlink" href="#q5-sketch-level-sets-of-f-x-y-5x-2-y-2-for-l-1-l-5-and-l-9" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/53.jpeg"><img alt="../../_images/53.jpeg" src="../../_images/53.jpeg" style="width: 700px;" /></a>

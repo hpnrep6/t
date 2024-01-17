@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-12">
-<h1>Tutorial Week 12<a class="headerlink" href="#tutorial-week-12" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 12<a class="headerlink" href="#tutorial-week-12" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,7 +421,7 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="sigma-notation">
-<h2>Sigma Notation<a class="headerlink" href="#sigma-notation" title="Permalink to this headline"></a></h2>
+<h2>Sigma Notation<a class="headerlink" href="#sigma-notation" title="Permalink to this heading"></a></h2>
 <p>We use sigma (<span class="math notranslate nohighlight">\(\Sigma\)</span>) notation as a way to express sums of numbers.</p>
 <p>With <span class="math notranslate nohighlight">\(\Sigma_{n=3}^5n^2\)</span>, we sum from <span class="math notranslate nohighlight">\(n = 3\)</span> to <span class="math notranslate nohighlight">\(n = 5\)</span> inclusive, giving <span class="math notranslate nohighlight">\(\Sigma_{n=3}^5n^2 = 3^2 + 4^2 + 5^2\)</span>.</p>
 <p>With sums, we also have a few useful formulas, those being:</p>
@@ -420,7 +435,7 @@ tex: {packages: {'[+]': ['ams']}}
 </ul>
 </section>
 <section id="riemann-sums">
-<h2>Riemann Sums<a class="headerlink" href="#riemann-sums" title="Permalink to this headline"></a></h2>
+<h2>Riemann Sums<a class="headerlink" href="#riemann-sums" title="Permalink to this heading"></a></h2>
 <p>Riemann sums are used to approximate the area under a function by using rectangles.</p>
 <p>To define a riemann sum from on the interval [a, b] for f(x), we need:</p>
 <ul class="simple">
@@ -433,7 +448,7 @@ tex: {packages: {'[+]': ['ams']}}
 <p>The left riemann sum is defined with <span class="math notranslate nohighlight">\(x^\ast_k = x_{k-1}\)</span> <span class="math notranslate nohighlight">\(L_n = \Sigma_{k=1}^n f(x_{k-1})\Delta x = \Sigma_{k=1}^n f(a + (k-1)\Delta x)\Delta x\)</span></p>
 <p>The right riemann sum is defined with <span class="math notranslate nohighlight">\(x^\ast_k = x_{k}\)</span> <span class="math notranslate nohighlight">\(R_n = \Sigma_{k=1}^n f(x_{k})\Delta x = \Sigma_{k=1}^n f(a + k\Delta x)\Delta x\)</span></p>
 <section id="q1-approximate-the-area-under-10-x-2-for-x-in-0-1-using-the-right-riemann-sum-over-four-intervals">
-<h3>Q1: Approximate the area under <span class="math notranslate nohighlight">\(10 - x^2\)</span> for <span class="math notranslate nohighlight">\(x \in [0, 1]\)</span> using the right Riemann sum over four intervals.<a class="headerlink" href="#q1-approximate-the-area-under-10-x-2-for-x-in-0-1-using-the-right-riemann-sum-over-four-intervals" title="Permalink to this headline"></a></h3>
+<h3>Q1: Approximate the area under <span class="math notranslate nohighlight">\(10 - x^2\)</span> for <span class="math notranslate nohighlight">\(x \in [0, 1]\)</span> using the right Riemann sum over four intervals.<a class="headerlink" href="#q1-approximate-the-area-under-10-x-2-for-x-in-0-1-using-the-right-riemann-sum-over-four-intervals" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>We first need to find the following:</p>
@@ -449,11 +464,11 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="integrals">
-<h2>Integrals<a class="headerlink" href="#integrals" title="Permalink to this headline"></a></h2>
+<h2>Integrals<a class="headerlink" href="#integrals" title="Permalink to this heading"></a></h2>
 <p>Integrals are essentially riemann sums with an infinite number of partitions. That is, <span class="math notranslate nohighlight">\(\int_a^b f(x) dx = \lim_{n\to \infty} \Sigma_{k=1}^n f(x^\ast_k) \Delta x\)</span> for the riemann sum over <span class="math notranslate nohighlight">\(x \in [a, b]\)</span>.
 The <span class="math notranslate nohighlight">\(dx\)</span> tells you which variable to integrate, which is useful in multivariable calculus.</p>
 <section id="q2-evaluate-int-0-4-2x-2-x-dx-using-riemann-sums">
-<h3>Q2: Evaluate <span class="math notranslate nohighlight">\(\int_0^4 2x^2 + x \,dx\)</span> using Riemann sums.<a class="headerlink" href="#q2-evaluate-int-0-4-2x-2-x-dx-using-riemann-sums" title="Permalink to this headline"></a></h3>
+<h3>Q2: Evaluate <span class="math notranslate nohighlight">\(\int_0^4 2x^2 + x \,dx\)</span> using Riemann sums.<a class="headerlink" href="#q2-evaluate-int-0-4-2x-2-x-dx-using-riemann-sums" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>For simplicity, let’s use the right riemann sum.</p>
@@ -486,7 +501,7 @@ The <span class="math notranslate nohighlight">\(dx\)</span> tells you which var
 </div></section>
 </section>
 <section id="integral-properties-and-formulas">
-<h2>Integral Properties and Formulas<a class="headerlink" href="#integral-properties-and-formulas" title="Permalink to this headline"></a></h2>
+<h2>Integral Properties and Formulas<a class="headerlink" href="#integral-properties-and-formulas" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\int x^n dx = \frac{x^{n+1}}{n+1} + C\)</span> if <span class="math notranslate nohighlight">\(n \neq -1\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\int \frac{1}{x} dx = ln|x| + C\)</span></p></li>
@@ -502,25 +517,25 @@ The <span class="math notranslate nohighlight">\(dx\)</span> tells you which var
 </ul>
 </section>
 <section id="fundamental-theorem-of-calculus-2-ftc-2">
-<h2>Fundamental Theorem of Calculus 2 (FTC 2)<a class="headerlink" href="#fundamental-theorem-of-calculus-2-ftc-2" title="Permalink to this headline"></a></h2>
+<h2>Fundamental Theorem of Calculus 2 (FTC 2)<a class="headerlink" href="#fundamental-theorem-of-calculus-2-ftc-2" title="Permalink to this heading"></a></h2>
 <p>With FTC 2, you’re able to evaluate integrals at the endpoints of your interval.</p>
 <p>If <span class="math notranslate nohighlight">\(\int f(x) dx = F(x)\)</span>, then <span class="math notranslate nohighlight">\(\int_a^b f(x) dx = F(x) |_a^b = F(b) - F(a)\)</span></p>
 <section id="q3-find-int-0-1-5x-x-2-sqrt-3-x-dx">
-<h3>Q3: Find <span class="math notranslate nohighlight">\(\int_{0}^{1} 5x + x^2\sqrt[3]{x} \, dx\)</span>.<a class="headerlink" href="#q3-find-int-0-1-5x-x-2-sqrt-3-x-dx" title="Permalink to this headline"></a></h3>
+<h3>Q3: Find <span class="math notranslate nohighlight">\(\int_{0}^{1} 5x + x^2\sqrt[3]{x} \, dx\)</span>.<a class="headerlink" href="#q3-find-int-0-1-5x-x-2-sqrt-3-x-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/5.jpg"><img alt="../../_images/5.jpg" src="../../_images/5.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q4-find-int-3-3-frac-cos-e-x-x-2-e-x-dx">
-<h3>Q4: Find <span class="math notranslate nohighlight">\(\int^3_3 \frac{\cos(e^{x})}{x^{2}+e^{x}} \, dx\)</span>.<a class="headerlink" href="#q4-find-int-3-3-frac-cos-e-x-x-2-e-x-dx" title="Permalink to this headline"></a></h3>
+<h3>Q4: Find <span class="math notranslate nohighlight">\(\int^3_3 \frac{\cos(e^{x})}{x^{2}+e^{x}} \, dx\)</span>.<a class="headerlink" href="#q4-find-int-3-3-frac-cos-e-x-x-2-e-x-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/11.jpg"><img alt="../../_images/11.jpg" src="../../_images/11.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q5-if-int-1-5-f-x-4-dx-8-int-1-2-f-x-x-dx-2-find-int-2-5-f-x-dx">
-<h3>Q5: If <span class="math notranslate nohighlight">\(\int_{1}^{5} f(x) + 4 \, dx = 8\)</span>, <span class="math notranslate nohighlight">\(\int_1^2 f(x) + x \, dx = 2\)</span>, find <span class="math notranslate nohighlight">\(\int_2^5 f(x) \, dx\)</span>.<a class="headerlink" href="#q5-if-int-1-5-f-x-4-dx-8-int-1-2-f-x-x-dx-2-find-int-2-5-f-x-dx" title="Permalink to this headline"></a></h3>
+<h3>Q5: If <span class="math notranslate nohighlight">\(\int_{1}^{5} f(x) + 4 \, dx = 8\)</span>, <span class="math notranslate nohighlight">\(\int_1^2 f(x) + x \, dx = 2\)</span>, find <span class="math notranslate nohighlight">\(\int_2^5 f(x) \, dx\)</span>.<a class="headerlink" href="#q5-if-int-1-5-f-x-4-dx-8-int-1-2-f-x-x-dx-2-find-int-2-5-f-x-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/31.jpg"><img alt="../../_images/31.jpg" src="../../_images/31.jpg" style="width: 700px;" /></a>

@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-10">
-<h1>Tutorial Week 10<a class="headerlink" href="#tutorial-week-10" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 10<a class="headerlink" href="#tutorial-week-10" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,12 +421,12 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="initial-value-problems">
-<h2>Initial Value Problems<a class="headerlink" href="#initial-value-problems" title="Permalink to this headline"></a></h2>
+<h2>Initial Value Problems<a class="headerlink" href="#initial-value-problems" title="Permalink to this heading"></a></h2>
 <p>Initial value problems are modelled around the differential equation <span class="math notranslate nohighlight">\(\frac{dy}{dt} = ky\)</span>.</p>
 <p>If we’re given that equation, and we know <span class="math notranslate nohighlight">\(y(0) = y_0\)</span>, then the solution to the differential equation is <span class="math notranslate nohighlight">\(y(t) = y_0e^{kt}\)</span>.</p>
 <p>You can think of it as <span class="math notranslate nohighlight">\(\frac{dy}{dt} = ky \Rightarrow y(t) = y(0)e^{kt} = y_0e^{kt}\)</span>.</p>
 <section id="q1-a-cell-culture-starts-off-with-100-cells-and-has-grown-to-300-cells-after-an-hour-find-a-formula-for-the-population-after-t-hours-assuming-the-growth-rate-is-proportional-to-the-size">
-<h3>Q1: A cell culture starts off with 100 cells and has grown to 300 cells after an hour. Find a formula for the population after t hours (assuming the growth rate is proportional to the size).<a class="headerlink" href="#q1-a-cell-culture-starts-off-with-100-cells-and-has-grown-to-300-cells-after-an-hour-find-a-formula-for-the-population-after-t-hours-assuming-the-growth-rate-is-proportional-to-the-size" title="Permalink to this headline"></a></h3>
+<h3>Q1: A cell culture starts off with 100 cells and has grown to 300 cells after an hour. Find a formula for the population after t hours (assuming the growth rate is proportional to the size).<a class="headerlink" href="#q1-a-cell-culture-starts-off-with-100-cells-and-has-grown-to-300-cells-after-an-hour-find-a-formula-for-the-population-after-t-hours-assuming-the-growth-rate-is-proportional-to-the-size" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><p>Since the growth is proportional to its size, we can model this using the differential equation <span class="math notranslate nohighlight">\(\frac{dy}{dt} = ky\)</span>, giving us <span class="math notranslate nohighlight">\(y(t) = y_0e^{kt}\)</span>.</p>
@@ -422,7 +437,7 @@ tex: {packages: {'[+]': ['ams']}}
     </div>
 </div></section>
 <section id="q2-let-p-1-and-p-2-denote-the-population-of-two-types-of-bacteria-if-p-1-0-100-p-2-0-50-and-frac-dp-1-dt-0-3p-1-and-frac-dp-2-dt-0-5p-2-when-are-their-populations-equal">
-<h3>Q2: Let <span class="math notranslate nohighlight">\(P_1\)</span> and <span class="math notranslate nohighlight">\(P_2\)</span> denote the population of two types of bacteria. If <span class="math notranslate nohighlight">\(P_1(0) = 100\)</span>, <span class="math notranslate nohighlight">\(P_2(0) = 50\)</span>, and <span class="math notranslate nohighlight">\(\frac{dP_1}{dt} = -0.3P_1\)</span> and <span class="math notranslate nohighlight">\(\frac{dP_2}{dt} = 0.5P_2\)</span>, when are their populations equal?<a class="headerlink" href="#q2-let-p-1-and-p-2-denote-the-population-of-two-types-of-bacteria-if-p-1-0-100-p-2-0-50-and-frac-dp-1-dt-0-3p-1-and-frac-dp-2-dt-0-5p-2-when-are-their-populations-equal" title="Permalink to this headline"></a></h3>
+<h3>Q2: Let <span class="math notranslate nohighlight">\(P_1\)</span> and <span class="math notranslate nohighlight">\(P_2\)</span> denote the population of two types of bacteria. If <span class="math notranslate nohighlight">\(P_1(0) = 100\)</span>, <span class="math notranslate nohighlight">\(P_2(0) = 50\)</span>, and <span class="math notranslate nohighlight">\(\frac{dP_1}{dt} = -0.3P_1\)</span> and <span class="math notranslate nohighlight">\(\frac{dP_2}{dt} = 0.5P_2\)</span>, when are their populations equal?<a class="headerlink" href="#q2-let-p-1-and-p-2-denote-the-population-of-two-types-of-bacteria-if-p-1-0-100-p-2-0-50-and-frac-dp-1-dt-0-3p-1-and-frac-dp-2-dt-0-5p-2-when-are-their-populations-equal" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/3.jpeg"><img alt="../../_images/3.jpeg" src="../../_images/3.jpeg" style="width: 700px;" /></a>
@@ -430,7 +445,7 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="newton-s-law-of-cooling">
-<h2>Newton’s Law of Cooling<a class="headerlink" href="#newton-s-law-of-cooling" title="Permalink to this headline"></a></h2>
+<h2>Newton’s Law of Cooling<a class="headerlink" href="#newton-s-law-of-cooling" title="Permalink to this heading"></a></h2>
 <p>For Newton’s Law of Cooling, we have the formula
 <span class="math notranslate nohighlight">\(T(t) = T_e + (T_0 - T_e)e^{kt}\)</span>, where</p>
 <ul class="simple">
@@ -439,7 +454,7 @@ tex: {packages: {'[+]': ['ams']}}
 <li><p><span class="math notranslate nohighlight">\(T_e\)</span> is the environment temperature</p></li>
 </ul>
 <section id="q3-a-60c-object-is-placed-in-a-20c-room-after-10-minutes-the-temperature-of-the-object-is-40c-what-is-the-temperature-of-the-object-after-20-minutes">
-<h3>Q3: A 60°C object is placed in a 20°C room. After 10 minutes, the temperature of the object is 40°C. What is the temperature of the object after 20 minutes?<a class="headerlink" href="#q3-a-60c-object-is-placed-in-a-20c-room-after-10-minutes-the-temperature-of-the-object-is-40c-what-is-the-temperature-of-the-object-after-20-minutes" title="Permalink to this headline"></a></h3>
+<h3>Q3: A 60°C object is placed in a 20°C room. After 10 minutes, the temperature of the object is 40°C. What is the temperature of the object after 20 minutes?<a class="headerlink" href="#q3-a-60c-object-is-placed-in-a-20c-room-after-10-minutes-the-temperature-of-the-object-is-40c-what-is-the-temperature-of-the-object-after-20-minutes" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/5.jpeg"><img alt="../../_images/5.jpeg" src="../../_images/5.jpeg" style="width: 700px;" /></a>
@@ -447,11 +462,11 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="optimization">
-<h2>Optimization<a class="headerlink" href="#optimization" title="Permalink to this headline"></a></h2>
+<h2>Optimization<a class="headerlink" href="#optimization" title="Permalink to this heading"></a></h2>
 <p>One method of solving optimization problems is to use the Test for Absolute Extrema, which generally states that:</p>
 <p>Given a function <span class="math notranslate nohighlight">\(f(x)\)</span> that is continuous on a closed interval, you can find the absolute maximum and minimum by looking at its critical points and endpoints.</p>
 <section id="q4-find-the-dimensions-of-the-largest-rectangle-that-fits-in-between-x-2-and-y-3">
-<h3>Q4: Find the dimensions of the largest rectangle that fits in between <span class="math notranslate nohighlight">\(x^2\)</span> and <span class="math notranslate nohighlight">\(y=3\)</span>.<a class="headerlink" href="#q4-find-the-dimensions-of-the-largest-rectangle-that-fits-in-between-x-2-and-y-3" title="Permalink to this headline"></a></h3>
+<h3>Q4: Find the dimensions of the largest rectangle that fits in between <span class="math notranslate nohighlight">\(x^2\)</span> and <span class="math notranslate nohighlight">\(y=3\)</span>.<a class="headerlink" href="#q4-find-the-dimensions-of-the-largest-rectangle-that-fits-in-between-x-2-and-y-3" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/7.jpeg"><img alt="../../_images/7.jpeg" src="../../_images/7.jpeg" style="width: 700px;" /></a>

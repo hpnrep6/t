@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../2023.html">2023</a><ul class="current">
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-9">
-<h1>Tutorial Week 9<a class="headerlink" href="#tutorial-week-9" title="Permalink to this headline"></a></h1>
+<h1>Tutorial Week 9<a class="headerlink" href="#tutorial-week-9" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -406,7 +421,7 @@ loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="l-hopital-s-rule">
-<h2>L’Hopital’s Rule<a class="headerlink" href="#l-hopital-s-rule" title="Permalink to this headline"></a></h2>
+<h2>L’Hopital’s Rule<a class="headerlink" href="#l-hopital-s-rule" title="Permalink to this heading"></a></h2>
 <p>L’Hopital’s rule provides an easy to solve limits that otherwise would have been impossible/very difficult to compute using conventional algebra.</p>
 <p>To use L’Hoptial’s rule, the limit must be in an indeterminate form. These are:</p>
 <ul class="simple">
@@ -419,21 +434,21 @@ tex: {packages: {'[+]': ['ams']}}
 <li><p><span class="math notranslate nohighlight">\(0 \cdot \infty\)</span></p></li>
 </ul>
 <section id="q1-find-lim-x-to-0-frac-x-sin-x-x-2-cos-x-sin-x">
-<h3>Q1: Find <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x + sin(x)}{x^2 + cos(x)sin(x)}\)</span>.<a class="headerlink" href="#q1-find-lim-x-to-0-frac-x-sin-x-x-2-cos-x-sin-x" title="Permalink to this headline"></a></h3>
+<h3>Q1: Find <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{x + sin(x)}{x^2 + cos(x)sin(x)}\)</span>.<a class="headerlink" href="#q1-find-lim-x-to-0-frac-x-sin-x-x-2-cos-x-sin-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/18.jpg"><img alt="../../_images/18.jpg" src="../../_images/18.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q2-find-lim-x-to-0-xln-x">
-<h3>Q2: Find <span class="math notranslate nohighlight">\(\lim_{x \to 0^+} xln(x)\)</span>.<a class="headerlink" href="#q2-find-lim-x-to-0-xln-x" title="Permalink to this headline"></a></h3>
+<h3>Q2: Find <span class="math notranslate nohighlight">\(\lim_{x \to 0^+} xln(x)\)</span>.<a class="headerlink" href="#q2-find-lim-x-to-0-xln-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/27.jpg"><img alt="../../_images/27.jpg" src="../../_images/27.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q3-find-lim-x-to-infty-left-frac-1-e-x-1-right-e-x">
-<h3>Q3: Find <span class="math notranslate nohighlight">\(\lim_{x \to \infty} \left(\frac{1}{e^{x}}+1\right)^{e^{x}}\)</span>.<a class="headerlink" href="#q3-find-lim-x-to-infty-left-frac-1-e-x-1-right-e-x" title="Permalink to this headline"></a></h3>
+<h3>Q3: Find <span class="math notranslate nohighlight">\(\lim_{x \to \infty} \left(\frac{1}{e^{x}}+1\right)^{e^{x}}\)</span>.<a class="headerlink" href="#q3-find-lim-x-to-infty-left-frac-1-e-x-1-right-e-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/36.jpg"><img alt="../../_images/36.jpg" src="../../_images/36.jpg" style="width: 700px;" /></a>
@@ -441,11 +456,11 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="mean-value-theorem">
-<h2>Mean Value Theorem<a class="headerlink" href="#mean-value-theorem" title="Permalink to this headline"></a></h2>
+<h2>Mean Value Theorem<a class="headerlink" href="#mean-value-theorem" title="Permalink to this heading"></a></h2>
 <p>The Mean Value Theorem (MVT) states that:</p>
 <p>If a function f is continuous on <span class="math notranslate nohighlight">\([a, b]\)</span> and differentiable on <span class="math notranslate nohighlight">\((a, b)\)</span>, then there exists a <span class="math notranslate nohighlight">\(c \in (a, b)\)</span> such that <span class="math notranslate nohighlight">\(f'(c) = \frac{f(b) - f(a)}{b - a}\)</span>.</p>
 <section id="q4-if-3-leq-f-x-leq-6-for-all-x-show-that-18-leq-f-7-f-1-leq-36">
-<h3>Q4: If <span class="math notranslate nohighlight">\(3 \leq f'(x) \leq 6\)</span> for all <span class="math notranslate nohighlight">\(x\)</span>, show that <span class="math notranslate nohighlight">\(18 \leq f(7) − f(1) \leq 36\)</span>.<a class="headerlink" href="#q4-if-3-leq-f-x-leq-6-for-all-x-show-that-18-leq-f-7-f-1-leq-36" title="Permalink to this headline"></a></h3>
+<h3>Q4: If <span class="math notranslate nohighlight">\(3 \leq f'(x) \leq 6\)</span> for all <span class="math notranslate nohighlight">\(x\)</span>, show that <span class="math notranslate nohighlight">\(18 \leq f(7) − f(1) \leq 36\)</span>.<a class="headerlink" href="#q4-if-3-leq-f-x-leq-6-for-all-x-show-that-18-leq-f-7-f-1-leq-36" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/76.jpg"><img alt="../../_images/76.jpg" src="../../_images/76.jpg" style="width: 700px;" /></a>
@@ -453,11 +468,11 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="linearization">
-<h2>Linearization<a class="headerlink" href="#linearization" title="Permalink to this headline"></a></h2>
+<h2>Linearization<a class="headerlink" href="#linearization" title="Permalink to this heading"></a></h2>
 <p>Linearization is a computationally simple method of getting a good approximation of the value of a function near some point.</p>
 <p>The linearization of a function f at a point a is given by the formula: <span class="math notranslate nohighlight">\(L(x) = f(a) + f'(a)(x-a)\)</span>. Essentially, this is an approximation of f near f(a).</p>
 <section id="q5-find-the-linear-approximation-of-f-x-3e-x-at-x-0-use-it-to-approximate-3e-0-2">
-<h3>Q5: Find the linear approximation of <span class="math notranslate nohighlight">\(f(x) = 3e^{x}\)</span> at <span class="math notranslate nohighlight">\(x=0\)</span>. Use it to approximate <span class="math notranslate nohighlight">\(3e^{0.2}\)</span>.<a class="headerlink" href="#q5-find-the-linear-approximation-of-f-x-3e-x-at-x-0-use-it-to-approximate-3e-0-2" title="Permalink to this headline"></a></h3>
+<h3>Q5: Find the linear approximation of <span class="math notranslate nohighlight">\(f(x) = 3e^{x}\)</span> at <span class="math notranslate nohighlight">\(x=0\)</span>. Use it to approximate <span class="math notranslate nohighlight">\(3e^{0.2}\)</span>.<a class="headerlink" href="#q5-find-the-linear-approximation-of-f-x-3e-x-at-x-0-use-it-to-approximate-3e-0-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/116.jpg"><img alt="../../_images/116.jpg" src="../../_images/116.jpg" style="width: 700px;" /></a>

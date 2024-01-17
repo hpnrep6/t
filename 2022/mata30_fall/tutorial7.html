@@ -16,7 +16,9 @@
         <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -48,6 +50,19 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../general.html#teaching">Teaching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../2024/2024.html">2024</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../2024/mata36_winter/mata36.html">MATA36 Winter 2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html">Tutorial Week 2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#basic-integration-rules">Basic Integration Rules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#integration-methods">Integration Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../2024/mata36_winter/tutorial2.html#challenge-questions">Challenge Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../2023/2023.html">2023</a><ul>
@@ -397,7 +412,7 @@
            <div itemprop="articleBody">
              
   <section id="tutorial-week-7">
-<span id="mata30-fall-tut-7"></span><h1>Tutorial Week 7<a class="headerlink" href="#tutorial-week-7" title="Permalink to this headline"></a></h1>
+<span id="mata30-fall-tut-7"></span><h1>Tutorial Week 7<a class="headerlink" href="#tutorial-week-7" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -407,30 +422,30 @@ tex: {packages: {'[+]': ['ams']}}
 };
 </script><p>This tutorial will be about implicit differentiation and logarithmitic differentiation, as well as some application questions.</p>
 <section id="implicit-differentiation">
-<h2>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this headline"></a></h2>
+<h2>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this heading"></a></h2>
 <section id="q1-given-y-and-x-are-implicitly-related-find-frac-dy-dx-for-3x-2y-4y-3y-4-x">
-<h3>Q1: Given <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(x\)</span> are implicitly related, find <span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span> for <span class="math notranslate nohighlight">\(3x^2y + 4y = 3y^4 + x\)</span>.<a class="headerlink" href="#q1-given-y-and-x-are-implicitly-related-find-frac-dy-dx-for-3x-2y-4y-3y-4-x" title="Permalink to this headline"></a></h3>
+<h3>Q1: Given <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(x\)</span> are implicitly related, find <span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span> for <span class="math notranslate nohighlight">\(3x^2y + 4y = 3y^4 + x\)</span>.<a class="headerlink" href="#q1-given-y-and-x-are-implicitly-related-find-frac-dy-dx-for-3x-2y-4y-3y-4-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/16.jpg"><img alt="../../_images/16.jpg" src="../../_images/16.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q2-which-points-on-the-curve-xy-3y-x-have-a-tangent-line-perpendicular-to-y-3x-1">
-<h3>Q2: Which points on the curve <span class="math notranslate nohighlight">\(xy = 3y + x\)</span> have a tangent line perpendicular to <span class="math notranslate nohighlight">\(y = 3x + 1\)</span>?<a class="headerlink" href="#q2-which-points-on-the-curve-xy-3y-x-have-a-tangent-line-perpendicular-to-y-3x-1" title="Permalink to this headline"></a></h3>
+<h3>Q2: Which points on the curve <span class="math notranslate nohighlight">\(xy = 3y + x\)</span> have a tangent line perpendicular to <span class="math notranslate nohighlight">\(y = 3x + 1\)</span>?<a class="headerlink" href="#q2-which-points-on-the-curve-xy-3y-x-have-a-tangent-line-perpendicular-to-y-3x-1" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/25.jpg"><img alt="../../_images/25.jpg" src="../../_images/25.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q3-what-is-the-equation-of-the-line-tangent-to-tan-x-y-4x-1-at-0-frac-pi-4">
-<h3>Q3: What is the equation of the line tangent to <span class="math notranslate nohighlight">\(\tan(x+y)=4x+1\)</span> at <span class="math notranslate nohighlight">\((0, \frac{\pi}{4})\)</span>?<a class="headerlink" href="#q3-what-is-the-equation-of-the-line-tangent-to-tan-x-y-4x-1-at-0-frac-pi-4" title="Permalink to this headline"></a></h3>
+<h3>Q3: What is the equation of the line tangent to <span class="math notranslate nohighlight">\(\tan(x+y)=4x+1\)</span> at <span class="math notranslate nohighlight">\((0, \frac{\pi}{4})\)</span>?<a class="headerlink" href="#q3-what-is-the-equation-of-the-line-tangent-to-tan-x-y-4x-1-at-0-frac-pi-4" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/34.jpg"><img alt="../../_images/34.jpg" src="../../_images/34.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q4-find-the-derivative-of-x-2y-3-sqrt-xy-x-2y-3-with-respect-to-t-if-x-and-y-are-functions-of-t-what-would-the-derivative-be-if-x-t-3-and-y-3t-2">
-<h3>Q4: Find the derivative of <span class="math notranslate nohighlight">\(x^2y^3 = \sqrt{xy + x} + 2y + 3\)</span> with respect to <span class="math notranslate nohighlight">\(t\)</span> if <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are functions of <span class="math notranslate nohighlight">\(t\)</span>. What would the derivative be if <span class="math notranslate nohighlight">\(x = t^3\)</span> and <span class="math notranslate nohighlight">\(y = 3t + 2\)</span>?<a class="headerlink" href="#q4-find-the-derivative-of-x-2y-3-sqrt-xy-x-2y-3-with-respect-to-t-if-x-and-y-are-functions-of-t-what-would-the-derivative-be-if-x-t-3-and-y-3t-2" title="Permalink to this headline"></a></h3>
+<h3>Q4: Find the derivative of <span class="math notranslate nohighlight">\(x^2y^3 = \sqrt{xy + x} + 2y + 3\)</span> with respect to <span class="math notranslate nohighlight">\(t\)</span> if <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are functions of <span class="math notranslate nohighlight">\(t\)</span>. What would the derivative be if <span class="math notranslate nohighlight">\(x = t^3\)</span> and <span class="math notranslate nohighlight">\(y = 3t + 2\)</span>?<a class="headerlink" href="#q4-find-the-derivative-of-x-2y-3-sqrt-xy-x-2y-3-with-respect-to-t-if-x-and-y-are-functions-of-t-what-would-the-derivative-be-if-x-t-3-and-y-3t-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/45.jpg"><img alt="../../_images/45.jpg" src="../../_images/45.jpg" style="width: 700px;" /></a>
@@ -438,9 +453,9 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="exponential-derivatives">
-<h2>Exponential Derivatives<a class="headerlink" href="#exponential-derivatives" title="Permalink to this headline"></a></h2>
+<h2>Exponential Derivatives<a class="headerlink" href="#exponential-derivatives" title="Permalink to this heading"></a></h2>
 <section id="q5-find-f-x-if-f-x-ln-ln-e-e-3x-3-cos-x">
-<h3>Q5: Find <span class="math notranslate nohighlight">\(f'(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = ln(ln(e^{e^{3x^3 + cos(x)}}))\)</span>.<a class="headerlink" href="#q5-find-f-x-if-f-x-ln-ln-e-e-3x-3-cos-x" title="Permalink to this headline"></a></h3>
+<h3>Q5: Find <span class="math notranslate nohighlight">\(f'(x)\)</span> if <span class="math notranslate nohighlight">\(f(x) = ln(ln(e^{e^{3x^3 + cos(x)}}))\)</span>.<a class="headerlink" href="#q5-find-f-x-if-f-x-ln-ln-e-e-3x-3-cos-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/55.jpg"><img alt="../../_images/55.jpg" src="../../_images/55.jpg" style="width: 700px;" /></a>
@@ -448,9 +463,9 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="inverse-trigonometric-derivatives">
-<h2>Inverse Trigonometric Derivatives<a class="headerlink" href="#inverse-trigonometric-derivatives" title="Permalink to this headline"></a></h2>
+<h2>Inverse Trigonometric Derivatives<a class="headerlink" href="#inverse-trigonometric-derivatives" title="Permalink to this heading"></a></h2>
 <section id="q6-find-the-derivative-of-f-x-3-cos-1-x-2-tan-1-sqrt-5-3x-3-1">
-<h3>Q6: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = 3^{cos^{-1}(x^2)} + tan^{-1}(\sqrt[5]{3x^3 + 1})\)</span>.<a class="headerlink" href="#q6-find-the-derivative-of-f-x-3-cos-1-x-2-tan-1-sqrt-5-3x-3-1" title="Permalink to this headline"></a></h3>
+<h3>Q6: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = 3^{cos^{-1}(x^2)} + tan^{-1}(\sqrt[5]{3x^3 + 1})\)</span>.<a class="headerlink" href="#q6-find-the-derivative-of-f-x-3-cos-1-x-2-tan-1-sqrt-5-3x-3-1" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/65.jpg"><img alt="../../_images/65.jpg" src="../../_images/65.jpg" style="width: 700px;" /></a>
@@ -458,16 +473,16 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="logarithmitic-differentiation">
-<h2>Logarithmitic Differentiation<a class="headerlink" href="#logarithmitic-differentiation" title="Permalink to this headline"></a></h2>
+<h2>Logarithmitic Differentiation<a class="headerlink" href="#logarithmitic-differentiation" title="Permalink to this heading"></a></h2>
 <section id="q7-find-the-derivative-of-f-x-x-x">
-<h3>Q7: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = x^x\)</span>.<a class="headerlink" href="#q7-find-the-derivative-of-f-x-x-x" title="Permalink to this headline"></a></h3>
+<h3>Q7: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = x^x\)</span>.<a class="headerlink" href="#q7-find-the-derivative-of-f-x-x-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/75.jpg"><img alt="../../_images/75.jpg" src="../../_images/75.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q8-find-the-derivative-of-f-x-frac-sqrt-3-3x-4-4x-sqrt-3cos-x-4-6x-3-2tan-x">
-<h3>Q8: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = \frac{\sqrt[3]{3x^4 + 4x}\sqrt{3cos(x) + 4}}{6x^3 + 2tan(x)}\)</span>.<a class="headerlink" href="#q8-find-the-derivative-of-f-x-frac-sqrt-3-3x-4-4x-sqrt-3cos-x-4-6x-3-2tan-x" title="Permalink to this headline"></a></h3>
+<h3>Q8: Find the derivative of <span class="math notranslate nohighlight">\(f(x) = \frac{\sqrt[3]{3x^4 + 4x}\sqrt{3cos(x) + 4}}{6x^3 + 2tan(x)}\)</span>.<a class="headerlink" href="#q8-find-the-derivative-of-f-x-frac-sqrt-3-3x-4-4x-sqrt-3cos-x-4-6x-3-2tan-x" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/85.jpg"><img alt="../../_images/85.jpg" src="../../_images/85.jpg" style="width: 700px;" /></a>
@@ -475,16 +490,16 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="related-rates">
-<h2>Related Rates<a class="headerlink" href="#related-rates" title="Permalink to this headline"></a></h2>
+<h2>Related Rates<a class="headerlink" href="#related-rates" title="Permalink to this heading"></a></h2>
 <section id="q9-a-cylinder-with-a-radius-of-4m-is-being-filled-at-a-rate-of-2m-3-min-how-quickly-is-the-height-of-the-water-changing">
-<h3>Q9: A cylinder with a radius of <span class="math notranslate nohighlight">\(4m\)</span> is being filled at a rate of <span class="math notranslate nohighlight">\(2m^3/min\)</span>. How quickly is the height of the water changing?<a class="headerlink" href="#q9-a-cylinder-with-a-radius-of-4m-is-being-filled-at-a-rate-of-2m-3-min-how-quickly-is-the-height-of-the-water-changing" title="Permalink to this headline"></a></h3>
+<h3>Q9: A cylinder with a radius of <span class="math notranslate nohighlight">\(4m\)</span> is being filled at a rate of <span class="math notranslate nohighlight">\(2m^3/min\)</span>. How quickly is the height of the water changing?<a class="headerlink" href="#q9-a-cylinder-with-a-radius-of-4m-is-being-filled-at-a-rate-of-2m-3-min-how-quickly-is-the-height-of-the-water-changing" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/95.jpg"><img alt="../../_images/95.jpg" src="../../_images/95.jpg" style="width: 700px;" /></a>
     </div>
 </div></section>
 <section id="q10-ship-a-is-located-100km-west-of-ship-b-ship-a-is-travelling-at-20km-h-east-and-ship-b-is-travelling-at-30km-h-north-at-what-rate-does-the-distance-between-the-two-ships-change-after-6-hours">
-<h3>Q10: Ship A is located <span class="math notranslate nohighlight">\(100km\)</span> west of ship B. Ship A is travelling at <span class="math notranslate nohighlight">\(20km/h\)</span> east and ship B is travelling at <span class="math notranslate nohighlight">\(30km/h\)</span> north. At what rate does the distance between the two ships change after <span class="math notranslate nohighlight">\(6\)</span> hours?<a class="headerlink" href="#q10-ship-a-is-located-100km-west-of-ship-b-ship-a-is-travelling-at-20km-h-east-and-ship-b-is-travelling-at-30km-h-north-at-what-rate-does-the-distance-between-the-two-ships-change-after-6-hours" title="Permalink to this headline"></a></h3>
+<h3>Q10: Ship A is located <span class="math notranslate nohighlight">\(100km\)</span> west of ship B. Ship A is travelling at <span class="math notranslate nohighlight">\(20km/h\)</span> east and ship B is travelling at <span class="math notranslate nohighlight">\(30km/h\)</span> north. At what rate does the distance between the two ships change after <span class="math notranslate nohighlight">\(6\)</span> hours?<a class="headerlink" href="#q10-ship-a-is-located-100km-west-of-ship-b-ship-a-is-travelling-at-20km-h-east-and-ship-b-is-travelling-at-30km-h-north-at-what-rate-does-the-distance-between-the-two-ships-change-after-6-hours" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/105.jpg"><img alt="../../_images/105.jpg" src="../../_images/105.jpg" style="width: 700px;" /></a>
@@ -492,9 +507,9 @@ tex: {packages: {'[+]': ['ams']}}
 </div></section>
 </section>
 <section id="inverse-function-derivatives">
-<h2>Inverse Function Derivatives<a class="headerlink" href="#inverse-function-derivatives" title="Permalink to this headline"></a></h2>
+<h2>Inverse Function Derivatives<a class="headerlink" href="#inverse-function-derivatives" title="Permalink to this heading"></a></h2>
 <section id="q11-given-f-x-x-3-ln-7x-2-1-find-f-1-1">
-<h3>Q11: Given <span class="math notranslate nohighlight">\(f(x) = x^3 + ln(7x + 2) + 1\)</span>, find <span class="math notranslate nohighlight">\((f^{-1})'(1)\)</span>.<a class="headerlink" href="#q11-given-f-x-x-3-ln-7x-2-1-find-f-1-1" title="Permalink to this headline"></a></h3>
+<h3>Q11: Given <span class="math notranslate nohighlight">\(f(x) = x^3 + ln(7x + 2) + 1\)</span>, find <span class="math notranslate nohighlight">\((f^{-1})'(1)\)</span>.<a class="headerlink" href="#q11-given-f-x-x-3-ln-7x-2-1-find-f-1-1" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/115.jpg"><img alt="../../_images/115.jpg" src="../../_images/115.jpg" style="width: 700px;" /></a>

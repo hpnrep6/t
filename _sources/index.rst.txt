@@ -6,6 +6,7 @@ Home
    :maxdepth: 3
    
    general
+   2024/2024
    2023/2023
    2022/2022
 
@@ -15,4 +16,3 @@ Home
    <script>
    window.location.href = './general.html'
    </script>
-

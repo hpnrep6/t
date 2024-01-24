@@ -11,6 +11,4 @@ MATA36 Winter 2024
    :caption: Pages for MATA36
 
    tutorial2
-
-
-
+   tutorial3

@@ -67,6 +67,9 @@ Partial Fraction Decomposition (PFD)
 Partial fraction decomposition is a way to simplify rational integrals into a way that 
 is easier to work with by seperating the rational expression into its partial fractions.
 
+The thing to recall here is how to do polynomial division and that the result can be written in the form of
+:math:`polynomial(x) = quotient(x) + \frac{remainder(x)}{divisor(x)}`.
+
 Q2: Integrate :math:`\int \frac{x^4+2x^3-3x+4}{x(x-3)(x^2+1)} \; dx`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -87,8 +90,8 @@ Q2: Integrate :math:`\int \frac{x^4+2x^3-3x+4}{x(x-3)(x^2+1)} \; dx`.
 Practice Questions
 ------------------
 
-C1: Rewrite :math:`tan(sec^-1(x))` without trig functions (using a triangle).
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C1: Rewrite :math:`tan(sec^{-1}(x))` without trig functions (using a triangle).
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 C2: Integrate :math:`\int \frac{1}{\sqrt{49 + x^2}} dx`. (Hint: :math:`\int sec(x) = ln|sec(x) + tan(x)| + C` from week 1)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

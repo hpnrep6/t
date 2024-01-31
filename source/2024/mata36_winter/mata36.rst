@@ -1,4 +1,4 @@
-.. _2024_mata36_fall:
+.. _2024_mata36_winter:
 
 MATA36 Winter 2024
 ==================
@@ -12,3 +12,4 @@ MATA36 Winter 2024
 
    tutorial2
    tutorial3
+   tutorial4

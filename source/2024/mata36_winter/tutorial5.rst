@@ -80,11 +80,11 @@ Midpoint: :math:`x_k^\star = \frac{x_{k - 1} + x_k}{2}`
 
 We can also use the trapezoid sum to approximate integrals, defined as:
 
-:math:`T_n = \Sigma^n_{k=1} \frac{\Delta x}{2} (f(x_{k-1) + f(x_k))`
+:math:`T_n = \Sigma^n_{k=1} \frac{\Delta x}{2} (f(x_{k-1}) + f(x_k))`
 
 There's also Simpson's rule, defined as:
 
-:math:`S_n \ = \frac{\Delta x}{3} (f(x_0) + 4f(x_1) + 2f(x_2) + 4 f(x_3) + 2f(x_4) + \dots + 2f(x_{n-1}) + 4f(x_{n-1}) + f(x_n)`
+:math:`S_n = \frac{\Delta x}{3} (f(x_0) + 4f(x_1) + 2f(x_2) + 4 f(x_3) + 2f(x_4) + \dots + 2f(x_{n-1}) + 4f(x_{n-1}) + f(x_n)`
 
 Q2: Approximate :math:`\int_{-\pi}^{\pi} \frac{sin(x)}{x}dx` using Simpson's Rule with :math:`n=4`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

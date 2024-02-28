@@ -17,6 +17,8 @@ Tutorial Week 7
 Arc Length
 ----------
 
+The formula to find the arc length of a function is :math:`\int_a^b \sqrt{a + (f'(x))^2} \; dx`.
+
 Q1: Find the length of the curve :math:`y = -ln(sin(x))` on :math:`x \in [\frac{\pi}{4}, \frac{3\pi}{4}]`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -39,6 +41,18 @@ Q1: Find the length of the curve :math:`y = -ln(sin(x))` on :math:`x \in [\frac{
 
 Complex Numbers
 ---------------
+
+Complex numbers gives us a way of working with the roots of negative numbers.
+
+The key concepts are:
+
+- :math:`i = \sqrt{-1}`
+
+- Standard form is :math:`z = a + ib`, where a and b are real numbers
+
+- Polar form is represented as :math:`z = re^{i\theta}`, where r and :math:`\theta` are real numbers
+
+- Euler's Formula gives us :math:`e^{i\theta} = cos\theta + isin\theta`
 
 Q2: Write :math:`(1 + \frac{2i}{1 - i})^{25}` in standard form.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

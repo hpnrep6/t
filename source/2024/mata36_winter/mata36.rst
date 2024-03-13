@@ -17,3 +17,4 @@ MATA36 Winter 2024
    tutorial6
    tutorial7
    tutorial8
+   tutorial9

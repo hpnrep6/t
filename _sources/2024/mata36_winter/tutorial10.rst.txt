@@ -35,7 +35,7 @@ If :math:`|r| \lt 1`, then the series converges to :math:`\frac{a}{1-r}`.
 If :math:`|r| \ge 1`, the series diverges.
 
 Q1: Does :math:`\sum_1^\infty 1 - \arctan(n)` converge? If so, find its sum.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -43,7 +43,7 @@ Q1: Does :math:`\sum_1^\infty 1 - \arctan(n)` converge? If so, find its sum.
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t10/2.jpeg
+.. image:: ../../2023/mata36_winter/images/t10/2.jpeg
    :width: 700
 
 .. raw:: html
@@ -60,7 +60,7 @@ Q2: Does :math:`\sum_{n=1}^\infty 3(-\frac{3}{2})^n` converge? If so, find its s
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t10/3.jpeg
+.. image:: ../../2023/mata36_winter/images/t10/3.jpeg
    :width: 700
 
 .. raw:: html
@@ -77,7 +77,7 @@ Q3: Does :math:`\sum_{n=3}^\infty 4^{n+1}5^n6^{-2n}` converge? If so, find its s
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-.. image:: ./images/t10/4.jpeg
+.. image:: ../../2023/mata36_winter/images/t10/4.jpeg
    :width: 700
 
 .. raw:: html

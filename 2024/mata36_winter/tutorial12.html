@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutorial Week 8</title>
+  <title>Tutorial Week 12</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/style.css" type="text/css" />
@@ -19,13 +19,12 @@
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Tutorial Week 9" href="tutorial9.html" />
-    <link rel="prev" title="Tutorial Week 7" href="tutorial7.html" /> 
+    <link rel="next" title="2023" href="../../2023/2023.html" />
+    <link rel="prev" title="Tutorial Week 11" href="tutorial11.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -87,10 +86,10 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial7.html#complex-numbers">Complex Numbers</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 8</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#initial-value-problems">Initial Value Problems</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#separable-differential-equations">Separable Differential Equations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#linear-differential-equations">Linear Differential Equations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial8.html">Tutorial Week 8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#initial-value-problems">Initial Value Problems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#separable-differential-equations">Separable Differential Equations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#linear-differential-equations">Linear Differential Equations</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial9.html">Tutorial Week 9</a><ul>
@@ -110,9 +109,9 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial11.html#alternating-series-test">Alternating Series Test</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial12.html">Tutorial Week 12</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tutorial12.html#ratio-test">Ratio Test</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tutorial12.html#root-test">Root Test</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ratio-test">Ratio Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-test">Root Test</a></li>
 </ul>
 </li>
 </ul>
@@ -455,9 +454,9 @@
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../2024.html">2024</a> &raquo;</li>
           <li><a href="mata36.html">MATA36 Winter 2024</a> &raquo;</li>
-      <li>Tutorial Week 8</li>
+      <li>Tutorial Week 12</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/hpnrep6/t/blob/development/source/2024/mata36_winter/tutorial8.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/hpnrep6/t/blob/development/source/2024/mata36_winter/tutorial12.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -465,8 +464,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="tutorial-week-8">
-<h1>Tutorial Week 8<a class="headerlink" href="#tutorial-week-8" title="Permalink to this heading"></a></h1>
+  <section id="tutorial-week-12">
+<h1>Tutorial Week 12<a class="headerlink" href="#tutorial-week-12" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <script>
@@ -474,40 +473,28 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script><section id="initial-value-problems">
-<h2>Initial Value Problems<a class="headerlink" href="#initial-value-problems" title="Permalink to this heading"></a></h2>
-<p>With initial value problems, you’re given a set of initial conditions (i.e. <span class="math notranslate nohighlight">\(y(a) = y_a\)</span>, <span class="math notranslate nohighlight">\(y'(a) = y_b\)</span>).</p>
-<section id="q1-solve-the-initial-value-problem-with-frac-d-2y-dx-2-x-2-cos-x-with-y-0-1-and-y-0-2">
-<h3>Q1: Solve the initial value problem with <span class="math notranslate nohighlight">\(\frac{d^2y}{dx^2} = x + 2 + \cos x\)</span>, with <span class="math notranslate nohighlight">\(y(0) = 1\)</span> and <span class="math notranslate nohighlight">\(y'(0) = 2\)</span>.<a class="headerlink" href="#q1-solve-the-initial-value-problem-with-frac-d-2y-dx-2-x-2-cos-x-with-y-0-1-and-y-0-2" title="Permalink to this heading"></a></h3>
-</section>
-</section>
-<section id="separable-differential-equations">
-<h2>Separable Differential Equations<a class="headerlink" href="#separable-differential-equations" title="Permalink to this heading"></a></h2>
-<p>Separable differential equations are in the form of <span class="math notranslate nohighlight">\(\frac{dy}{dx} = f(x) \cdot g(y)\)</span>, where f is a function in terms of x and g is a function in terms of y.</p>
-<p>This differential equation can then be rewritten as <span class="math notranslate nohighlight">\(\frac{1}{g(y)} dy = f(x) dx\)</span>, and then be integrated on both sides, <span class="math notranslate nohighlight">\(\int \frac{1}{g(y)} dy = \int f(x) dx\)</span>.</p>
-<p>After computing this integral, you’ll just need to solve for the variable y.</p>
-<section id="q2-solve-the-differential-equation-frac-dy-dx-3x-2y-3x-2-y-1">
-<h3>Q2: Solve the differential equation <span class="math notranslate nohighlight">\(\frac{dy}{dx} = 3x^2y - 3x^2 - y + 1\)</span>.<a class="headerlink" href="#q2-solve-the-differential-equation-frac-dy-dx-3x-2y-3x-2-y-1" title="Permalink to this heading"></a></h3>
-</section>
-</section>
-<section id="linear-differential-equations">
-<h2>Linear Differential Equations<a class="headerlink" href="#linear-differential-equations" title="Permalink to this heading"></a></h2>
-<p>A first-order linear differential equation the standard form is given by <span class="math notranslate nohighlight">\(\frac{dy}{dx} + P(x)y = Q(x)\)</span>.</p>
-<p>To solve a first-order linear differential equation, we define the integrating factor as <span class="math notranslate nohighlight">\(I(x) = e^{\int P(x) dx}\)</span>, and then multiply both sides of <span class="math notranslate nohighlight">\(\frac{dy}{dx} + P(x)y = Q(x)\)</span> by <span class="math notranslate nohighlight">\(I(x)\)</span> to get <span class="math notranslate nohighlight">\(I(x)(frac{dy}{dx} + P(x)y) = I(x)(Q(x))\)</span>.</p>
-<p>With the choice of <span class="math notranslate nohighlight">\(I(x)\)</span>, <span class="math notranslate nohighlight">\(I(x)(\frac{dy}{dx} + P(x)y) = I(x)(Q(x))\)</span> simplifies to <span class="math notranslate nohighlight">\((I(x)y)' = I(x)Q(x)\)</span>.</p>
-<p>We then integrate both sides (<span class="math notranslate nohighlight">\(\int (I(x)y)' = \int I(x)Q(x) dx\)</span>), which simplifies to <span class="math notranslate nohighlight">\(I(x)y = \int I(x)Q(x) dx\)</span>, which we can use to solve for y.</p>
-<section id="q3-solve-the-differential-equation-y-frac-2y-x-frac-1-2x-4-4x-3-3x-2">
-<h3>Q3: Solve the differential equation <span class="math notranslate nohighlight">\(y' + \frac{2y}{x} = \frac{1}{2x^4 + 4x^3 + 3x^2}\)</span>.<a class="headerlink" href="#q3-solve-the-differential-equation-y-frac-2y-x-frac-1-2x-4-4x-3-3x-2" title="Permalink to this heading"></a></h3>
-</section>
-</section>
+</script><section id="ratio-test">
+<h2>Ratio Test<a class="headerlink" href="#ratio-test" title="Permalink to this heading"></a></h2>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/311.jpeg"><img alt="../../_images/311.jpeg" src="../../_images/311.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="root-test">
+<h2>Root Test<a class="headerlink" href="#root-test" title="Permalink to this heading"></a></h2>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/410.jpeg"><img alt="../../_images/410.jpeg" src="../../_images/410.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="tutorial7.html" class="btn btn-neutral float-left" title="Tutorial Week 7" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="tutorial9.html" class="btn btn-neutral float-right" title="Tutorial Week 9" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial11.html" class="btn btn-neutral float-left" title="Tutorial Week 11" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../2023/2023.html" class="btn btn-neutral float-right" title="2023" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

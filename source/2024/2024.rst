@@ -8,3 +8,4 @@
    :caption: Pages for 2024
    
    mata36_winter/mata36
+   mata30_fall/mata30

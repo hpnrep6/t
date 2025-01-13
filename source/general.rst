@@ -22,3 +22,4 @@ Teaching
 - :ref:`2023_mata30_fall`
 - :ref:`2024_mata36_winter`
 - :ref:`2024_mata30_fall`
+- :ref:`2025_mata36_winter`

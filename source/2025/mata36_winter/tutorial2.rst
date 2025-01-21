@@ -167,25 +167,6 @@ Q4: Integrate :math:`\int \frac{1}{1 - cos(x)} dx`.
         </div>
     </div>
 
-Q5: Integrate :math:`\int sin^4(x) dx`.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. raw:: html
-
-   <div class="answer-container">
-      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
-      <div class="answer">
-
-.. image:: ./images/t4/1.jpeg
-   :width: 700
-
-.. raw:: html
-
-        </div>
-    </div>
-    
-.. raw:: html
-
   <script>
     document.querySelectorAll('a.reference.external').forEach(function(link) {
       link.target = '_blank';

@@ -14,6 +14,26 @@ Tutorial Week 3
       };
       </script>
 
+Integration Methods Review
+--------------------------
+
+Q1: Integrate :math:`\int sin^4(x) dx`.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ./images/t4/1.jpeg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
 Trigonometric Substitution (Trig Sub)
 -------------------------------------
 
@@ -36,7 +56,7 @@ just fancy and strategic U-sub. Refer to the following table for which substitut
       - :math:`\theta \in [0, -\frac{\pi}{2}) \cup (\frac{\pi}{2}, \pi]`
 
 
-Q1: Integrate :math:`\int \frac{1}{\sqrt{x^2 + 10x + 27}} dx`.
+Q2: Integrate :math:`\int \frac{1}{\sqrt{x^2 + 10x + 27}} dx`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
@@ -61,14 +81,54 @@ Q1: Integrate :math:`\int \frac{1}{\sqrt{x^2 + 10x + 27}} dx`.
     });
   </script>
 
-Practice Questions
-------------------
+Partial Fraction Decomposition (PFD)
+------------------------------------
 
-Q2: Rewrite :math:`tan(sec^{-1}(x))` without trig functions (using a triangle).
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Partial fraction decomposition is a general algebraic method of rewriting a fraction as a sum of simpler fractions.
 
-Q3: Integrate :math:`\int \frac{1}{\sqrt{49 + x^2}} dx`. (Hint: :math:`\int sec(x) = ln|sec(x) + tan(x)| + C` from week 1)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+There are 2 steps to finding PFDs:
 
-Q4: Find the PFD of :math:`\frac{x^{2}+x+2}{x^{3}+x^{2}+x+1}`.
+1. Fully factor the denominator and write the partial factors
+2. Solve for the variables in the partial factors
+
+For the first step, the partial factors for each demoniator factor follows the pattern of:
+
+.. list-table:: 
+
+    * - Form of Denominator Factor
+      - Partial Factor
+    * - :math:`\frac{1}{ax + b}`
+      - :math:`\frac{A}{ax+b}`
+    * - :math:`\frac{1}{(ax + b)^2}`
+      - :math:`\frac{A}{ax+b} + \frac{B}{(ax+b)^2}`
+    * - :math:`\frac{1}{ax^2 + bx + c}`
+      - :math:`\frac{Ax+B}{ax^2+bx+c}`
+    * - :math:`\frac{1}{(ax^2 + bx + c)^2}`
+      - :math:`\frac{Ax+B}{ax^2+bx+c} + \frac{Cx+D}{(ax^2+bx+c)^2}`
+
+The complete partial factors for a fraction will be a sum of each of the individual partial factors for each denominator factor.
+
+Q3: Find the PFD of :math:`\frac{x^{2}+x+2}{x^{3}+x^{2}+x+1}`.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+   <div class="answer-container">
+      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+      <div class="answer">
+
+.. image:: ../../2025/mata36_winter/images/t3.jpg
+   :width: 700
+
+.. raw:: html
+
+        </div>
+    </div>
+
+.. raw:: html
+
+  <script>
+    document.querySelectorAll('a.reference.external').forEach(function(link) {
+      link.target = '_blank';
+    });
+  </script>

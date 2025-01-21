@@ -62,8 +62,9 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#integration-methods-review">Integration Methods Review</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#trigonometric-substitution-trig-sub">Trigonometric Substitution (Trig Sub)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practice-questions">Practice Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#partial-fraction-decomposition-pfd">Partial Fraction Decomposition (PFD)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial4.html">Tutorial Week 4</a><ul>
@@ -545,7 +546,17 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script><section id="trigonometric-substitution-trig-sub">
+</script><section id="integration-methods-review">
+<h2>Integration Methods Review<a class="headerlink" href="#integration-methods-review" title="Permalink to this heading"></a></h2>
+<section id="q1-integrate-int-sin-4-x-dx">
+<h3>Q1: Integrate <span class="math notranslate nohighlight">\(\int sin^4(x) dx\)</span>.<a class="headerlink" href="#q1-integrate-int-sin-4-x-dx" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/119.jpeg"><img alt="../../_images/119.jpeg" src="../../_images/119.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="trigonometric-substitution-trig-sub">
 <h2>Trigonometric Substitution (Trig Sub)<a class="headerlink" href="#trigonometric-substitution-trig-sub" title="Permalink to this heading"></a></h2>
 <p>The method of Trig sub takes advantage of your trig identities to simplify integrals and in a way, it’s
 just fancy and strategic U-sub. Refer to the following table for which substitution to use:</p>
@@ -574,8 +585,8 @@ just fancy and strategic U-sub. Refer to the following table for which substitut
 </tr>
 </tbody>
 </table>
-<section id="q1-integrate-int-frac-1-sqrt-x-2-10x-27-dx">
-<h3>Q1: Integrate <span class="math notranslate nohighlight">\(\int \frac{1}{\sqrt{x^2 + 10x + 27}} dx\)</span>.<a class="headerlink" href="#q1-integrate-int-frac-1-sqrt-x-2-10x-27-dx" title="Permalink to this heading"></a></h3>
+<section id="q2-integrate-int-frac-1-sqrt-x-2-10x-27-dx">
+<h3>Q2: Integrate <span class="math notranslate nohighlight">\(\int \frac{1}{\sqrt{x^2 + 10x + 27}} dx\)</span>.<a class="headerlink" href="#q2-integrate-int-frac-1-sqrt-x-2-10x-27-dx" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/115.jpeg"><img alt="../../_images/115.jpeg" src="../../_images/115.jpeg" style="width: 700px;" /></a>
@@ -586,17 +597,50 @@ just fancy and strategic U-sub. Refer to the following table for which substitut
   });
 </script></section>
 </section>
-<section id="practice-questions">
-<h2>Practice Questions<a class="headerlink" href="#practice-questions" title="Permalink to this heading"></a></h2>
-<section id="q2-rewrite-tan-sec-1-x-without-trig-functions-using-a-triangle">
-<h3>Q2: Rewrite <span class="math notranslate nohighlight">\(tan(sec^{-1}(x))\)</span> without trig functions (using a triangle).<a class="headerlink" href="#q2-rewrite-tan-sec-1-x-without-trig-functions-using-a-triangle" title="Permalink to this heading"></a></h3>
-</section>
-<section id="q3-integrate-int-frac-1-sqrt-49-x-2-dx-hint-int-sec-x-ln-sec-x-tan-x-c-from-week-1">
-<h3>Q3: Integrate <span class="math notranslate nohighlight">\(\int \frac{1}{\sqrt{49 + x^2}} dx\)</span>. (Hint: <span class="math notranslate nohighlight">\(\int sec(x) = ln|sec(x) + tan(x)| + C\)</span> from week 1)<a class="headerlink" href="#q3-integrate-int-frac-1-sqrt-49-x-2-dx-hint-int-sec-x-ln-sec-x-tan-x-c-from-week-1" title="Permalink to this heading"></a></h3>
-</section>
-<section id="q4-find-the-pfd-of-frac-x-2-x-2-x-3-x-2-x-1">
-<h3>Q4: Find the PFD of <span class="math notranslate nohighlight">\(\frac{x^{2}+x+2}{x^{3}+x^{2}+x+1}\)</span>.<a class="headerlink" href="#q4-find-the-pfd-of-frac-x-2-x-2-x-3-x-2-x-1" title="Permalink to this heading"></a></h3>
-</section>
+<section id="partial-fraction-decomposition-pfd">
+<h2>Partial Fraction Decomposition (PFD)<a class="headerlink" href="#partial-fraction-decomposition-pfd" title="Permalink to this heading"></a></h2>
+<p>Partial fraction decomposition is a general algebraic method of rewriting a fraction as a sum of simpler fractions.</p>
+<p>There are 2 steps to finding PFDs:</p>
+<ol class="arabic simple">
+<li><p>Fully factor the denominator and write the partial factors</p></li>
+<li><p>Solve for the variables in the partial factors</p></li>
+</ol>
+<p>For the first step, the partial factors for each demoniator factor follows the pattern of:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Form of Denominator Factor</p></td>
+<td><p>Partial Factor</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\frac{1}{ax + b}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{A}{ax+b}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\frac{1}{(ax + b)^2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{A}{ax+b} + \frac{B}{(ax+b)^2}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\frac{1}{ax^2 + bx + c}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{Ax+B}{ax^2+bx+c}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\frac{1}{(ax^2 + bx + c)^2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{Ax+B}{ax^2+bx+c} + \frac{Cx+D}{(ax^2+bx+c)^2}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>The complete partial factors for a fraction will be a sum of each of the individual partial factors for each denominator factor.</p>
+<section id="q3-find-the-pfd-of-frac-x-2-x-2-x-3-x-2-x-1">
+<h3>Q3: Find the PFD of <span class="math notranslate nohighlight">\(\frac{x^{2}+x+2}{x^{3}+x^{2}+x+1}\)</span>.<a class="headerlink" href="#q3-find-the-pfd-of-frac-x-2-x-2-x-3-x-2-x-1" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/t3.jpg"><img alt="../../_images/t3.jpg" src="../../_images/t3.jpg" style="width: 700px;" /></a>
+    </div>
+</div><script>
+  document.querySelectorAll('a.reference.external').forEach(function(link) {
+    link.target = '_blank';
+  });
+</script></section>
 </section>
 </section>
 

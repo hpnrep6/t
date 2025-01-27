@@ -14,56 +14,6 @@ Tutorial Week 5
       };
       </script>
 
-Riemann Sums (Again)
---------------------
-
-Q1: Evaluate :math:`\int_0^4 2x^2 + x \,dx` using Riemann sums.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. raw:: html
-
-   <div class="answer-container">
-      <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
-      <div class="answer">
-
-For simplicity, let's use the right riemann sum.
-
-We have: 
-
-- :math:`\Delta x = \frac{b - a}{n} = \frac{4 - 0}{n} = \frac{4}{n}`
-
-- :math:`x_k = a + k\Delta x = 0 + \frac{4k}{n}` for :math:`k = 0, 1, 2, ... , n`
-
-- :math:`x^\ast_k = x_{k} = \frac{4k}{n}` since we're using the right Riemann sum.
-
-So then 
-
-.. math::
-    \begin{aligned}
-    \int_1^5 2x^2 + x dx &= \lim_{n \to \infty} \Sigma_{k=1}^n f(x_{k})\Delta x \\
-    &= \lim_{n \to \infty} \Sigma_{k=1}^n f(\frac{4k}{n})\Delta x \\
-    &=\lim_{n \to \infty} \Sigma_{k=1}^n (2(\frac{4k}{n})^2 + \frac{4k}{n})(\frac{4}{n})
-    \end{aligned}
-
-Solving for this gives us 
-
-.. math::
-    \begin{aligned}
-    &\lim_{n \to \infty} \Sigma_{k=1}^n (2(\frac{4k}{n})^2 + \frac{4k}{n})(\frac{4}{n}) \\ &= \lim_{n \to \infty} \frac{4}{n}\Sigma^n_{k = 1}2(\frac{4k}{n})^2 + \frac{4k}{n} \\
-    &= \lim_{n \to \infty} \frac{4}{n}\Sigma^n_{k = 1}\frac{32k^2}{n^2} + \frac{4k}{n} \\
-    &= \lim_{n \to \infty} \frac{4}{n} ( \frac{32}{n^2} \Sigma^n_{k = 1} k^2 + \frac{4}{n} \Sigma^n_{k = 1} k) \\
-    &= \lim_{n \to \infty} \frac{4}{n} (\frac{32}{n^2} \cdot \frac{n(n+1)(2n+1)}{6} + \frac{4}{n} \cdot \frac{n(n+1)}{2} ) \\
-    &= \lim_{n \to \infty} \frac{128(2n^3+3n^2+n)}{6n^3} + \frac{16(n^2 + n)}{2n^2} \\
-    &= \text{... skipping a few steps for finding the limit} \\
-    &= \frac{128 \cdot 2}{6} + \frac{16}{2} \\
-    &= \frac{128}{3} + 8
-    \end{aligned}
-
-.. raw:: html
-
-        </div>
-    </div>
-
 Numerical Integration
 ---------------------
 

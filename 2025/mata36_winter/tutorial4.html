@@ -73,7 +73,6 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial5.html">Tutorial Week 5</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tutorial5.html#riemann-sums-again">Riemann Sums (Again)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial5.html#numerical-integration">Numerical Integration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial5.html#improper-integrals">Improper Integrals</a></li>
 </ul>
@@ -601,6 +600,38 @@ is easier to work with by seperating the rational expression into its partial fr
 </ul>
 <p>Then the right riemann sum is</p>
 <p><span class="math notranslate nohighlight">\(R_n = \Sigma_{k=1}^n f(\frac{k}{4})\Delta x = (\frac{1}{4})((10 - (\frac{1}{4})^2) + (10 - (\frac{2}{4})^2) + (10 - (\frac{3}{4})^2) + (10 - 1^2))\)</span></p>
+    </div>
+</div></section>
+<section id="q3-evaluate-int-0-4-2x-2-x-dx-using-riemann-sums">
+<h3>Q3: Evaluate <span class="math notranslate nohighlight">\(\int_0^4 2x^2 + x \,dx\)</span> using Riemann sums.<a class="headerlink" href="#q3-evaluate-int-0-4-2x-2-x-dx-using-riemann-sums" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><p>For simplicity, let’s use the right riemann sum.</p>
+<p>We have:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Delta x = \frac{b - a}{n} = \frac{4 - 0}{n} = \frac{4}{n}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x_k = a + k\Delta x = 0 + \frac{4k}{n}\)</span> for <span class="math notranslate nohighlight">\(k = 0, 1, 2, ... , n\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x^\ast_k = x_{k} = \frac{4k}{n}\)</span> since we’re using the right Riemann sum.</p></li>
+</ul>
+<p>So then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\int_1^5 2x^2 + x dx &amp;= \lim_{n \to \infty} \Sigma_{k=1}^n f(x_{k})\Delta x \\
+&amp;= \lim_{n \to \infty} \Sigma_{k=1}^n f(\frac{4k}{n})\Delta x \\
+&amp;=\lim_{n \to \infty} \Sigma_{k=1}^n (2(\frac{4k}{n})^2 + \frac{4k}{n})(\frac{4}{n})
+\end{aligned}\end{split}\]</div>
+<p>Solving for this gives us</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+&amp;\lim_{n \to \infty} \Sigma_{k=1}^n (2(\frac{4k}{n})^2 + \frac{4k}{n})(\frac{4}{n}) \\ &amp;= \lim_{n \to \infty} \frac{4}{n}\Sigma^n_{k = 1}2(\frac{4k}{n})^2 + \frac{4k}{n} \\
+&amp;= \lim_{n \to \infty} \frac{4}{n}\Sigma^n_{k = 1}\frac{32k^2}{n^2} + \frac{4k}{n} \\
+&amp;= \lim_{n \to \infty} \frac{4}{n} ( \frac{32}{n^2} \Sigma^n_{k = 1} k^2 + \frac{4}{n} \Sigma^n_{k = 1} k) \\
+&amp;= \lim_{n \to \infty} \frac{4}{n} (\frac{32}{n^2} \cdot \frac{n(n+1)(2n+1)}{6} + \frac{4}{n} \cdot \frac{n(n+1)}{2} ) \\
+&amp;= \lim_{n \to \infty} \frac{128(2n^3+3n^2+n)}{6n^3} + \frac{16(n^2 + n)}{2n^2} \\
+&amp;= \text{... skipping a few steps for finding the limit} \\
+&amp;= \frac{128 \cdot 2}{6} + \frac{16}{2} \\
+&amp;= \frac{128}{3} + 8
+\end{aligned}\end{split}\]</div>
     </div>
 </div></section>
 </section>

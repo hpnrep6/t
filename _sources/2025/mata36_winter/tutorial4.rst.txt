@@ -78,12 +78,14 @@ The riemann sum is :math:`\Sigma_{k=1}^n f(x_n^\ast)\Delta x`.
 
 We have two common types of riemann sums, those being the left riemann sum and the right riemann sum.
 
-The left riemann sum is defined with :math:`x^\ast_k = x_{k-1}` :math:`L_n = \Sigma_{k=1}^n f(x_{k-1})\Delta x = \Sigma_{k=1}^n f(a + (k-1)\Delta x)\Delta x`
+The left riemann sum is defined with :math:`x^\ast_k = x_{k-1}` so that :math:`L_n = \Sigma_{k=1}^n f(x_{k-1})\Delta x = \Sigma_{k=1}^n f(a + (k-1)\Delta x)\Delta x`.
 
-The right riemann sum is defined with :math:`x^\ast_k = x_{k}` :math:`R_n = \Sigma_{k=1}^n f(x_{k})\Delta x = \Sigma_{k=1}^n f(a + k\Delta x)\Delta x`
+The right riemann sum is defined with :math:`x^\ast_k = x_{k}` so that  :math:`R_n = \Sigma_{k=1}^n f(x_{k})\Delta x = \Sigma_{k=1}^n f(a + k\Delta x)\Delta x`.
 
-Q2: Approximate the area under :math:`10 - x^2` for :math:`x \in [0, 1]` using the right Riemann sum over four intervals.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The midpoint sum is defined with :math:`x^\ast_k = x_{k} = \frac{x_{k-1} + x_k}{2}` so that :math:`M_n = \Sigma_{k=1}^n f(\frac{x_{k-1} + x_k}{2}) \Delta x`.
+
+Q2: Approximate the area under :math:`10 - x^2` for :math:`x \in [0, 1]` using the midpoint sum over four intervals.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -91,19 +93,35 @@ Q2: Approximate the area under :math:`10 - x^2` for :math:`x \in [0, 1]` using t
       <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
       <div class="answer">
 
-We first need to find the following: 
+Directing plugging this into the riemann sum formula gives us
 
-- :math:`\Delta x = \frac{b - a}{n} = \frac{1 - 0}{4} = \frac{1}{4}`
+:math:`\sum_{k=1}^4 f(x_k^\ast)\Delta x = \Delta x \sum_{k=1}^4 f(x_k^\ast)`
 
-- :math:`x_k = a + k\Delta x = 0 + \frac{k}{4}` for :math:`k = 0, 1, 2, ... , n`
+:math:`= \Delta x (f(x_1^\ast) + f(x_2^\ast) + f(x_3^\ast) + f(x_4^\ast))`
 
-- :math:`x^\ast_k = x_{k} = \frac{k}{4}` since we're using the right Riemann sum.
+Remember that :math:`x_k = a + k\Delta x` for :math:`k = 0, 1, 2, ... , n`
 
-- :math:`\Sigma_{k=1}^n f(x_{k})\Delta x = \Sigma_{k=1}^n f(\frac{k}{4})\Delta x`
+so using :math:`a = 0` and :math:`\Delta x = \frac{1}{4}` from the interval of :math:`x` we want to approximate the area for,
+we have
 
-Then the right riemann sum is
+:math:`x_0 = 0, x_1 = \frac{1}{4}, x_2 = \frac{1}{2}, x_3 = \frac{3}{4}, x_4 = 1`.
 
-:math:`R_n = \Sigma_{k=1}^n f(\frac{k}{4})\Delta x = (\frac{1}{4})((10 - (\frac{1}{4})^2) + (10 - (\frac{2}{4})^2) + (10 - (\frac{3}{4})^2) + (10 - 1^2))`
+Since :math:`x^\ast_k = x_{k} = \frac{x_{k-1} + x_k}{2}`, 
+
+:math:`x^\ast_1 = \frac{0 + \frac{1}{4}}{2}, x^\ast_2 = \frac{\frac{1}{4} + \frac{1}{2}}{2}, \dots` and so on.
+
+We end up with 
+
+:math:`x^\ast_1 = \frac{1}{8}, x^\ast_2 = \frac{3}{8}, x^\ast_3 = \frac{5}{8}, x^\ast_4 = \frac{7}{8}`.
+
+Using these points, the midpoint sum is 
+
+.. math::
+  \begin{aligned}
+    &\Delta x (f(x_1^\ast) + f(x_2^\ast) + f(x_3^\ast) + f(x_4^\ast)) \\
+    &= \frac{1}{4} (f(\frac{1}{8}) + f(\frac{3}{8}) + f(\frac{5}{8}) + f(\frac{7}{8})) \\
+    &= \frac{1}{4} (10 - (\frac{1}{8})^2 + 10 - (\frac{3}{8})^2+ 10 - (\frac{5}{8})^2+ 10 - (\frac{7}{8})^2)
+  \end{aligned}
 
 .. raw:: html
 

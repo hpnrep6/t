@@ -84,11 +84,10 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 7</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#arc-length">Arc Length</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#complex-numbers">Complex Numbers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#initial-value-problems-differential-equations">Initial Value Problems (Differential Equations)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial8.html">Tutorial Week 8</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tutorial8.html#initial-value-problems">Initial Value Problems</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial8.html#separable-differential-equations">Separable Differential Equations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial8.html#linear-differential-equations">Linear Differential Equations</a></li>
 </ul>
@@ -547,7 +546,7 @@ tex: {packages: {'[+]': ['ams']}}
 };
 </script><section id="arc-length">
 <h2>Arc Length<a class="headerlink" href="#arc-length" title="Permalink to this heading"></a></h2>
-<p>The formula to find the arc length of a function is <span class="math notranslate nohighlight">\(\int_a^b \sqrt{a + (f'(x))^2} \; dx\)</span>.</p>
+<p>The formula to find the arc length of a function is <span class="math notranslate nohighlight">\(\int_a^b \sqrt{1 + (f'(x))^2} \; dx\)</span>.</p>
 <section id="q1-find-the-length-of-the-curve-y-ln-sin-x-on-x-in-frac-pi-4-frac-3-pi-4">
 <h3>Q1: Find the length of the curve <span class="math notranslate nohighlight">\(y = -ln(sin(x))\)</span> on <span class="math notranslate nohighlight">\(x \in [\frac{\pi}{4}, \frac{3\pi}{4}]\)</span>.<a class="headerlink" href="#q1-find-the-length-of-the-curve-y-ln-sin-x-on-x-in-frac-pi-4-frac-3-pi-4" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
@@ -557,54 +556,29 @@ tex: {packages: {'[+]': ['ams']}}
     </div>
 </div></section>
 </section>
-<section id="complex-numbers">
-<h2>Complex Numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this heading"></a></h2>
-<p>Complex numbers gives us a way of working with the roots of negative numbers.</p>
-<p>The key concepts are:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(i = \sqrt{-1}\)</span></p></li>
-<li><p>Standard form is <span class="math notranslate nohighlight">\(z = a + ib\)</span>, where a and b are real numbers</p></li>
-<li><p>Polar form is represented as <span class="math notranslate nohighlight">\(z = re^{i\theta}\)</span>, where r and <span class="math notranslate nohighlight">\(\theta\)</span> are real numbers</p></li>
-<li><p>Euler’s Formula gives us <span class="math notranslate nohighlight">\(e^{i\theta} = cos\theta + isin\theta\)</span></p></li>
-</ul>
-<section id="q2-write-1-frac-2i-1-i-25-in-standard-form">
-<h3>Q2: Write <span class="math notranslate nohighlight">\((1 + \frac{2i}{1 - i})^{25}\)</span> in standard form.<a class="headerlink" href="#q2-write-1-frac-2i-1-i-25-in-standard-form" title="Permalink to this heading"></a></h3>
+<section id="initial-value-problems-differential-equations">
+<h2>Initial Value Problems (Differential Equations)<a class="headerlink" href="#initial-value-problems-differential-equations" title="Permalink to this heading"></a></h2>
+<p>Differential equations are equations derivatives of a function, such as <span class="math notranslate nohighlight">\(\frac{dy}{dx} + 2\frac{dy^3}{dx^3} = 1\)</span>.</p>
+<p>With initial value problems, you’re given a set of initial conditions (i.e. <span class="math notranslate nohighlight">\(y(a) = k\)</span>, <span class="math notranslate nohighlight">\(y'(a) = m\)</span>).</p>
+<section id="q2-solve-the-initial-value-problem-with-frac-dy-dx-5x-1-with-y-1-1">
+<h3>Q2: Solve the initial value problem with <span class="math notranslate nohighlight">\(\frac{dy}{dx} = 5x + 1\)</span>, with <span class="math notranslate nohighlight">\(y(1) = -1\)</span>.<a class="headerlink" href="#q2-solve-the-initial-value-problem-with-frac-dy-dx-5x-1-with-y-1-1" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
-   <div class="answer"><div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-1 + \frac{2i}{1-i} &amp;= 1 + \frac{2i(i+1)}{(i-1)(i+1)} \\
-&amp;= 1 + \frac{2i^2 + 2i}{1 - i^2} \\
-&amp;= 1 + \frac{2i - 2}{1 - (-1)} \\
-&amp;= 1 + \frac{2i - 2}{2} \\
-&amp;= 1 + -1 + i \\
-&amp;= i
-\end{aligned}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-(i)^25 &amp;= i(i^2)^23 \\
-&amp;= i(-1)^23 \\
-&amp;= i(-1) \\
-&amp;= -i
-\end{aligned}\end{split}\]</div>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/120.jpeg"><img alt="../../_images/120.jpeg" src="../../_images/120.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
-<section id="q3-write-z-2-sqrt-3-e-frac-pi-i-3-in-standard-form">
-<h3>Q3: Write <span class="math notranslate nohighlight">\(z = 2\sqrt{3}e^{\frac{\pi i}{3}}\)</span> in standard form.<a class="headerlink" href="#q3-write-z-2-sqrt-3-e-frac-pi-i-3-in-standard-form" title="Permalink to this heading"></a></h3>
+<section id="q3-solve-the-initial-value-problem-with-frac-d-2y-dx-2-x-2-sin-x-with-y-0-1-and-y-0-2">
+<h3>Q3: Solve the initial value problem with <span class="math notranslate nohighlight">\(\frac{d^2y}{dx^2} = x^2 + \sin x\)</span>, with <span class="math notranslate nohighlight">\(y(0) = 1\)</span> and <span class="math notranslate nohighlight">\(y'(0) = 2\)</span>.<a class="headerlink" href="#q3-solve-the-initial-value-problem-with-frac-d-2y-dx-2-x-2-sin-x-with-y-0-1-and-y-0-2" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
-   <div class="answer"><p>We’re given the polar form of a complex number, that is, in the form of <span class="math notranslate nohighlight">\(z = re^{i\theta}\)</span>.</p>
-<p>So <span class="math notranslate nohighlight">\(r = 2\sqrt{3}\)</span> and <span class="math notranslate nohighlight">\(\theta = -\frac{\pi}{3}\)</span>.</p>
-<p>Euler’s formula gives us <span class="math notranslate nohighlight">\(e^{i\theta} = cos\theta + isin\theta\)</span>.</p>
-<p>It follows that:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-z &amp;= re^{i\theta} \\
-&amp;= 2\sqrt{3}e^{i\frac{-\pi}{3}} \\
-&amp;= 2\sqrt{3}(cos(-\frac{\pi}{3}) + isin(-\frac{\pi}{3})) \\
-&amp;= 2\sqrt{3}(\frac{1}{2} + i(-\frac{\sqrt{3}}{2})) \\
-&amp;= \sqrt{3} - 3i
-\end{aligned}\end{split}\]</div>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/221.jpeg"><img alt="../../_images/221.jpeg" src="../../_images/221.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q4-solve-the-initial-value-problem-with-3x-5-2-frac-dy-dx-0-with-y-1-5">
+<h3>Q4: Solve the initial value problem with <span class="math notranslate nohighlight">\(3x - 5 + 2\frac{dy}{dx}= 0\)</span>, with <span class="math notranslate nohighlight">\(y(-1) = 5\)</span>.<a class="headerlink" href="#q4-solve-the-initial-value-problem-with-3x-5-2-frac-dy-dx-0-with-y-1-5" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/3.png"><img alt="../../_images/3.png" src="../../_images/3.png" style="width: 700px;" /></a>
     </div>
 </div></section>
 </section>

@@ -549,19 +549,41 @@ tex: {packages: {'[+]': ['ams']}}
 <p>Separable differential equations are in the form of <span class="math notranslate nohighlight">\(\frac{dy}{dx} = f(x) \cdot g(y)\)</span>, where f is a function in terms of x and g is a function in terms of y.</p>
 <p>This differential equation can then be rewritten as <span class="math notranslate nohighlight">\(\frac{1}{g(y)} dy = f(x) dx\)</span>, and then be integrated on both sides, <span class="math notranslate nohighlight">\(\int \frac{1}{g(y)} dy = \int f(x) dx\)</span>.</p>
 <p>After computing this integral, you’ll just need to solve for the variable y.</p>
-<section id="q2-solve-the-differential-equation-frac-dy-dx-3x-2y-3x-2-y-1">
-<h3>Q2: Solve the differential equation <span class="math notranslate nohighlight">\(\frac{dy}{dx} = 3x^2y - 3x^2 - y + 1\)</span>.<a class="headerlink" href="#q2-solve-the-differential-equation-frac-dy-dx-3x-2y-3x-2-y-1" title="Permalink to this heading"></a></h3>
-</section>
+<section id="q1-solve-the-differential-equation-frac-dy-dx-3x-2y-3x-2-y-1">
+<h3>Q1: Solve the differential equation <span class="math notranslate nohighlight">\(\frac{dy}{dx} = 3x^2y - 3x^2 - y + 1\)</span>.<a class="headerlink" href="#q1-solve-the-differential-equation-frac-dy-dx-3x-2y-3x-2-y-1" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/121.jpeg"><img alt="../../_images/121.jpeg" src="../../_images/121.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q2-solve-the-differential-equation-frac-dy-dx-x-x-3y-xy">
+<h3>Q2: Solve the differential equation <span class="math notranslate nohighlight">\(\frac{dy}{dx}x = x^3y - xy\)</span>.<a class="headerlink" href="#q2-solve-the-differential-equation-frac-dy-dx-x-x-3y-xy" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/222.jpeg"><img alt="../../_images/222.jpeg" src="../../_images/222.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
 </section>
 <section id="linear-differential-equations">
 <h2>Linear Differential Equations<a class="headerlink" href="#linear-differential-equations" title="Permalink to this heading"></a></h2>
 <p>A first-order linear differential equation the standard form is given by <span class="math notranslate nohighlight">\(\frac{dy}{dx} + P(x)y = Q(x)\)</span>.</p>
 <p>To solve a first-order linear differential equation, we define the integrating factor as <span class="math notranslate nohighlight">\(I(x) = e^{\int P(x) dx}\)</span>, and then multiply both sides of <span class="math notranslate nohighlight">\(\frac{dy}{dx} + P(x)y = Q(x)\)</span> by <span class="math notranslate nohighlight">\(I(x)\)</span> to get <span class="math notranslate nohighlight">\(I(x)(\frac{dy}{dx} + P(x)y) = I(x)(Q(x))\)</span>.</p>
-<p>With the choice of <span class="math notranslate nohighlight">\(I(x)\)</span>, <span class="math notranslate nohighlight">\(I(x)(\frac{dy}{dx} + P(x)y) = I(x)(Q(x))\)</span> simplifies to <span class="math notranslate nohighlight">\((I(x)y)' = I(x)Q(x)\)</span>.</p>
-<p>We then integrate both sides (<span class="math notranslate nohighlight">\(\int (I(x)y)' = \int I(x)Q(x) dx\)</span>), which simplifies to <span class="math notranslate nohighlight">\(I(x)y = \int I(x)Q(x) dx\)</span>, which we can use to solve for y.</p>
-<section id="q3-solve-the-differential-equation-y-frac-2y-x-frac-1-2x-4-4x-3-3x-2">
-<h3>Q3: Solve the differential equation <span class="math notranslate nohighlight">\(y' + \frac{2y}{x} = \frac{1}{2x^4 + 4x^3 + 3x^2}\)</span>.<a class="headerlink" href="#q3-solve-the-differential-equation-y-frac-2y-x-frac-1-2x-4-4x-3-3x-2" title="Permalink to this heading"></a></h3>
-</section>
+<p>With the choice of <span class="math notranslate nohighlight">\(I(x)\)</span>, <span class="math notranslate nohighlight">\(I(x)(\frac{dy}{dx} + P(x)y) = I(x)(Q(x))\)</span> simplifies to <span class="math notranslate nohighlight">\(\frac{d}{dx}(I(x)y) = I(x)Q(x)\)</span>.</p>
+<p>We then integrate both sides (<span class="math notranslate nohighlight">\(\int \frac{d}{dx} (I(x)y) dx = \int I(x)Q(x) dx\)</span>), which simplifies to <span class="math notranslate nohighlight">\(I(x)y = \int I(x)Q(x) dx\)</span>, which we can use to solve for y.</p>
+<section id="q3-solve-the-differential-equation-frac-dy-dx-frac-2y-x-frac-1-2x-4-4x-3-3x-2">
+<h3>Q3: Solve the differential equation <span class="math notranslate nohighlight">\(\frac{dy}{dx} + \frac{2y}{x} = \frac{1}{2x^4 + 4x^3 + 3x^2}\)</span>.<a class="headerlink" href="#q3-solve-the-differential-equation-frac-dy-dx-frac-2y-x-frac-1-2x-4-4x-3-3x-2" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/318.jpeg"><img alt="../../_images/318.jpeg" src="../../_images/318.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q4-solve-the-differential-equation-frac-dy-dx-4y-e-2x">
+<h3>Q4: Solve the differential equation <span class="math notranslate nohighlight">\(\frac{dy}{dx} - 4y = e^{2x}\)</span>.<a class="headerlink" href="#q4-solve-the-differential-equation-frac-dy-dx-4y-e-2x" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/415.jpeg"><img alt="../../_images/415.jpeg" src="../../_images/415.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
 </section>
 </section>
 

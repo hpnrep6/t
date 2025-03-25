@@ -101,11 +101,11 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial10.html">Tutorial Week 10</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tutorial10.html#term-test-review">Term Test Review</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tutorial10.html#series-definitions">Series Definitions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tutorial10.html#geometric-series">Geometric Series</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 11</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#series-definitions">Series Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#geometric-series">Geometric Series</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#comparison-test">Comparison Test</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#alternating-series-test">Alternating Series Test</a></li>
 </ul>
@@ -545,7 +545,41 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script><section id="comparison-test">
+</script><section id="series-definitions">
+<h2>Series Definitions<a class="headerlink" href="#series-definitions" title="Permalink to this heading"></a></h2>
+<p>A series is a sum written in the form <span class="math notranslate nohighlight">\(\sum_{k=1}^\infty a_k\)</span>.</p>
+<p>A series converges if <span class="math notranslate nohighlight">\(\sum_{k=1}^\infty a_k = L\)</span> for some constant L.</p>
+<p>If no such <span class="math notranslate nohighlight">\(L\)</span> exists, then the series diverges.</p>
+<p>The divergence test states that if <span class="math notranslate nohighlight">\(\lim_{k \to \infty} a_k \ne 0\)</span>, then a series diverges.</p>
+</section>
+<section id="geometric-series">
+<h2>Geometric Series<a class="headerlink" href="#geometric-series" title="Permalink to this heading"></a></h2>
+<p>A geometric series is a series in the form of <span class="math notranslate nohighlight">\(\sum_{k=0}^\infty ar^k\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(|r| \lt 1\)</span>, then the series converges to <span class="math notranslate nohighlight">\(\frac{a}{1-r}\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(|r| \ge 1\)</span>, the series diverges.</p>
+<section id="q1-does-sum-1-infty-1-arctan-n-converge-if-so-find-its-sum">
+<h3>Q1: Does <span class="math notranslate nohighlight">\(\sum_1^\infty 1 - \arctan(n)\)</span> converge? If so, find its sum.<a class="headerlink" href="#q1-does-sum-1-infty-1-arctan-n-converge-if-so-find-its-sum" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/210.jpeg"><img alt="../../_images/210.jpeg" src="../../_images/210.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q2-does-sum-n-1-infty-3-frac-3-2-n-converge-if-so-find-its-sum">
+<h3>Q2: Does <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty 3(-\frac{3}{2})^n\)</span> converge? If so, find its sum.<a class="headerlink" href="#q2-does-sum-n-1-infty-3-frac-3-2-n-converge-if-so-find-its-sum" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/39.jpeg"><img alt="../../_images/39.jpeg" src="../../_images/39.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q3-does-sum-n-3-infty-4-n-1-5-n6-2n-converge-if-so-find-its-sum">
+<h3>Q3: Does <span class="math notranslate nohighlight">\(\sum_{n=3}^\infty 4^{n+1}5^n6^{-2n}\)</span> converge? If so, find its sum.<a class="headerlink" href="#q3-does-sum-n-3-infty-4-n-1-5-n6-2n-converge-if-so-find-its-sum" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/49.jpeg"><img alt="../../_images/49.jpeg" src="../../_images/49.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
+<section id="comparison-test">
 <h2>Comparison Test<a class="headerlink" href="#comparison-test" title="Permalink to this heading"></a></h2>
 <p>The comparison test states:</p>
 <p>Given series <span class="math notranslate nohighlight">\(\sum a_n\)</span> and <span class="math notranslate nohighlight">\(\sum b_n\)</span>, where <span class="math notranslate nohighlight">\(a_n \ge 0\)</span> and <span class="math notranslate nohighlight">\(b_n \ge 0\)</span>,</p>
@@ -553,8 +587,8 @@ tex: {packages: {'[+]': ['ams']}}
 <li><p>If <span class="math notranslate nohighlight">\(\sum a_n\)</span> converges and <span class="math notranslate nohighlight">\(b_n \le a_n\)</span>, then <span class="math notranslate nohighlight">\(\sum b_n\)</span> converges.</p></li>
 <li><p>If <span class="math notranslate nohighlight">\(\sum a_n\)</span> diverges and <span class="math notranslate nohighlight">\(a_n \le b_n\)</span>, then <span class="math notranslate nohighlight">\(\sum b_n\)</span> diverges.</p></li>
 </ol>
-<section id="q1-use-the-comparison-test-to-show-whether-sum-n-1-infty-frac-3n-5-2-n-5-n-1-converges">
-<h3>Q1: Use the comparison test to show whether <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty \frac{3n + 5}{2^n + 5^n - 1}\)</span> converges.<a class="headerlink" href="#q1-use-the-comparison-test-to-show-whether-sum-n-1-infty-frac-3n-5-2-n-5-n-1-converges" title="Permalink to this heading"></a></h3>
+<section id="q4-use-the-comparison-test-to-show-whether-sum-n-1-infty-frac-3n-5-2-n-5-n-1-converges">
+<h3>Q4: Use the comparison test to show whether <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty \frac{3n + 5}{2^n + 5^n - 1}\)</span> converges.<a class="headerlink" href="#q4-use-the-comparison-test-to-show-whether-sum-n-1-infty-frac-3n-5-2-n-5-n-1-converges" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/211.jpeg"><img alt="../../_images/211.jpeg" src="../../_images/211.jpeg" style="width: 700px;" /></a>
@@ -565,15 +599,15 @@ tex: {packages: {'[+]': ['ams']}}
 <h2>Alternating Series Test<a class="headerlink" href="#alternating-series-test" title="Permalink to this heading"></a></h2>
 <p>The alternating series test states:</p>
 <p>Given an alternating series in the form of <span class="math notranslate nohighlight">\(\sum (-1)^n b_n\)</span> where <span class="math notranslate nohighlight">\(b_n \gt 0\)</span>, if <span class="math notranslate nohighlight">\(b_n\)</span> forms a decreasing sequence (<span class="math notranslate nohighlight">\(b_{n+1} \le b_n\)</span>) and <span class="math notranslate nohighlight">\(\lim_{n \to \infty} b_n = 0\)</span>, then <span class="math notranslate nohighlight">\(\sum (-1)^n b_n\)</span> converges.</p>
-<section id="q2-does-the-series-sum-n-1-infty-frac-1-nn-2-n-2-n-converge-if-it-converges-is-it-absolutely-or-conditionally-convergent">
-<h3>Q2: Does the series <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty \frac{(-1)^nn^2}{n^2+n}\)</span> converge? If it converges, is it absolutely or conditionally convergent?<a class="headerlink" href="#q2-does-the-series-sum-n-1-infty-frac-1-nn-2-n-2-n-converge-if-it-converges-is-it-absolutely-or-conditionally-convergent" title="Permalink to this heading"></a></h3>
+<section id="q5-does-the-series-sum-n-1-infty-frac-1-nn-2-n-2-n-converge-if-it-converges-is-it-absolutely-or-conditionally-convergent">
+<h3>Q5: Does the series <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty \frac{(-1)^nn^2}{n^2+n}\)</span> converge? If it converges, is it absolutely or conditionally convergent?<a class="headerlink" href="#q5-does-the-series-sum-n-1-infty-frac-1-nn-2-n-2-n-converge-if-it-converges-is-it-absolutely-or-conditionally-convergent" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/113.jpeg"><img alt="../../_images/113.jpeg" src="../../_images/113.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
-<section id="q3-does-the-series-sum-n-1-infty-frac-1-nn-n-2-n-converge-if-it-converges-is-it-absolutely-or-conditionally-convergent">
-<h3>Q3: Does the series <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty \frac{(-1)^nn}{n^2+n}\)</span> converge? If it converges, is it absolutely or conditionally convergent?<a class="headerlink" href="#q3-does-the-series-sum-n-1-infty-frac-1-nn-n-2-n-converge-if-it-converges-is-it-absolutely-or-conditionally-convergent" title="Permalink to this heading"></a></h3>
+<section id="q6-does-the-series-sum-n-1-infty-frac-1-nn-n-2-n-converge-if-it-converges-is-it-absolutely-or-conditionally-convergent">
+<h3>Q6: Does the series <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty \frac{(-1)^nn}{n^2+n}\)</span> converge? If it converges, is it absolutely or conditionally convergent?<a class="headerlink" href="#q6-does-the-series-sum-n-1-infty-frac-1-nn-n-2-n-converge-if-it-converges-is-it-absolutely-or-conditionally-convergent" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/212.jpeg"><img alt="../../_images/212.jpeg" src="../../_images/212.jpeg" style="width: 700px;" /></a>

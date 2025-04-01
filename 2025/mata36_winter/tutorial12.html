@@ -19,6 +19,7 @@
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
         <script src="../../_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="../../_static/js/toggle.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -110,8 +111,10 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial Week 12</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#absolute-convergence">Absolute Convergence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ratio-test">Ratio Test</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#root-test">Root Test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#taylor-series">Taylor Series</a></li>
 </ul>
 </li>
 </ul>
@@ -544,20 +547,62 @@ window.MathJax = {
 loader: {load: ['[tex]/ams']},
 tex: {packages: {'[+]': ['ams']}}
 };
-</script><section id="ratio-test">
+</script><section id="absolute-convergence">
+<h2>Absolute Convergence<a class="headerlink" href="#absolute-convergence" title="Permalink to this heading"></a></h2>
+<p>A series <span class="math notranslate nohighlight">\(\sum a_n\)</span> is absolutely convergent if the series <span class="math notranslate nohighlight">\(\sum | a_n |\)</span> converges.</p>
+</section>
+<section id="ratio-test">
 <h2>Ratio Test<a class="headerlink" href="#ratio-test" title="Permalink to this heading"></a></h2>
+<p>Given a series <span class="math notranslate nohighlight">\(\sum a_n\)</span>,</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(\lim_{n \to \infty} | \frac{a_{n+1}}{a_n} | \lt 1\)</span>, the series is absolutely convergent</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\lim_{n \to \infty} | \frac{a_{n+1}}{a_n} | \gt 1\)</span>, the series diverges</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\lim_{n \to \infty} | \frac{a_{n+1}}{a_n} | = 1\)</span>, the ratio test is inconclusive (use another test).</p></li>
+</ul>
+<section id="q1-use-the-ratio-test-to-check-if-sum-n-1-infty-frac-5-n-n-2-converges">
+<h3>Q1: Use the ratio test to check if <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty \frac{(-5)^n}{(n!)^2}\)</span> converges.<a class="headerlink" href="#q1-use-the-ratio-test-to-check-if-sum-n-1-infty-frac-5-n-n-2-converges" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/311.jpeg"><img alt="../../_images/311.jpeg" src="../../_images/311.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
+</section>
 <section id="root-test">
 <h2>Root Test<a class="headerlink" href="#root-test" title="Permalink to this heading"></a></h2>
+<p>Given a series <span class="math notranslate nohighlight">\(\sum a_n\)</span>,</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(\lim_{n \to \infty} \sqrt[n]{|a_n|} \lt 1\)</span>, the series is absolutely convergent</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\lim_{n \to \infty} \sqrt[n]{|a_n|} \gt 1\)</span>, the series diverges</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\lim_{n \to \infty} \sqrt[n]{|a_n|} = 1\)</span>, the ratio test is inconclusive (use another test).</p></li>
+</ul>
+<section id="q2-use-the-root-test-to-check-if-sum-n-1-infty-frac-4-n-ln-n-n-2-n-converges">
+<h3>Q2: Use the root test to check if <span class="math notranslate nohighlight">\(\sum_{n=1}^\infty (\frac{4 + n + ln(n)}{n^2})^n\)</span> converges.<a class="headerlink" href="#q2-use-the-root-test-to-check-if-sum-n-1-infty-frac-4-n-ln-n-n-2-n-converges" title="Permalink to this heading"></a></h3>
 <div class="answer-container">
    <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
    <div class="answer"><a class="reference internal image-reference" href="../../_images/410.jpeg"><img alt="../../_images/410.jpeg" src="../../_images/410.jpeg" style="width: 700px;" /></a>
     </div>
 </div></section>
+</section>
+<section id="taylor-series">
+<h2>Taylor Series<a class="headerlink" href="#taylor-series" title="Permalink to this heading"></a></h2>
+<p>The Taylor series provides an approximation of a function around some x value in the form of an infinite sum.</p>
+<p>The Taylor series of a function <span class="math notranslate nohighlight">\(f(x)\)</span> around <span class="math notranslate nohighlight">\(x = a\)</span> given by the formula <span class="math notranslate nohighlight">\(f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x-a)^n\)</span>.</p>
+<p>The Maclaurin Series is a Taylor series around the point <span class="math notranslate nohighlight">\(x = 0\)</span>.</p>
+<section id="q3-find-the-taylor-series-for-f-x-e-x-at-x-2">
+<h3>Q3: Find the Taylor series for <span class="math notranslate nohighlight">\(f(x) = e^x\)</span> at <span class="math notranslate nohighlight">\(x = 2\)</span>.<a class="headerlink" href="#q3-find-the-taylor-series-for-f-x-e-x-at-x-2" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/319.jpeg"><img alt="../../_images/319.jpeg" src="../../_images/319.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+<section id="q4-find-the-maclaurin-series-for-f-x-x-3e-3x">
+<h3>Q4: Find the Maclaurin series for <span class="math notranslate nohighlight">\(f(x) = x^3e^{3x}\)</span>.<a class="headerlink" href="#q4-find-the-maclaurin-series-for-f-x-x-3e-3x" title="Permalink to this heading"></a></h3>
+<div class="answer-container">
+   <button onClick="toggleClicked(this)" class="show-answer-button">Show Solution</button>
+   <div class="answer"><a class="reference internal image-reference" href="../../_images/415.jpeg"><img alt="../../_images/415.jpeg" src="../../_images/415.jpeg" style="width: 700px;" /></a>
+    </div>
+</div></section>
+</section>
 </section>
 
 
